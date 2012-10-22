@@ -76,66 +76,7 @@
     <favorites_list name="301" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="72" selection-start="2144" selection-end="2144" vertical-scroll-proportion="0.45850623">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GroupedEntity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/GroupedEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="26" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vector2D.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Vector2D.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="42" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Entity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="20" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Group.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Group.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="66" selection-start="1733" selection-end="1990" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollisionBoard.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/CollisionBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="35" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -145,7 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/PhaseA1/Map/Map.java" />
         <option value="$PROJECT_DIR$/src/PhaseA2/Constants.java" />
         <option value="$PROJECT_DIR$/Content/Maps/Normal/tiles.xml" />
         <option value="$PROJECT_DIR$/src/PhaseA2/MapEditor.java" />
@@ -161,6 +101,7 @@
         <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/GroupedEntity.java" />
         <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Group.java" />
         <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Main.java" />
+        <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/Entity.java" />
       </list>
     </option>
   </component>
@@ -381,7 +322,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="IntelligentAgents" />
+              <option name="myItemId" value="ShootingAgents" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -405,10 +346,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="IntelligentAgents" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CollisionBoard.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -455,11 +392,11 @@
       <recent name="PhaseA1.Map" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\ShootingAgents" />
+      <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning" />
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\IntelligentAgents" />
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\CollisionDetectionImplementation" />
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\PhaseA1" />
-      <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src" />
-      <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\PhaseA" />
     </key>
   </component>
   <component name="RunManager" selected="Application.IntelligentAgentMain">
@@ -725,7 +662,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32681563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -733,7 +670,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32324323" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1949807" sideWeight="0.70810056" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1949807" sideWeight="0.70810056" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35407406" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
@@ -852,11 +789,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Content/Maps/Normal/map.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/PhaseA2/MapEditor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="103" column="8" selection-start="2276" selection-end="2276" vertical-scroll-proportion="0.34" />
@@ -904,49 +836,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/CollisionBoard.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="35" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="57" column="7" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Vector2D.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="42" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="20" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="275" selection-end="275" vertical-scroll-proportion="0.33195022">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/GroupedEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="26" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0">
+        <state line="36" column="26" selection-start="904" selection-end="904" vertical-scroll-proportion="1.0705395">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Vector2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="42" selection-start="175" selection-end="175" vertical-scroll-proportion="0.2821577">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="20" selection-start="1161" selection-end="1161" vertical-scroll-proportion="1.1286308">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="66" selection-start="1733" selection-end="1990" vertical-scroll-proportion="0.0">
+        <state line="82" column="66" selection-start="1733" selection-end="1990" vertical-scroll-proportion="0.5062241">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/CollisionBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="72" selection-start="2144" selection-end="2144" vertical-scroll-proportion="0.45850623">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="63" column="35" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.50829875">
+          <folding />
         </state>
       </provider>
     </entry>

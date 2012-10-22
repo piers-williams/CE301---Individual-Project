@@ -1,4 +1,4 @@
-package Learning.IntelligentAgents;
+package Learning.ShootingAgents;
 
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.Display;
