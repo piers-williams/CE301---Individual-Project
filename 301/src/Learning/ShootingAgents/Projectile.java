@@ -32,14 +32,15 @@ public class Projectile {
     }
 
     public void draw() {
-
-        int width = 2;
-        GL11.glColor4f(1, 0.2f, 0, 1.0f);
-        GL11.glBegin(GL11.GL_QUADS);
-        GL11.glVertex2d(source.x - width / 2, source.y - width / 2);
-        GL11.glVertex2d(source.x + width / 2, source.y - width / 2);
-        GL11.glVertex2d(target.x + width / 2, target.y + width / 2);
-        GL11.glVertex2d(target.x - width / 2, target.y + width / 2);
-        GL11.glEnd();
+        if (alive) {
+            int width = 2;
+            GL11.glColor4f(1, 0.2f, 0, 1.0f);
+            GL11.glBegin(GL11.GL_QUADS);
+            GL11.glVertex2d(source.x - width / 2, source.y - width / 2);
+            GL11.glVertex2d(source.x + width / 2, source.y - width / 2);
+            GL11.glVertex2d(target.x + width / 2, target.y + width / 2);
+            GL11.glVertex2d(target.x - width / 2, target.y + width / 2);
+            GL11.glEnd();
+        }
     }
 }

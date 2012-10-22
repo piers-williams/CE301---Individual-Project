@@ -29,11 +29,11 @@ public class ShootingEntity extends GroupedEntity {
         }
         if (shooting) {
             if (projectile == null || !projectile.alive) {
-                System.out.println("Shooting");
+//                System.out.println("Shooting");
                 Entity target = null;
                 double closestDistance = Double.MAX_VALUE;
                 for (Entity other : SQUARES) {
-                    if (!(other instanceof ShootingEntity)) {
+                    if (!(other instanceof ShootingEntity) && other.alive) {
                         double distance = Utilities.manhattanDistance(x, y, other.x, other.y);
                         if (distance < closestDistance) {
                             target = other;
