@@ -16,6 +16,7 @@ public class GroupedEntity extends Entity {
 
     Group group;
 
+    public static Boolean shooting = false;
     double maxSpeed = 1;
 
     public GroupedEntity(Group group, int width) {
@@ -27,16 +28,17 @@ public class GroupedEntity extends Entity {
         Point2D.Double cohesion = calculateCohesion();
         Point2D.Double separation = calculateSeparation();
 
-        if (Utilities.distance(group.x, group.y, this.x, this.y) > 150) {
-            dX = cohesion.x;
-            dY = cohesion.y;
+        if (Utilities.distance(group.x, group.y, this.x, this.y) > group.entities.size() * 1.5) {
+            dX = cohesion.x + separation.x;
+            dY = cohesion.y + separation.y;
         } else {
             dX = separation.x;
             dY = separation.y;
         }
 
-//        dX = (separation.x != 0) ? separation.x + cohesion.x / 2 : cohesion.x;
-//        dY = (separation.y != 0) ? separation.y + cohesion.x / 2 : cohesion.y;
+        if(shooting){
+
+        }
 
         super.update();
     }
@@ -61,21 +63,15 @@ public class GroupedEntity extends Entity {
                 if (distance < Main.SQUARE_WIDTH * 3) {
                     sX += ((this.x - entity.x > 0) ? 1 : -1);
                     sY +=  ((this.y - entity.y > 0) ? 1 : -1);
-//                    sX += (1 - sX) * (1 / (this.x - entity.x));
-//                    sY += (1 - sY) * (1 / (this.y - entity.y));
-//                    sX += (1 - sX) * ((this.x - entity.x));
-//                    sY += (1 - sY) * ( (this.y - entity.y));
                 }
             }
         }
 
-//        sX /= group.entities.size();
-//        sY /= group.entities.size();
-        System.out.println("sX: " + sX + " sY: " + sY);
-        sX = (sX > 1) ? 1 : sX;
-        sX = (sX < -1) ? -1 : sX;
-        sY = (sY > 1) ? 1 : sY;
-        sY = (sY < -1) ? -1 : sY;
+//        System.out.println("sX: " + sX + " sY: " + sY);
+//        sX = (sX > 1) ? 1 : sX;
+//        sX = (sX < -1) ? -1 : sX;
+//        sY = (sY > 1) ? 1 : sY;
+//        sY = (sY < -1) ? -1 : sY;
 
         return new Point2D.Double(sX, sY);
     }

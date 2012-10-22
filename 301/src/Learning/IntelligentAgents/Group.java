@@ -2,6 +2,7 @@ package Learning.IntelligentAgents;
 
 import org.lwjgl.opengl.GL11;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -46,7 +47,7 @@ public class Group {
 
     public void update() {
         // check if at target or close enough
-        if (Utilities.distance(x, y, tX, tY) < 5.0d) {
+        if (Utilities.distance(x, y, tX, tY) < 5) {
             // if so make new target
             do {
                 setNewTarget();
@@ -59,6 +60,7 @@ public class Group {
         if (y > tY) y -= speed;
         if (y < tY) y += speed;
 
+        speed = 2;
     }
 
     private void setNewTarget() {

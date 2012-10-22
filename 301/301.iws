@@ -80,7 +80,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="53" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.9294606">
+            <state line="69" column="54" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.22406639">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,7 +91,7 @@
       <file leaf-file-name="GroupedEntity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/GroupedEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="60" selection-start="1925" selection-end="1925" vertical-scroll-proportion="0.0">
+            <state line="39" column="0" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,7 +111,7 @@
       <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="8" selection-start="1443" selection-end="1752" vertical-scroll-proportion="0.0">
+            <state line="51" column="0" selection-start="1053" selection-end="1155" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,7 +120,7 @@
       <file leaf-file-name="Group.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Group.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="17" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.0">
+            <state line="60" column="41" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -156,11 +156,11 @@
         <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/CollisionBoard.java" />
         <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Entity.java" />
         <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Utilities.java" />
-        <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Main.java" />
-        <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Group.java" />
         <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Vector.java" />
         <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Vector2D.java" />
+        <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Group.java" />
         <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/GroupedEntity.java" />
+        <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Main.java" />
       </list>
     </option>
   </component>
@@ -789,7 +789,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
@@ -911,20 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="8" selection-start="1443" selection-end="1752" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="17" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Vector2D.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="42" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
@@ -932,9 +918,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="0" selection-start="1053" selection-end="1155" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="41" selection-start="1404" selection-end="1404" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/GroupedEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="60" selection-start="1925" selection-end="1925" vertical-scroll-proportion="0.0">
+        <state line="39" column="0" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -943,7 +943,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="53" selection-start="2355" selection-end="2355" vertical-scroll-proportion="0.9294606">
+        <state line="69" column="54" selection-start="2037" selection-end="2037" vertical-scroll-proportion="0.22406639">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

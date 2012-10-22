@@ -26,7 +26,7 @@ public class Main {
     static int MAP_WIDTH = 1600;
     static int MAP_HEIGHT = 900;
     static int SQUARE_WIDTH = 10;
-    static int SQUARE_COUNT = 0;
+    static int SQUARE_COUNT = 200;
     static boolean FULL_SCREEN = true;
 
     public Main() {
@@ -67,7 +67,7 @@ public class Main {
 
         Random random = new Random();
         for(Group group : groups){
-            for(int i = 0; i < random.nextInt(15) + 25; i++){
+            for(int i = 0; i < random.nextInt(30) + 20; i++){
                 GroupedEntity entity = new GroupedEntity(group, SQUARE_WIDTH);
                 group.addEntity(entity);
                 squares.add(entity);
@@ -90,6 +90,8 @@ public class Main {
             if(Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)){
                 break;
             }
+            if(Keyboard.isKeyDown(Keyboard.KEY_A)) addMoreUnits();
+            if(Keyboard.isKeyDown(Keyboard.KEY_C)) GroupedEntity.shooting = !GroupedEntity.shooting;
 
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
             for (int j = 0; j < squares.size(); j++) {
@@ -110,5 +112,16 @@ public class Main {
 
     public static void main(String[] args) {
         new Main();
+    }
+
+    private void addMoreUnits(){
+        Random random = new Random();
+        for(Group group : groups){
+            for(int i = 0; i < random.nextInt(5) + 10; i++){
+                GroupedEntity entity = new GroupedEntity(group, SQUARE_WIDTH);
+                group.addEntity(entity);
+                squares.add(entity);
+            }
+        }
     }
 }
