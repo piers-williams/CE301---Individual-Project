@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tiles>
+    <Tile red="0" green="128" blue="0" source="grass1.png"></Tile>
+    <Tile red="0" green="0" blue="127" source="water1.png"></Tile>
+</Tiles>

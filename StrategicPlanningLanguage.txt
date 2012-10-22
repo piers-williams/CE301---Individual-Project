@@ -1,0 +1,152 @@
+**************************************************
+*** Strategic Planning Language Specification ****
+**************************************************
+
+Two Parts to the language.
+Query and Order
+
+*************
+*** Query ***
+*************
+
+A Query is a request of information from the AI
+
+Query
+	QueryObject
+		HowMany - How many of these do you have?
+			1 Argument(ObjectType)
+				ObjectType - Object type to count
+		HowManyGreedy - How many of these and related do you have?
+			1 Argument(ObjectType)
+				ObjectType - Object type to count, as well as sub and parent types
+		HowManyAvailable - How many of these to spare?
+			1 Argument(ObjectType)
+				ObjectType - Object type to count
+		HowManyGreedyAvailable - How many of these and related to spare?
+			1 Argument(ObjectType)
+				ObjectType - Object type to count, as well as sub and parent types
+	QueryTime
+		HowLong - How long to complete an order?
+			1 Argument(Order)
+				Order - A previously agreed Order
+		HowLongStart - How long till start an order?
+			1 Argument(Order)
+				Order - Either previously agreed Order or OrderWIP
+				
+	QueryAssessment
+		AttackStrength - Evaluate attack strengths / weaknesses
+			1 Argument(Player/Team)
+				Player/Team - Evaluate the player or team given with all available information to AI's team
+		DefenseStrength - Evaluate defense strengths / weaknesses		
+			1 Argument(Player/Team)
+				Player/Team - Evaluate the player or team given with all available information to AI's team
+		TotalStrength
+			AttackStrength(Player/Team) && DefenseStrength(Player/Team)
+		AssessAll - Assess TotalStrength of all players and return matching strengths to weaknesses
+
+			
+			
+*************			
+*** Order ***
+*************			
+			
+An Order is a request to the AI to carry out a task
+
+Order ::= Order | Order && Order
+
+4 Main Types of order
+
+Attack, Defend, Trade and Explore
+
+Attack - Attack orders are given to direct the AI to attack a location or structure or base.
+
+	Assasinate - Orders the AI to take out a single structure or unit without regard to others. Should withdraw after completion
+		2 Arguments (Object, Severity)
+			Object - The Target
+			Severity - How important it is to succeed
+			
+	Destroy - Orders the AI to completly destroy a base
+		2 Arguments (Base, Severity)
+			Base - The Base to destroy
+			Severity - How important it is to succeed
+	
+	Neutralize - Orders the AI to keep the enemy out of a region
+		3 Arguments (Location, Radius, Severity)
+			Location - Location to use as center point
+			Radius - How wide around the center point to go
+			Severity - How important it is to succeed
+			
+			
+Defend - Defend orders the AI to perform defensive tasks
+
+	Grow - Orders the AI to improve its own base defenses
+		3 Arguments (Base, Type, Severity)
+			Base - The Base to grow
+			Type - The thing to defend against
+			Severity - How much resources to put into this. Out of 5.
+			
+	Occupy - Orders the AI to construct a base in an area
+		3 Arguments (Location, Type, Severity)
+			Location - The location to use as center point
+			Type - The purpose of the base
+			Severity - How large/Strong will the base be
+	OccupyForMe - Orders the AI to construct a base for me in an area
+		(Occupy followed by GiveBase)
+		3 Arguments (Location, Type, Severity)
+			Location - The location to use as center point
+			Type - The purpose of the base
+			Severity - How large/Strong will the base be
+			
+			
+Explore - Explores the terrain
+	Explore - Explore a geographical location
+		3 Arguments (Location, Radius, Severity)
+			Location - The Location to use as center point
+			Radius - How much to explore around the point
+			Severity - How soon should we explore
+	
+	Search - Search for a particular item
+		4 Arguments (Resource,Location, Radius, Severity)
+			Resource - The Resource we are looking for
+			Location - The Location to use as center point
+			Radius - How much to explore around the point
+			Severity - How soon should we explore
+
+			
+Trade - Negotiates trade of units/resource/buildings
+	Give - Orders the AI to hand over control
+		GiveObject
+			1 Argument (Object)
+				Object - The Object to be transferred
+		GiveGroup
+			1 Argument (Group)
+				Group - The Group to be transferred
+		GiveBase
+			1 Argument (Base)
+				Base - The Base to be transferred
+		GiveAll
+			0 Arguments
+			
+	Receive
+		ReceiveObject
+			1 Argument (Object)
+				Object - The Object to be transferred
+		ReceiveGroup
+			1 Argument (Group)
+				Group - The Group to be transferred
+		ReceiveBase
+			1 Argument (Base)
+				Base - The Base to be transferred
+		ReceiveAll
+			0 Arguments
+			
+	Swap
+		SwapObject
+			2 Arguments (ObjectMine, ObjectYours)
+				GiveObject(ObjectMine) && ReceiveObject(ObjectYours);
+		SwapGroup
+			2 Arguments (GroupMine, GroupYours)
+				GiveGroup(GroupMine) && ReceiveGroup(GroupYours);
+		SwapBase
+			2 Arguments (BaseMine, BaseYours)
+				GiveBase(BaseMine) && ReceiveBase(BaseYours);
