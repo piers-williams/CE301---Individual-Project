@@ -1,0 +1,45 @@
+package Learning.ShootingAgents;
+
+import org.lwjgl.opengl.GL11;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: Piers
+ * Date: 22/10/12
+ * Time: 17:00
+ * To change this template use File | Settings | File Templates.
+ */
+public class Projectile {
+
+    Entity source;
+    Entity target;
+
+    int lifeInTicks = 60;
+
+    boolean alive = true;
+
+    public Projectile(Entity source, Entity target) {
+        this.source = source;
+        this.target = target;
+    }
+
+    public void update() {
+        lifeInTicks--;
+        if (lifeInTicks <= 0) {
+            alive = false;
+            target.kill();
+        }
+    }
+
+    public void draw() {
+
+        int width = 2;
+        GL11.glColor4f(1, 0.2f, 0, 1.0f);
+        GL11.glBegin(GL11.GL_QUADS);
+        GL11.glVertex2d(source.x - width / 2, source.y - width / 2);
+        GL11.glVertex2d(source.x + width / 2, source.y - width / 2);
+        GL11.glVertex2d(target.x + width / 2, target.y + width / 2);
+        GL11.glVertex2d(target.x - width / 2, target.y + width / 2);
+        GL11.glEnd();
+    }
+}

@@ -18,6 +18,7 @@ import java.util.Random;
 public class Main {
     ArrayList<Entity> squares;
 
+
     ArrayList<Group> groups;
 
     static int SCREEN_WIDTH = 1600;
@@ -26,7 +27,7 @@ public class Main {
     static int MAP_WIDTH = 1600;
     static int MAP_HEIGHT = 900;
     static int SQUARE_WIDTH = 6;
-    static int SQUARE_COUNT = 0;
+    static int SQUARE_COUNT = 200;
     static boolean FULL_SCREEN = true;
 
     public Main() {
@@ -47,6 +48,7 @@ public class Main {
         }
         // Set the board
         Entity.BOARD = new CollisionBoard(Main.MAP_WIDTH, Main.MAP_HEIGHT, 75);
+        ShootingEntity.SQUARES = squares;
 
         Thread thread = new Thread(Entity.BOARD);
         thread.setDaemon(true);
@@ -74,7 +76,7 @@ public class Main {
         Random random = new Random();
         for(Group group : groups){
             for(int i = 0; i < random.nextInt(30) + 20; i++){
-                GroupedEntity entity = new GroupedEntity(group, SQUARE_WIDTH);
+                GroupedEntity entity = new ShootingEntity(group, SQUARE_WIDTH);
                 group.addEntity(entity);
                 squares.add(entity);
             }
@@ -124,7 +126,7 @@ public class Main {
         Random random = new Random();
         for(Group group : groups){
             for(int i = 0; i < random.nextInt(5) + 20; i++){
-                GroupedEntity entity = new GroupedEntity(group, SQUARE_WIDTH);
+                GroupedEntity entity = new ShootingEntity(group, SQUARE_WIDTH);
                 group.addEntity(entity);
                 squares.add(entity);
             }

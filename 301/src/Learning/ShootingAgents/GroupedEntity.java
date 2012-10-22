@@ -36,9 +36,6 @@ public class GroupedEntity extends Entity {
         } else {
             dX = separation.x;
             dY = separation.y;
-
-            // Those in the group move slower
-
         }
 
         if (shooting) {

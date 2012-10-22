@@ -24,6 +24,8 @@ public class Entity {
 
     float r, g, b;
 
+    boolean alive = true;
+
     private static Random random = new Random();
 
     public Entity(int width) {
@@ -66,13 +68,15 @@ public class Entity {
     }
 
     public void draw() {
-        GL11.glColor4f(r, g, b, 1.0f);
-        GL11.glBegin(GL11.GL_QUADS);
-        GL11.glVertex2d(x - width / 2, y - width / 2);
-        GL11.glVertex2d(x + width / 2, y - width / 2);
-        GL11.glVertex2d(x + width / 2, y + width / 2);
-        GL11.glVertex2d(x - width / 2, y + width / 2);
-        GL11.glEnd();
+        if (alive) {
+            GL11.glColor4f(r, g, b, 1.0f);
+            GL11.glBegin(GL11.GL_QUADS);
+            GL11.glVertex2d(x - width / 2, y - width / 2);
+            GL11.glVertex2d(x + width / 2, y - width / 2);
+            GL11.glVertex2d(x + width / 2, y + width / 2);
+            GL11.glVertex2d(x - width / 2, y + width / 2);
+            GL11.glEnd();
+        }
     }
 
     protected void moveToPoint(double tX, double tY) {
@@ -82,6 +86,10 @@ public class Entity {
         if (x + radius < tX) x += 1;
         if (y - radius > tY) y -= 1;
         if (y + radius < tY) y += 1;
+    }
+
+    public void kill() {
+        alive = false;
     }
 
     public static boolean collidesWith(Entity first, Entity second) {
