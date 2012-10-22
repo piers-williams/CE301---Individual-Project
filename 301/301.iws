@@ -77,19 +77,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="37" selection-start="2837" selection-end="2837" vertical-scroll-proportion="2.3278008">
+            <state line="63" column="36" selection-start="1771" selection-end="1771" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShootingEntity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ShootingEntity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/ShootingEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="41" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.0">
+            <state line="34" column="0" selection-start="826" selection-end="826" vertical-scroll-proportion="1.0726141">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,7 +109,7 @@
       <file leaf-file-name="Projectile.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Projectile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="26" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
+            <state line="35" column="33" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,8 +148,8 @@
         <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/GroupedEntity.java" />
         <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/Entity.java" />
         <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/Projectile.java" />
-        <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/Main.java" />
         <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/ShootingEntity.java" />
+        <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/Main.java" />
       </list>
     </option>
   </component>
@@ -939,6 +939,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Projectile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="33" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="36" selection-start="1771" selection-end="1771" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="9" selection-start="1835" selection-end="1835" vertical-scroll-proportion="0.0">
@@ -946,26 +960,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Projectile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="26" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/ShootingEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="41" selection-start="1663" selection-end="1663" vertical-scroll-proportion="0.0">
+        <state line="34" column="0" selection-start="826" selection-end="826" vertical-scroll-proportion="1.0726141">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="37" selection-start="2837" selection-end="2837" vertical-scroll-proportion="2.3278008">
-          <folding />
         </state>
       </provider>
     </entry>

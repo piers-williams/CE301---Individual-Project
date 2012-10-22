@@ -48,7 +48,6 @@ public class Main {
         }
         // Set the board
         Entity.BOARD = new CollisionBoard(Main.MAP_WIDTH, Main.MAP_HEIGHT, 75);
-        ShootingEntity.SQUARES = squares;
 
         Thread thread = new Thread(Entity.BOARD);
         thread.setDaemon(true);
@@ -62,6 +61,7 @@ public class Main {
             squares.add(new Entity(SQUARE_WIDTH, 0.5f, 0.5f, 0.5f));
         }
 
+        ShootingEntity.SQUARES = squares;
         groups = new ArrayList<Group>();
         groups.add(new Group(0, 1, 0, 0));
         groups.add(new Group(1, 0, 1, 0));
