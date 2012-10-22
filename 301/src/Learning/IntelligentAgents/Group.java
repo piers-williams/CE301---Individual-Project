@@ -28,6 +28,8 @@ public class Group {
 
     double speed = 1;
 
+    double radius;
+
     public Group(int group, float r, float g, float b) {
         this.group = group;
         this.r = r;
@@ -60,7 +62,8 @@ public class Group {
         if (y > tY) y -= speed;
         if (y < tY) y += speed;
 
-        speed = 2;
+        speed = 1;
+        radius = Math.sqrt(Math.pow(entities.size(), 1.5) * 8);
     }
 
     private void setNewTarget() {
@@ -74,23 +77,20 @@ public class Group {
     }
 
     public void draw() {
+//        drawSmallSquare((int) (x - radius), (int) (y + radius));
+//        drawSmallSquare((int) (x + radius), (int) (y + radius));
+//        drawSmallSquare((int) (x - radius), (int) (y - radius));
+//        drawSmallSquare((int) (x + radius), (int) (y - radius));
+    }
 
-        int width = 6;
-        GL11.glColor4f(r, g, b, 1.0f);
+    private void drawSmallSquare(int x, int y) {
+        int width = 20;
+        GL11.glColor4f(r, g, b, 0.2f);
         GL11.glBegin(GL11.GL_QUADS);
         GL11.glVertex2d(x - width / 2, y - width / 2);
         GL11.glVertex2d(x + width / 2, y - width / 2);
         GL11.glVertex2d(x + width / 2, y + width / 2);
         GL11.glVertex2d(x - width / 2, y + width / 2);
-        GL11.glEnd();
-
-        width = 12;
-        GL11.glColor4f(r, g, b, 1.0f);
-        GL11.glBegin(GL11.GL_QUADS);
-        GL11.glVertex2d(tX - width / 2,tY - width / 2);
-        GL11.glVertex2d(tX + width / 2,tY - width / 2);
-        GL11.glVertex2d(tX + width / 2,tY + width / 2);
-        GL11.glVertex2d(tX - width / 2,tY + width / 2);
         GL11.glEnd();
     }
 }

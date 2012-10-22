@@ -19,6 +19,7 @@ public class GroupedEntity extends Entity {
     public static Boolean shooting = false;
     double maxSpeed = 1;
 
+
     public GroupedEntity(Group group, int width) {
         super(width, group.r, group.g, group.b);
         this.group = group;
@@ -28,15 +29,21 @@ public class GroupedEntity extends Entity {
         Point2D.Double cohesion = calculateCohesion();
         Point2D.Double separation = calculateSeparation();
 
-        if (Utilities.distance(group.x, group.y, this.x, this.y) > group.entities.size() * 1.5) {
-            dX = cohesion.x + separation.x;
-            dY = cohesion.y + separation.y;
+        if (Utilities.distance(group.x, group.y, this.x, this.y) > group.radius) {
+            dX = cohesion.x + separation.x /2;
+            dY = cohesion.y + separation.y /2;
+
+            dX *= 1.4;
+            dY *= 1.4;
         } else {
             dX = separation.x;
             dY = separation.y;
+
+            // Those in the group move slower
+
         }
 
-        if(shooting){
+        if (shooting) {
 
         }
 
@@ -62,7 +69,7 @@ public class GroupedEntity extends Entity {
                 //System.out.println("Distance is: " + distance);
                 if (distance < Main.SQUARE_WIDTH * 3) {
                     sX += ((this.x - entity.x > 0) ? 1 : -1);
-                    sY +=  ((this.y - entity.y > 0) ? 1 : -1);
+                    sY += ((this.y - entity.y > 0) ? 1 : -1);
                 }
             }
         }
@@ -79,4 +86,6 @@ public class GroupedEntity extends Entity {
     private Point calculateAlignment() {
         return new Point(0, 0);
     }
+
+
 }

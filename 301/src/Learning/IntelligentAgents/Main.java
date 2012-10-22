@@ -25,8 +25,8 @@ public class Main {
 
     static int MAP_WIDTH = 1600;
     static int MAP_HEIGHT = 900;
-    static int SQUARE_WIDTH = 10;
-    static int SQUARE_COUNT = 200;
+    static int SQUARE_WIDTH = 6;
+    static int SQUARE_COUNT = 0;
     static boolean FULL_SCREEN = true;
 
     public Main() {
@@ -64,6 +64,12 @@ public class Main {
         groups.add(new Group(0, 1, 0, 0));
         groups.add(new Group(1, 0, 1, 0));
         groups.add(new Group(2, 0, 0, 1));
+        groups.add(new Group(3, 1, 0, 1));
+        groups.add(new Group(4, 0, 1, 1));
+        groups.add(new Group(5, 1, 1, 0));
+        groups.add(new Group(6, 0.25f, 0.75f, 0.25f));
+        groups.add(new Group(7, 0.75f, 0.25f, 0.25f));
+        groups.add(new Group(8, 0.25f, 0.25f, 0.75f));
 
         Random random = new Random();
         for(Group group : groups){
