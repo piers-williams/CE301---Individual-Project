@@ -1,4 +1,4 @@
-package Learning.ShootingEachOtherAgents;
+package Learning.Bases;
 
 import org.lwjgl.opengl.GL11;
 
@@ -19,12 +19,12 @@ public class ShootingEntity extends GroupedEntity {
 
     private static double MAX_RANGE = 50;
 
-    public ShootingEntity(Group group, int width) {
-        super(group, width);
+    public ShootingEntity(Faction faction, int width) {
+        super(faction, width);
     }
 
-    public ShootingEntity(Group group, int width, double x, double y) {
-        super(group, width);
+    public ShootingEntity(Faction faction, int width, double x, double y) {
+        super(faction, width);
         this.x = x;
         this.y = y;
     }
@@ -49,7 +49,7 @@ public class ShootingEntity extends GroupedEntity {
                                     target = other;
                                     closestDistance = distance;
                                 }
-                            } else if (((ShootingEntity) other).group != this.group) {
+                            } else if (((ShootingEntity) other).faction != this.faction) {
                                 double distance = Utilities.distance(x, y, other.x, other.y);
                                 if (distance < closestDistance) {
                                     target = other;

@@ -10,7 +10,7 @@ import java.util.Iterator;
  * Time: 11:17
  * To change this template use File | Settings | File Templates.
  */
-public class EntityList implements Runnable{
+public class GameLoop implements Runnable{
 
     private ArrayList<Entity> entities;
     private final Object _entities = new Object();
@@ -19,12 +19,12 @@ public class EntityList implements Runnable{
 
     private int tickDelay;
 
-    public EntityList(){
+    public GameLoop(){
         entities = new ArrayList<Entity>();
         addEntities = new ArrayList<Entity>();
         tickDelay = 50;
     }
-    public EntityList(int tickDelay){
+    public GameLoop(int tickDelay){
         this();
         this.tickDelay = tickDelay;
     }
@@ -35,7 +35,7 @@ public class EntityList implements Runnable{
             try {
                 Thread.sleep(tickDelay);
             } catch (InterruptedException e) {
-                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                e.printStackTrace();
             }
 
             // Run the removal run
@@ -51,6 +51,10 @@ public class EntityList implements Runnable{
             // Addition run
             synchronized (_entities){
                 entities.addAll(addEntities);
+            }
+
+            synchronized (_entities){
+                for(Entity entity : entities) entity.update();
             }
         }
     }

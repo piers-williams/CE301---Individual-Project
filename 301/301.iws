@@ -76,46 +76,43 @@
     <favorites_list name="301" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="CollisionBoard.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/CollisionBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="182" column="29" selection-start="5416" selection-end="5416" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ShootingEntity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/ShootingEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="29" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityList.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/EntityList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="26" selection-start="485" selection-end="485" vertical-scroll-proportion="0.43568465">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="57" selection-start="4070" selection-end="4070" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Learning/Bases/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="59" column="27" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.63752663">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Learning/Bases/Entity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="99" column="38" selection-start="2481" selection-end="2481" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="GameLoop.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Learning/Bases/GameLoop.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="90" column="26" selection-start="2426" selection-end="2426" vertical-scroll-proportion="0.8589212">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -125,22 +122,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/CollisionBoard.java" />
-        <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Entity.java" />
-        <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Utilities.java" />
-        <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Vector.java" />
-        <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Vector2D.java" />
-        <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/GroupedEntity.java" />
-        <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Group.java" />
-        <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Main.java" />
-        <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/GroupedEntity.java" />
-        <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/Entity.java" />
         <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/Main.java" />
         <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/ShootingEntity.java" />
         <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/Projectile.java" />
         <option value="$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/CollisionBoard.java" />
         <option value="$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/ShootingEntity.java" />
         <option value="$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/EntityList.java" />
+        <option value="$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/GameLoop.java" />
+        <option value="$PROJECT_DIR$/Content/Bases/Home" />
+        <option value="$PROJECT_DIR$/src/Learning/Bases/Vector2D.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Bases/Group.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Bases/CollisionBoard.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Bases/Projectile.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Bases/ShootingEntity.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Bases/Entity.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Bases/GameLoop.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Bases/Main.java" />
       </list>
     </option>
   </component>
@@ -279,20 +276,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -365,7 +348,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ShootingEachOtherAgents" />
+              <option name="myItemId" value="Bases" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -379,20 +362,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="Content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Learning" />
+              <option name="myItemId" value="Content" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ShootingEachOtherAgents" />
+              <option name="myItemId" value="Bases" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CollisionBoard.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -403,6 +392,20 @@
             <PATH_ELEMENT USER_OBJECT="Root">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -418,7 +421,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="project.structure.side.proportion" value="0.16103059" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -426,23 +429,24 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Learning.Bases" />
       <recent name="PhaseA1.Map" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\Bases" />
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\ShootingEachOtherAgents" />
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\ShootingAgents" />
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning" />
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\IntelligentAgents" />
-      <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\CollisionDetectionImplementation" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShootingEachOther">
+  <component name="RunManager" selected="Application.Bases">
     <configuration default="false" name="MapEditor" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -506,6 +510,25 @@
     <configuration default="false" name="ShootingEachOther" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Learning.ShootingEachOtherAgents.Main" />
+      <option name="VM_PARAMETERS" value=" -Djava.library.path=lib/windows -ea" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="301" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="false" name="Bases" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Learning.Bases.Main" />
       <option name="VM_PARAMETERS" value=" -Djava.library.path=lib/windows -ea" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -665,7 +688,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list size="7">
+    <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Application.MapEditor" />
       <item index="1" class="java.lang.String" itemvalue="Application.Reader" />
       <item index="2" class="java.lang.String" itemvalue="Application.GraphicsMain" />
@@ -673,6 +696,7 @@
       <item index="4" class="java.lang.String" itemvalue="Application.IntelligentAgentMain" />
       <item index="5" class="java.lang.String" itemvalue="Application.ShootingAgents" />
       <item index="6" class="java.lang.String" itemvalue="Application.ShootingEachOther" />
+      <item index="7" class="java.lang.String" itemvalue="Application.Bases" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -747,18 +771,19 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32681563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35407406" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32681563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32324323" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23037323" sideWeight="0.70810056" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35407406" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23359074" sideWeight="0.70810056" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29189944" sideWeight="0.6898263" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -767,7 +792,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -872,105 +896,95 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Projectile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="7" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.0" />
+        <state line="25" column="32" selection-start="522" selection-end="522" vertical-scroll-proportion="0.7205543" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/GroupedEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="26" selection-start="904" selection-end="904" vertical-scroll-proportion="1.0705395" />
+        <state line="92" column="16" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.6348548" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Vector2D.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="42" selection-start="175" selection-end="175" vertical-scroll-proportion="0.2821577" />
+        <state line="21" column="26" selection-start="422" selection-end="422" vertical-scroll-proportion="0.03526971" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Entity.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/CollisionBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="20" selection-start="1161" selection-end="1161" vertical-scroll-proportion="1.1286308" />
+        <state line="182" column="29" selection-start="5416" selection-end="5416" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Group.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/ShootingEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="66" selection-start="1733" selection-end="1990" vertical-scroll-proportion="0.5062241" />
+        <state line="53" column="59" selection-start="1791" selection-end="1791" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/CollisionBoard.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/GameLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="35" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.50829875" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="13" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="25" column="5" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/GroupedEntity.java">
+    <entry file="file://$PROJECT_DIR$/Content/Bases/Home">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="285" selection-end="285" vertical-scroll-proportion="0.0">
+        <state line="21" column="27" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/ShootingEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="65" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.0">
+        <state line="53" column="65" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.45875543">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Projectile.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="32" selection-start="522" selection-end="522" vertical-scroll-proportion="0.7205543">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="16" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.6348548">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="26" selection-start="422" selection-end="422" vertical-scroll-proportion="0.03526971">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/CollisionBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="29" selection-start="5416" selection-end="5416" vertical-scroll-proportion="0.0">
+        <state line="25" column="28" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="57" selection-start="4070" selection-end="4070" vertical-scroll-proportion="0.0">
+        <state line="131" column="57" selection-start="4070" selection-end="4070" vertical-scroll-proportion="0.55716354">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/ShootingEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/Bases/ShootingEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="29" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/EntityList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="26" selection-start="485" selection-end="485" vertical-scroll-proportion="0.43568465">
+        <state line="28" column="18" selection-start="642" selection-end="642" vertical-scroll-proportion="0.6701245">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Bases/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="38" selection-start="2481" selection-end="2481" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Bases/GameLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="26" selection-start="2426" selection-end="2426" vertical-scroll-proportion="0.8589212">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Bases/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="27" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.63752663">
+          <folding />
         </state>
       </provider>
     </entry>
