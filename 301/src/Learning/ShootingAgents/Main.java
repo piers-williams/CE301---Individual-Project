@@ -100,6 +100,7 @@ public class Main {
             }
             if(Keyboard.isKeyDown(Keyboard.KEY_A)) addMoreUnits();
             if(Keyboard.isKeyDown(Keyboard.KEY_C)) GroupedEntity.shooting = !GroupedEntity.shooting;
+            if(Keyboard.isKeyDown(Keyboard.KEY_P)) addMorePrey();
 
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
             for (int j = 0; j < squares.size(); j++) {
@@ -130,6 +131,13 @@ public class Main {
                 group.addEntity(entity);
                 squares.add(entity);
             }
+        }
+    }
+
+    private void addMorePrey(){
+        for (int i = 0; i < 250; i++) {
+            // all grey
+            squares.add(new Entity(SQUARE_WIDTH, 0.5f, 0.5f, 0.5f));
         }
     }
 }

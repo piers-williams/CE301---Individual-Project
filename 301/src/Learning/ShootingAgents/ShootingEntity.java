@@ -17,8 +17,16 @@ public class ShootingEntity extends GroupedEntity {
 
     private Projectile projectile;
 
+    private static double MAX_RANGE = 50;
+
     public ShootingEntity(Group group, int width) {
         super(group, width);
+    }
+
+    public ShootingEntity(Group group, int width, double x, double y){
+         super(group, width);
+        this.x = x;
+        this.y = y;
     }
 
     public void update() {
@@ -34,7 +42,7 @@ public class ShootingEntity extends GroupedEntity {
                 double closestDistance = Double.MAX_VALUE;
                 for (Entity other : SQUARES) {
                     if (!(other instanceof ShootingEntity) && other.alive) {
-                        double distance = Utilities.manhattanDistance(x, y, other.x, other.y);
+                        double distance = Utilities.distance(x, y, other.x, other.y);
                         if (distance < closestDistance) {
                             target = other;
                             closestDistance = distance;
@@ -42,8 +50,8 @@ public class ShootingEntity extends GroupedEntity {
                     }
                 }
 
-                if (target != null) {
-                    projectile = new Projectile(this, target);
+                if (target != null && closestDistance < ShootingEntity.MAX_RANGE) {
+                    projectile = new Projectile(this, target, true);
                 }
             }
         }

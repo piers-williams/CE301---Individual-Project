@@ -11,16 +11,24 @@ import org.lwjgl.opengl.GL11;
  */
 public class Projectile {
 
-    Entity source;
+    ShootingEntity source;
     Entity target;
 
     int lifeInTicks = 60;
 
     boolean alive = true;
+    boolean converter;
 
-    public Projectile(Entity source, Entity target) {
+    public Projectile(ShootingEntity source, Entity target) {
         this.source = source;
         this.target = target;
+        converter = false;
+    }
+
+    public Projectile(ShootingEntity source, Entity target, boolean converter) {
+        this.source = source;
+        this.target = target;
+        this.converter = converter;
     }
 
     public void update() {
