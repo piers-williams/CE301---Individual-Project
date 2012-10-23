@@ -23,8 +23,8 @@ public class ShootingEntity extends GroupedEntity {
         super(group, width);
     }
 
-    public ShootingEntity(Group group, int width, double x, double y){
-         super(group, width);
+    public ShootingEntity(Group group, int width, double x, double y) {
+        super(group, width);
         this.x = x;
         this.y = y;
     }
@@ -41,11 +41,20 @@ public class ShootingEntity extends GroupedEntity {
                 Entity target = null;
                 double closestDistance = Double.MAX_VALUE;
                 for (Entity other : SQUARES) {
-                    if (!(other instanceof ShootingEntity) && other.alive) {
-                        double distance = Utilities.distance(x, y, other.x, other.y);
-                        if (distance < closestDistance) {
-                            target = other;
-                            closestDistance = distance;
+                    if (other.alive) {
+                        if (!(other instanceof ShootingEntity)) {
+
+                            double distance = Utilities.distance(x, y, other.x, other.y);
+                            if (distance < closestDistance) {
+                                target = other;
+                                closestDistance = distance;
+                            }
+                        } else if (((ShootingEntity) other).group != this.group) {
+                            double distance = Utilities.distance(x, y, other.x, other.y);
+                            if (distance < closestDistance) {
+                                target = other;
+                                closestDistance = distance;
+                            }
                         }
                     }
                 }
@@ -58,24 +67,27 @@ public class ShootingEntity extends GroupedEntity {
     }
 
     public void draw() {
-        GL11.glColor4f(r, g, b, 0.5f);
-        GL11.glBegin(GL11.GL_QUADS);
-        GL11.glVertex2d(x - width / 2, y - width / 2);
-        GL11.glVertex2d(x + width / 2, y - width / 2);
-        GL11.glVertex2d(x + width / 2, y + width / 2);
-        GL11.glVertex2d(x - width / 2, y + width / 2);
-        GL11.glEnd();
+        if (alive) {
+            GL11.glColor4f(r, g, b, 0.5f);
+            GL11.glBegin(GL11.GL_QUADS);
+            GL11.glVertex2d(x - width / 2, y - width / 2);
+            GL11.glVertex2d(x + width / 2, y - width / 2);
+            GL11.glVertex2d(x + width / 2, y + width / 2);
+            GL11.glVertex2d(x - width / 2, y + width / 2);
+            GL11.glEnd();
 
-        GL11.glColor4f(r, g, b, 1.0f);
-        GL11.glBegin(GL11.GL_QUADS);
-        GL11.glVertex2d(x - width / 4, y - width / 4);
-        GL11.glVertex2d(x + width / 4, y - width / 4);
-        GL11.glVertex2d(x + width / 4, y + width / 4);
-        GL11.glVertex2d(x - width / 4, y + width / 4);
-        GL11.glEnd();
+            GL11.glColor4f(r, g, b, 1.0f);
+            GL11.glBegin(GL11.GL_QUADS);
+            GL11.glVertex2d(x - width / 4, y - width / 4);
+            GL11.glVertex2d(x + width / 4, y - width / 4);
+            GL11.glVertex2d(x + width / 4, y + width / 4);
+            GL11.glVertex2d(x - width / 4, y + width / 4);
+            GL11.glEnd();
 
-        if (projectile != null) {
-            projectile.draw();
+
+            if (projectile != null) {
+                projectile.draw();
+            }
         }
     }
 }

@@ -77,10 +77,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CollisionBoard.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CollisionBoard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/CollisionBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="12" selection-start="5239" selection-end="5239" vertical-scroll-proportion="0.47095436">
+            <state line="182" column="29" selection-start="5416" selection-end="5416" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShootingEntity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/ShootingEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="29" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityList.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/EntityList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="26" selection-start="485" selection-end="485" vertical-scroll-proportion="0.43568465">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="131" column="57" selection-start="4070" selection-end="4070" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,8 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Learning/CollisionDetectionImplementation/CollisionBoard.java" />
-        <option value="$PROJECT_DIR$/src/Learning/CollisionDetectionImplementation/Main.java" />
         <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/CollisionBoard.java" />
         <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Entity.java" />
         <option value="$PROJECT_DIR$/src/Learning/IntelligentAgents/Utilities.java" />
@@ -112,6 +139,8 @@
         <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/ShootingEntity.java" />
         <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/Projectile.java" />
         <option value="$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/CollisionBoard.java" />
+        <option value="$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/ShootingEntity.java" />
+        <option value="$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/EntityList.java" />
       </list>
     </option>
   </component>
@@ -366,28 +395,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ShootingAgents" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -435,7 +442,7 @@
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\CollisionDetectionImplementation" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShootingAgents">
+  <component name="RunManager" selected="Application.ShootingEachOther">
     <configuration default="false" name="MapEditor" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -480,6 +487,25 @@
     <configuration default="false" name="ShootingAgents" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Learning.ShootingAgents.Main" />
+      <option name="VM_PARAMETERS" value=" -Djava.library.path=lib/windows -ea" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="301" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="false" name="ShootingEachOther" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="Learning.ShootingEachOtherAgents.Main" />
       <option name="VM_PARAMETERS" value=" -Djava.library.path=lib/windows -ea" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -639,13 +665,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list size="6">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Application.MapEditor" />
       <item index="1" class="java.lang.String" itemvalue="Application.Reader" />
       <item index="2" class="java.lang.String" itemvalue="Application.GraphicsMain" />
       <item index="3" class="java.lang.String" itemvalue="Application.CollisionMain" />
       <item index="4" class="java.lang.String" itemvalue="Application.IntelligentAgentMain" />
       <item index="5" class="java.lang.String" itemvalue="Application.ShootingAgents" />
+      <item index="6" class="java.lang.String" itemvalue="Application.ShootingEachOther" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -718,7 +745,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32681563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -726,7 +753,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32324323" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23037323" sideWeight="0.70810056" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23037323" sideWeight="0.70810056" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35407406" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
@@ -845,26 +872,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Learning/CollisionDetectionImplementation/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="20" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/CollisionDetectionImplementation/CollisionBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="17" selection-start="1574" selection-end="1574" vertical-scroll-proportion="2.014553" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/CollisionDetectionImplementation/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="32" selection-start="1887" selection-end="1887" vertical-scroll-proportion="0.22960725" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Utilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="20" selection-start="524" selection-end="524" vertical-scroll-proportion="0.74595845" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/IntelligentAgents/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="7" selection-start="1589" selection-end="1589" vertical-scroll-proportion="0.0" />
@@ -934,6 +941,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="26" selection-start="422" selection-end="422" vertical-scroll-proportion="0.03526971">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/CollisionBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="29" selection-start="5416" selection-end="5416" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="57" selection-start="4070" selection-end="4070" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/ShootingEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="29" selection-start="667" selection-end="667" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/EntityList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="26" selection-start="485" selection-end="485" vertical-scroll-proportion="0.43568465">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
