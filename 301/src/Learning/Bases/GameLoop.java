@@ -16,7 +16,7 @@ public class GameLoop implements Runnable {
     private final Object _entities = new Object();
 
     private ArrayList<Faction> factions;
-    private final Object _faction = new Object();
+    private final Object _factions = new Object();
 
     private ArrayList<Entity> addEntities;
 
@@ -44,7 +44,7 @@ public class GameLoop implements Runnable {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            if (paused) {
+            if (!paused) {
                 // Run the removal run
                 synchronized (_entities) {
                     Iterator<Entity> iterator = entities.iterator();
@@ -58,6 +58,7 @@ public class GameLoop implements Runnable {
                 // Addition run
                 synchronized (_entities) {
                     entities.addAll(addEntities);
+                    addEntities.clear();
                 }
 
                 // Update run
@@ -66,8 +67,8 @@ public class GameLoop implements Runnable {
                 }
 
                 // Faction update
-                synchronized (_faction){
-                    for(Faction faction : factions) faction.update();
+                synchronized (_factions) {
+                    for (Faction faction : factions) faction.update();
                 }
             }
         }
@@ -77,18 +78,26 @@ public class GameLoop implements Runnable {
         addEntities.add(entity);
     }
 
+
     // Not thread safe - only add factions when thread paused
-    public void addFaction(Faction faction){
+    public void addFaction(Faction faction) {
         factions.add(faction);
     }
 
-    public void setPaused(boolean paused){
+    public void setPaused(boolean paused) {
         this.paused = paused;
     }
 
-    public void draw(){
-        for(Entity entity : entities){
-            entity.draw();
+    public void draw() {
+        synchronized (_entities) {
+            for (Entity entity : entities) {
+                entity.draw();
+            }
+        }
+        synchronized (_factions) {
+            for (Faction faction : factions) {
+                faction.draw();
+            }
         }
     }
 }

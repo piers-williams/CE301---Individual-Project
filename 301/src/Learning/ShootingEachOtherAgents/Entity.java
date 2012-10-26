@@ -43,6 +43,8 @@ public class Entity {
         dY = (random.nextDouble() * 2) - 1;
         this.r = r;
         this.g = g;
+
+
         this.b = b;
 
         this.width = width;

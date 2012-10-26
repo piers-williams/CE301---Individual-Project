@@ -52,21 +52,23 @@ public class Main {
         physics.setDaemon(true);
         physics.start();
 
-        for(int i = 0; i < Main.SQUARE_COUNT; i++) Main.GAME_LOOP.addEntity(new Entity(Main.SQUARE_WIDTH));
+        for(int i = 0; i < Main.SQUARE_COUNT; i++) Main.GAME_LOOP.addEntity(new Entity(Main.SQUARE_WIDTH, 1f, 1f, 1f));
 
         Thread loop = new Thread(GAME_LOOP);
         loop.setDaemon(true);
         loop.start();
 
-        GAME_LOOP.addFaction(new Faction(0, 1, 0, 0));
-        GAME_LOOP.addFaction(new Faction(1, 0, 1, 0));
-        GAME_LOOP.addFaction(new Faction(2, 0, 0, 1));
+        GAME_LOOP.addFaction(new Faction(0, 1, 0, 0, new Vector2D(50, MAP_HEIGHT /2)));
+        GAME_LOOP.addFaction(new Faction(1, 0, 1, 0, new Vector2D(MAP_WIDTH - 50, MAP_HEIGHT / 3)));
+        GAME_LOOP.addFaction(new Faction(2, 0, 0, 1,  new Vector2D(MAP_WIDTH - 50, MAP_HEIGHT * 2 / 3)));
 //        GAME_LOOP.addFaction(new Faction(3, 1, 0, 1));
 //        GAME_LOOP.addFaction(new Faction(4, 0, 1, 1));
 //        GAME_LOOP.addFaction(new Faction(5, 1, 1, 0));
 //        GAME_LOOP.addFaction(new Faction(6, 0.25f, 0.75f, 0.25f));
 //        GAME_LOOP.addFaction(new Faction(7, 0.75f, 0.25f, 0.25f));
 //        GAME_LOOP.addFaction(new Faction(8, 0.25f, 0.25f, 0.75f));
+
+
 
         // Set the loops to do work
         Main.COLLISION_BOARD.setPaused(false);

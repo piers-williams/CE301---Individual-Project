@@ -30,6 +30,9 @@
     <rightPanel />
     <splitter proportion="0.5" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/301$ShootingEachOther.coverage" NAME="ShootingEachOther Coverage Results" MODIFIED="1351117056155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -76,43 +79,62 @@
     <favorites_list name="301" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Learning/Bases/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="59" column="27" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.63752663">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Learning/Bases/Entity.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="99" column="38" selection-start="2481" selection-end="2481" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="GameLoop.java" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Learning/Bases/GameLoop.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="90" column="26" selection-start="2426" selection-end="2426" vertical-scroll-proportion="0.8589212">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="45" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Faction.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Bases/Faction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="31" selection-start="834" selection-end="834" vertical-scroll-proportion="0.5072464">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameLoop.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Bases/GameLoop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="52" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroupedEntity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Bases/GroupedEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="16" selection-start="1635" selection-end="1635" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShootingEntity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Bases/ShootingEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="18" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Bases/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="70" column="8" selection-start="2479" selection-end="2479" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -122,9 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/Main.java" />
-        <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/ShootingEntity.java" />
-        <option value="$PROJECT_DIR$/src/Learning/ShootingAgents/Projectile.java" />
         <option value="$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/CollisionBoard.java" />
         <option value="$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/ShootingEntity.java" />
         <option value="$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/EntityList.java" />
@@ -136,8 +155,11 @@
         <option value="$PROJECT_DIR$/src/Learning/Bases/Projectile.java" />
         <option value="$PROJECT_DIR$/src/Learning/Bases/ShootingEntity.java" />
         <option value="$PROJECT_DIR$/src/Learning/Bases/Entity.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Bases/GameLoop.java" />
+        <option value="$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/Entity.java" />
         <option value="$PROJECT_DIR$/src/Learning/Bases/Main.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Bases/GameLoop.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Bases/GroupedEntity.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Bases/Faction.java" />
       </list>
     </option>
   </component>
@@ -276,6 +298,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -348,6 +380,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ShootingEachOtherAgents" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Bases" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -382,16 +436,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Bases" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -415,7 +459,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.13736264" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -520,7 +564,9 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="301" />
       <envs />
+      <RunnerSettings RunnerId="Cover" />
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Cover" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" enabled="true" />
@@ -690,13 +736,13 @@
     </configuration>
     <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Application.MapEditor" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Reader" />
-      <item index="2" class="java.lang.String" itemvalue="Application.GraphicsMain" />
-      <item index="3" class="java.lang.String" itemvalue="Application.CollisionMain" />
-      <item index="4" class="java.lang.String" itemvalue="Application.IntelligentAgentMain" />
-      <item index="5" class="java.lang.String" itemvalue="Application.ShootingAgents" />
-      <item index="6" class="java.lang.String" itemvalue="Application.ShootingEachOther" />
-      <item index="7" class="java.lang.String" itemvalue="Application.Bases" />
+      <item index="1" class="java.lang.String" itemvalue="Application.GraphicsMain" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ShootingAgents" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ShootingEachOther" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Bases" />
+      <item index="5" class="java.lang.String" itemvalue="Application.Reader" />
+      <item index="6" class="java.lang.String" itemvalue="Application.CollisionMain" />
+      <item index="7" class="java.lang.String" itemvalue="Application.IntelligentAgentMain" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -771,27 +817,28 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32681563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35407406" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32681563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32324323" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23359074" sideWeight="0.70810056" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29189944" sideWeight="0.6898263" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22265123" sideWeight="0.7094972" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35407406" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2905028" sideWeight="0.6898263" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32880434" sideWeight="0.70857143" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -896,16 +943,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Projectile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="32" selection-start="522" selection-end="522" vertical-scroll-proportion="0.7205543" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="16" selection-start="2132" selection-end="2132" vertical-scroll-proportion="0.6348548" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/Group.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="26" selection-start="422" selection-end="422" vertical-scroll-proportion="0.03526971" />
@@ -923,67 +960,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/GameLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="5" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="25" column="5" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Content/Bases/Home">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="27" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="21" column="27" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/ShootingAgents/ShootingEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="65" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.45875543">
-          <folding />
-        </state>
+        <state line="53" column="65" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.45875543" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="28" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="25" column="28" selection-start="499" selection-end="499" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="57" selection-start="4070" selection-end="4070" vertical-scroll-proportion="0.55716354">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Bases/ShootingEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="18" selection-start="642" selection-end="642" vertical-scroll-proportion="0.6701245">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="131" column="57" selection-start="4070" selection-end="4070" vertical-scroll-proportion="0.55716354" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Bases/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="38" selection-start="2481" selection-end="2481" vertical-scroll-proportion="0.0">
+        <state line="23" column="48" selection-start="421" selection-end="421" vertical-scroll-proportion="0.03586498" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Bases/Vector2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="47" selection-start="234" selection-end="234" vertical-scroll-proportion="0.034907598" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Bases/ShootingEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="18" selection-start="654" selection-end="654" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Bases/GameLoop.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="26" selection-start="2426" selection-end="2426" vertical-scroll-proportion="0.8589212">
+        <state line="61" column="45" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Bases/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="27" selection-start="1792" selection-end="1792" vertical-scroll-proportion="0.63752663">
+        <state line="70" column="8" selection-start="2479" selection-end="2479" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Bases/GameLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="52" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Bases/GroupedEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="16" selection-start="1635" selection-end="1635" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Bases/Faction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="31" selection-start="834" selection-end="834" vertical-scroll-proportion="0.5072464">
           <folding />
         </state>
       </provider>
@@ -997,7 +1044,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.16103059" />
               </list>
             </option>
           </splitter-proportions>
@@ -1009,7 +1056,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.16103059" />
               </list>
             </option>
           </splitter-proportions>
@@ -1020,7 +1067,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.16103059" />
               </list>
             </option>
           </splitter-proportions>
@@ -1032,7 +1079,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.16103059" />
               </list>
             </option>
           </splitter-proportions>
@@ -1056,7 +1103,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.20325202" />
+                <option value="0.16103059" />
               </list>
             </option>
           </splitter-proportions>

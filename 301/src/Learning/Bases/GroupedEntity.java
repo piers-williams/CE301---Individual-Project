@@ -48,9 +48,9 @@ public class GroupedEntity extends Entity {
     private Point2D.Double calculateCohesion() {
         double cX = 0, cY = 0;
 
-        double distance = Utilities.distance(x, y, faction.tX, faction.tY);
-        cX = (x > faction.tX) ? -1 : 1;
-        cY = (y > faction.tY) ? -1 : 1;
+//        double distance = Utilities.distance(x, y, faction.x, faction.y);
+        cX = (x > faction.x) ? -1 : 1;
+        cY = (y > faction.y) ? -1 : 1;
 
         return new Point2D.Double(cX, cY);
     }
@@ -61,7 +61,7 @@ public class GroupedEntity extends Entity {
         for (GroupedEntity entity : faction.entities) {
             if (entity != this) {
                 double distance = Utilities.distance(entity.x, entity.y, this.x, this.y);
-                //System.out.println("Distance is: " + distance);
+//                System.out.println("Distance is: " + distance);
                 if (distance < Main.SQUARE_WIDTH * 3) {
                     sX += ((this.x - entity.x > 0) ? 1 : -1);
                     sY += ((this.y - entity.y > 0) ? 1 : -1);

@@ -29,6 +29,9 @@ public class Faction {
 
     double radius;
 
+    Vector2D startLocation;
+
+    @Deprecated
     public Faction(int group, float r, float g, float b) {
         this.group = group;
         this.r = r;
@@ -40,10 +43,26 @@ public class Faction {
         setNewTarget();
 
         entities = new ArrayList<GroupedEntity>(10);
+
+        for(int i = 0; i < 80; i++){
+            makeEntity();
+        }
+    }
+
+    public Faction(int group, float r, float g, float b, Vector2D startLocation) {
+        this(group, r, g, b);
+        this.startLocation = startLocation;
+
     }
 
     public void addEntity(GroupedEntity entity) {
         entities.add(entity);
+    }
+
+    public void makeEntity(){
+        GroupedEntity entity = new ShootingEntity(this, Main.SQUARE_WIDTH, random.nextInt(Main.MAP_WIDTH), random.nextInt(Main.MAP_HEIGHT));
+        entities.add(entity);
+        Main.GAME_LOOP.addEntity(entity);
     }
 
     public void update() {
@@ -62,7 +81,7 @@ public class Faction {
         if (y < tY) y += speed;
 
         speed = 1;
-        radius = Math.sqrt(Math.pow(entities.size(), 1.5) * 8);
+        radius = Math.sqrt(Math.pow(entities.size(), 1.5) * 16);
     }
 
     private void setNewTarget() {
@@ -76,14 +95,14 @@ public class Faction {
     }
 
     public void draw() {
-//        drawSmallSquare((int) (x - radius), (int) (y + radius));
-//        drawSmallSquare((int) (x + radius), (int) (y + radius));
-//        drawSmallSquare((int) (x - radius), (int) (y - radius));
-//        drawSmallSquare((int) (x + radius), (int) (y - radius));
+        drawSmallSquare((int) (x - radius), (int) (y + radius));
+        drawSmallSquare((int) (x + radius), (int) (y + radius));
+        drawSmallSquare((int) (x - radius), (int) (y - radius));
+        drawSmallSquare((int) (x + radius), (int) (y - radius));
     }
 
     private void drawSmallSquare(int x, int y) {
-        int width = 20;
+        int width = 10;
         GL11.glColor4f(r, g, b, 0.2f);
         GL11.glBegin(GL11.GL_QUADS);
         GL11.glVertex2d(x - width / 2, y - width / 2);
