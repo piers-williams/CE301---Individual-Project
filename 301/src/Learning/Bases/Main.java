@@ -44,6 +44,9 @@ public class Main {
             GL11.glLoadIdentity();
             GL11.glOrtho(0, SCREEN_WIDTH, 0, SCREEN_HEIGHT, 1, -1);
             GL11.glMatrixMode(GL11.GL_MODELVIEW);
+            GL11.glEnable (GL11.GL_BLEND);
+            GL11.glBlendFunc (GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
+
         } catch (Exception e) {
 
         }
