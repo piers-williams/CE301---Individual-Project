@@ -29,6 +29,8 @@ public class GameLoop implements Runnable {
         factions = new ArrayList<Faction>();
         tickDelay = 50;
         paused = true;
+
+        ShootingEntity.SQUARES = entities;
     }
 
     public GameLoop(int tickDelay) {

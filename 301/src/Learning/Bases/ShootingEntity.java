@@ -17,7 +17,9 @@ public class ShootingEntity extends GroupedEntity {
 
     private Projectile projectile;
 
-    private static double MAX_RANGE = 50;
+    private static double MAX_RANGE = 100;
+
+    public static Boolean shooting = false;
 
     public ShootingEntity(Faction faction, int width) {
         super(faction, width);
@@ -42,7 +44,7 @@ public class ShootingEntity extends GroupedEntity {
                     double closestDistance = Double.MAX_VALUE;
                     for (Entity other : SQUARES) {
                         if (other.alive) {
-                            if (!(other instanceof ShootingEntity)) {
+                            if (!(other instanceof ShootingEntity) || (other instanceof Base)) {
 
                                 double distance = Utilities.distance(x, y, other.x, other.y);
                                 if (distance < closestDistance) {
@@ -69,7 +71,7 @@ public class ShootingEntity extends GroupedEntity {
 
     public void draw() {
         if (alive) {
-            GL11.glColor4f(r, g, b, 0.5f);
+            GL11.glColor4f(r, g, b, 1f);
             GL11.glBegin(GL11.GL_QUADS);
             GL11.glVertex2d(x - width / 2, y - width / 2);
             GL11.glVertex2d(x + width / 2, y - width / 2);
@@ -77,13 +79,6 @@ public class ShootingEntity extends GroupedEntity {
             GL11.glVertex2d(x - width / 2, y + width / 2);
             GL11.glEnd();
 
-            GL11.glColor4f(r, g, b, 1.0f);
-            GL11.glBegin(GL11.GL_QUADS);
-            GL11.glVertex2d(x - width / 4, y - width / 4);
-            GL11.glVertex2d(x + width / 4, y - width / 4);
-            GL11.glVertex2d(x + width / 4, y + width / 4);
-            GL11.glVertex2d(x - width / 4, y + width / 4);
-            GL11.glEnd();
 
 
             if (projectile != null) {

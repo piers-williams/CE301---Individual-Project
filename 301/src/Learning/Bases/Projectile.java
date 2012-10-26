@@ -14,7 +14,7 @@ public class Projectile {
     ShootingEntity source;
     Entity target;
 
-    int lifeInTicks = 60;
+    int lifeInTicks = 15;
 
     boolean alive = true;
     boolean converter;

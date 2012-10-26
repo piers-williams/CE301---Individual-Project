@@ -3,6 +3,7 @@ package Learning.Bases;
 import org.lwjgl.opengl.GL11;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Random;
 
 /**
@@ -43,16 +44,13 @@ public class Faction {
         setNewTarget();
 
         entities = new ArrayList<GroupedEntity>(10);
-
-        for(int i = 0; i < 80; i++){
-            makeEntity();
-        }
     }
 
     public Faction(int group, float r, float g, float b, Vector2D startLocation) {
         this(group, r, g, b);
         this.startLocation = startLocation;
-
+        Base base = new Base(this, 26);
+        Main.GAME_LOOP.addEntity(base);
     }
 
     public void addEntity(GroupedEntity entity) {
@@ -60,7 +58,10 @@ public class Faction {
     }
 
     public void makeEntity(){
-        GroupedEntity entity = new ShootingEntity(this, Main.SQUARE_WIDTH, random.nextInt(Main.MAP_WIDTH), random.nextInt(Main.MAP_HEIGHT));
+        makeEntity(random.nextInt(Main.MAP_WIDTH), random.nextInt(Main.MAP_HEIGHT));
+    }
+    public void makeEntity(double x, double y){
+        GroupedEntity entity = new ShootingEntity(this, Main.SQUARE_WIDTH, x, y);
         entities.add(entity);
         Main.GAME_LOOP.addEntity(entity);
     }
@@ -82,6 +83,13 @@ public class Faction {
 
         speed = 1;
         radius = Math.sqrt(Math.pow(entities.size(), 1.5) * 16);
+
+      Iterator<GroupedEntity> itr = entities.iterator();
+        while(itr.hasNext()){
+            GroupedEntity entity = itr.next();
+            if(!entity.alive) itr.remove();
+        }
+
     }
 
     private void setNewTarget() {

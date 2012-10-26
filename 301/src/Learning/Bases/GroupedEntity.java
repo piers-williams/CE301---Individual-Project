@@ -14,7 +14,6 @@ public class GroupedEntity extends Entity {
 
     Faction faction;
 
-    public static Boolean shooting = false;
     double maxSpeed = 1;
 
 
@@ -36,10 +35,6 @@ public class GroupedEntity extends Entity {
         } else {
             dX = separation.x;
             dY = separation.y;
-        }
-
-        if (shooting) {
-
         }
 
         super.update();
