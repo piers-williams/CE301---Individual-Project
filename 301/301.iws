@@ -79,13 +79,13 @@
     <favorites_list name="301" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7245409">
+    <splitter split-orientation="horizontal" split-proportion="0.54257095">
       <split-first>
         <leaf>
           <file leaf-file-name="InfluenceMap.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceMap.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="39" selection-start="817" selection-end="817" vertical-scroll-proportion="0.7062635">
+                <state line="58" column="12" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.7284345">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -102,10 +102,19 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="110" column="36" selection-start="3644" selection-end="3644" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Entity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="44" column="10" selection-start="1033" selection-end="1039" vertical-scroll-proportion="0.0">
+                <state line="22" column="18" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -154,7 +163,7 @@
           <file leaf-file-name="CollisionBoard.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/CollisionBoard.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="31" column="15" selection-start="820" selection-end="820" vertical-scroll-proportion="0.6680851">
+                <state line="79" column="26" selection-start="2113" selection-end="2113" vertical-scroll-proportion="1.4473684">
                   <folding />
                 </state>
               </provider>
@@ -182,11 +191,11 @@
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence.java" />
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/InfluenceMap.java" />
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceGridType.java" />
-        <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Entity.java" />
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/ShootingEntity.java" />
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/GroupedEntity.java" />
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceGrid.java" />
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/GameLoop.java" />
+        <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Entity.java" />
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceMap.java" />
       </list>
     </option>
@@ -869,11 +878,11 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32324323" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22908624" sideWeight="0.7094972" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22908624" sideWeight="0.95530725" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35407406" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2905028" sideWeight="0.6898263" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.044692736" sideWeight="0.6898263" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1031,20 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="24" selection-start="3636" selection-end="3636" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/CollisionBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="15" selection-start="820" selection-end="820" vertical-scroll-proportion="0.6680851">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/Influence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="25" selection-start="220" selection-end="220" vertical-scroll-proportion="0.33045357">
@@ -1055,13 +1050,6 @@
     <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceGridType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="30" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="10" selection-start="1033" selection-end="1039" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1094,9 +1082,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="36" selection-start="3644" selection-end="3644" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/CollisionBoard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="26" selection-start="2113" selection-end="2113" vertical-scroll-proportion="1.4473684">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="18" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="39" selection-start="817" selection-end="817" vertical-scroll-proportion="0.7062635">
+        <state line="58" column="12" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.7284345">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -17,7 +17,7 @@ import java.util.Random;
 public class Entity {
     //    public static CollisionBoard BOARD;
     // Location
-    double x, y;
+    public double x, y;
     int width;
     double dX, dY;
 
@@ -140,5 +140,9 @@ public class Entity {
     private void setUpInfluence(double strength, InfluenceGridType type){
         this.influenceStrength = strength;
         this.influenceGrid = InfluenceGrid.createGrid(this, type);
+    }
+
+    public InfluenceGrid getInfluenceGrid() {
+        return influenceGrid;
     }
 }
