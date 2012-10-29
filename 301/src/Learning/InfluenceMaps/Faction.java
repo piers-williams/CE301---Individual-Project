@@ -57,10 +57,11 @@ public class Faction {
         entities.add(entity);
     }
 
-    public void makeEntity(){
+    public void makeEntity() {
         makeEntity(random.nextInt(Main.MAP_WIDTH), random.nextInt(Main.MAP_HEIGHT));
     }
-    public void makeEntity(double x, double y){
+
+    public void makeEntity(double x, double y) {
         GroupedEntity entity = new ShootingEntity(this, Main.SQUARE_WIDTH, x, y);
         entities.add(entity);
         Main.GAME_LOOP.addEntity(entity);
@@ -84,10 +85,10 @@ public class Faction {
         speed = 1;
         radius = Math.sqrt(Math.pow(entities.size(), 1.5) * 16);
 
-      Iterator<GroupedEntity> itr = entities.iterator();
-        while(itr.hasNext()){
+        Iterator<GroupedEntity> itr = entities.iterator();
+        while (itr.hasNext()) {
             GroupedEntity entity = itr.next();
-            if(!entity.alive) itr.remove();
+            if (!entity.alive) itr.remove();
         }
 
     }

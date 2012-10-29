@@ -18,9 +18,13 @@ public class GroupedEntity extends Entity {
 
 
     public GroupedEntity(Faction faction, int width) {
-        super(width, faction.r, faction.g, faction.b);
+        this(faction, width, 3);
+    }
+    public GroupedEntity(Faction faction, int width, double strength){
+        super(width, faction.r, faction.g, faction.b, strength);
         this.faction = faction;
     }
+
 
     public void update() {
         Point2D.Double cohesion = calculateCohesion();

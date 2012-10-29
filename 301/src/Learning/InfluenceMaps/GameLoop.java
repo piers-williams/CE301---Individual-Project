@@ -90,6 +90,12 @@ public class GameLoop implements Runnable {
         this.paused = paused;
     }
 
+    public ArrayList<Entity> getEntities() {
+        synchronized (_entities) {
+            return entities;
+        }
+    }
+
     public void draw() {
         synchronized (_entities) {
             for (Entity entity : entities) {

@@ -1,5 +1,7 @@
 package Learning.InfluenceMaps;
 
+import Learning.InfluenceMaps.Influence.InfluenceGrid;
+import Learning.InfluenceMaps.Influence.InfluenceGridType;
 import org.lwjgl.opengl.GL11;
 
 import java.awt.*;
@@ -13,8 +15,8 @@ import java.util.Random;
  * To change this template use File | Settings | File Templates.
  */
 public class Entity {
-//    public static CollisionBoard BOARD;
-  // Location
+    //    public static CollisionBoard BOARD;
+    // Location
     double x, y;
     int width;
     double dX, dY;
@@ -27,11 +29,20 @@ public class Entity {
 
     private static Random random = new Random();
 
+    // Number used to generate the influence grid
+   private double influenceStrength;
+
+    // Grid to be used for generating influence maps
+    private InfluenceGrid influenceGrid;
+
     public Entity(int width) {
-        this(width, random.nextFloat(), random.nextFloat(), random.nextFloat());
+        this(width, random.nextFloat(), random.nextFloat(), random.nextFloat(), 1);
     }
 
-    public Entity(int width, float r, float g, float b) {
+    public Entity(int width, float r, float g, float b){
+        this(width, r, g, b, 1);
+    }
+    public Entity(int width, float r, float g, float b, double strength) {
         x = random.nextInt(Main.MAP_WIDTH);
         y = random.nextInt(Main.MAP_HEIGHT);
 
@@ -45,6 +56,8 @@ public class Entity {
         this.b = b;
 
         this.width = width;
+
+        setUpInfluence(strength, InfluenceGridType.SimpleSquare);
     }
 
     public void update() {
@@ -120,4 +133,12 @@ public class Entity {
 
     }
 
+    public final double getIS() {
+        return influenceStrength;
+    }
+
+    private void setUpInfluence(double strength, InfluenceGridType type){
+        this.influenceStrength = strength;
+        this.influenceGrid = InfluenceGrid.createGrid(this, type);
+    }
 }

@@ -26,7 +26,7 @@ public class ShootingEntity extends GroupedEntity {
     }
 
     public ShootingEntity(Faction faction, int width, double x, double y) {
-        super(faction, width);
+        super(faction, width, 3);
         this.x = x;
         this.y = y;
     }
@@ -78,7 +78,6 @@ public class ShootingEntity extends GroupedEntity {
             GL11.glVertex2d(x + width / 2, y + width / 2);
             GL11.glVertex2d(x - width / 2, y + width / 2);
             GL11.glEnd();
-
 
 
             if (projectile != null) {
