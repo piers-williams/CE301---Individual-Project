@@ -82,10 +82,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.7245409">
       <split-first>
         <leaf>
-          <file leaf-file-name="InfluenceMap.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="InfluenceMap.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceMap.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="33" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0">
+                <state line="39" column="39" selection-start="817" selection-end="817" vertical-scroll-proportion="0.7062635">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -93,10 +93,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="GameLoop.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="GameLoop.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/GameLoop.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="95" column="9" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.412527">
+                <state line="108" column="40" selection-start="2861" selection-end="2861" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -186,8 +186,8 @@
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/ShootingEntity.java" />
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/GroupedEntity.java" />
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceGrid.java" />
-        <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceMap.java" />
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/GameLoop.java" />
+        <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceMap.java" />
       </list>
     </option>
   </component>
@@ -1087,19 +1087,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceMap.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/GameLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="33" selection-start="753" selection-end="753" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="108" column="40" selection-start="2861" selection-end="2861" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/GameLoop.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="9" selection-start="2556" selection-end="2556" vertical-scroll-proportion="0.412527">
-          <folding />
+        <state line="39" column="39" selection-start="817" selection-end="817" vertical-scroll-proportion="0.7062635">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

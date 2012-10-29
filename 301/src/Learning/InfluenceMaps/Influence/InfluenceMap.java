@@ -30,16 +30,12 @@ public class InfluenceMap {
 
     public void update(){
         influence = new double[width][height];
-        for(Entity entity : loop.entities){
+        for(Entity entity : loop.getEntities()){
 
         }
     }
 
     public void draw(){
 
-    }
-
-    public void setEntities(ArrayList<Entity> entities) {
-        this.entities = entities;
     }
 }
