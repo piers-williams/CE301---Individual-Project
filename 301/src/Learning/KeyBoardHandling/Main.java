@@ -87,9 +87,6 @@ public class Main {
         INFLUENCE_MAP.setPaused(false);
 
 
-        boolean stepping = false;
-        boolean paused = false;
-
         /**
          * Main render loop
          */

@@ -84,8 +84,8 @@ public class InfluenceMap implements Runnable {
         for (int x = 0, i = 0; x < width && i < influence.length; x += cellSize, i++) {
             for (int y = 0, j = 0; y < height && j < influence[i].length; y += cellSize, j++) {
 
-                float strength = (float)influence[i][j];
-                if(strength > 255) strength = 255;
+                float strength = (float) influence[i][j];
+                if (strength > 255) strength = 255;
 //                System.out.println(strength);
 
                 GL11.glColor4f(strength, 0, 0, 0.5f);

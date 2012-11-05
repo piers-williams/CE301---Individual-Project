@@ -20,7 +20,7 @@ public class KeyManager {
         return null;
     }
 
-    public void changeKey(Keys action, Integer key){
+    public void changeKey(Keys action, Integer key) {
 
     }
 

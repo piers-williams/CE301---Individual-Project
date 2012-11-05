@@ -85,7 +85,7 @@
           <file leaf-file-name="KeyManager.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/KeyManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="43" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
+                <state line="43" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -94,9 +94,9 @@
           <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="121" column="38" selection-start="4140" selection-end="4140" vertical-scroll-proportion="0.6716698">
+                <state line="87" column="0" selection-start="3126" selection-end="3126" vertical-scroll-proportion="0.16135085">
                   <folding>
-                    <element signature="e#3493#3526#0" expanded="false" />
+                    <element signature="e#3426#3459#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -1031,7 +1031,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/KeyManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
+        <state line="43" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1045,9 +1045,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="38" selection-start="4140" selection-end="4140" vertical-scroll-proportion="0.6716698">
+        <state line="87" column="0" selection-start="3126" selection-end="3126" vertical-scroll-proportion="0.16135085">
           <folding>
-            <element signature="e#3493#3526#0" expanded="false" />
+            <element signature="e#3426#3459#0" expanded="false" />
           </folding>
         </state>
       </provider>
