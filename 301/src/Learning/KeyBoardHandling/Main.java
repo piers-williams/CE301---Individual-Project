@@ -100,27 +100,26 @@ public class Main {
 
             }
 
-            // Keyboard release
             if (Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)) {
                 break;
             }
-//            if(Keyboard.isKeyDown(Keyboard.KEY_A)) addMoreUnits();
-            if (Keyboard.isKeyDown(Keyboard.KEY_C) && !cDown) {
-                ShootingEntity.shooting = !ShootingEntity.shooting;
-                cDown = true;
-            } else {
-                cDown = false;
-            }
-
-            if (Keyboard.isKeyDown(Keyboard.KEY_P)) {
-                paused = !paused;
-                COLLISION_BOARD.setPaused(paused);
-                GAME_LOOP.setPaused(paused);
-                INFLUENCE_MAP.setPaused(paused);
-            }
-            if (Keyboard.isKeyDown(Keyboard.KEY_S)) {
-                stepping = !stepping;
-            }
+//            // Keyboard release
+//            if (Keyboard.isKeyDown(Keyboard.KEY_C) && !cDown) {
+//                ShootingEntity.shooting = !ShootingEntity.shooting;
+//                cDown = true;
+//            } else {
+//                cDown = false;
+//            }
+//
+//            if (Keyboard.isKeyDown(Keyboard.KEY_P)) {
+//                paused = !paused;
+//                COLLISION_BOARD.setPaused(paused);
+//                GAME_LOOP.setPaused(paused);
+//                INFLUENCE_MAP.setPaused(paused);
+//            }
+//            if (Keyboard.isKeyDown(Keyboard.KEY_S)) {
+//                stepping = !stepping;
+//            }
 
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
 

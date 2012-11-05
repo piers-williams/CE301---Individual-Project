@@ -85,7 +85,7 @@
           <file leaf-file-name="KeyManager.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/KeyManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="46" column="0" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0">
+                <state line="43" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -94,8 +94,10 @@
           <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="127" column="33" selection-start="4325" selection-end="4325" vertical-scroll-proportion="1.0250738">
-                  <folding />
+                <state line="121" column="38" selection-start="4140" selection-end="4140" vertical-scroll-proportion="0.6716698">
+                  <folding>
+                    <element signature="e#3493#3526#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -113,10 +115,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="KeyManager.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="KeyManager.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/KeyManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="43" selection-start="867" selection-end="867" vertical-scroll-proportion="0.8031838">
+                <state line="6" column="0" selection-start="143" selection-end="143" vertical-scroll-proportion="0.0">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -124,10 +126,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Keys.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Keys.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/Keys.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="8" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
+                <state line="4" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.124542125">
                   <folding />
                 </state>
               </provider>
@@ -145,7 +147,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Learning/ShootingEachOtherAgents/matrix" />
         <option value="$PROJECT_DIR$/src/Learning/Bases/Faction.java" />
         <option value="$PROJECT_DIR$/src/Learning/Bases/Main.java" />
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence.java" />
@@ -159,8 +160,9 @@
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceMap.java" />
         <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Main.java" />
         <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Vector2D.java" />
-        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/Keys.java" />
         <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/KeyManager.java" />
+        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/Keys.java" />
+        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Main.java" />
       </list>
     </option>
   </component>
@@ -499,26 +501,7 @@
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\ShootingAgents" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.InfluenceMaps">
-    <configuration default="false" name="GraphicsMain" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Learning.LWJGL.Main" />
-      <option name="VM_PARAMETERS" value=" -Djava.library.path=lib/windows" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="301" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method>
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.KeyBoardHandling">
     <configuration default="false" name="ShootingAgents" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Learning.ShootingAgents.Main" />
@@ -603,6 +586,30 @@
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="false" name="KeyBoardHandling" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Learning.KeyBoardHandling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Learning.KeyBoardHandling.Main" />
+      <option name="VM_PARAMETERS" value=" -Djava.library.path=lib/windows -ea" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="301" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" enabled="true" />
@@ -752,14 +759,14 @@
       </method>
     </configuration>
     <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="Application.GraphicsMain" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ShootingAgents" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ShootingEachOther" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Bases" />
-      <item index="4" class="java.lang.String" itemvalue="Application.InfluenceMaps" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Reader" />
-      <item index="6" class="java.lang.String" itemvalue="Application.CollisionMain" />
-      <item index="7" class="java.lang.String" itemvalue="Application.IntelligentAgentMain" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ShootingAgents" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ShootingEachOther" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Bases" />
+      <item index="3" class="java.lang.String" itemvalue="Application.InfluenceMaps" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Reader" />
+      <item index="5" class="java.lang.String" itemvalue="Application.CollisionMain" />
+      <item index="6" class="java.lang.String" itemvalue="Application.IntelligentAgentMain" />
+      <item index="7" class="java.lang.String" itemvalue="Application.KeyBoardHandling" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -844,7 +851,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35407406" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20251396" sideWeight="0.6898263" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20251396" sideWeight="0.6898263" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -960,11 +967,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Learning/Bases/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="76" selection-start="1710" selection-end="1710" vertical-scroll-proportion="0.6335404" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/Influence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="25" selection-start="220" selection-end="220" vertical-scroll-proportion="0.33045357" />
@@ -1020,20 +1022,6 @@
         <state line="134" column="8" selection-start="3682" selection-end="3682" vertical-scroll-proportion="0.4945055" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/Keys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="8" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/KeyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1010" selection-end="1010" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Content/Keys/Custom">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1041,10 +1029,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/KeyManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/Keys.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.124542125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="33" selection-start="4325" selection-end="4325" vertical-scroll-proportion="1.0250738">
-          <folding />
+        <state line="121" column="38" selection-start="4140" selection-end="4140" vertical-scroll-proportion="0.6716698">
+          <folding>
+            <element signature="e#3493#3526#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

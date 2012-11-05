@@ -2,13 +2,7 @@ package Learning.KeyBoardHandling.Input;
 
 import org.lwjgl.input.Keyboard;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Piers
- * Date: 05/11/12
- * Time: 15:12
- * To change this template use File | Settings | File Templates.
- */
+
 public enum Keys {
     /**
      * Global keys
@@ -31,7 +25,8 @@ public enum Keys {
     public Integer getKey() {
         return keyValue;
     }
-    public void setKey(Integer newKey){
+
+    public void setKey(Integer newKey) {
         keyValue = newKey;
     }
 }

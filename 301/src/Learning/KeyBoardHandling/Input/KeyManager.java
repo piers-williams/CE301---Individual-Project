@@ -5,13 +5,6 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Piers
- * Date: 05/11/12
- * Time: 14:26
- * To change this template use File | Settings | File Templates.
- */
 public class KeyManager {
 
     HashMap<Integer, Keys> keyAssignments;
@@ -25,6 +18,10 @@ public class KeyManager {
             return keyAssignments.get(input);
         }
         return null;
+    }
+
+    public void changeKey(Keys action, Integer key){
+
     }
 
     public void loadKeys(String fileName) {
