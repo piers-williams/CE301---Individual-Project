@@ -12,7 +12,7 @@ public class InfluenceGrid {
     }
 
     // Only way to get one
-    public static InfluenceGrid createGrid(Entity entity, InfluenceGridType type){
+    public static InfluenceGrid createGrid(Entity entity, InfluenceGridType type) {
 //        System.out.println("Creating grids");
         InfluenceGrid grid;
         double[][] influence;
@@ -25,8 +25,14 @@ public class InfluenceGrid {
                         new double[]{0.25 * entity.getIS(), 0.50 * entity.getIS(), 0.50 * entity.getIS(), 0.50 * entity.getIS(), 0.25 * entity.getIS()},
                         new double[]{0.25 * entity.getIS(), 0.25 * entity.getIS(), 0.25 * entity.getIS(), 0.25 * entity.getIS(), 0.25 * entity.getIS()}
                 };
-                break;
+                return new InfluenceGrid(influence);
+
         }
         return new InfluenceGrid(new double[5][5]);
+    }
+
+    @Override
+    public String toString() {
+        return Double.toString(influence[3][3]);
     }
 }

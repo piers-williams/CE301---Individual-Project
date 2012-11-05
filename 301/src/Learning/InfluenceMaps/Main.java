@@ -1,5 +1,6 @@
 package Learning.InfluenceMaps;
 
+import Learning.InfluenceMaps.Influence.InfluenceMap;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
@@ -23,8 +24,9 @@ public class Main {
     static boolean FULL_SCREEN = true;
     public static final int CELL_SIZE = 75;
 
-    static GameLoop GAME_LOOP;
-    static CollisionBoard COLLISION_BOARD;
+    public static GameLoop GAME_LOOP;
+    public static CollisionBoard COLLISION_BOARD;
+    public static InfluenceMap INFLUENCE_MAP;
 
     boolean cDown = false;
 
@@ -32,6 +34,7 @@ public class Main {
 
         Main.GAME_LOOP = new GameLoop(20);
         Main.COLLISION_BOARD = new CollisionBoard(Main.MAP_WIDTH, Main.MAP_HEIGHT, CELL_SIZE);
+        Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, CELL_SIZE, 40);
 
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
         // Set up the display
@@ -63,6 +66,10 @@ public class Main {
         loop.setDaemon(true);
         loop.start();
 
+        Thread influence = new Thread(INFLUENCE_MAP);
+        influence.setDaemon(true);
+        influence.start();
+
         GAME_LOOP.addFaction(new Faction(0, 1, 0, 0, new Vector2D(50, MAP_HEIGHT / 2)));
         GAME_LOOP.addFaction(new Faction(1, 0, 1, 0, new Vector2D(MAP_WIDTH - 100, MAP_HEIGHT / 3)));
         GAME_LOOP.addFaction(new Faction(2, 0, 0, 1, new Vector2D(MAP_WIDTH - 100, MAP_HEIGHT * 2 / 3)));
@@ -75,8 +82,13 @@ public class Main {
 
 
         // Set the loops to do work
-        Main.COLLISION_BOARD.setPaused(false);
+        COLLISION_BOARD.setPaused(false);
         GAME_LOOP.setPaused(false);
+        INFLUENCE_MAP.setPaused(false);
+
+
+        boolean stepping = false;
+        boolean paused = false;
 
         /**
          * Main render loop
@@ -99,11 +111,21 @@ public class Main {
             } else {
                 cDown = false;
             }
-//            if(Keyboard.isKeyDown(Keyboard.KEY_P)) addMorePrey();
+
+            if (Keyboard.isKeyDown(Keyboard.KEY_P)) {
+                paused = !paused;
+                COLLISION_BOARD.setPaused(paused);
+                GAME_LOOP.setPaused(paused);
+                INFLUENCE_MAP.setPaused(paused);
+            }
+            if (Keyboard.isKeyDown(Keyboard.KEY_S)) {
+                stepping = !stepping;
+            }
 
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
 
             Main.GAME_LOOP.draw();
+            INFLUENCE_MAP.draw();
 
             Display.update();
         }

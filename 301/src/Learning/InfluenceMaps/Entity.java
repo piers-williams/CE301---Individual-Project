@@ -30,7 +30,7 @@ public class Entity {
     private static Random random = new Random();
 
     // Number used to generate the influence grid
-   private double influenceStrength;
+    private double influenceStrength;
 
     // Grid to be used for generating influence maps
     private InfluenceGrid influenceGrid;
@@ -39,9 +39,10 @@ public class Entity {
         this(width, random.nextFloat(), random.nextFloat(), random.nextFloat(), 1);
     }
 
-    public Entity(int width, float r, float g, float b){
+    public Entity(int width, float r, float g, float b) {
         this(width, r, g, b, 1);
     }
+
     public Entity(int width, float r, float g, float b, double strength) {
         x = random.nextInt(Main.MAP_WIDTH);
         y = random.nextInt(Main.MAP_HEIGHT);
@@ -137,9 +138,12 @@ public class Entity {
         return influenceStrength;
     }
 
-    private void setUpInfluence(double strength, InfluenceGridType type){
+    private void setUpInfluence(double strength, InfluenceGridType type) {
         this.influenceStrength = strength;
         this.influenceGrid = InfluenceGrid.createGrid(this, type);
+//        System.out.println(strength);
+//        System.out.println(influenceGrid);
+//        System.out.println("");
     }
 
     public InfluenceGrid getInfluenceGrid() {

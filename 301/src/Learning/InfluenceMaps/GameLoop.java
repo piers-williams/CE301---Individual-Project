@@ -13,7 +13,7 @@ import java.util.Iterator;
 public class GameLoop implements Runnable {
 
     private ArrayList<Entity> entities;
-    private final Object _entities = new Object();
+    public final Object _entities = new Object();
 
     private ArrayList<Faction> factions;
     private final Object _factions = new Object();
@@ -91,9 +91,7 @@ public class GameLoop implements Runnable {
     }
 
     public ArrayList<Entity> getEntities() {
-        synchronized (_entities) {
-            return entities;
-        }
+        return entities;
     }
 
     public void draw() {

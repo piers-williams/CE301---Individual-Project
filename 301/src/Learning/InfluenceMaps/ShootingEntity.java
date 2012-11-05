@@ -44,7 +44,7 @@ public class ShootingEntity extends GroupedEntity {
                     double closestDistance = Double.MAX_VALUE;
                     for (Entity other : SQUARES) {
                         if (other.alive) {
-                            if (!(other instanceof ShootingEntity) || (other instanceof Base)) {
+                            if (!(other instanceof ShootingEntity)) {
 
                                 double distance = Utilities.distance(x, y, other.x, other.y);
                                 if (distance < closestDistance) {

@@ -20,7 +20,8 @@ public class GroupedEntity extends Entity {
     public GroupedEntity(Faction faction, int width) {
         this(faction, width, 3);
     }
-    public GroupedEntity(Faction faction, int width, double strength){
+
+    public GroupedEntity(Faction faction, int width, double strength) {
         super(width, faction.r, faction.g, faction.b, strength);
         this.faction = faction;
     }
