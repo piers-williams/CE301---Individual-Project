@@ -1,9 +1,12 @@
 package Learning.KeyBoardHandling.Influence;
 
 import Learning.KeyBoardHandling.Entity;
+import Learning.KeyBoardHandling.Faction;
 import Learning.KeyBoardHandling.Main;
 import Learning.KeyBoardHandling.Vector2D;
 import org.lwjgl.opengl.GL11;
+
+import java.util.HashMap;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,7 +17,10 @@ import org.lwjgl.opengl.GL11;
  */
 public class InfluenceMap implements Runnable {
 
+    @Deprecated
     private double[][] influence;
+    private HashMap<Faction, double[][]> influences;
+    private static final Object _influences = new Object();
 
     private int width, height, cellSize;
 
@@ -28,7 +34,8 @@ public class InfluenceMap implements Runnable {
         this.tickDelay = tickDelay;
         running = true;
 
-        influence = new double[width][height];
+        influences = new HashMap<Faction, double[][]>(10);
+
     }
 
     @Override
@@ -46,10 +53,22 @@ public class InfluenceMap implements Runnable {
     }
 
     private void update() {
-        influence = new double[width][height];
+        reset();
         synchronized (Main.GAME_LOOP._entities) {
             for (Entity entity : Main.GAME_LOOP.getEntities()) {
-                addGridToInfluence(entity.getInfluenceGrid(), getPoint(entity));
+                if (entity.getFaction() != null) {
+                    addGridToInfluence(entity.getInfluenceGrid(), getPoint(entity), entity.getFaction());
+                }
+            }
+        }
+    }
+
+
+    private void reset() {
+        synchronized (_influences) {
+            influences.clear();
+            for (Faction faction : Main.GAME_LOOP.getFactions()) {
+                influences.put(faction, new double[width][height]);
             }
         }
     }
@@ -58,16 +77,16 @@ public class InfluenceMap implements Runnable {
         return new Vector2D((int) (entity.x / cellSize), (int) (entity.y / cellSize));
     }
 
-    private void addGridToInfluence(InfluenceGrid grid, Vector2D point) {
+    private void addGridToInfluence(InfluenceGrid grid, Vector2D point, Faction faction) {
         int xWidth = grid.influence.length / 2;
         int yWidth = grid.influence[0].length / 2;
 
         for (int x = -xWidth; x <= xWidth; x++) {
             for (int y = -yWidth; y <= yWidth; y++) {
                 try {
-                    influence[x + (int) point.x][y + (int) point.y] += grid.influence[x + xWidth][y + yWidth] / 32;
-//                    System.out.println(grid.influence[x + xWidth][y + yWidth]);
-//                    System.out.println("Doing something");
+                    synchronized (_influences) {
+                        influences.get(faction)[x + (int) point.x][y + (int) point.y] += grid.influence[x + xWidth][y + yWidth] / 32;
+                    }
                 } catch (ArrayIndexOutOfBoundsException aioobe) {
 //                    System.err.println("oh dear :(");
                 }
@@ -81,20 +100,25 @@ public class InfluenceMap implements Runnable {
     }
 
     public void draw() {
-        for (int x = 0, i = 0; x < width && i < influence.length; x += cellSize, i++) {
-            for (int y = 0, j = 0; y < height && j < influence[i].length; y += cellSize, j++) {
+        synchronized (_influences) {
+            for (Faction faction : influences.keySet()) {
+                double[][] influence = influences.get(faction);
+                for (int x = 0, i = 0; x < width && i < influence.length; x += cellSize, i++) {
+                    for (int y = 0, j = 0; y < height && j < influence[i].length; y += cellSize, j++) {
 
-                float strength = (float) influence[i][j];
-                if (strength > 255) strength = 255;
-//                System.out.println(strength);
-
-                GL11.glColor4f(strength, 0, 0, 0.5f);
-                GL11.glBegin(GL11.GL_QUADS);
-                GL11.glVertex2d(x, y);
-                GL11.glVertex2d(x + cellSize, y);
-                GL11.glVertex2d(x + cellSize, y + cellSize);
-                GL11.glVertex2d(x, y + cellSize);
-                GL11.glEnd();
+                        float strength = (float) influence[i][j];
+                        if (strength > 255) strength = 255;
+                        if (strength != 0) {
+                            GL11.glColor4f(strength * faction.r, strength * faction.g, strength * faction.b, 0.4f);
+                            GL11.glBegin(GL11.GL_QUADS);
+                            GL11.glVertex2d(x, y);
+                            GL11.glVertex2d(x + cellSize, y);
+                            GL11.glVertex2d(x + cellSize, y + cellSize);
+                            GL11.glVertex2d(x, y + cellSize);
+                            GL11.glEnd();
+                        }
+                    }
+                }
             }
         }
     }

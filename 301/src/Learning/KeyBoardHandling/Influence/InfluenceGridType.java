@@ -8,5 +8,7 @@ package Learning.KeyBoardHandling.Influence;
  * To change this template use File | Settings | File Templates.
  */
 public enum InfluenceGridType {
-    SimpleSquare;
+    SimpleSquare,
+    Circular
+    ;
 }

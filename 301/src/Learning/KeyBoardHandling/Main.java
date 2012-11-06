@@ -28,13 +28,15 @@ public class Main {
     public static CollisionBoard COLLISION_BOARD;
     public static InfluenceMap INFLUENCE_MAP;
 
+//    public static Faction NATURE = new Faction(0, 0.75f, 0.75f, 0.75f, new Vector2D(0,0));
+
     boolean cDown = false;
 
     public Main() {
 
         Main.GAME_LOOP = new GameLoop(20);
         Main.COLLISION_BOARD = new CollisionBoard(Main.MAP_WIDTH, Main.MAP_HEIGHT, CELL_SIZE);
-        Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, CELL_SIZE, 40);
+        Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 25, 40);
 
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
         // Set up the display

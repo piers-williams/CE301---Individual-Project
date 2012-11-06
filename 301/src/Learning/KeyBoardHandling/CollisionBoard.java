@@ -20,6 +20,7 @@ public class CollisionBoard implements Runnable {
     final Object _cellEntities = new Object();
 
     ArrayList<Entity> addEntities, deleteEntities;
+    final Object _addEntities = new Object();
     ArrayList<EntityCellPair> moveEntities;
     final Object _moveEntities = new Object();
 
@@ -99,11 +100,13 @@ public class CollisionBoard implements Runnable {
     }
 
     private void addEntitiesToMap() {
-        for (Entity entity : addEntities) {
-            Point cell = getPoint(entity);
-            addEntityToMap(cell, entity);
+        synchronized (_addEntities) {
+            for (Entity entity : addEntities) {
+                Point cell = getPoint(entity);
+                addEntityToMap(cell, entity);
+            }
+            addEntities.clear();
         }
-        addEntities.clear();
     }
 
     private void moveEntitiesToMap() {

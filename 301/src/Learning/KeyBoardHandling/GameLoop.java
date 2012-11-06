@@ -94,6 +94,10 @@ public class GameLoop implements Runnable {
         return entities;
     }
 
+    public ArrayList<Faction> getFactions() {
+        return factions;
+    }
+
     public void draw() {
         synchronized (_entities) {
             for (Entity entity : entities) {

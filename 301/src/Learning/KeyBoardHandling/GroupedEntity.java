@@ -11,9 +11,6 @@ import java.awt.geom.Point2D;
  * To change this template use File | Settings | File Templates.
  */
 public class GroupedEntity extends Entity {
-
-    Faction faction;
-
     double maxSpeed = 1;
 
 

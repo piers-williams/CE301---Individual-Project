@@ -35,6 +35,9 @@ public class Entity {
     // Grid to be used for generating influence maps
     private InfluenceGrid influenceGrid;
 
+
+    protected Faction faction;
+
     public Entity(int width) {
         this(width, random.nextFloat(), random.nextFloat(), random.nextFloat(), 1);
     }
@@ -44,6 +47,8 @@ public class Entity {
     }
 
     public Entity(int width, float r, float g, float b, double strength) {
+
+//        faction = Main.NATURE;
         x = random.nextInt(Main.MAP_WIDTH);
         y = random.nextInt(Main.MAP_HEIGHT);
 
@@ -58,7 +63,7 @@ public class Entity {
 
         this.width = width;
 
-        setUpInfluence(strength, InfluenceGridType.SimpleSquare);
+        setUpInfluence(strength, InfluenceGridType.Circular);
     }
 
     public void update() {
@@ -148,5 +153,9 @@ public class Entity {
 
     public InfluenceGrid getInfluenceGrid() {
         return influenceGrid;
+    }
+
+    public Faction getFaction() {
+        return faction;
     }
 }

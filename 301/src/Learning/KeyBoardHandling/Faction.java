@@ -19,7 +19,7 @@ public class Faction {
     ArrayList<GroupedEntity> entities;
 
     int group;
-    float r, g, b;
+    public float r, g, b;
 
     // location
     double x, y;
