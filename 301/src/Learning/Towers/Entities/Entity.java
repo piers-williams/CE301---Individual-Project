@@ -1,5 +1,6 @@
 package Learning.Towers.Entities;
 
+import Learning.Towers.Behaviours.Movement.Movement;
 import Learning.Towers.Influence.InfluenceGrid;
 import Learning.Towers.Influence.InfluenceGridType;
 import Learning.Towers.Main;
@@ -10,20 +11,13 @@ import java.awt.*;
 import java.util.Random;
 
 /**
- * Created with IntelliJ IDEA.
- * User: Piers
- * Date: 18/10/12
- * Time: 22:05
- * To change this template use File | Settings | File Templates.
+ * Entity class
  */
 public class Entity {
-    //    public static CollisionBoard BOARD;
     // Location
     public double x, y;
     protected int width;
     double dX, dY;
-
-    Vector2D oldCell;
 
     protected float r, g, b;
 
@@ -37,6 +31,8 @@ public class Entity {
     // Grid to be used for generating influence maps
     private InfluenceGrid influenceGrid;
 
+    protected Movement movementBehaviour;
+
     public Entity(int width) {
         this(width, random.nextFloat(), random.nextFloat(), random.nextFloat(), 1);
     }
@@ -49,7 +45,7 @@ public class Entity {
         x = random.nextInt(Main.MAP_WIDTH);
         y = random.nextInt(Main.MAP_HEIGHT);
 
-        oldCell = Main.COLLISION_BOARD.getPoint(this);
+
         Main.COLLISION_BOARD.addEntity(this);
 
         dX = (random.nextDouble() * 2) - 1;
@@ -64,22 +60,20 @@ public class Entity {
     }
 
     public void update() {
-        move();
+        //move();
+        movementBehaviour.update();
 
-        if (x < 0 || x > Main.MAP_WIDTH) dX *= -1;
-        if (y < 0 || y > Main.MAP_HEIGHT) dY *= -1;
+
+
     }
 
     public void move() {
         x += dX;
         y += dY;
 
-        Vector2D cell = Main.COLLISION_BOARD.getPoint(this);
 
-        if (!oldCell.equals(cell)) {
-            Main.COLLISION_BOARD.moveEntity(this, new Vector2D(oldCell));
-            oldCell = cell;
-        }
+
+
     }
 
     public void draw() {
