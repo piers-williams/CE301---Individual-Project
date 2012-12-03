@@ -5,40 +5,36 @@ import Learning.Towers.Main;
 import Learning.Towers.Vector2D;
 
 /**
+ *   Implements common sections of Movement aspects
  *
+ *   Should force units to bounce on the screen etc
  */
 public abstract class BasicMovement implements Movement {
     protected Entity entity;
     protected Vector2D location;
     protected Vector2D direction;
 
-    Vector2D oldCell;
-
-    // TODO Need to pull out the collision work from here
-
     protected BasicMovement(Entity entity, Vector2D location) {
         this.entity = entity;
         this.location = location;
-        this.direction = new Vector2D(0,0);
-        Main.COLLISION_BOARD.addEntity(entity);
-        this.oldCell = Main.COLLISION_BOARD.getPoint(entity);
+        this.direction = new Vector2D(0, 0);
     }
 
     @Override
-    public void update() {
+    public final void update() {
+        updateSpecialisation();
+        boundaryCheck();
+    }
+
+    public abstract void updateSpecialisation();
+
+    private void boundaryCheck(){
         if (location.x < 0 || location.x > Main.MAP_WIDTH) direction.x *= -1;
         if (location.y < 0 || location.y > Main.MAP_HEIGHT) direction.y *= -1;
-
-
-        Vector2D cell = Main.COLLISION_BOARD.getPoint(entity);
-        if (!oldCell.equals(cell)) {
-            Main.COLLISION_BOARD.moveEntity(entity, new Vector2D(oldCell));
-            oldCell = cell;
-        }
     }
 
     @Override
-    public Vector2D getLocation() {
-        return null;
+    public final Vector2D getLocation() {
+        return location;
     }
 }

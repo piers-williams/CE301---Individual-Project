@@ -19,7 +19,7 @@ public class Flocking  extends BasicMovement {
     }
 
     @Override
-    public void update() {
+    public void updateSpecialisation() {
         Vector2D cohesion = calculateCohesion();
         Vector2D separation = calculateSeparation();
 
@@ -33,13 +33,6 @@ public class Flocking  extends BasicMovement {
             direction.x = separation.x;
             direction.y = separation.y;
         }
-
-        super.update();
-    }
-
-    @Override
-    public Vector2D getLocation() {
-        return location;
     }
 
     private Vector2D calculateCohesion() {

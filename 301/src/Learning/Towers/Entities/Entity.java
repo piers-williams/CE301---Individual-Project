@@ -16,8 +16,11 @@ import java.util.Random;
  */
 public class Entity {
     // Location
+    @Deprecated
     public double x, y;
+    @Deprecated
     protected int width;
+    @Deprecated
     double dX, dY;
 
     protected float r, g, b;
@@ -27,9 +30,11 @@ public class Entity {
     private static Random random = new Random();
 
     // Number used to generate the influence grid
+    @Deprecated
     private double influenceStrength;
 
     // Grid to be used for generating influence maps
+    @Deprecated
     private InfluenceGrid influenceGrid;
 
     // TODO Strip out the functionality to fill these with useful things
@@ -71,7 +76,6 @@ public class Entity {
     public void move() {
         x += dX;
         y += dY;
-
     }
 
     public void draw() {

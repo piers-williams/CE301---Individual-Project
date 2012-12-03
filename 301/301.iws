@@ -122,22 +122,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Entity.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="77" column="19" selection-start="2067" selection-end="2067" vertical-scroll-proportion="0.0">
+                <state line="108" column="4" selection-start="2861" selection-end="2861" vertical-scroll-proportion="0.43920973">
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BasicMovement.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/BasicMovement.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="31" selection-start="278" selection-end="278" vertical-scroll-proportion="0.29310346">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -193,22 +182,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Static.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Static.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="38" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
+                <state line="16" column="38" selection-start="320" selection-end="320" vertical-scroll-proportion="0.3936324">
                   <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Flocking.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Flocking.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="28" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -216,17 +194,10 @@
           <file leaf-file-name="SimpleCollision.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleCollision.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="4" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Collision.java" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/Collision.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="3" selection-start="151" selection-end="151" vertical-scroll-proportion="0.22801788">
-                  <folding />
+                <state line="20" column="18" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -250,15 +221,15 @@
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Meta/Group.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/GroupedEntity.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Flocking.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/BasicMovement.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleCollision.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Behaviour.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/Collision.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Influence/Influence.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Drawing/Drawing.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Movement.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleCollision.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/BasicMovement.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Flocking.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java" />
       </list>
     </option>
   </component>
@@ -1368,49 +1339,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="38" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Units/ShootingEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="36" selection-start="2206" selection-end="2206" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Flocking.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="19" selection-start="2067" selection-end="2067" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleCollision.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/Collision.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="151" selection-end="151" vertical-scroll-proportion="0.22801788">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1444,12 +1378,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/BasicMovement.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/Collision.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="31" selection-start="278" selection-end="278" vertical-scroll-proportion="0.29310346">
+        <state line="10" column="23" selection-start="153" selection-end="153" vertical-scroll-proportion="0.2533532">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleCollision.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="18" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Flocking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="36" selection-start="267" selection-end="267" vertical-scroll-proportion="0.12536873">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="38" selection-start="320" selection-end="320" vertical-scroll-proportion="0.3936324">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/BasicMovement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="27" selection-start="510" selection-end="510" vertical-scroll-proportion="0.4439324">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="4" selection-start="2861" selection-end="2861" vertical-scroll-proportion="0.43920973">
+          <folding />
         </state>
       </provider>
     </entry>
