@@ -8,17 +8,19 @@ import Learning.Towers.Vector2D;
  *
  */
 public abstract class BasicMovement implements Movement {
-    private Entity entity;
-    private Vector2D location;
-    private Vector2D direction;
+    protected Entity entity;
+    protected Vector2D location;
+    protected Vector2D direction;
 
     Vector2D oldCell;
 
+    // TODO Need to pull out the collision work from here
 
     protected BasicMovement(Entity entity, Vector2D location) {
         this.entity = entity;
         this.location = location;
         this.direction = new Vector2D(0,0);
+        Main.COLLISION_BOARD.addEntity(entity);
         this.oldCell = Main.COLLISION_BOARD.getPoint(entity);
     }
 

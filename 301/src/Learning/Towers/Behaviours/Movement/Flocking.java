@@ -11,15 +11,10 @@ import Learning.Towers.Vector2D;
  */
 public class Flocking  extends BasicMovement {
 
-    private Entity entity;
-    private Vector2D location;
-    private Vector2D direction;
     private Group group;
 
     public Flocking(Entity entity, Vector2D location, Group group) {
-        this.entity = entity;
-        this.location = location;
-        direction = new Vector2D(0, 0);
+        super(entity, location);
         this.group = group;
     }
 

@@ -1,13 +1,14 @@
 package Learning.Towers.Entities;
 
+import Learning.Towers.Behaviours.Collision.Collision;
+import Learning.Towers.Behaviours.Drawing.Drawing;
+import Learning.Towers.Behaviours.Influence.Influence;
 import Learning.Towers.Behaviours.Movement.Movement;
 import Learning.Towers.Influence.InfluenceGrid;
 import Learning.Towers.Influence.InfluenceGridType;
 import Learning.Towers.Main;
-import Learning.Towers.Vector2D;
 import org.lwjgl.opengl.GL11;
 
-import java.awt.*;
 import java.util.Random;
 
 /**
@@ -31,8 +32,14 @@ public class Entity {
     // Grid to be used for generating influence maps
     private InfluenceGrid influenceGrid;
 
+    // TODO Strip out the functionality to fill these with useful things
+    // Hopefully this section will replace most of the other code
     protected Movement movementBehaviour;
+    protected Collision collisionBehaviour;
+    protected Drawing drawingBehaviour;
+    protected Influence influenceBehaviour;
 
+    // TODO Create factory methods for making Entities
     public Entity(int width) {
         this(width, random.nextFloat(), random.nextFloat(), random.nextFloat(), 1);
     }
@@ -44,9 +51,6 @@ public class Entity {
     public Entity(int width, float r, float g, float b, double strength) {
         x = random.nextInt(Main.MAP_WIDTH);
         y = random.nextInt(Main.MAP_HEIGHT);
-
-
-        Main.COLLISION_BOARD.addEntity(this);
 
         dX = (random.nextDouble() * 2) - 1;
         dY = (random.nextDouble() * 2) - 1;
@@ -62,17 +66,11 @@ public class Entity {
     public void update() {
         //move();
         movementBehaviour.update();
-
-
-
     }
 
     public void move() {
         x += dX;
         y += dY;
-
-
-
 
     }
 
@@ -131,7 +129,6 @@ public class Entity {
         ang -= Math.PI;
         second.x -= Math.cos(ang) * mov;
         second.y -= Math.sin(ang) * mov;
-
     }
 
     public final double getIS() {
@@ -141,9 +138,6 @@ public class Entity {
     private void setUpInfluence(double strength, InfluenceGridType type) {
         this.influenceStrength = strength;
         this.influenceGrid = InfluenceGrid.createGrid(this, type);
-//        System.out.println(strength);
-//        System.out.println(influenceGrid);
-//        System.out.println("");
     }
 
     public InfluenceGrid getInfluenceGrid() {
