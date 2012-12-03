@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Learning.KeyBoardHandling</OriginalElement>
+  <nodes>
+    <node x="303.7916666666667" y="518.0">Learning.KeyBoardHandling.Main</node>
+    <node x="143.0" y="176.0">Learning.KeyBoardHandling.GroupedEntity</node>
+    <node x="0.0" y="410.0">Learning.KeyBoardHandling.GameLoop</node>
+    <node x="410.31666666666666" y="332.0">Learning.KeyBoardHandling.EntityCellPair</node>
+    <node x="303.31666666666666" y="254.0">Learning.KeyBoardHandling.Vector2D</node>
+    <node x="430.5947811447812" y="410.0">Learning.KeyBoardHandling.CollisionBoard</node>
+    <node x="199.03005050505055" y="332.0">Learning.KeyBoardHandling.Faction</node>
+    <node x="263.06666666666666" y="410.0">Learning.KeyBoardHandling.Influence.InfluenceMap</node>
+    <node x="48.833333333333314" y="254.0">Learning.KeyBoardHandling.ShootingEntity</node>
+    <node x="209.0947811447812" y="78.0">Learning.KeyBoardHandling.Entity</node>
+    <node x="209.66666666666669" y="254.0">Learning.KeyBoardHandling.Base</node>
+    <node x="187.5947811447812" y="0.0">Learning.KeyBoardHandling.Influence.InfluenceGrid</node>
+    <node x="34.0" y="176.0">Learning.KeyBoardHandling.Projectile</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Learning.KeyBoardHandling.Faction" target="Learning.KeyBoardHandling.ShootingEntity">
+      <point x="-30.0" y="-14.0" />
+      <point x="206.53005050505055" y="312.0" />
+      <point x="107.33333333333331" y="312.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.ShootingEntity" target="Learning.KeyBoardHandling.Entity">
+      <point x="23.399999999999977" y="-14.0" />
+      <point x="130.7333333333333" y="229.0" />
+      <point x="132.5" y="229.0" />
+      <point x="132.5" y="146.0" />
+      <point x="230.0322811447812" y="146.0" />
+      <point x="-12.5625" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.ShootingEntity" target="Learning.KeyBoardHandling.GroupedEntity">
+      <point x="46.80000000000001" y="-14.0" />
+      <point x="154.13333333333333" y="229.0" />
+      <point x="162.16666666666669" y="229.0" />
+      <point x="-38.333333333333314" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Influence.InfluenceMap" target="Learning.KeyBoardHandling.Vector2D">
+      <point x="27.75" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Faction" target="Learning.KeyBoardHandling.Base">
+      <point x="0.0" y="-14.0" />
+      <point x="236.53005050505055" y="312.0" />
+      <point x="240.16666666666669" y="312.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Main" target="Learning.KeyBoardHandling.Faction">
+      <point x="-13.555555555555571" y="-14.0" />
+      <point x="320.7361111111111" y="478.0" />
+      <point x="236.53005050505055" y="478.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Main" target="Learning.KeyBoardHandling.Influence.InfluenceMap">
+      <point x="0.0" y="-14.0" />
+      <point x="334.2916666666667" y="458.0" />
+      <point x="346.31666666666666" y="458.0" />
+      <point x="27.75" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.GameLoop" target="Learning.KeyBoardHandling.Faction">
+      <point x="23.5" y="-14.0" />
+      <point x="70.5" y="385.0" />
+      <point x="211.53005050505055" y="385.0" />
+      <point x="-25.0" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.EntityCellPair" target="Learning.KeyBoardHandling.Entity">
+      <point x="0.0" y="-14.0" />
+      <point x="464.81666666666666" y="136.0" />
+      <point x="263.5322811447812" y="136.0" />
+      <point x="20.9375" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Main" target="Learning.KeyBoardHandling.Vector2D">
+      <point x="6.7777777777777715" y="-14.0" />
+      <point x="341.06944444444446" y="468.0" />
+      <point x="388.8027777777778" y="468.0" />
+      <point x="388.8027777777778" y="312.0" />
+      <point x="374.98333333333335" y="312.0" />
+      <point x="28.666666666666686" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Faction" target="Learning.KeyBoardHandling.GroupedEntity">
+      <point x="-15.0" y="-14.0" />
+      <point x="221.53005050505055" y="302.0" />
+      <point x="199.16666666666669" y="302.0" />
+      <point x="199.16666666666669" y="229.0" />
+      <point x="200.5" y="229.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Faction" target="Learning.KeyBoardHandling.Vector2D">
+      <point x="30.0" y="-14.0" />
+      <point x="266.53005050505055" y="312.0" />
+      <point x="317.65" y="312.0" />
+      <point x="-28.666666666666657" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Influence.InfluenceMap" target="Learning.KeyBoardHandling.Faction">
+      <point x="-27.75" y="-14.0" />
+      <point x="290.81666666666666" y="385.0" />
+      <point x="261.53005050505055" y="385.0" />
+      <point x="25.0" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.CollisionBoard" target="Learning.KeyBoardHandling.EntityCellPair">
+      <point x="-37.66666666666666" y="-14.0" />
+      <point x="449.42811447811454" y="385.0" />
+      <point x="437.56666666666666" y="385.0" />
+      <point x="-27.25" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Main" target="Learning.KeyBoardHandling.Entity">
+      <point x="13.555555555555543" y="-14.0" />
+      <point x="347.84722222222223" y="478.0" />
+      <point x="399.81666666666666" y="478.0" />
+      <point x="399.81666666666666" y="146.0" />
+      <point x="255.1572811447812" y="146.0" />
+      <point x="12.5625" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Projectile" target="Learning.KeyBoardHandling.ShootingEntity">
+      <point x="29.333333333333314" y="14.0" />
+      <point x="0.0" y="-14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.ShootingEntity" target="Learning.KeyBoardHandling.Projectile">
+      <point x="-23.399999999999977" y="-14.0" />
+      <point x="83.93333333333334" y="229.0" />
+      <point x="78.0" y="229.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Main" target="Learning.KeyBoardHandling.CollisionBoard">
+      <point x="20.333333333333343" y="-14.0" />
+      <point x="354.625" y="488.0" />
+      <point x="458.8447811447812" y="488.0" />
+      <point x="-28.25" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.GameLoop" target="Learning.KeyBoardHandling.Entity">
+      <point x="-23.5" y="-14.0" />
+      <point x="23.5" y="126.0" />
+      <point x="213.2822811447812" y="126.0" />
+      <point x="-29.3125" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Base" target="Learning.KeyBoardHandling.GroupedEntity">
+      <point x="0.0" y="-14.0" />
+      <point x="240.16666666666669" y="229.0" />
+      <point x="238.83333333333337" y="229.0" />
+      <point x="38.33333333333337" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Main" target="Learning.KeyBoardHandling.GameLoop">
+      <point x="-20.333333333333343" y="-14.0" />
+      <point x="313.9583333333333" y="488.0" />
+      <point x="70.5" y="488.0" />
+      <point x="23.5" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.CollisionBoard" target="Learning.KeyBoardHandling.Entity">
+      <point x="37.66666666666666" y="-14.0" />
+      <point x="524.7614478114479" y="385.0" />
+      <point x="529.8166666666666" y="385.0" />
+      <point x="529.8166666666666" y="126.0" />
+      <point x="271.9072811447812" y="126.0" />
+      <point x="29.3125" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.GroupedEntity" target="Learning.KeyBoardHandling.Entity">
+      <point x="0.0" y="-14.0" />
+      <point x="200.5" y="156.0" />
+      <point x="238.4072811447812" y="156.0" />
+      <point x="-4.1875" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Entity" target="Learning.KeyBoardHandling.Faction">
+      <point x="4.1875" y="14.0" />
+      <point x="246.7822811447812" y="156.0" />
+      <point x="285.5833333333333" y="156.0" />
+      <point x="285.5833333333333" y="302.0" />
+      <point x="251.53005050505055" y="302.0" />
+      <point x="15.0" y="-14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Entity" target="Learning.KeyBoardHandling.Influence.InfluenceGrid">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="Learning.KeyBoardHandling.Projectile" target="Learning.KeyBoardHandling.Entity">
+      <point x="0.0" y="-14.0" />
+      <point x="78.0" y="136.0" />
+      <point x="221.6572811447812" y="136.0" />
+      <point x="-20.9375" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="272.0" y="273.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+
