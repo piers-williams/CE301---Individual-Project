@@ -1,0 +1,82 @@
+package Learning.Towers.Entities;
+
+import Learning.Towers.Faction;
+import Learning.Towers.Main;
+import Learning.Towers.Utilities;
+
+import java.awt.*;
+import java.awt.geom.Point2D;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: Piers
+ * Date: 19/10/12
+ * Time: 16:37
+ * To change this template use File | Settings | File Templates.
+ */
+public class GroupedEntity extends Entity {
+
+    protected Faction faction;
+
+    double maxSpeed = 1;
+
+
+    public GroupedEntity(Faction faction, int width) {
+        this(faction, width, 3);
+    }
+
+    public GroupedEntity(Faction faction, int width, double strength) {
+        super(width, faction.getR(), faction.getG(), faction.getB(), strength);
+        this.faction = faction;
+    }
+
+
+    public void update() {
+        Point2D.Double cohesion = calculateCohesion();
+        Point2D.Double separation = calculateSeparation();
+
+        if (Utilities.distance(faction.getX(), faction.getY(), this.x, this.y) > faction.getRadius()) {
+            dX = cohesion.x + separation.x / 2;
+            dY = cohesion.y + separation.y / 2;
+
+            dX *= 1.4;
+            dY *= 1.4;
+        } else {
+            dX = separation.x;
+            dY = separation.y;
+        }
+
+        super.update();
+    }
+
+    private Point2D.Double calculateCohesion() {
+        double cX = 0, cY = 0;
+
+        cX = (x > faction.getX()) ? -1 : 1;
+        cY = (y > faction.getY()) ? -1 : 1;
+
+        return new Point2D.Double(cX, cY);
+    }
+
+    // This code is wrong
+    private Point2D.Double calculateSeparation() {
+        double sX = 0, sY = 0;
+        for (GroupedEntity entity : faction.getEntities()) {
+            if (entity != this) {
+                double distance = Utilities.distance(entity.x, entity.y, this.x, this.y);
+                if (distance < Main.SQUARE_WIDTH * 3) {
+                    sX += ((this.x - entity.x > 0) ? 1 : -1);
+                    sY += ((this.y - entity.y > 0) ? 1 : -1);
+                }
+            }
+        }
+
+        return new Point2D.Double(sX, sY);
+    }
+
+    private Point calculateAlignment() {
+        return new Point(0, 0);
+    }
+
+
+}

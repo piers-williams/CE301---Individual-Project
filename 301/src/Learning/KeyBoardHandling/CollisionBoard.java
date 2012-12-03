@@ -5,11 +5,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Created with IntelliJ IDEA.
- * User: Piers
- * Date: 18/10/12
- * Time: 22:05
- * To change this template use File | Settings | File Templates.
+ * Collision Detection manager
+ *
+ * Uses a cell based approach to reduce the common n^2 problem
+ *
+ * Code theorised from work done by Mr Perry Monschau
+ * However the technique is reasonably common knowledge in the industry
  */
 public class CollisionBoard implements Runnable {
     private int mapWidth, mapHeight;
@@ -38,7 +39,7 @@ public class CollisionBoard implements Runnable {
         addEntities = new ArrayList<Entity>();
         deleteEntities = new ArrayList<Entity>();
 
-        tickDelay = 10;
+        tickDelay = 20;
     }
 
     public Point getPoint(double x, double y) {
@@ -56,18 +57,12 @@ public class CollisionBoard implements Runnable {
     @Override
     public void run() {
 
-        long time = System.currentTimeMillis();
-        long oldTime = time;
         while (running) {
             try {
                 Thread.sleep(tickDelay);
             } catch (InterruptedException ie) {
 
             }
-
-//            time = System.currentTimeMillis();
-//            System.out.println(1000/(time - oldTime) + ":FPS");
-//            oldTime = time;
 
             if (!paused) {
                 // Add entities that are due

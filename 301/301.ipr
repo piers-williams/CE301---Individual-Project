@@ -175,6 +175,13 @@
   <component name="ProjectDetails">
     <option name="projectName" value="301" />
   </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="Piers">
+      <words>
+        <w>monschau</w>
+      </words>
+    </dictionary>
+  </component>
   <component name="ProjectKey">
     <option name="state" value="project://M:\CE301\301\301\301.ipr" />
   </component>
@@ -186,7 +193,7 @@
   <component name="ProjectResources">
     <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="ResourceManagerContainer">

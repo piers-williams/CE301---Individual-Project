@@ -61,56 +61,64 @@ Attack, Defend, Trade and Explore
 Attack - Attack orders are given to direct the AI to attack a location or structure or base.
 
 	Assasinate - Orders the AI to take out a single structure or unit without regard to others. Should withdraw after completion
-		2 Arguments (Object, Severity)
+		2 Arguments (Object, Severity, After)
 			Object - The Target
 			Severity - How important it is to succeed
+			After - Optional list of Orders that must be completed first
 			
 	Destroy - Orders the AI to completly destroy a base
-		2 Arguments (Base, Severity)
+		2 Arguments (Base, Severity, After)
 			Base - The Base to destroy
 			Severity - How important it is to succeed
+			After - Optional list of Orders that must be completed first
 	
 	Neutralize - Orders the AI to keep the enemy out of a region
-		3 Arguments (Location, Radius, Severity)
+		3 Arguments (Location, Radius, Severity, After)
 			Location - Location to use as center point
 			Radius - How wide around the center point to go
 			Severity - How important it is to succeed
-			
+			After - Optional list of Orders that must be completed first
 			
 Defend - Defend orders the AI to perform defensive tasks
 
 	Grow - Orders the AI to improve its own base defenses
-		3 Arguments (Base, Type, Severity)
+		3 Arguments (Base, Type, Severity, After)
 			Base - The Base to grow
 			Type - The thing to defend against
 			Severity - How much resources to put into this. Out of 5.
+			After - Optional list of Orders that must be completed first
 			
 	Occupy - Orders the AI to construct a base in an area
-		3 Arguments (Location, Type, Severity)
+		3 Arguments (Location, Type, Severity, After)
 			Location - The location to use as center point
 			Type - The purpose of the base
 			Severity - How large/Strong will the base be
+			After - Optional list of Orders that must be completed first
+
 	OccupyForMe - Orders the AI to construct a base for me in an area
 		(Occupy followed by GiveBase)
-		3 Arguments (Location, Type, Severity)
+		3 Arguments (Location, Type, Severity, After)
 			Location - The location to use as center point
 			Type - The purpose of the base
 			Severity - How large/Strong will the base be
+			After - Optional list of Orders that must be completed first
 			
 			
 Explore - Explores the terrain
 	Explore - Explore a geographical location
-		3 Arguments (Location, Radius, Severity)
+		3 Arguments (Location, Radius, Severity, After)
 			Location - The Location to use as center point
 			Radius - How much to explore around the point
 			Severity - How soon should we explore
+			After - Optional list of Orders that must be completed first
 	
 	Search - Search for a particular item
-		4 Arguments (Resource,Location, Radius, Severity)
+		4 Arguments (Resource,Location, Radius, Severity, After)
 			Resource - The Resource we are looking for
 			Location - The Location to use as center point
 			Radius - How much to explore around the point
 			Severity - How soon should we explore
+			After - Optional list of Orders that must be completed first
 
 			
 Trade - Negotiates trade of units/resource/buildings

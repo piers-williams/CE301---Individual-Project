@@ -33,8 +33,8 @@ public class InfluenceGrid {
                         new double[]{0.55 * entity.getIS(), 0.65 * entity.getIS(), 0.75 * entity.getIS(), 0.80 * entity.getIS(), 0.75 * entity.getIS(), 0.65 * entity.getIS(), 0.55 * entity.getIS()},
                         new double[]{0.40 * entity.getIS(), 0.60 * entity.getIS(), 0.80 * entity.getIS(), 1.00 * entity.getIS(), 0.80 * entity.getIS(), 0.60 * entity.getIS(), 0.40 * entity.getIS()},
                         new double[]{0.55 * entity.getIS(), 0.65 * entity.getIS(), 0.75 * entity.getIS(), 0.80 * entity.getIS(), 0.75 * entity.getIS(), 0.65 * entity.getIS(), 0.55 * entity.getIS()},
-                        new double[]{0.25 * entity.getIS(), 0.30 * entity.getIS(), 0.55 * entity.getIS(), 0.40 * entity.getIS(), 0.55 * entity.getIS(), 0.30 * entity.getIS(), 0.25 * entity.getIS()},
-                        new double[]{0.30 * entity.getIS(), 0.50 * entity.getIS(), 0.65 * entity.getIS(), 0.60 * entity.getIS(), 0.65 * entity.getIS(), 0.50 * entity.getIS(), 0.30 * entity.getIS()}
+                        new double[]{0.30 * entity.getIS(), 0.50 * entity.getIS(), 0.65 * entity.getIS(), 0.60 * entity.getIS(), 0.65 * entity.getIS(), 0.50 * entity.getIS(), 0.30 * entity.getIS()},
+                        new double[]{0.25 * entity.getIS(), 0.30 * entity.getIS(), 0.55 * entity.getIS(), 0.40 * entity.getIS(), 0.55 * entity.getIS(), 0.30 * entity.getIS(), 0.25 * entity.getIS()}
                 };
 
                 return new InfluenceGrid(influence);

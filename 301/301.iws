@@ -80,66 +80,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Main.java">
+      <file leaf-file-name="Vector2D.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Vector2D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="6" selection-start="918" selection-end="918" vertical-scroll-proportion="0.0">
+            <state line="18" column="49" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utilities.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Utilities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShootingEntity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Units/ShootingEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="5" selection-start="757" selection-end="757" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#3513#3546#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InfluenceGridType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Influence/InfluenceGridType.java">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="5" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+            <state line="30" column="46" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tower.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Buildings/Tower.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InfluenceGrid.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Influence/InfluenceGrid.java">
+      <file leaf-file-name="GroupedEntity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/GroupedEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="50" selection-start="2977" selection-end="2977" vertical-scroll-proportion="0.0">
+            <state line="53" column="0" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InfluenceMap.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Influence/InfluenceMap.java">
+      <file leaf-file-name="Faction.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="37" selection-start="3675" selection-end="3675" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollisionBoard.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/CollisionBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="85" selection-start="2635" selection-end="2635" vertical-scroll-proportion="0.3021978">
+            <state line="56" column="30" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.58473283">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Entity.java">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="10" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.0">
+            <state line="108" column="30" selection-start="2735" selection-end="2735" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameLoop.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/GameLoop.java">
+      <file leaf-file-name="Base.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Buildings/Base.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="45" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.0">
+            <state line="16" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -155,22 +175,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Entity.java" />
-        <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceMap.java" />
-        <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Main.java" />
-        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Vector2D.java" />
-        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/KeyManager.java" />
-        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/Keys.java" />
-        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/GroupedEntity.java" />
-        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/ShootingEntity.java" />
-        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Influence/InfluenceGridType.java" />
-        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Influence/InfluenceGrid.java" />
-        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Faction.java" />
         <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/GameLoop.java" />
         <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Entity.java" />
-        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Main.java" />
         <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Influence/InfluenceMap.java" />
         <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/CollisionBoard.java" />
+        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Influence/InfluenceGrid.java" />
+        <option value="$PROJECT_DIR$/Content/Keys/Custom" />
+        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Base.java" />
+        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Main.java" />
+        <option value="$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/KeyManager.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Vector2D.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Tower.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/GroupedEntity.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/GroupedEntity.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Main.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Faction.java" />
       </list>
     </option>
   </component>
@@ -182,10 +202,8 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="1" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="width" value="1255" />
+    <option name="height" value="860" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -302,23 +320,13 @@
       <showMembers />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages />
+      <hideEmptyPackages ProjectPane="false" />
       <abbreviatePackageNames />
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -377,7 +385,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="KeyBoardHandling" />
+              <option name="myItemId" value="Towers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -399,11 +407,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="KeyBoardHandling" />
+              <option name="myItemId" value="Towers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Input" />
+              <option name="myItemId" value="Entities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -425,11 +433,45 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="KeyBoardHandling" />
+              <option name="myItemId" value="Towers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Influence" />
+              <option name="myItemId" value="Entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Units" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Towers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Buildings" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -485,6 +527,16 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -504,7 +556,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.13736264" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -528,11 +580,11 @@
       <recent name="PhaseA1.Map" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\Towers" />
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\KeyBoardHandling" />
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\InfluenceMaps" />
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\Bases" />
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\ShootingEachOtherAgents" />
-      <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\ShootingAgents" />
     </key>
   </component>
   <component name="RunManager" selected="Application.KeyBoardHandling">
@@ -799,11 +851,11 @@
       <item index="0" class="java.lang.String" itemvalue="Application.ShootingEachOther" />
       <item index="1" class="java.lang.String" itemvalue="Application.Bases" />
       <item index="2" class="java.lang.String" itemvalue="Application.InfluenceMaps" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Reader" />
-      <item index="4" class="java.lang.String" itemvalue="Application.CollisionMain" />
-      <item index="5" class="java.lang.String" itemvalue="Application.IntelligentAgentMain" />
-      <item index="6" class="java.lang.String" itemvalue="Application.KeyBoardHandling" />
-      <item index="7" class="java.lang.String" itemvalue="Application.LWJGL" />
+      <item index="3" class="java.lang.String" itemvalue="Application.KeyBoardHandling" />
+      <item index="4" class="java.lang.String" itemvalue="Application.LWJGL" />
+      <item index="5" class="java.lang.String" itemvalue="Application.Reader" />
+      <item index="6" class="java.lang.String" itemvalue="Application.CollisionMain" />
+      <item index="7" class="java.lang.String" itemvalue="Application.IntelligentAgentMain" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -875,20 +927,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="1" width="1616" height="876" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="0" width="1255" height="860" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32681563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32324323" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34491634" sideWeight="0.797486" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2590109" sideWeight="0.79888266" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35407406" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20251396" sideWeight="0.6898263" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20111732" sideWeight="0.6898263" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -900,6 +951,7 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3257143" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1004,110 +1056,246 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Influence/InfluenceGrid.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Base.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="21" selection-start="776" selection-end="776" vertical-scroll-proportion="0.48405254" />
+        <state line="1" column="0" selection-start="35" selection-end="35" vertical-scroll-proportion="0.025954198" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/CollisionBoard.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/CollisionBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="44" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/InfluenceMaps/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="8" selection-start="3682" selection-end="3682" vertical-scroll-proportion="0.4945055" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/Keys.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.13682093">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Input/KeyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="0" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Influence/InfluenceGridType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="5" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/ShootingEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="20" selection-start="565" selection-end="565" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/Keys/Custom">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Influence/InfluenceGrid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="50" selection-start="2977" selection-end="2977" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Faction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="11" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/GroupedEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="35" selection-start="579" selection-end="579" vertical-scroll-proportion="-1.0627376">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/GameLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="45" selection-start="2562" selection-end="2562" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="41" column="22" selection-start="1247" selection-end="1247" vertical-scroll-proportion="0.025679758" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="10" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.0">
+        <state line="51" column="10" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.025679758" />
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Learning.KeyBoardHandling">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Learning.KeyBoardHandling</OriginalElement>
+          <nodes>
+            <node x="324.32323232323233" y="518.0">Learning.KeyBoardHandling.Main</node>
+            <node x="59.11489898989896" y="176.0">Learning.KeyBoardHandling.GroupedEntity</node>
+            <node x="426.9415404040404" y="332.0">Learning.KeyBoardHandling.EntityCellPair</node>
+            <node x="0.0" y="410.0">Learning.KeyBoardHandling.GameLoop</node>
+            <node x="319.9415404040404" y="254.0">Learning.KeyBoardHandling.Vector2D</node>
+            <node x="448.1387205387206" y="410.0">Learning.KeyBoardHandling.CollisionBoard</node>
+            <node x="81.42739898989896" y="332.0">Learning.KeyBoardHandling.Faction</node>
+            <node x="279.6915404040404" y="410.0">Learning.KeyBoardHandling.Influence.InfluenceMap</node>
+            <node x="182.94154040404038" y="254.0">Learning.KeyBoardHandling.ShootingEntity</node>
+            <node x="235.66372053872055" y="78.0">Learning.KeyBoardHandling.Entity</node>
+            <node x="88.42739898989896" y="254.0">Learning.KeyBoardHandling.Base</node>
+            <node x="194.11489898989896" y="176.0">Learning.KeyBoardHandling.Projectile</node>
+            <node x="214.16372053872055" y="0.0">Learning.KeyBoardHandling.Influence.InfluenceGrid</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Learning.KeyBoardHandling.Faction" target="Learning.KeyBoardHandling.ShootingEntity">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.ShootingEntity" target="Learning.KeyBoardHandling.GroupedEntity">
+              <point x="-46.799999999999955" y="-14.0" />
+              <point x="194.64154040404043" y="229.0" />
+              <point x="154.94823232323233" y="229.0" />
+              <point x="38.33333333333337" y="14.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.ShootingEntity" target="Learning.KeyBoardHandling.Entity">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Influence.InfluenceMap" target="Learning.KeyBoardHandling.Vector2D">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Faction" target="Learning.KeyBoardHandling.Base">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Main" target="Learning.KeyBoardHandling.Faction">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Main" target="Learning.KeyBoardHandling.Influence.InfluenceMap">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.GameLoop" target="Learning.KeyBoardHandling.Faction">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.EntityCellPair" target="Learning.KeyBoardHandling.Entity">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Main" target="Learning.KeyBoardHandling.Vector2D">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Faction" target="Learning.KeyBoardHandling.Vector2D">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Faction" target="Learning.KeyBoardHandling.GroupedEntity">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Influence.InfluenceMap" target="Learning.KeyBoardHandling.Faction">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.CollisionBoard" target="Learning.KeyBoardHandling.EntityCellPair">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Projectile" target="Learning.KeyBoardHandling.ShootingEntity">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Main" target="Learning.KeyBoardHandling.Entity">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.ShootingEntity" target="Learning.KeyBoardHandling.Projectile">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Main" target="Learning.KeyBoardHandling.CollisionBoard">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.GameLoop" target="Learning.KeyBoardHandling.Entity">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Base" target="Learning.KeyBoardHandling.GroupedEntity">
+              <point x="0.0" y="-14.0" />
+              <point x="118.92739898989896" y="229.0" />
+              <point x="116.61489898989896" y="229.0" />
+              <point x="0.0" y="14.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.CollisionBoard" target="Learning.KeyBoardHandling.Entity">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Main" target="Learning.KeyBoardHandling.GameLoop">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.GroupedEntity" target="Learning.KeyBoardHandling.Entity">
+              <point x="0.0" y="-14.0" />
+              <point x="116.61489898989896" y="146.0" />
+              <point x="256.60122053872055" y="146.0" />
+              <point x="-12.5625" y="14.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Entity" target="Learning.KeyBoardHandling.Faction">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Entity" target="Learning.KeyBoardHandling.Influence.InfluenceGrid">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="Learning.KeyBoardHandling.Projectile" target="Learning.KeyBoardHandling.Entity">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="425.0" y="309.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>public</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Influence/InfluenceMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="70" selection-start="2374" selection-end="2374" vertical-scroll-proportion="0.48036253">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="6" selection-start="918" selection-end="918" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#3513#3546#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/Influence/InfluenceMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="37" selection-start="3675" selection-end="3675" vertical-scroll-proportion="0.0">
+        <state line="47" column="21" selection-start="1648" selection-end="1648" vertical-scroll-proportion="0.025679758">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/CollisionBoard.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/KeyBoardHandling/GameLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="85" selection-start="2635" selection-end="2635" vertical-scroll-proportion="0.3021978">
+        <state line="98" column="19" selection-start="2593" selection-end="2593" vertical-scroll-proportion="0.47111112">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Vector2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="49" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Utilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Units/ShootingEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="5" selection-start="757" selection-end="757" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Buildings/Base.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Buildings/Tower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="378" selection-end="378" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/GroupedEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="46" selection-start="946" selection-end="946" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="30" selection-start="2735" selection-end="2735" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="30" selection-start="1314" selection-end="1314" vertical-scroll-proportion="0.58473283">
           <folding />
         </state>
       </provider>

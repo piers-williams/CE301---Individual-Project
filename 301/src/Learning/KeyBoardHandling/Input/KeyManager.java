@@ -7,15 +7,21 @@ import java.util.Scanner;
 
 public class KeyManager {
 
-    HashMap<Integer, Keys> keyAssignments;
+    HashMap<Integer, Keys> inputToKeys;
+    HashMap<Keys, Integer> keysToInput;
+
+    public KeyManager() {
+        inputToKeys = new HashMap<>(20);
+        keysToInput = new HashMap<>(20);
+    }
 
     public void HandleKeyboard() {
 
     }
 
     private Keys translateKey(Integer input) {
-        if (keyAssignments.containsKey(input)) {
-            return keyAssignments.get(input);
+        if (inputToKeys.containsKey(input)) {
+            return inputToKeys.get(input);
         }
         return null;
     }
@@ -29,15 +35,22 @@ public class KeyManager {
             Scanner scanner = new Scanner(new File(fileName));
 
             while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
+                String[] line = scanner.nextLine().split("\\s+");
+                if (line.length == 2) {
+                    Keys.valueOf(line[0]).setKey(Character.getNumericValue(line[1].charAt(0)));
+                }
             }
         } catch (IOException ioe) {
 
         }
 
-        keyAssignments.clear();
+        updateKeyAssignments();
+    }
+
+    private void updateKeyAssignments() {
+        inputToKeys.clear();
         for (Keys key : Keys.values()) {
-            keyAssignments.put(key.getKey(), key);
+            inputToKeys.put(key.getKey(), key);
         }
     }
 }

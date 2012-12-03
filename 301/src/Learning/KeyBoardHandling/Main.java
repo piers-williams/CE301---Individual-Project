@@ -1,18 +1,12 @@
 package Learning.KeyBoardHandling;
 
 import Learning.KeyBoardHandling.Influence.InfluenceMap;
+import Learning.KeyBoardHandling.Input.KeyManager;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Piers
- * Date: 16/10/12
- * Time: 11:49
- * To change this template use File | Settings | File Templates.
- */
 public class Main {
     static int SCREEN_WIDTH = 1600;
     static int SCREEN_HEIGHT = 900;
@@ -28,6 +22,8 @@ public class Main {
     public static CollisionBoard COLLISION_BOARD;
     public static InfluenceMap INFLUENCE_MAP;
 
+    public static KeyManager KEY_MANAGER;
+
 //    public static Faction NATURE = new Faction(0, 0.75f, 0.75f, 0.75f, new Vector2D(0,0));
 
     boolean cDown = false;
@@ -36,7 +32,8 @@ public class Main {
 
         Main.GAME_LOOP = new GameLoop(20);
         Main.COLLISION_BOARD = new CollisionBoard(Main.MAP_WIDTH, Main.MAP_HEIGHT, CELL_SIZE);
-        Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 25, 40);
+        Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 25, 250);
+        Main.KEY_MANAGER = new KeyManager();
 
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
         // Set up the display
@@ -102,23 +99,6 @@ public class Main {
             if (Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)) {
                 break;
             }
-//            // Keyboard release
-//            if (Keyboard.isKeyDown(Keyboard.KEY_C) && !cDown) {
-//                ShootingEntity.shooting = !ShootingEntity.shooting;
-//                cDown = true;
-//            } else {
-//                cDown = false;
-//            }
-//
-//            if (Keyboard.isKeyDown(Keyboard.KEY_P)) {
-//                paused = !paused;
-//                COLLISION_BOARD.setPaused(paused);
-//                GAME_LOOP.setPaused(paused);
-//                INFLUENCE_MAP.setPaused(paused);
-//            }
-//            if (Keyboard.isKeyDown(Keyboard.KEY_S)) {
-//                stepping = !stepping;
-//            }
 
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
 
