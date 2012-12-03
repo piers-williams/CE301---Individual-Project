@@ -43,12 +43,12 @@ public class ShootingEntity extends GroupedEntity {
                 projectile.update();
             }
             if (shooting) {
-                if (projectile == null || !projectile.alive) {
+                if (projectile == null || !projectile.isAlive()) {
 //                System.out.println("Shooting");
                     Entity target = null;
                     double closestDistance = Double.MAX_VALUE;
                     for (Entity other : SQUARES) {
-                        if (other.alive) {
+                        if (other.isAlive()) {
                             if (!(other instanceof ShootingEntity)) {
 
                                 double distance = Utilities.distance(x, y, other.x, other.y);

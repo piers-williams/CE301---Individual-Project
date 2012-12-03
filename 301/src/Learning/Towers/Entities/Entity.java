@@ -3,6 +3,7 @@ package Learning.Towers.Entities;
 import Learning.Towers.Influence.InfluenceGrid;
 import Learning.Towers.Influence.InfluenceGridType;
 import Learning.Towers.Main;
+import Learning.Towers.Vector2D;
 import org.lwjgl.opengl.GL11;
 
 import java.awt.*;
@@ -19,14 +20,14 @@ public class Entity {
     //    public static CollisionBoard BOARD;
     // Location
     public double x, y;
-    int width;
+    protected int width;
     double dX, dY;
 
-    Point oldCell;
+    Vector2D oldCell;
 
-    float r, g, b;
+    protected float r, g, b;
 
-    boolean alive = true;
+    protected boolean alive = true;
 
     private static Random random = new Random();
 
@@ -73,10 +74,10 @@ public class Entity {
         x += dX;
         y += dY;
 
-        Point cell = Main.COLLISION_BOARD.getPoint(this);
+        Vector2D cell = Main.COLLISION_BOARD.getPoint(this);
 
         if (!oldCell.equals(cell)) {
-            Main.COLLISION_BOARD.moveEntity(this, (Point) oldCell.clone());
+            Main.COLLISION_BOARD.moveEntity(this, new Vector2D(oldCell));
             oldCell = cell;
         }
     }

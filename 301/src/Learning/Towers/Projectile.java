@@ -41,6 +41,10 @@ public class Projectile {
         }
     }
 
+    public boolean isAlive() {
+        return alive;
+    }
+
     public void draw() {
         if (alive) {
             int width = 2;

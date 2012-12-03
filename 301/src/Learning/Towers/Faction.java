@@ -46,7 +46,7 @@ public class Faction {
         y = random.nextInt(Main.MAP_HEIGHT);
         setNewTarget();
 
-        entities = new ArrayList<GroupedEntity>(10);
+        entities = new ArrayList<>(10);
     }
 
     public Faction(int group, float r, float g, float b, Vector2D startLocation) {

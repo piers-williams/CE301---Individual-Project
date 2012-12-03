@@ -27,9 +27,9 @@ public class GameLoop implements Runnable {
     private boolean paused;
 
     public GameLoop() {
-        entities = new ArrayList<Entity>();
-        addEntities = new ArrayList<Entity>();
-        factions = new ArrayList<Faction>();
+        entities = new ArrayList<>();
+        addEntities = new ArrayList<>();
+        factions = new ArrayList<>();
         tickDelay = 50;
         paused = true;
 
@@ -55,7 +55,7 @@ public class GameLoop implements Runnable {
                     Iterator<Entity> iterator = entities.iterator();
                     while (iterator.hasNext()) {
                         Entity entity = iterator.next();
-                        if (!entity.alive) {
+                        if (!entity.isAlive()) {
                             iterator.remove();
                         }
                     }
