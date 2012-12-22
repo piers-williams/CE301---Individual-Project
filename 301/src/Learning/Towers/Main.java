@@ -1,7 +1,6 @@
 package Learning.Towers;
 
 import Learning.Towers.Entities.Entity;
-import Learning.Towers.Entities.Units.ShootingEntity;
 import Learning.Towers.Influence.InfluenceMap;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.Display;
@@ -13,7 +12,6 @@ import org.lwjgl.opengl.GL11;
  * User: Piers
  * Date: 16/10/12
  * Time: 11:49
- * To change this template use File | Settings | File Templates.
  */
 public class Main {
     public static int SCREEN_WIDTH = 1600;
@@ -105,13 +103,6 @@ public class Main {
             // Keyboard release
             if (Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)) {
                 break;
-            }
-//            if(Keyboard.isKeyDown(Keyboard.KEY_A)) addMoreUnits();
-            if (Keyboard.isKeyDown(Keyboard.KEY_C) && !cDown) {
-                ShootingEntity.shooting = !ShootingEntity.shooting;
-                cDown = true;
-            } else {
-                cDown = false;
             }
 
             if (Keyboard.isKeyDown(Keyboard.KEY_P)) {

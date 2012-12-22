@@ -1,7 +1,6 @@
 package Learning.Towers;
 
 import Learning.Towers.Entities.Entity;
-import Learning.Towers.Entities.Units.ShootingEntity;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -32,8 +31,6 @@ public class GameLoop implements Runnable {
         factions = new ArrayList<>();
         tickDelay = 50;
         paused = true;
-
-        ShootingEntity.SQUARES = entities;
     }
 
     public GameLoop(int tickDelay) {

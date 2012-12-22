@@ -6,7 +6,7 @@ import Learning.Towers.Vector2D;
 /**
  *
  */
-public interface Movement extends Behaviour{
+public interface Movement extends Behaviour {
 
     public Vector2D getLocation();
 

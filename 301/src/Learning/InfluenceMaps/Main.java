@@ -21,7 +21,7 @@ public class Main {
     static int MAP_HEIGHT = 900;
     static int SQUARE_WIDTH = 6;
     static int SQUARE_COUNT = 200;
-    static boolean FULL_SCREEN = true;
+    static boolean FULL_SCREEN = false;
     public static final int CELL_SIZE = 75;
 
     public static GameLoop GAME_LOOP;

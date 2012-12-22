@@ -5,7 +5,7 @@ import Learning.Towers.Behaviours.Behaviour;
 /**
  *
  */
-public interface Collision extends Behaviour{
+public interface Collision extends Behaviour {
 
 
 }

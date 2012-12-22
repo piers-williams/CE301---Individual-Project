@@ -9,7 +9,7 @@ import Learning.Towers.Vector2D;
 /**
  * Implements the Flocking behaviour
  */
-public class Flocking  extends BasicMovement {
+public class Flocking extends BasicMovement {
 
     private Group group;
 

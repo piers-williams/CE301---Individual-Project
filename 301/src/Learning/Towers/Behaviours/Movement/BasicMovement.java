@@ -5,9 +5,9 @@ import Learning.Towers.Main;
 import Learning.Towers.Vector2D;
 
 /**
- *   Implements common sections of Movement aspects
- *
- *   Should force units to bounce on the screen etc
+ * Implements common sections of Movement aspects
+ * <p/>
+ * Should force units to bounce on the screen etc
  */
 public abstract class BasicMovement implements Movement {
     protected Entity entity;
@@ -28,7 +28,7 @@ public abstract class BasicMovement implements Movement {
 
     public abstract void updateSpecialisation();
 
-    private void boundaryCheck(){
+    private void boundaryCheck() {
         if (location.x < 0 || location.x > Main.MAP_WIDTH) direction.x *= -1;
         if (location.y < 0 || location.y > Main.MAP_HEIGHT) direction.y *= -1;
     }

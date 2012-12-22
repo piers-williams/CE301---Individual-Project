@@ -2,12 +2,13 @@ package Learning.Towers.Entities;
 
 import Learning.Towers.Behaviours.Collision.Collision;
 import Learning.Towers.Behaviours.Drawing.Drawing;
+import Learning.Towers.Behaviours.Drawing.SimpleQuad;
 import Learning.Towers.Behaviours.Influence.Influence;
 import Learning.Towers.Behaviours.Movement.Movement;
+import Learning.Towers.Behaviours.Movement.Static;
 import Learning.Towers.Influence.InfluenceGrid;
-import Learning.Towers.Influence.InfluenceGridType;
 import Learning.Towers.Main;
-import org.lwjgl.opengl.GL11;
+import Learning.Towers.Vector2D;
 
 import java.util.Random;
 
@@ -54,49 +55,24 @@ public class Entity {
     }
 
     public Entity(int width, float r, float g, float b, double strength) {
-        x = random.nextInt(Main.MAP_WIDTH);
-        y = random.nextInt(Main.MAP_HEIGHT);
-
-        dX = (random.nextDouble() * 2) - 1;
-        dY = (random.nextDouble() * 2) - 1;
         this.r = r;
         this.g = g;
         this.b = b;
 
-        this.width = width;
+        setUpInfluence(strength);
 
-        setUpInfluence(strength, InfluenceGridType.SimpleSquare);
+        movementBehaviour = new Static(new Vector2D(random.nextInt(Main.MAP_WIDTH), random.nextInt(Main.MAP_HEIGHT)));
+        drawingBehaviour = new SimpleQuad(width, r, g, b, movementBehaviour);
     }
 
     public void update() {
-        //move();
         movementBehaviour.update();
-    }
-
-    public void move() {
-        x += dX;
-        y += dY;
     }
 
     public void draw() {
         if (alive) {
-            GL11.glColor4f(r, g, b, 1.0f);
-            GL11.glBegin(GL11.GL_QUADS);
-            GL11.glVertex2d(x - width / 2, y - width / 2);
-            GL11.glVertex2d(x + width / 2, y - width / 2);
-            GL11.glVertex2d(x + width / 2, y + width / 2);
-            GL11.glVertex2d(x - width / 2, y + width / 2);
-            GL11.glEnd();
+            drawingBehaviour.draw();
         }
-    }
-
-    protected void moveToPoint(double tX, double tY) {
-        int radius = 50;
-
-        if (x - radius > tX) x -= 1;
-        if (x + radius < tX) x += 1;
-        if (y - radius > tY) y -= 1;
-        if (y + radius < tY) y += 1;
     }
 
     public void kill() {
@@ -105,6 +81,14 @@ public class Entity {
 
     public boolean isAlive() {
         return alive;
+    }
+
+    public double getX() {
+        return movementBehaviour.getLocation().getX();
+    }
+
+    public double getY() {
+        return movementBehaviour.getLocation().getY();
     }
 
     public static boolean collidesWith(Entity first, Entity second) {
@@ -139,9 +123,9 @@ public class Entity {
         return influenceStrength;
     }
 
-    private void setUpInfluence(double strength, InfluenceGridType type) {
+    private void setUpInfluence(double strength) {
         this.influenceStrength = strength;
-        this.influenceGrid = InfluenceGrid.createGrid(this, type);
+        this.influenceGrid = InfluenceGrid.createGrid(this, 5);
     }
 
     public InfluenceGrid getInfluenceGrid() {

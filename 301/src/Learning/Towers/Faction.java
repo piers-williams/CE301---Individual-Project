@@ -1,8 +1,7 @@
 package Learning.Towers;
 
 import Learning.Towers.Entities.Buildings.Base;
-import Learning.Towers.Entities.GroupedEntity;
-import Learning.Towers.Entities.Units.ShootingEntity;
+import Learning.Towers.Entities.Entity;
 import org.lwjgl.opengl.GL11;
 
 import java.util.ArrayList;
@@ -14,12 +13,11 @@ import java.util.Random;
  * User: Piers
  * Date: 19/10/12
  * Time: 16:42
- * To change this template use File | Settings | File Templates.
  */
 public class Faction {
     private final static Random random = new Random();
 
-    ArrayList<GroupedEntity> entities;
+    ArrayList<Entity> entities;
 
     int group;
     float r, g, b;
@@ -56,7 +54,7 @@ public class Faction {
         Main.GAME_LOOP.addEntity(base);
     }
 
-    public void addEntity(GroupedEntity entity) {
+    public void addEntity(Entity entity) {
         entities.add(entity);
     }
 
@@ -65,7 +63,8 @@ public class Faction {
     }
 
     public void makeEntity(double x, double y) {
-        GroupedEntity entity = new ShootingEntity(this, Main.SQUARE_WIDTH, x, y);
+        Entity entity = new Entity(Main.SQUARE_WIDTH, r, g, b);
+
         entities.add(entity);
         Main.GAME_LOOP.addEntity(entity);
     }
@@ -88,9 +87,9 @@ public class Faction {
         speed = 1;
         radius = Math.sqrt(Math.pow(entities.size(), 1.5) * 16);
 
-        Iterator<GroupedEntity> itr = entities.iterator();
+        Iterator<Entity> itr = entities.iterator();
         while (itr.hasNext()) {
-            GroupedEntity entity = itr.next();
+            Entity entity = itr.next();
             if (!entity.isAlive()) itr.remove();
         }
 
@@ -130,7 +129,7 @@ public class Faction {
         return radius;
     }
 
-    public ArrayList<GroupedEntity> getEntities() {
+    public ArrayList<Entity> getEntities() {
         return entities;
     }
 

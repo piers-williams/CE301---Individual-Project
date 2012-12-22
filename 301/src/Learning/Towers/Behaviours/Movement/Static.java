@@ -4,7 +4,7 @@ import Learning.Towers.Vector2D;
 
 /**
  * Completely static movement implementation
- *
+ * <p/>
  * Will not move
  */
 public class Static implements Movement {

@@ -1,19 +1,22 @@
 package Learning.Towers.Entities.Buildings;
 
+import Learning.Towers.Entities.Entity;
 import Learning.Towers.Faction;
-import Learning.Towers.Entities.GroupedEntity;
 
 /**
  * Base building
+ * <p/>
+ * This doesn't make much sense really
  */
-public class Base extends GroupedEntity {
+public class Base extends Entity {
 
     static final int MAX_RESOURCE = 30;
     int resource = MAX_RESOURCE;
-
+    Faction faction;
 
     public Base(Faction faction, int width) {
-        super(faction, width);
+        super(width, faction.getR(), faction.getG(), faction.getB());
+        this.faction = faction;
     }
 
     public void update() {
