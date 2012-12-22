@@ -8,6 +8,7 @@ import Learning.Towers.Behaviours.Movement.Movement;
 import Learning.Towers.Behaviours.Movement.Static;
 import Learning.Towers.Influence.InfluenceGrid;
 import Learning.Towers.Main;
+import Learning.Towers.Utilities;
 import Learning.Towers.Vector2D;
 
 import java.util.Random;
@@ -94,7 +95,7 @@ public class Entity {
     public static boolean collidesWith(Entity first, Entity second) {
         if (first.equals(second)) return false;
 
-        double distance = (first.x - second.x) * (first.x - second.x) + (first.y - second.y) * (first.y - second.y);
+        double distance = (first.getX() - second.getX()) * (first.getX() - second.getX()) + (first.getY() - second.getY()) * (first.getY() - second.getY());
         return (distance < first.width * first.width);
     }
 
@@ -107,8 +108,8 @@ public class Entity {
         second.dX = dX;
         second.dY = dY;
 
-        double distance = (first.x - second.x) * (first.x - second.x) + (first.y - second.y) * (first.y - second.y);
-        double ang = Math.atan2(second.y - first.y, second.x - first.x);
+        double distance = Utilities.distance(first.getX(), first.getY(), second.getX(), second.getY());
+        double ang = Math.atan2(second.getY() - first.getY(), second.getX() - first.getX());
         double mov = first.width - Math.sqrt(distance);
         mov /= 2;
 

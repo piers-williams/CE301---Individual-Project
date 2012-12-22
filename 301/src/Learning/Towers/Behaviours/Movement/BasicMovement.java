@@ -37,4 +37,9 @@ public abstract class BasicMovement implements Movement {
     public final Vector2D getLocation() {
         return location;
     }
+
+    @Override
+    public void setLocation(Vector2D location) {
+        this.location = location;
+    }
 }

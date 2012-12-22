@@ -53,8 +53,6 @@ public class Main {
         } catch (Exception e) {
 
         }
-        // Set the board
-        Main.COLLISION_BOARD = COLLISION_BOARD;
 
         Thread physics = new Thread(Main.COLLISION_BOARD);
         physics.setDaemon(true);
@@ -88,7 +86,6 @@ public class Main {
         COLLISION_BOARD.setPaused(false);
         GAME_LOOP.setPaused(false);
         INFLUENCE_MAP.setPaused(false);
-
 
         boolean stepping = false;
         boolean paused = false;
