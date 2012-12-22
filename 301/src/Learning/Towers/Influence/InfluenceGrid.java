@@ -26,7 +26,7 @@ public class InfluenceGrid {
             if (grids.containsKey(entity.getIS())) return grids.get(entity.getIS());
 
             // Obtain the normal grid and transform it
-            InfluenceGrid newGrid = multiply(grids.get(1), entity.getIS());
+            InfluenceGrid newGrid = multiply(grids.get(1.0d), entity.getIS());
 
             // cache the new grid
             grids.put(entity.getIS(), newGrid);

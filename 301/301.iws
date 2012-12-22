@@ -92,13 +92,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="13" selection-start="3528" selection-end="3528" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state line="38" column="49" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.91434264">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,10 +132,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InfluenceMap.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="InfluenceMap.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="9" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.6494024">
+            <state line="103" column="42" selection-start="3244" selection-end="3244" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -146,7 +144,7 @@
       <file leaf-file-name="Utilities.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Utilities.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="40" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+            <state line="6" column="14" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -155,8 +153,10 @@
       <file leaf-file-name="InfluenceGrid.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceGrid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="39" selection-start="2615" selection-end="2615" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="33" column="35" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,22 +180,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Learning/InfluenceMaps/Main.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Drawing/SimpleQuad.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Drawing/Drawing.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Meta/Group.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Buildings/Base.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Influence/Influence.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Influence/SimpleInfluence.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceGrid.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/GroupedEntity.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Main.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Projectile.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Units/ShootingEntity.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/GameLoop.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Faction.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Utilities.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceGrid.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Main.java" />
       </list>
     </option>
   </component>
@@ -1284,35 +1284,12 @@
         <state line="9" column="59" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceGrid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="39" selection-start="2615" selection-end="2615" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Buildings/Base.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="5" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="13" selection-start="3528" selection-end="3528" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/GameLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="39" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1325,13 +1302,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Utilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="32" selection-start="2335" selection-end="2335" vertical-scroll-proportion="0.0">
@@ -1339,9 +1309,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Utilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="14" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceGrid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="35" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="9" selection-start="2098" selection-end="2098" vertical-scroll-proportion="0.6494024">
+        <state line="103" column="42" selection-start="3244" selection-end="3244" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/GameLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="39" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="49" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.91434264">
           <folding />
         </state>
       </provider>

@@ -10,11 +10,12 @@ import org.lwjgl.opengl.GL11;
  * User: Piers
  * Date: 29/10/12
  * Time: 08:56
- * To change this template use File | Settings | File Templates.
  */
 public class InfluenceMap implements Runnable {
 
-    private double[][] influence;
+    private double[][][] influence;
+    private int calculateIndex, drawIndex;
+
 
     private int width, height, cellSize;
 
@@ -28,7 +29,9 @@ public class InfluenceMap implements Runnable {
         this.tickDelay = tickDelay;
         running = true;
 
-        influence = new double[width][height];
+        influence = new double[2][width][height];
+        calculateIndex = 0;
+        drawIndex = 1;
     }
 
     @Override
@@ -46,7 +49,11 @@ public class InfluenceMap implements Runnable {
     }
 
     private void update() {
-        influence = new double[width][height];
+        // Swap the buffers
+        calculateIndex = drawIndex;
+        drawIndex = (drawIndex == 0) ? 1 : 0;
+        // clear this section to 0.0
+        for(int x = 0; x < influence[calculateIndex].length; x++) for(int y = 0; y < influence[calculateIndex][x].length; y++) influence[calculateIndex][x][y] = 0.0d;
         synchronized (Main.GAME_LOOP._entities) {
             for (Entity entity : Main.GAME_LOOP.getEntities()) {
                 addGridToInfluence(entity.getInfluenceGrid(), getPoint(entity));
@@ -65,8 +72,8 @@ public class InfluenceMap implements Runnable {
         for (int x = -xWidth; x <= xWidth; x++) {
             for (int y = -yWidth; y <= yWidth; y++) {
                 try {
-                    influence[x + (int) point.x][y + (int) point.y] += grid.influence[x + xWidth][y + yWidth] / 32;
-                } catch (ArrayIndexOutOfBoundsException aioobe) {
+                    influence[calculateIndex][x + (int) point.x][y + (int) point.y] += grid.influence[x + xWidth][y + yWidth] / 32;
+                } catch (ArrayIndexOutOfBoundsException arrayIndexOutOrBoundsException) {
                 }
             }
         }
@@ -77,12 +84,11 @@ public class InfluenceMap implements Runnable {
     }
 
     public void draw() {
-        for (int x = 0, i = 0; x < width && i < influence.length; x += cellSize, i++) {
-            for (int y = 0, j = 0; y < height && j < influence[i].length; y += cellSize, j++) {
+        for (int x = 0, i = 0; x < width && i < influence[drawIndex].length; x += cellSize, i++) {
+            for (int y = 0, j = 0; y < height && j < influence[drawIndex][i].length; y += cellSize, j++) {
 
-                float strength = (float) influence[i][j];
+                float strength = (float) influence[drawIndex][i][j];
                 if (strength > 255) strength = 255;
-//                System.out.println(strength);
 
                 GL11.glColor4f(strength, 0, 0, 0.5f);
                 GL11.glBegin(GL11.GL_QUADS);

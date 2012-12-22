@@ -34,7 +34,7 @@ public class Main {
 
         Main.GAME_LOOP = new GameLoop(20);
         Main.COLLISION_BOARD = new CollisionBoard(Main.MAP_WIDTH, Main.MAP_HEIGHT, CELL_SIZE);
-        Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, CELL_SIZE, 40);
+        Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 30, 40);
 
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
         // Set up the display
@@ -58,16 +58,19 @@ public class Main {
 
         Thread physics = new Thread(Main.COLLISION_BOARD);
         physics.setDaemon(true);
+        physics.setName("Collision Detection");
         physics.start();
 
         for (int i = 0; i < Main.SQUARE_COUNT; i++) Main.GAME_LOOP.addEntity(new Entity(Main.SQUARE_WIDTH, 1f, 1f, 1f));
 
         Thread loop = new Thread(GAME_LOOP);
         loop.setDaemon(true);
+        loop.setName("Game Loop");
         loop.start();
 
         Thread influence = new Thread(INFLUENCE_MAP);
         influence.setDaemon(true);
+        influence.setName("Influence Thread");
         influence.start();
 
         GAME_LOOP.addFaction(new Faction(0, 1, 0, 0, new Vector2D(50, MAP_HEIGHT / 2)));

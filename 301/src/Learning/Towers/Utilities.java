@@ -5,7 +5,6 @@ package Learning.Towers;
  * User: Piers
  * Date: 19/10/12
  * Time: 16:49
- * To change this template use File | Settings | File Templates.
  */
 public class Utilities {
 
