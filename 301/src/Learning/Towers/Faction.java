@@ -35,7 +35,7 @@ public class Faction {
         baseGroup = new Hashtable<>();
 
         Entity base = EntityFactory.getBaseEntity(this, Utilities.randomLocation(100), 26);
-        Vector2D groupLocation = base.getMovementBehaviour().getLocation();
+        Vector2D groupLocation = new Vector2D(base.getMovementBehaviour().getLocation());
         groupLocation.add(50, 50);
         Group newGroup = new Group(r, g, b, groupLocation, 5, this);
         baseGroup.put(base.getConstructionBehaviour(), newGroup);
@@ -58,7 +58,7 @@ public class Faction {
 
         // House keeping on the groups
         if (baseGroup.get(base).isFull()) {
-            Vector2D groupLocation = base.getEntity().getMovementBehaviour().getLocation();
+            Vector2D groupLocation = new Vector2D(base.getEntity().getMovementBehaviour().getLocation());
             groupLocation.add(50, 50);
             Group newGroup = new Group(r, g, b, groupLocation, 5, this);
             groups.add(baseGroup.get(base));

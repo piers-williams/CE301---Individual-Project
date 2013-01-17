@@ -103,10 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Faction.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Faction.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="20" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0">
+            <state line="56" column="33" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.5838384">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,7 +117,7 @@
       <file leaf-file-name="BasicConstruction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/BasicConstruction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="48" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
+            <state line="25" column="54" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -144,16 +144,7 @@
       <file leaf-file-name="Group.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Meta/Group.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="53" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Flocking.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Flocking.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="43" selection-start="930" selection-end="930" vertical-scroll-proportion="0.5494949">
+            <state line="44" column="84" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -201,8 +192,8 @@
         <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Meta/Group.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Faction.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Flocking.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Faction.java" />
       </list>
     </option>
   </component>
@@ -1878,32 +1869,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="20" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/BasicConstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="48" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="75" column="52" selection-start="2063" selection-end="2063" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Meta/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="53" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1917,8 +1885,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Flocking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="43" selection-start="930" selection-end="930" vertical-scroll-proportion="0.5494949">
+        <state line="23" column="36" selection-start="590" selection-end="590" vertical-scroll-proportion="0.5494949">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Meta/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="84" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/BasicConstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="54" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="33" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.5838384">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
