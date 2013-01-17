@@ -1,5 +1,6 @@
 package Learning.Towers.Behaviours.Movement;
 
+import Learning.Towers.Entities.Entity;
 import Learning.Towers.Vector2D;
 
 /**
@@ -9,8 +10,11 @@ import Learning.Towers.Vector2D;
  */
 public class Static implements Movement {
     private Vector2D location;
+    private Vector2D direction;
+    private Entity entity;
 
-    public Static(Vector2D location) {
+    public Static(Entity entity, Vector2D location) {
+        this.entity = entity;
         this.location = location;
     }
 
@@ -24,7 +28,22 @@ public class Static implements Movement {
     }
 
     @Override
+    public Vector2D getDirection() {
+        return direction;
+    }
+
+    @Override
+    public void setDirection(Vector2D direction) {
+        this.direction = direction;
+    }
+
+    @Override
     public void setLocation(Vector2D location) {
         this.location = location;
+    }
+
+    @Override
+    public Entity getEntity() {
+        return entity;
     }
 }

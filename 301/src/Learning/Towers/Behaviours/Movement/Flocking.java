@@ -20,10 +20,12 @@ public class Flocking extends BasicMovement {
 
     @Override
     public void updateSpecialisation() {
-        Vector2D cohesion = calculateCohesion();
         Vector2D separation = calculateSeparation();
 
         if (Utilities.distance(group.getX(), group.getY(), location.x, location.y) > group.getRadius()) {
+
+            Vector2D cohesion = calculateCohesion();
+
             direction.x = cohesion.x + separation.x / 2;
             direction.y = cohesion.y + separation.y / 2;
 
@@ -33,10 +35,12 @@ public class Flocking extends BasicMovement {
             direction.x = separation.x;
             direction.y = separation.y;
         }
+
+        location.add(direction);
     }
 
     private Vector2D calculateCohesion() {
-        double cX = 0, cY = 0;
+        double cX, cY;
 
         cX = (location.x > group.getX()) ? -1 : 1;
         cY = (location.y > group.getY()) ? -1 : 1;
@@ -48,10 +52,10 @@ public class Flocking extends BasicMovement {
         double sX = 0, sY = 0;
         for (Entity entity : group.getEntities()) {
             if (entity != this.entity) {
-                double distance = Utilities.distance(entity.x, entity.y, location.x, location.y);
+                double distance = Utilities.distance(entity.getX(), entity.getY(), location.x, location.y);
                 if (distance < Main.SQUARE_WIDTH * 3) {
-                    sX += ((location.x - entity.x > 0) ? 1 : -1);
-                    sY += ((location.y - entity.y > 0) ? 1 : -1);
+                    sX += ((location.x - entity.getX() > 0) ? 1 : -1);
+                    sY += ((location.y - entity.getY() > 0) ? 1 : -1);
                 }
             }
         }

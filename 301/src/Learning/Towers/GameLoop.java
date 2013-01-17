@@ -10,7 +10,6 @@ import java.util.Iterator;
  * User: Piers
  * Date: 23/10/12
  * Time: 11:17
- * To change this template use File | Settings | File Templates.
  */
 public class GameLoop implements Runnable {
 
@@ -98,11 +97,6 @@ public class GameLoop implements Runnable {
         synchronized (_entities) {
             for (Entity entity : entities) {
                 entity.draw();
-            }
-        }
-        synchronized (_factions) {
-            for (Faction faction : factions) {
-                faction.draw();
             }
         }
     }

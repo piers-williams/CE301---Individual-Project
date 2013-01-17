@@ -1,5 +1,6 @@
 package Learning.Towers;
 
+import Learning.Towers.Behaviours.Collision.SimpleCollision;
 import Learning.Towers.Entities.Entity;
 
 import java.util.ArrayList;
@@ -10,11 +11,8 @@ import java.util.HashMap;
  * User: Piers
  * Date: 18/10/12
  * Time: 22:05
- * To change this template use File | Settings | File Templates.
  */
 public class CollisionBoard implements Runnable {
-    private int mapWidth, mapHeight;
-
     private int cellSize;
 
     HashMap<Vector2D, ArrayList<Entity>> cellEntities;
@@ -28,15 +26,13 @@ public class CollisionBoard implements Runnable {
     boolean running = true, paused = true;
     int tickDelay;
 
-    public CollisionBoard(int mapWidth, int mapHeight, int cellSize) {
-        this.mapWidth = mapWidth;
-        this.mapHeight = mapHeight;
+    public CollisionBoard( int cellSize) {
         this.cellSize = cellSize;
 
-        cellEntities = new HashMap<Vector2D, ArrayList<Entity>>();
-        moveEntities = new ArrayList<EntityCellPair>();
-        addEntities = new ArrayList<Entity>();
-        deleteEntities = new ArrayList<Entity>();
+        cellEntities = new HashMap<>();
+        moveEntities = new ArrayList<>();
+        addEntities = new ArrayList<>();
+        deleteEntities = new ArrayList<>();
 
         tickDelay = 10;
     }
@@ -46,7 +42,7 @@ public class CollisionBoard implements Runnable {
     }
 
     public Vector2D getPoint(Entity entity) {
-        return getPoint(entity.x, entity.y);
+        return getPoint(entity.getX(), entity.getY());
     }
 
     public void setPaused(boolean paused) {
@@ -55,19 +51,12 @@ public class CollisionBoard implements Runnable {
 
     @Override
     public void run() {
-
-        long time = System.currentTimeMillis();
-        long oldTime = time;
         while (running) {
             try {
                 Thread.sleep(tickDelay);
             } catch (InterruptedException ie) {
 
             }
-
-//            time = System.currentTimeMillis();
-//            System.out.println(1000/(time - oldTime) + ":FPS");
-//            oldTime = time;
 
             if (!paused) {
                 // Add entities that are due
@@ -95,6 +84,7 @@ public class CollisionBoard implements Runnable {
         }
     }
 
+    @SuppressWarnings("UnusedDeclaration")
     public void deleteEntity(Entity entity) {
         deleteEntities.add(entity);
     }
@@ -132,7 +122,7 @@ public class CollisionBoard implements Runnable {
             synchronized (_cellEntities) {
                 ArrayList<Entity> tl = cellEntities.get(cell);
 
-                ArrayList<Entity> entities = new ArrayList<Entity>(tl);
+                ArrayList<Entity> entities = new ArrayList<>(tl);
                 if (cellEntities.containsKey(new Vector2D(cell.x + 1, cell.y))) {
                     entities.addAll(cellEntities.get(new Vector2D(cell.x + 1, cell.y)));
                 }
@@ -145,8 +135,8 @@ public class CollisionBoard implements Runnable {
 
                 for (int i = 0; i < tl.size(); i++) {
                     for (int j = i + 1; j < entities.size(); j++) {
-                        if (Entity.collidesWith(entities.get(i), entities.get(j))) {
-                            Entity.bounce(entities.get(i), entities.get(j));
+                        if (SimpleCollision.collidesWith(entities.get(i).getCollisionBehaviour(), entities.get(j).getCollisionBehaviour())) {
+                            SimpleCollision.bounce(entities.get(i).getCollisionBehaviour(), entities.get(j).getCollisionBehaviour());
                         }
                     }
                 }

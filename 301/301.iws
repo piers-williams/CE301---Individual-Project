@@ -83,19 +83,77 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
+      <file leaf-file-name="InfluenceMap.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="16" selection-start="3308" selection-end="3308" vertical-scroll-proportion="0.0">
+            <state line="96" column="38" selection-start="3266" selection-end="3266" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Flocking.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="18" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Faction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="20" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicConstruction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/BasicConstruction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="48" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Factions.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Factions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="74" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="52" selection-start="2063" selection-end="2063" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Group.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Meta/Group.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="41" column="53" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Flocking.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Flocking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="7" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+            <state line="32" column="43" selection-start="930" selection-end="930" vertical-scroll-proportion="0.5494949">
               <folding />
             </state>
           </provider>
@@ -104,70 +162,16 @@
       <file leaf-file-name="BasicMovement.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/BasicMovement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="13" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0">
+            <state line="17" column="44" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Static.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java">
+      <file leaf-file-name="EntityFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/EntityFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="25" selection-start="359" selection-end="359" vertical-scroll-proportion="0.4674385">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Movement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Movement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="55" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Base.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Buildings/Base.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="5" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Faction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="32" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfluenceMap.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="42" selection-start="3244" selection-end="3244" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utilities.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Utilities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="14" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Behaviour.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Behaviour.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="59" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0">
+            <state line="38" column="41" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -183,22 +187,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Buildings/Base.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Influence/Influence.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Influence/SimpleInfluence.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/GroupedEntity.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Projectile.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Units/ShootingEntity.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/GameLoop.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Faction.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/Construction.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/BasicConstruction.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Utilities.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceGrid.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Main.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Movement.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/BasicMovement.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceGrid.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Factions.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleNoCollision.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Drawing/RadiusIndicator.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Main.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/KeyManager.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/EntityFactory.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Meta/Group.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Faction.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Flocking.java" />
       </list>
     </option>
   </component>
@@ -337,16 +341,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -539,36 +533,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buildings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Towers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Behaviours" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -600,6 +564,96 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Movement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Towers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Behaviours" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Influence" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Towers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Behaviours" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Drawing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Towers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Behaviours" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Constructive" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -681,6 +735,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Bases" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1083,18 +1147,19 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3170391" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35335195" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3170391" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32324323" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22522523" sideWeight="0.68296087" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35407406" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26396647" sideWeight="0.997936" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19176319" sideWeight="0.72625697" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.273743" sideWeight="0.997936" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1104,12 +1169,11 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39944133" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1209,94 +1273,651 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Influence/Influence.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleCollision.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="8" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Influence/SimpleInfluence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="6" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Drawing/SimpleQuad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="24" selection-start="514" selection-end="514" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/GameLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="39" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Buildings/Base.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="32" selection-start="492" selection-end="492" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="42" selection-start="3244" selection-end="3244" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Utilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="14" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceGrid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="35" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Behaviour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="59" selection-start="106" selection-end="106" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="39" selection-start="3179" selection-end="3179" vertical-scroll-proportion="2.252988">
+        <state line="10" column="13" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Movement.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleNoCollision.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="55" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+        <state line="17" column="36" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../lwjgl-2.8.4/lwjgl-2.8.4/jar/lwjgl.jar!/org/lwjgl/input/Keyboard.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="28" selection-start="323" selection-end="323" vertical-scroll-proportion="0.3601286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="18" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/KeyManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="34" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="38" selection-start="3266" selection-end="3266" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/EntityFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="41" selection-start="1438" selection-end="1438" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Learning.Towers">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Learning.Towers</OriginalElement>
+          <nodes>
+            <node x="886.1857142857142" y="78.0">Learning.Towers.Behaviours.Movement.Movement</node>
+            <node x="1113.4427123991677" y="0.0">Learning.Towers.Behaviours.Behaviour</node>
+            <node x="956.6857142857142" y="620.0">Learning.Towers.Entities.Meta.Group</node>
+            <node x="1365.5830357142854" y="78.0">Learning.Towers.Behaviours.Influence.Influence</node>
+            <node x="988.9266673985164" y="718.0">Learning.Towers.Faction</node>
+            <node x="580.2857142857142" y="718.0">Learning.Towers.Behaviours.Movement.Flocking</node>
+            <node x="104.14285714285688" y="532.0">Learning.Towers.Behaviours.Movement.Wandering</node>
+            <node x="915.3016673985164" y="964.0">Learning.Towers.Main</node>
+            <node x="1079.0657055035128" y="434.0">Learning.Towers.Behaviours.Drawing.SimpleQuad</node>
+            <node x="0.0" y="434.0">Learning.Towers.Utilities</node>
+            <node x="1148.8692769320842" y="816.0">Learning.Towers.GameLoop</node>
+            <node x="413.46533144678676" y="78.0">Learning.Towers.Behaviours.Collision.Collision</node>
+            <node x="257.50925668423065" y="434.0">Learning.Towers.Behaviours.Collision.SimpleCollision</node>
+            <node x="547.5092566842308" y="434.0">Learning.Towers.Behaviours.Movement.BasicMovement</node>
+            <node x="1263.8692769320842" y="816.0">Learning.Towers.Behaviours.Constructive.BasicConstruction</node>
+            <node x="1013.2262933417903" y="816.0">Learning.Towers.Factions</node>
+            <node x="1177.0874999999999" y="186.0">Learning.Towers.Entities.Entity</node>
+            <node x="665.5607142857142" y="532.0">Learning.Towers.CollisionBoard</node>
+            <node x="1352.1296935987507" y="532.0">Learning.Towers.Behaviours.Influence.SimpleInfluence</node>
+            <node x="919.8573721701796" y="434.0">Learning.Towers.Behaviours.Drawing.RadiusIndicator</node>
+            <node x="1347.7130269320842" y="434.0">Learning.Towers.Influence.InfluenceGrid</node>
+            <node x="223.46533144678676" y="186.0">Learning.Towers.Vector2D</node>
+            <node x="395.5092566842307" y="434.0">Learning.Towers.Behaviours.Collision.SimpleNoCollision</node>
+            <node x="882.2262933417903" y="816.0">Learning.Towers.Influence.InfluenceMap</node>
+            <node x="785.3016673985164" y="964.0">Learning.Towers.Entities.EntityFactory</node>
+            <node x="832.8573721701796" y="434.0">Learning.Towers.Behaviours.Movement.Static</node>
+            <node x="893.3016673985164" y="1042.0">Learning.Towers.KeyManager</node>
+            <node x="1118.9427123991677" y="78.0">Learning.Towers.Behaviours.Drawing.Drawing</node>
+            <node x="1509.9630269320842" y="78.0">Learning.Towers.Behaviours.Constructive.Construction</node>
+            <node x="694.8790483508974" y="434.0">Learning.Towers.EntityCellPair</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Learning.Towers.GameLoop" target="Learning.Towers.Entities.Entity">
+              <point x="23.5" y="-14.0" />
+              <point x="1219.3692769320842" y="414.0" />
+              <point x="1229.4312499999999" y="414.0" />
+              <point x="18.84375" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.CollisionBoard" target="Learning.Towers.Entities.Entity">
+              <point x="45.200000000000045" y="-14.0" />
+              <point x="767.2607142857142" y="512.0" />
+              <point x="814.3790483508974" y="512.0" />
+              <point x="814.3790483508974" y="334.0" />
+              <point x="1195.9312499999999" y="334.0" />
+              <point x="-14.65625" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Factions" target="Learning.Towers.Faction">
+              <point x="-20.25" y="-14.0" />
+              <point x="1033.4762933417903" y="796.0" />
+              <point x="1020.1766673985164" y="796.0" />
+              <point x="-6.25" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Influence.Influence" target="Learning.Towers.Behaviours.Behaviour">
+              <point x="0.0" y="-14.0" />
+              <point x="1409.0830357142854" y="58.0" />
+              <point x="1177.1427123991675" y="58.0" />
+              <point x="18.200000000000045" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Movement.BasicMovement" target="Learning.Towers.Behaviours.Movement.Movement">
+              <point x="15.5" y="-14.0" />
+              <point x="625.0092566842308" y="284.0" />
+              <point x="670.1888738453033" y="284.0" />
+              <point x="670.1888738453033" y="156.0" />
+              <point x="895.6857142857142" y="156.0" />
+              <point x="-38.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Movement.Flocking" target="Learning.Towers.Behaviours.Movement.BasicMovement">
+              <point x="0.0" y="-14.0" />
+              <point x="620.2857142857142" y="512.0" />
+              <point x="640.5092566842308" y="512.0" />
+              <point x="31.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.Entity" target="Learning.Towers.Behaviours.Collision.Collision">
+              <point x="-26.799999999999955" y="-14.0" />
+              <point x="1183.7875" y="146.0" />
+              <point x="480.1319981134535" y="146.0" />
+              <point x="26.666666666666742" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.EntityFactory" target="Learning.Towers.Behaviours.Influence.SimpleInfluence">
+              <point x="48.888888888888914" y="-14.0" />
+              <point x="889.1905562874053" y="944.0" />
+              <point x="1445.8796935987507" y="944.0" />
+              <point x="31.25" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.Entity" target="Learning.Towers.Behaviours.Drawing.Drawing">
+              <point x="0.0" y="-14.0" />
+              <point x="1210.5874999999999" y="126.0" />
+              <point x="1185.6093790658342" y="126.0" />
+              <point x="26.66666666666663" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.Entity" target="Learning.Towers.Faction">
+              <point x="14.65625" y="14.0" />
+              <point x="1225.2437499999999" y="404.0" />
+              <point x="1215.1817769320842" y="404.0" />
+              <point x="1215.1817769320842" y="688.0" />
+              <point x="1047.855238827088" y="688.0" />
+              <point x="21.428571428571445" y="-14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Influence.SimpleInfluence" target="Learning.Towers.Behaviours.Influence.Influence">
+              <point x="41.66666666666663" y="-14.0" />
+              <point x="1456.2963602654174" y="512.0" />
+              <point x="1468.2130269320842" y="512.0" />
+              <point x="1468.2130269320842" y="156.0" />
+              <point x="1430.8330357142854" y="156.0" />
+              <point x="21.75" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Faction" target="Learning.Towers.Entities.Entity">
+              <point x="10.714285714285666" y="-14.0" />
+              <point x="1037.1409531128022" y="678.0" />
+              <point x="1204.4674912177984" y="678.0" />
+              <point x="1204.4674912177984" y="394.0" />
+              <point x="1221.0562499999999" y="394.0" />
+              <point x="10.46875" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Drawing.RadiusIndicator" target="Learning.Towers.Entities.Meta.Group">
+              <point x="-31.0" y="14.0" />
+              <point x="950.8573721701796" y="512.0" />
+              <point x="980.9714285714284" y="512.0" />
+              <point x="-9.71428571428578" y="-14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.EntityFactory" target="Learning.Towers.Behaviours.Movement.Wandering">
+              <point x="-48.888888888888914" y="-14.0" />
+              <point x="791.4127785096275" y="944.0" />
+              <point x="127.89285714285688" y="944.0" />
+              <point x="-23.75" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.EntityFactory" target="Learning.Towers.Behaviours.Collision.SimpleCollision">
+              <point x="-36.66666666666674" y="-14.0" />
+              <point x="803.6350007318497" y="934.0" />
+              <point x="296.2857142857142" y="934.0" />
+              <point x="296.2857142857142" y="502.0" />
+              <point x="316.50925668423065" y="502.0" />
+              <point x="0.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Utilities" target="Learning.Towers.Vector2D">
+              <point x="0.0" y="-14.0" />
+              <point x="38.5" y="334.0" />
+              <point x="226.5367600182152" y="334.0" />
+              <point x="-39.92857142857156" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Movement.BasicMovement" target="Learning.Towers.Entities.Entity">
+              <point x="46.5" y="-14.0" />
+              <point x="656.0092566842308" y="314.0" />
+              <point x="1187.5562499999999" y="314.0" />
+              <point x="-23.03125" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.Meta.Group" target="Learning.Towers.Behaviours.Movement.Wandering">
+              <point x="-29.14285714285711" y="-14.0" />
+              <point x="961.5428571428571" y="590.0" />
+              <point x="175.39285714285688" y="590.0" />
+              <point x="23.75" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Faction" target="Learning.Towers.Behaviours.Constructive.Construction">
+              <point x="32.14285714285711" y="-14.0" />
+              <point x="1058.5695245413735" y="698.0" />
+              <point x="1568.8076197794687" y="698.0" />
+              <point x="1568.8076197794687" y="166.0" />
+              <point x="1562.9630269320842" y="166.0" />
+              <point x="0.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Drawing.SimpleQuad" target="Learning.Towers.Entities.Entity">
+              <point x="33.66666666666663" y="-14.0" />
+              <point x="1163.2323721701796" y="364.0" />
+              <point x="1208.4937499999999" y="364.0" />
+              <point x="-2.09375" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Movement.Flocking" target="Learning.Towers.Vector2D">
+              <point x="-26.666666666666742" y="-14.0" />
+              <point x="593.6190476190475" y="698.0" />
+              <point x="93.64285714285688" y="698.0" />
+              <point x="93.64285714285688" y="354.0" />
+              <point x="238.82247430392943" y="354.0" />
+              <point x="-27.642857142857338" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Main" target="Learning.Towers.KeyManager">
+              <point x="0.0" y="14.0" />
+              <point x="0.0" y="-14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Collision.SimpleNoCollision" target="Learning.Towers.Behaviours.Collision.Collision">
+              <point x="-33.0" y="-14.0" />
+              <point x="428.5092566842307" y="284.0" />
+              <point x="473.6888738453033" y="284.0" />
+              <point x="473.6888738453033" y="166.0" />
+              <point x="453.46533144678676" y="166.0" />
+              <point x="0.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Main" target="Learning.Towers.Influence.InfluenceMap">
+              <point x="-5.0833333333332575" y="-14.0" />
+              <point x="940.7183340651832" y="864.0" />
+              <point x="909.9762933417903" y="864.0" />
+              <point x="-27.75" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Drawing.Drawing" target="Learning.Towers.Behaviours.Behaviour">
+              <point x="0.0" y="-14.0" />
+              <point x="0.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Influence.InfluenceMap" target="Learning.Towers.Vector2D">
+              <point x="-37.0" y="-14.0" />
+              <point x="900.7262933417903" y="796.0" />
+              <point x="87.5" y="796.0" />
+              <point x="87.5" y="344.0" />
+              <point x="232.67961716107254" y="344.0" />
+              <point x="-33.78571428571422" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Movement.Static" target="Learning.Towers.Vector2D">
+              <point x="-22.333333333333258" y="-14.0" />
+              <point x="844.0240388368463" y="244.0" />
+              <point x="306.3939028753583" y="244.0" />
+              <point x="39.92857142857156" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.EntityFactory" target="Learning.Towers.Behaviours.Movement.Static">
+              <point x="0.0" y="-14.0" />
+              <point x="840.3016673985164" y="512.0" />
+              <point x="849.6073721701796" y="512.0" />
+              <point x="-16.75" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Faction" target="Learning.Towers.Entities.Meta.Group">
+              <point x="-21.42857142857133" y="-14.0" />
+              <point x="1004.9980959699451" y="698.0" />
+              <point x="1016.1857142857142" y="698.0" />
+              <point x="25.5" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Collision.SimpleCollision" target="Learning.Towers.Behaviours.Collision.Collision">
+              <point x="14.75" y="-14.0" />
+              <point x="331.25925668423065" y="284.0" />
+              <point x="376.4388738453033" y="284.0" />
+              <point x="376.4388738453033" y="166.0" />
+              <point x="426.79866478012" y="166.0" />
+              <point x="-26.666666666666742" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.Meta.Group" target="Learning.Towers.Behaviours.Drawing.RadiusIndicator">
+              <point x="0.0" y="-14.0" />
+              <point x="990.6857142857142" y="512.0" />
+              <point x="1012.8573721701796" y="512.0" />
+              <point x="31.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.EntityFactory" target="Learning.Towers.Behaviours.Movement.Flocking">
+              <point x="-12.222222222222172" y="-14.0" />
+              <point x="828.0794451762943" y="914.0" />
+              <point x="620.2857142857142" y="914.0" />
+              <point x="0.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Drawing.RadiusIndicator" target="Learning.Towers.Behaviours.Movement.Movement">
+              <point x="-41.33333333333326" y="-14.0" />
+              <point x="940.5240388368463" y="284.0" />
+              <point x="937.6857142857142" y="284.0" />
+              <point x="937.6857142857142" y="166.0" />
+              <point x="933.6857142857142" y="166.0" />
+              <point x="0.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Drawing.RadiusIndicator" target="Learning.Towers.Behaviours.Drawing.Drawing">
+              <point x="0.0" y="-14.0" />
+              <point x="981.8573721701796" y="284.0" />
+              <point x="959.6857142857142" y="284.0" />
+              <point x="959.6857142857142" y="156.0" />
+              <point x="1132.276045732501" y="156.0" />
+              <point x="-26.66666666666663" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.EntityFactory" target="Learning.Towers.Entities.Entity">
+              <point x="24.444444444444343" y="-14.0" />
+              <point x="864.7461118429608" y="924.0" />
+              <point x="1253.3692769320842" y="924.0" />
+              <point x="1253.3692769320842" y="404.0" />
+              <point x="1233.6187499999999" y="404.0" />
+              <point x="23.03125" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Collision.SimpleNoCollision" target="Learning.Towers.Entities.Entity">
+              <point x="33.0" y="-14.0" />
+              <point x="494.5092566842307" y="304.0" />
+              <point x="1183.3687499999999" y="304.0" />
+              <point x="-27.21875" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Influence.SimpleInfluence" target="Learning.Towers.Influence.InfluenceGrid">
+              <point x="0.0" y="-14.0" />
+              <point x="1414.6296935987507" y="512.0" />
+              <point x="1402.7130269320842" y="512.0" />
+              <point x="0.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Main" target="Learning.Towers.GameLoop">
+              <point x="15.25" y="-14.0" />
+              <point x="961.0516673985164" y="904.0" />
+              <point x="1172.3692769320842" y="904.0" />
+              <point x="-23.5" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Drawing.SimpleQuad" target="Learning.Towers.Behaviours.Movement.Movement">
+              <point x="-33.66666666666663" y="-14.0" />
+              <point x="1095.899038836846" y="274.0" />
+              <point x="948.6857142857142" y="274.0" />
+              <point x="948.6857142857142" y="166.0" />
+              <point x="952.6857142857142" y="166.0" />
+              <point x="19.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Movement.Movement" target="Learning.Towers.Behaviours.Behaviour">
+              <point x="0.0" y="-14.0" />
+              <point x="933.6857142857142" y="58.0" />
+              <point x="1140.7427123991674" y="58.0" />
+              <point x="-18.200000000000045" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.Meta.Group" target="Learning.Towers.Behaviours.Movement.Static">
+              <point x="-19.42857142857133" y="-14.0" />
+              <point x="971.2571428571429" y="580.0" />
+              <point x="871.8573721701796" y="580.0" />
+              <point x="871.8573721701796" y="512.0" />
+              <point x="883.1073721701796" y="512.0" />
+              <point x="16.75" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Movement.BasicMovement" target="Learning.Towers.Vector2D">
+              <point x="-15.5" y="-14.0" />
+              <point x="594.0092566842308" y="264.0" />
+              <point x="294.1081885896441" y="264.0" />
+              <point x="27.642857142857338" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.GameLoop" target="Learning.Towers.Faction">
+              <point x="-23.5" y="-14.0" />
+              <point x="1172.3692769320842" y="776.0" />
+              <point x="1045.1766673985164" y="776.0" />
+              <point x="18.75" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Influence.InfluenceMap" target="Learning.Towers.Faction">
+              <point x="37.0" y="-14.0" />
+              <point x="974.7262933417903" y="796.0" />
+              <point x="1007.6766673985164" y="796.0" />
+              <point x="-18.75" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Collision.Collision" target="Learning.Towers.Behaviours.Behaviour">
+              <point x="0.0" y="-14.0" />
+              <point x="453.46533144678676" y="48.0" />
+              <point x="1122.5427123991676" y="48.0" />
+              <point x="-36.39999999999998" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Influence.SimpleInfluence" target="Learning.Towers.Entities.Entity">
+              <point x="-41.66666666666663" y="-14.0" />
+              <point x="1372.9630269320842" y="512.0" />
+              <point x="1335.5567769320842" y="512.0" />
+              <point x="1335.5567769320842" y="384.0" />
+              <point x="1241.9937499999999" y="384.0" />
+              <point x="31.40625" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Movement.Flocking" target="Learning.Towers.Entities.Meta.Group">
+              <point x="26.666666666666742" y="-14.0" />
+              <point x="646.952380952381" y="698.0" />
+              <point x="965.1857142857142" y="698.0" />
+              <point x="-25.5" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Constructive.BasicConstruction" target="Learning.Towers.Behaviours.Constructive.Construction">
+              <point x="45.0" y="-14.0" />
+              <point x="1376.3692769320842" y="796.0" />
+              <point x="1579.8076197794687" y="796.0" />
+              <point x="1579.8076197794687" y="166.0" />
+              <point x="1598.2963602654177" y="166.0" />
+              <point x="35.33333333333337" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.KeyManager" target="Learning.Towers.Main">
+              <point x="-35.0" y="-14.0" />
+              <point x="910.8016673985164" y="1017.0" />
+              <point x="925.4683340651832" y="1017.0" />
+              <point x="-20.333333333333258" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.Entity" target="Learning.Towers.Behaviours.Influence.Influence">
+              <point x="13.399999999999977" y="-14.0" />
+              <point x="1223.9874999999997" y="156.0" />
+              <point x="1387.3330357142854" y="156.0" />
+              <point x="-21.75" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Movement.Wandering" target="Learning.Towers.Behaviours.Movement.BasicMovement">
+              <point x="31.666666666666515" y="-14.0" />
+              <point x="183.3095238095234" y="512.0" />
+              <point x="578.5092566842308" y="512.0" />
+              <point x="-31.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Movement.Static" target="Learning.Towers.Entities.Entity">
+              <point x="22.333333333333258" y="-14.0" />
+              <point x="888.6907055035128" y="344.0" />
+              <point x="1200.1187499999999" y="344.0" />
+              <point x="-10.46875" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.EntityFactory" target="Learning.Towers.Behaviours.Drawing.SimpleQuad">
+              <point x="12.222222222222172" y="-14.0" />
+              <point x="852.5238896207386" y="894.0" />
+              <point x="1129.5657055035128" y="894.0" />
+              <point x="0.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.Entity" target="Learning.Towers.Behaviours.Movement.Movement">
+              <point x="-13.399999999999977" y="-14.0" />
+              <point x="1197.1875" y="136.0" />
+              <point x="971.6857142857142" y="136.0" />
+              <point x="38.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Main" target="Learning.Towers.CollisionBoard">
+              <point x="-25.416666666666742" y="-14.0" />
+              <point x="920.3850007318497" y="884.0" />
+              <point x="717.0457150175641" y="884.0" />
+              <point x="717.0457150175641" y="600.0" />
+              <point x="693.8107142857142" y="600.0" />
+              <point x="-28.25" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Drawing.RadiusIndicator" target="Learning.Towers.Entities.Entity">
+              <point x="41.33333333333326" y="-14.0" />
+              <point x="1023.1907055035128" y="354.0" />
+              <point x="1204.3062499999999" y="354.0" />
+              <point x="-6.28125" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Collision.SimpleCollision" target="Learning.Towers.Entities.Entity">
+              <point x="44.25" y="-14.0" />
+              <point x="360.75925668423065" y="294.0" />
+              <point x="1179.1812499999999" y="294.0" />
+              <point x="-31.40625" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Faction" target="Learning.Towers.Vector2D">
+              <point x="-32.14285714285711" y="-14.0" />
+              <point x="994.2838102556593" y="688.0" />
+              <point x="209.64285714285688" y="688.0" />
+              <point x="209.64285714285688" y="384.0" />
+              <point x="257.251045732501" y="384.0" />
+              <point x="-9.21428571428578" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Constructive.Construction" target="Learning.Towers.Behaviours.Behaviour">
+              <point x="0.0" y="-14.0" />
+              <point x="1562.9630269320842" y="48.0" />
+              <point x="1195.3427123991676" y="48.0" />
+              <point x="36.39999999999998" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Movement.Static" target="Learning.Towers.Behaviours.Movement.Movement">
+              <point x="0.0" y="-14.0" />
+              <point x="866.3573721701796" y="234.0" />
+              <point x="844.1857142857142" y="234.0" />
+              <point x="844.1857142857142" y="166.0" />
+              <point x="914.6857142857142" y="166.0" />
+              <point x="-19.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.CollisionBoard" target="Learning.Towers.EntityCellPair">
+              <point x="0.0" y="-14.0" />
+              <point x="-27.25" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.Entity" target="Learning.Towers.Behaviours.Constructive.Construction">
+              <point x="26.799999999999955" y="-14.0" />
+              <point x="1237.3874999999998" y="166.0" />
+              <point x="1527.6296935987507" y="166.0" />
+              <point x="-35.33333333333334" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.CollisionBoard" target="Learning.Towers.Vector2D">
+              <point x="-45.200000000000045" y="-14.0" />
+              <point x="676.8607142857142" y="492.0" />
+              <point x="236.00925668423065" y="492.0" />
+              <point x="236.00925668423065" y="394.0" />
+              <point x="263.3939028753583" y="394.0" />
+              <point x="-3.0714285714284415" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.Meta.Group" target="Learning.Towers.Entities.Entity">
+              <point x="19.42857142857133" y="-14.0" />
+              <point x="1010.1142857142855" y="590.0" />
+              <point x="1200.2799912177984" y="590.0" />
+              <point x="1200.2799912177984" y="384.0" />
+              <point x="1216.8687499999999" y="384.0" />
+              <point x="6.28125" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Movement.Wandering" target="Learning.Towers.Vector2D">
+              <point x="-31.666666666666515" y="-14.0" />
+              <point x="119.97619047619037" y="512.0" />
+              <point x="139.0161519320842" y="512.0" />
+              <point x="139.0161519320842" y="364.0" />
+              <point x="244.96533144678676" y="364.0" />
+              <point x="-21.5" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.Meta.Group" target="Learning.Towers.Behaviours.Influence.SimpleInfluence">
+              <point x="29.14285714285711" y="-14.0" />
+              <point x="1019.8285714285713" y="600.0" />
+              <point x="1383.3796935987507" y="600.0" />
+              <point x="-31.25" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Constructive.BasicConstruction" target="Learning.Towers.Entities.Entity">
+              <point x="0.0" y="-14.0" />
+              <point x="1331.3692769320842" y="394.0" />
+              <point x="1237.8062499999999" y="394.0" />
+              <point x="27.21875" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Constructive.BasicConstruction" target="Learning.Towers.Faction">
+              <point x="-45.0" y="-14.0" />
+              <point x="1286.3692769320842" y="766.0" />
+              <point x="1057.6766673985164" y="766.0" />
+              <point x="31.25" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.EntityFactory" target="Learning.Towers.Behaviours.Constructive.BasicConstruction">
+              <point x="36.66666666666674" y="-14.0" />
+              <point x="876.9683340651832" y="934.0" />
+              <point x="1331.3692769320842" y="934.0" />
+              <point x="0.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.EntityCellPair" target="Learning.Towers.Vector2D">
+              <point x="-27.25" y="-14.0" />
+              <point x="722.1290483508974" y="254.0" />
+              <point x="300.251045732501" y="254.0" />
+              <point x="33.78571428571422" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Collision.SimpleCollision" target="Learning.Towers.Vector2D">
+              <point x="-44.25" y="-14.0" />
+              <point x="272.25925668423065" y="414.0" />
+              <point x="275.67961716107254" y="414.0" />
+              <point x="9.21428571428578" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.EntityCellPair" target="Learning.Towers.Entities.Entity">
+              <point x="27.25" y="-14.0" />
+              <point x="776.6290483508974" y="324.0" />
+              <point x="1191.7437499999999" y="324.0" />
+              <point x="-18.84375" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Behaviours.Drawing.SimpleQuad" target="Learning.Towers.Behaviours.Drawing.Drawing">
+              <point x="0.0" y="-14.0" />
+              <point x="1129.5657055035128" y="264.0" />
+              <point x="1092.1857142857143" y="264.0" />
+              <point x="1092.1857142857143" y="166.0" />
+              <point x="1158.9427123991677" y="166.0" />
+              <point x="0.0" y="14.0" />
+            </edge>
+            <edge source="Learning.Towers.Entities.EntityFactory" target="Learning.Towers.Behaviours.Collision.SimpleNoCollision">
+              <point x="-24.44444444444457" y="-14.0" />
+              <point x="815.8572229540719" y="924.0" />
+              <point x="441.28571428571416" y="924.0" />
+              <point x="441.28571428571416" y="502.0" />
+              <point x="461.5092566842307" y="502.0" />
+              <point x="0.0" y="14.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.7000000000000001" x="347.85714285714283" y="746.8571428571429" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>public</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Drawing/RadiusIndicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="84" selection-start="1214" selection-end="1214" vertical-scroll-proportion="1.3050505">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Factions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="74" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="20" selection-start="767" selection-end="767" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/BasicConstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="48" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="16" selection-start="3308" selection-end="3308" vertical-scroll-proportion="0.0">
+        <state line="75" column="52" selection-start="2063" selection-end="2063" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Flocking.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Meta/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+        <state line="41" column="53" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/BasicMovement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="13" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0">
+        <state line="17" column="44" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Flocking.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="359" selection-end="359" vertical-scroll-proportion="0.4674385">
+        <state line="32" column="43" selection-start="930" selection-end="930" vertical-scroll-proportion="0.5494949">
           <folding />
         </state>
       </provider>

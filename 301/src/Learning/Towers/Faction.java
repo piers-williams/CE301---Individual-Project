@@ -1,11 +1,13 @@
 package Learning.Towers;
 
-import Learning.Towers.Entities.Buildings.Base;
+import Learning.Towers.Behaviours.Constructive.Construction;
 import Learning.Towers.Entities.Entity;
-import org.lwjgl.opengl.GL11;
+import Learning.Towers.Entities.EntityFactory;
+import Learning.Towers.Entities.Meta.Group;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Dictionary;
+import java.util.Hashtable;
 import java.util.Random;
 
 /**
@@ -17,100 +19,57 @@ import java.util.Random;
 public class Faction {
     private final static Random random = new Random();
 
-    ArrayList<Entity> entities;
+    private ArrayList<Entity> entities;
+    private ArrayList<Group> groups;
+    private Dictionary<Construction, Group> baseGroup;
 
-    int group;
-    float r, g, b;
+    private float r, g, b;
 
-    // location
-    double x, y;
-    // waypoint
-    double tX, tY;
-
-    double speed = 1;
-
-    double radius;
-
-    Vector2D startLocation;
-
-    @Deprecated
-    public Faction(int group, float r, float g, float b) {
-        this.group = group;
+    protected Faction(float r, float g, float b) {
         this.r = r;
         this.g = g;
         this.b = b;
 
-        x = random.nextInt(Main.MAP_WIDTH);
-        y = random.nextInt(Main.MAP_HEIGHT);
-        setNewTarget();
-
         entities = new ArrayList<>(10);
-    }
+        groups = new ArrayList<>();
+        baseGroup = new Hashtable<>();
 
-    public Faction(int group, float r, float g, float b, Vector2D startLocation) {
-        this(group, r, g, b);
-        this.startLocation = startLocation;
-        Base base = new Base(this, 26);
+        Entity base = EntityFactory.getBaseEntity(this, Utilities.randomLocation(100), 26);
+        Vector2D groupLocation = base.getMovementBehaviour().getLocation();
+        groupLocation.add(50, 50);
+        Group newGroup = new Group(r, g, b, groupLocation, 5, this);
+        baseGroup.put(base.getConstructionBehaviour(), newGroup);
         Main.GAME_LOOP.addEntity(base);
+        Main.GAME_LOOP.addEntity(newGroup);
     }
 
     public void addEntity(Entity entity) {
         entities.add(entity);
     }
 
-    public void makeEntity() {
-        makeEntity(random.nextInt(Main.MAP_WIDTH), random.nextInt(Main.MAP_HEIGHT));
-    }
+    public void makeEntity(double x, double y, Construction base) {
+        // Create new entity
+        Entity entity = EntityFactory.getGroupedEntity(this, baseGroup.get(base), new Vector2D(x, y), 5);
 
-    public void makeEntity(double x, double y) {
-        Entity entity = new Entity(Main.SQUARE_WIDTH, r, g, b);
-
+        // Add entity where necessary
         entities.add(entity);
+        baseGroup.get(base).addEntity(entity);
         Main.GAME_LOOP.addEntity(entity);
+
+        // House keeping on the groups
+        if (baseGroup.get(base).isFull()) {
+            Vector2D groupLocation = base.getEntity().getMovementBehaviour().getLocation();
+            groupLocation.add(50, 50);
+            Group newGroup = new Group(r, g, b, groupLocation, 5, this);
+            groups.add(baseGroup.get(base));
+            baseGroup.get(base).switchToWander();
+            baseGroup.put(base, newGroup);
+            Main.GAME_LOOP.addEntity(newGroup);
+        }
     }
 
     public void update() {
-        // check if at target or close enough
-        if (Utilities.distance(x, y, tX, tY) < 5) {
-            // if so make new target
-            do {
-                setNewTarget();
-            } while (tX < 0 || tX > Main.MAP_WIDTH || tY < 0 || tY > Main.MAP_HEIGHT);
-        }
 
-        // in all cases
-        if (x > tX) x -= speed;
-        if (x < tX) x += speed;
-        if (y > tY) y -= speed;
-        if (y < tY) y += speed;
-
-        speed = 1;
-        radius = Math.sqrt(Math.pow(entities.size(), 1.5) * 16);
-
-        Iterator<Entity> itr = entities.iterator();
-        while (itr.hasNext()) {
-            Entity entity = itr.next();
-            if (!entity.isAlive()) itr.remove();
-        }
-
-    }
-
-    private void setNewTarget() {
-        tX = random.nextInt(500);
-        tY = random.nextInt(500);
-
-        tX -= 250;
-        tY -= 250;
-        tX += x;
-        tY += y;
-    }
-
-    public double getX() {
-        return x;
-    }
-
-    public double getY() {
-        return y;
     }
 
     public float getR() {
@@ -125,29 +84,10 @@ public class Faction {
         return b;
     }
 
-    public double getRadius() {
-        return radius;
-    }
-
     public ArrayList<Entity> getEntities() {
         return entities;
     }
-
-    public void draw() {
-        drawSmallSquare((int) (x - radius), (int) (y + radius));
-        drawSmallSquare((int) (x + radius), (int) (y + radius));
-        drawSmallSquare((int) (x - radius), (int) (y - radius));
-        drawSmallSquare((int) (x + radius), (int) (y - radius));
-    }
-
-    private void drawSmallSquare(int x, int y) {
-        int width = 10;
-        GL11.glColor4f(r, g, b, 0.2f);
-        GL11.glBegin(GL11.GL_QUADS);
-        GL11.glVertex2d(x - width / 2, y - width / 2);
-        GL11.glVertex2d(x + width / 2, y - width / 2);
-        GL11.glVertex2d(x + width / 2, y + width / 2);
-        GL11.glVertex2d(x - width / 2, y + width / 2);
-        GL11.glEnd();
-    }
 }
+
+
+

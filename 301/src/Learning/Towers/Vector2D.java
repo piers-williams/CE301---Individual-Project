@@ -5,7 +5,7 @@ public final class Vector2D {
     // fields
     public double x, y;
 
-    // construct a null vector
+    // construct a zero vector
     public Vector2D() {
         x = 0;
         y = 0;
@@ -68,6 +68,16 @@ public final class Vector2D {
     // angle between vector and horizontal axis in radians
     public double theta() {
         return (Math.atan2(y, x));
+    }
+
+    // Returns the direction between the two vectors starting from this one
+    public Vector2D getNormalDirectionBetween(Vector2D other) {
+        Vector2D direction = new Vector2D();
+        direction.x = other.x - x;
+        direction.y = other.y - y;
+        direction.normalise();
+//        System.out.println(direction);
+        return direction;
     }
 
     // String for displaying vector as text
@@ -156,7 +166,9 @@ public final class Vector2D {
     // direction is unchanged
 
     public void normalise() {
-        mult(1 / mag());
+        if (x != 0 || y != 0) {
+            mult(1 / mag());
+        }
     }
 
     public double getX() {

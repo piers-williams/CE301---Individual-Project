@@ -1,9 +1,13 @@
 package Learning.Towers.Influence;
 
 import Learning.Towers.Entities.Entity;
+import Learning.Towers.Faction;
+import Learning.Towers.Factions;
 import Learning.Towers.Main;
 import Learning.Towers.Vector2D;
 import org.lwjgl.opengl.GL11;
+
+import java.util.HashMap;
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,9 +17,11 @@ import org.lwjgl.opengl.GL11;
  */
 public class InfluenceMap implements Runnable {
 
-    private double[][][] influence;
+    // Make this per faction
+    private HashMap<Faction, double[][][]> influence;
     private int calculateIndex, drawIndex;
-
+    private Faction currentlyDrawingFaction = Factions.Nature.getFaction();
+    private int factionIndex = 0;
 
     private int width, height, cellSize;
 
@@ -28,8 +34,12 @@ public class InfluenceMap implements Runnable {
         this.cellSize = cellSize;
         this.tickDelay = tickDelay;
         running = true;
-
-        influence = new double[2][width][height];
+        influence = new HashMap<>();
+        for (Factions faction : Factions.values()) {
+            System.out.println(faction + " : " + faction.getFaction());
+            influence.put(faction.getFaction(), new double[2][width][height]);
+        }
+//        influence = new double[2][width][height];
         calculateIndex = 0;
         drawIndex = 1;
     }
@@ -52,11 +62,18 @@ public class InfluenceMap implements Runnable {
         // Swap the buffers
         calculateIndex = drawIndex;
         drawIndex = (drawIndex == 0) ? 1 : 0;
-        // clear this section to 0.0
-        for(int x = 0; x < influence[calculateIndex].length; x++) for(int y = 0; y < influence[calculateIndex][x].length; y++) influence[calculateIndex][x][y] = 0.0d;
-        synchronized (Main.GAME_LOOP._entities) {
-            for (Entity entity : Main.GAME_LOOP.getEntities()) {
-                addGridToInfluence(entity.getInfluenceGrid(), getPoint(entity));
+
+        // clear all sections to 0.0
+        for (double[][][] innerInfluence : influence.values()) {
+            for (int x = 0; x < innerInfluence[calculateIndex].length; x++) {
+                for (int y = 0; y < innerInfluence[calculateIndex][x].length; y++) {
+                    innerInfluence[calculateIndex][x][y] = 0.0d;
+                }
+            }
+            synchronized (Main.GAME_LOOP._entities) {
+                for (Entity entity : Main.GAME_LOOP.getEntities()) {
+                    addGridToInfluence(entity.getInfluenceGrid(), getPoint(entity), entity.getFaction());
+                }
             }
         }
     }
@@ -65,14 +82,15 @@ public class InfluenceMap implements Runnable {
         return new Vector2D((int) (entity.getX() / cellSize), (int) (entity.getY() / cellSize));
     }
 
-    private void addGridToInfluence(InfluenceGrid grid, Vector2D point) {
+    private void addGridToInfluence(InfluenceGrid grid, Vector2D point, Faction faction) {
         int xWidth = grid.influence.length / 2;
         int yWidth = grid.influence[0].length / 2;
 
         for (int x = -xWidth; x <= xWidth; x++) {
             for (int y = -yWidth; y <= yWidth; y++) {
                 try {
-                    influence[calculateIndex][x + (int) point.x][y + (int) point.y] += grid.influence[x + xWidth][y + yWidth] / 32;
+                      if(influence.get(faction) == null) System.out.println(faction);
+                    influence.get(faction)[calculateIndex][x + (int) point.x][y + (int) point.y] += grid.influence[x + xWidth][y + yWidth] / 32;
                 } catch (ArrayIndexOutOfBoundsException arrayIndexOutOrBoundsException) {
                 }
             }
@@ -84,10 +102,12 @@ public class InfluenceMap implements Runnable {
     }
 
     public void draw() {
-        for (int x = 0, i = 0; x < width && i < influence[drawIndex].length; x += cellSize, i++) {
-            for (int y = 0, j = 0; y < height && j < influence[drawIndex][i].length; y += cellSize, j++) {
+        currentlyDrawingFaction = Factions.values()[factionIndex].getFaction();
 
-                float strength = (float) influence[drawIndex][i][j];
+        for (int x = 0, i = 0; x < width && i < influence.get(currentlyDrawingFaction)[drawIndex].length; x += cellSize, i++) {
+            for (int y = 0, j = 0; y < height && j < influence.get(currentlyDrawingFaction)[drawIndex][i].length; y += cellSize, j++) {
+
+                float strength = (float) influence.get(currentlyDrawingFaction)[drawIndex][i][j];
                 if (strength > 255) strength = 255;
 
                 GL11.glColor4f(strength, 0, 0, 0.5f);
@@ -99,5 +119,10 @@ public class InfluenceMap implements Runnable {
                 GL11.glEnd();
             }
         }
+    }
+
+    public void cycleFaction(){
+        factionIndex++;
+        if(factionIndex >= Factions.values().length) factionIndex = 0;
     }
 }

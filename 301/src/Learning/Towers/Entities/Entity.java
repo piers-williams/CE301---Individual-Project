@@ -1,14 +1,17 @@
 package Learning.Towers.Entities;
 
 import Learning.Towers.Behaviours.Collision.Collision;
+import Learning.Towers.Behaviours.Constructive.Construction;
 import Learning.Towers.Behaviours.Drawing.Drawing;
 import Learning.Towers.Behaviours.Drawing.SimpleQuad;
 import Learning.Towers.Behaviours.Influence.Influence;
+import Learning.Towers.Behaviours.Influence.SimpleInfluence;
 import Learning.Towers.Behaviours.Movement.Movement;
 import Learning.Towers.Behaviours.Movement.Static;
+import Learning.Towers.Behaviours.Movement.Wandering;
+import Learning.Towers.Faction;
 import Learning.Towers.Influence.InfluenceGrid;
 import Learning.Towers.Main;
-import Learning.Towers.Utilities;
 import Learning.Towers.Vector2D;
 
 import java.util.Random;
@@ -17,13 +20,8 @@ import java.util.Random;
  * Entity class
  */
 public class Entity {
-    // Location
-    @Deprecated
-    public double x, y;
     @Deprecated
     protected int width;
-    @Deprecated
-    double dX, dY;
 
     protected float r, g, b;
 
@@ -31,43 +29,26 @@ public class Entity {
 
     private static Random random = new Random();
 
-    // Number used to generate the influence grid
-    @Deprecated
-    private double influenceStrength;
+    protected Faction faction;
 
-    // Grid to be used for generating influence maps
-    @Deprecated
-    private InfluenceGrid influenceGrid;
-
-    // TODO Strip out the functionality to fill these with useful things
     // Hopefully this section will replace most of the other code
     protected Movement movementBehaviour;
     protected Collision collisionBehaviour;
     protected Drawing drawingBehaviour;
     protected Influence influenceBehaviour;
+    protected Construction constructionBehaviour;
 
-    // TODO Create factory methods for making Entities
-    public Entity(int width) {
-        this(width, random.nextFloat(), random.nextFloat(), random.nextFloat(), 1);
-    }
+    // Used for factories
+    protected Entity(){
 
-    public Entity(int width, float r, float g, float b) {
-        this(width, r, g, b, 1);
-    }
-
-    public Entity(int width, float r, float g, float b, double strength) {
-        this.r = r;
-        this.g = g;
-        this.b = b;
-
-        setUpInfluence(strength);
-
-        movementBehaviour = new Static(new Vector2D(random.nextInt(Main.MAP_WIDTH), random.nextInt(Main.MAP_HEIGHT)));
-        drawingBehaviour = new SimpleQuad(width, r, g, b, movementBehaviour);
     }
 
     public void update() {
         movementBehaviour.update();
+        if(collisionBehaviour != null) collisionBehaviour.update();
+        if(constructionBehaviour != null) constructionBehaviour.update();
+        if(drawingBehaviour != null) drawingBehaviour.update();
+        if(influenceBehaviour != null) influenceBehaviour.update();
     }
 
     public void draw() {
@@ -92,44 +73,23 @@ public class Entity {
         return movementBehaviour.getLocation().getY();
     }
 
-    public static boolean collidesWith(Entity first, Entity second) {
-        if (first.equals(second)) return false;
-
-        double distance = (first.getX() - second.getX()) * (first.getX() - second.getX()) + (first.getY() - second.getY()) * (first.getY() - second.getY());
-        return (distance < first.width * first.width);
-    }
-
-    public static void bounce(Entity first, Entity second) {
-        double dX, dY;
-        dX = first.dX;
-        dY = first.dY;
-        first.dX = second.dX;
-        first.dY = second.dY;
-        second.dX = dX;
-        second.dY = dY;
-
-        double distance = Utilities.distance(first.getX(), first.getY(), second.getX(), second.getY());
-        double ang = Math.atan2(second.getY() - first.getY(), second.getX() - first.getX());
-        double mov = first.width - Math.sqrt(distance);
-        mov /= 2;
-
-        first.x -= Math.cos(ang) * mov;
-        first.y -= Math.sin(ang) * mov;
-        ang -= Math.PI;
-        second.x -= Math.cos(ang) * mov;
-        second.y -= Math.sin(ang) * mov;
-    }
-
-    public final double getIS() {
-        return influenceStrength;
-    }
-
-    private void setUpInfluence(double strength) {
-        this.influenceStrength = strength;
-        this.influenceGrid = InfluenceGrid.createGrid(this, 5);
-    }
-
     public InfluenceGrid getInfluenceGrid() {
-        return influenceGrid;
+        return influenceBehaviour.getInfluenceGrid();
+    }
+
+    public Collision getCollisionBehaviour() {
+        return collisionBehaviour;
+    }
+
+    public Movement getMovementBehaviour() {
+        return movementBehaviour;
+    }
+
+    public Construction getConstructionBehaviour() {
+        return constructionBehaviour;
+    }
+
+    public Faction getFaction() {
+        return faction;
     }
 }

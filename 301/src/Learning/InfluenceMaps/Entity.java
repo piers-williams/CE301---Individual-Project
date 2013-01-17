@@ -12,7 +12,6 @@ import java.util.Random;
  * User: Piers
  * Date: 18/10/12
  * Time: 22:05
- * To change this template use File | Settings | File Templates.
  */
 public class Entity {
     //    public static CollisionBoard BOARD;
@@ -21,7 +20,7 @@ public class Entity {
     int width;
     double dX, dY;
 
-    Point oldCell;
+    Vector2D oldCell;
 
     float r, g, b;
 
@@ -72,10 +71,10 @@ public class Entity {
         x += dX;
         y += dY;
 
-        Point cell = Main.COLLISION_BOARD.getPoint(this);
+        Vector2D cell = Main.COLLISION_BOARD.getPoint(this);
 
         if (!oldCell.equals(cell)) {
-            Main.COLLISION_BOARD.moveEntity(this, (Point) oldCell.clone());
+            Main.COLLISION_BOARD.moveEntity(this, new Vector2D(oldCell));
             oldCell = cell;
         }
     }

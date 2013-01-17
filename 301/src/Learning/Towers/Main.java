@@ -1,6 +1,6 @@
 package Learning.Towers;
 
-import Learning.Towers.Entities.Entity;
+import Learning.Towers.Entities.EntityFactory;
 import Learning.Towers.Influence.InfluenceMap;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.Display;
@@ -22,19 +22,21 @@ public class Main {
     public static int SQUARE_WIDTH = 6;
     public static int SQUARE_COUNT = 200;
     public static boolean FULL_SCREEN = true;
+    // Collision detection cell size
     public static final int CELL_SIZE = 75;
 
     public static GameLoop GAME_LOOP;
     public static CollisionBoard COLLISION_BOARD;
     public static InfluenceMap INFLUENCE_MAP;
 
-    boolean cDown = false;
+    public static KeyManager KEY_MANAGER;
 
     public Main() {
 
         Main.GAME_LOOP = new GameLoop(20);
-        Main.COLLISION_BOARD = new CollisionBoard(Main.MAP_WIDTH, Main.MAP_HEIGHT, CELL_SIZE);
+        Main.COLLISION_BOARD = new CollisionBoard(CELL_SIZE);
         Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 30, 40);
+        KEY_MANAGER = new KeyManager(this);
 
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
         // Set up the display
@@ -59,7 +61,7 @@ public class Main {
         physics.setName("Collision Detection");
         physics.start();
 
-        for (int i = 0; i < Main.SQUARE_COUNT; i++) Main.GAME_LOOP.addEntity(new Entity(Main.SQUARE_WIDTH, 1f, 1f, 1f));
+        for (int i = 0; i < Main.SQUARE_COUNT; i++) Main.GAME_LOOP.addEntity(EntityFactory.getNaturalEntity());
 
         Thread loop = new Thread(GAME_LOOP);
         loop.setDaemon(true);
@@ -71,16 +73,9 @@ public class Main {
         influence.setName("Influence Thread");
         influence.start();
 
-        GAME_LOOP.addFaction(new Faction(0, 1, 0, 0, new Vector2D(50, MAP_HEIGHT / 2)));
-        GAME_LOOP.addFaction(new Faction(1, 0, 1, 0, new Vector2D(MAP_WIDTH - 100, MAP_HEIGHT / 3)));
-        GAME_LOOP.addFaction(new Faction(2, 0, 0, 1, new Vector2D(MAP_WIDTH - 100, MAP_HEIGHT * 2 / 3)));
-//        GAME_LOOP.addFaction(new Faction(3, 1, 0, 1));
-//        GAME_LOOP.addFaction(new Faction(4, 0, 1, 1));
-//        GAME_LOOP.addFaction(new Faction(5, 1, 1, 0));
-//        GAME_LOOP.addFaction(new Faction(6, 0.25f, 0.75f, 0.25f));
-//        GAME_LOOP.addFaction(new Faction(7, 0.75f, 0.25f, 0.25f));
-//        GAME_LOOP.addFaction(new Faction(8, 0.25f, 0.25f, 0.75f));
-
+        for(Factions factions : Factions.values()){
+            GAME_LOOP.addFaction(factions.getFaction());
+        }
 
         // Set the loops to do work
         COLLISION_BOARD.setPaused(false);
@@ -100,20 +95,24 @@ public class Main {
 
             }
 
+//            if(KEY_MANAGER.isKeyDown(Keyboard.KEY_M)){
+//                System.out.println("Key M Pushed");
+//            }
+
             // Keyboard release
             if (Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)) {
                 break;
             }
 
-            if (Keyboard.isKeyDown(Keyboard.KEY_P)) {
-                paused = !paused;
-                COLLISION_BOARD.setPaused(paused);
-                GAME_LOOP.setPaused(paused);
-                INFLUENCE_MAP.setPaused(paused);
-            }
-            if (Keyboard.isKeyDown(Keyboard.KEY_S)) {
-                stepping = !stepping;
-            }
+//            if (KEY_MANAGER.isKeyDown(Keyboard.KEY_P)) {
+//                paused = !paused;
+//                COLLISION_BOARD.setPaused(paused);
+//                GAME_LOOP.setPaused(paused);
+//                INFLUENCE_MAP.setPaused(paused);
+//            }
+//            if (Keyboard.isKeyDown(Keyboard.KEY_S)) {
+//                stepping = !stepping;
+//            }
 
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
 
@@ -121,6 +120,7 @@ public class Main {
             INFLUENCE_MAP.draw();
 
             Display.update();
+            KEY_MANAGER.update();
         }
         Display.destroy();
     }

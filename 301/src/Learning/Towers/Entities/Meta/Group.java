@@ -1,9 +1,15 @@
 package Learning.Towers.Entities.Meta;
 
-import Learning.Towers.Behaviours.Movement.Movement;
+import Learning.Towers.Behaviours.Drawing.RadiusIndicator;
+import Learning.Towers.Behaviours.Influence.SimpleInfluence;
+import Learning.Towers.Behaviours.Movement.Static;
+import Learning.Towers.Behaviours.Movement.Wandering;
 import Learning.Towers.Entities.Entity;
+import Learning.Towers.Faction;
+import Learning.Towers.Vector2D;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Group of entities
@@ -11,42 +17,58 @@ import java.util.ArrayList;
  * A tactical group that will stay together and achieve tasks together as one
  * cohesive unit
  */
-public class Group {
+public class Group extends Entity {
 
-    private int x, y;
-    private int radius;
+    private double radius;
 
     private ArrayList<Entity> entities;
+    private int maxSize;
 
-    private Movement movementBehaviour;
+    public Group(float r, float g, float b, Vector2D location, int maxSize, Faction faction) {
+        this.r = r;
+        this.g = g;
+        this.b = b;
 
-    public Group() {
-        entities = new ArrayList<>();
+        movementBehaviour = new Static(this, location);
+        entities = new ArrayList<>(maxSize);
+        this.maxSize = maxSize;
+
+        this.faction = faction;
+
+        drawingBehaviour = new RadiusIndicator(this, r, g, b, movementBehaviour, this);
+        influenceBehaviour = new SimpleInfluence(this, 5, 0);
     }
 
-    public Group(Entity entity) {
-        this();
-        entities.add(entity);
-    }
+    @Override
+    public void update() {
+        radius = Math.sqrt(Math.pow(entities.size(), 1.5) * 16);
 
-    public Group(ArrayList<Entity> entities) {
-        this();
-        this.entities.addAll(entities);
-    }
+        super.update();
 
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
+        Iterator<Entity> itr = entities.iterator();
+        while (itr.hasNext()) {
+            Entity entity = itr.next();
+            if (!entity.isAlive()) itr.remove();
+        }
     }
 
     public ArrayList<Entity> getEntities() {
         return entities;
     }
 
-    public int getRadius() {
+    public void addEntity(Entity entity) {
+        entities.add(entity);
+    }
+
+    public Boolean isFull() {
+        return entities.size() >= maxSize;
+    }
+
+    public double getRadius() {
         return radius;
+    }
+
+    public void switchToWander(){
+        movementBehaviour = new Wandering(this, movementBehaviour.getLocation());
     }
 }

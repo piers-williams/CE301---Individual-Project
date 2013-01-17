@@ -1,5 +1,6 @@
 package Learning.Towers.Behaviours.Influence;
 
+import Learning.Towers.Entities.Entity;
 import Learning.Towers.Influence.InfluenceGrid;
 
 /**
@@ -8,9 +9,14 @@ import Learning.Towers.Influence.InfluenceGrid;
 public class SimpleInfluence implements Influence {
 
     private InfluenceGrid grid;
+    private double strength;
+    private Entity entity;
 
-    public SimpleInfluence(InfluenceGrid grid) {
-        this.grid = grid;
+    public SimpleInfluence(Entity entity, int size, double strength) {
+        this.entity = entity;
+
+        this.grid = InfluenceGrid.createGrid(size, strength);
+        this.strength = strength;
     }
 
     @Override
@@ -21,5 +27,14 @@ public class SimpleInfluence implements Influence {
     @Override
     public void update() {
         // do nothing
+    }
+
+    @Override
+    public Entity getEntity() {
+        return entity;
+    }
+
+    public double getStrength() {
+        return strength;
     }
 }

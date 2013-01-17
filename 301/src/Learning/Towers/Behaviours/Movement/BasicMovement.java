@@ -15,9 +15,9 @@ public abstract class BasicMovement implements Movement {
     protected Vector2D direction;
 
     protected BasicMovement(Entity entity, Vector2D location) {
+        direction = new Vector2D(1, 1);
         this.entity = entity;
         this.location = location;
-        this.direction = new Vector2D(0, 0);
     }
 
     @Override
@@ -41,5 +41,20 @@ public abstract class BasicMovement implements Movement {
     @Override
     public void setLocation(Vector2D location) {
         this.location = location;
+    }
+
+    @Override
+    public Vector2D getDirection() {
+        return direction;
+    }
+
+    @Override
+    public void setDirection(Vector2D direction) {
+        this.direction = direction;
+    }
+
+    @Override
+    public Entity getEntity() {
+        return entity;
     }
 }

@@ -33,7 +33,7 @@ public class Main {
     public Main() {
 
         Main.GAME_LOOP = new GameLoop(20);
-        Main.COLLISION_BOARD = new CollisionBoard(Main.MAP_WIDTH, Main.MAP_HEIGHT, CELL_SIZE);
+        Main.COLLISION_BOARD = new CollisionBoard(CELL_SIZE);
         Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, CELL_SIZE, 40);
 
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");

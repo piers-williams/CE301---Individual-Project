@@ -1,6 +1,5 @@
 package Learning.InfluenceMaps;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -9,14 +8,12 @@ import java.util.HashMap;
  * User: Piers
  * Date: 18/10/12
  * Time: 22:05
- * To change this template use File | Settings | File Templates.
  */
 public class CollisionBoard implements Runnable {
-    private int mapWidth, mapHeight;
 
     private int cellSize;
 
-    HashMap<Point, ArrayList<Entity>> cellEntities;
+    HashMap<Vector2D, ArrayList<Entity>> cellEntities;
     final Object _cellEntities = new Object();
 
     ArrayList<Entity> addEntities, deleteEntities;
@@ -27,24 +24,22 @@ public class CollisionBoard implements Runnable {
     boolean running = true, paused = true;
     int tickDelay;
 
-    public CollisionBoard(int mapWidth, int mapHeight, int cellSize) {
-        this.mapWidth = mapWidth;
-        this.mapHeight = mapHeight;
+    public CollisionBoard(int cellSize) {
         this.cellSize = cellSize;
 
-        cellEntities = new HashMap<Point, ArrayList<Entity>>();
-        moveEntities = new ArrayList<EntityCellPair>();
-        addEntities = new ArrayList<Entity>();
-        deleteEntities = new ArrayList<Entity>();
+        cellEntities = new HashMap<>();
+        moveEntities = new ArrayList<>();
+        addEntities = new ArrayList<>();
+        deleteEntities = new ArrayList<>();
 
         tickDelay = 10;
     }
 
-    public Point getPoint(double x, double y) {
-        return new Point((int) x / cellSize, (int) y / cellSize);
+    public Vector2D getPoint(double x, double y) {
+        return new Vector2D(x / cellSize, y / cellSize);
     }
 
-    public Point getPoint(Entity entity) {
+    public Vector2D getPoint(Entity entity) {
         return getPoint(entity.x, entity.y);
     }
 
@@ -55,8 +50,8 @@ public class CollisionBoard implements Runnable {
     @Override
     public void run() {
 
-        long time = System.currentTimeMillis();
-        long oldTime = time;
+//        long time = System.currentTimeMillis();
+//        long oldTime = time;
         while (running) {
             try {
                 Thread.sleep(tickDelay);
@@ -88,19 +83,20 @@ public class CollisionBoard implements Runnable {
         addEntities.add(entity);
     }
 
-    public void moveEntity(Entity entity, Point oldCell) {
+    public void moveEntity(Entity entity, Vector2D oldCell) {
         synchronized (_moveEntities) {
             moveEntities.add(new EntityCellPair(entity, oldCell));
         }
     }
 
+    @SuppressWarnings("UnusedDeclaration")
     public void deleteEntity(Entity entity) {
         deleteEntities.add(entity);
     }
 
     private void addEntitiesToMap() {
         for (Entity entity : addEntities) {
-            Point cell = getPoint(entity);
+            Vector2D cell = getPoint(entity);
             addEntityToMap(cell, entity);
         }
         addEntities.clear();
@@ -110,7 +106,7 @@ public class CollisionBoard implements Runnable {
         synchronized (_moveEntities) {
             for (EntityCellPair entityPair : moveEntities) {
                 removeEntityFromMap(entityPair.cell, entityPair.entity);
-                Point cell = getPoint(entityPair.entity);
+                Vector2D cell = getPoint(entityPair.entity);
                 addEntityToMap(cell, entityPair.entity);
             }
             moveEntities.clear();
@@ -120,26 +116,26 @@ public class CollisionBoard implements Runnable {
     private void deleteEntitiesToMap() {
 
         for (Entity entity : deleteEntities) {
-            Point cell = getPoint(entity);
+            Vector2D cell = getPoint(entity);
             removeEntityFromMap(cell, entity);
         }
         deleteEntities.clear();
     }
 
     private void runCollisionDetection() {
-        for (Point cell : cellEntities.keySet()) {
+        for (Vector2D cell : cellEntities.keySet()) {
             synchronized (_cellEntities) {
                 ArrayList<Entity> tl = cellEntities.get(cell);
 
-                ArrayList<Entity> entities = new ArrayList<Entity>(tl);
-                if (cellEntities.containsKey(new Point(cell.x + 1, cell.y))) {
-                    entities.addAll(cellEntities.get(new Point(cell.x + 1, cell.y)));
+                ArrayList<Entity> entities = new ArrayList<>(tl);
+                if (cellEntities.containsKey(new Vector2D(cell.x + 1, cell.y))) {
+                    entities.addAll(cellEntities.get(new Vector2D(cell.x + 1, cell.y)));
                 }
-                if (cellEntities.containsKey(new Point(cell.x, cell.y + 1))) {
-                    entities.addAll(cellEntities.get(new Point(cell.x, cell.y + 1)));
+                if (cellEntities.containsKey(new Vector2D(cell.x, cell.y + 1))) {
+                    entities.addAll(cellEntities.get(new Vector2D(cell.x, cell.y + 1)));
                 }
-                if (cellEntities.containsKey(new Point(cell.x + 1, cell.y + 1))) {
-                    entities.addAll(cellEntities.get(new Point(cell.x + 1, cell.y + 1)));
+                if (cellEntities.containsKey(new Vector2D(cell.x + 1, cell.y + 1))) {
+                    entities.addAll(cellEntities.get(new Vector2D(cell.x + 1, cell.y + 1)));
                 }
 
                 for (int i = 0; i < tl.size(); i++) {
@@ -153,7 +149,7 @@ public class CollisionBoard implements Runnable {
         }
     }
 
-    private void addEntityToMap(Point point, Entity entity) {
+    private void addEntityToMap(Vector2D point, Entity entity) {
         synchronized (_cellEntities) {
             if (!cellEntities.containsKey(point)) {
                 cellEntities.put(point, new ArrayList<Entity>());
@@ -162,7 +158,7 @@ public class CollisionBoard implements Runnable {
         } // End synchronized
     }
 
-    private void removeEntityFromMap(Point point, Entity entity) {
+    private void removeEntityFromMap(Vector2D point, Entity entity) {
         synchronized (_cellEntities) {
             if (cellEntities.containsKey(point)) {
                 cellEntities.get(point).remove(entity);
@@ -173,9 +169,9 @@ public class CollisionBoard implements Runnable {
 
 final class EntityCellPair {
     final Entity entity;
-    final Point cell;
+    final Vector2D cell;
 
-    EntityCellPair(Entity entity, Point cell) {
+    EntityCellPair(Entity entity, Vector2D cell) {
         this.entity = entity;
         this.cell = cell;
     }

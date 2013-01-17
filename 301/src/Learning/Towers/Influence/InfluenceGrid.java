@@ -1,7 +1,5 @@
 package Learning.Towers.Influence;
 
-import Learning.Towers.Entities.Entity;
-
 import java.util.HashMap;
 
 // Grid used by Entities to affect the influence maps
@@ -18,18 +16,18 @@ public class InfluenceGrid {
     }
 
     // Only way to get one
-    public static InfluenceGrid createGrid(Entity entity, Integer size) {
+    public static InfluenceGrid createGrid(Integer size, double strength) {
         // If we've made a grid of the correct size already
         if (cachedGrids.containsKey(size)) {
             HashMap<Double, InfluenceGrid> grids = cachedGrids.get(size);
 
-            if (grids.containsKey(entity.getIS())) return grids.get(entity.getIS());
+            if (grids.containsKey(strength)) return grids.get(strength);
 
             // Obtain the normal grid and transform it
-            InfluenceGrid newGrid = multiply(grids.get(1.0d), entity.getIS());
+            InfluenceGrid newGrid = multiply(grids.get(1.0d), strength);
 
             // cache the new grid
-            grids.put(entity.getIS(), newGrid);
+            grids.put(strength, newGrid);
             return newGrid;
         } else {
             HashMap<Double, InfluenceGrid> grids = new HashMap<>();
@@ -38,8 +36,8 @@ public class InfluenceGrid {
 
             grids.put(1.0d, normalGrid);
 
-            InfluenceGrid newGrid = multiply(normalGrid, entity.getIS());
-            grids.put(entity.getIS(), newGrid);
+            InfluenceGrid newGrid = multiply(normalGrid, strength);
+            grids.put(strength, newGrid);
             return newGrid;
         }
     }
@@ -47,7 +45,7 @@ public class InfluenceGrid {
     private static InfluenceGrid generateNormalGrid(Integer size) {
         // Make new grid of strength 1
         double[][] temp = new double[size][size];
-        int center = ((size - 1) / 2) + 1;
+        int center = ((size - 1) / 2);
         for (int x = 0; x < temp.length; x++) {
             for (int y = 0; y < temp[x].length; y++) {
                 // calculate distance from center
