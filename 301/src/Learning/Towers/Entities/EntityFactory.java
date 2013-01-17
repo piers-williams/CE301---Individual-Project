@@ -33,15 +33,13 @@ public class EntityFactory {
     }
 
     public static Entity getGroupedEntity(Faction faction, Group group, Vector2D location, double strength) {
-//        System.out.println("Building Grouped Entity");
         Entity entity = new Entity();
 
         setColour(entity, faction);
         entity.faction = faction;
         entity.movementBehaviour = new Flocking(entity, location, group);
-//        entity.movementBehaviour = new Static(entity, location);
         entity.drawingBehaviour = new SimpleQuad(entity, Main.SQUARE_WIDTH, entity.r, entity.g, entity.b);
-        entity.influenceBehaviour = new SimpleInfluence(entity, 7, 2);
+        entity.influenceBehaviour = new SimpleInfluence(entity, 7, strength);
         entity.collisionBehaviour = new SimpleCollision(entity, Main.SQUARE_WIDTH);
 
         return entity;
@@ -56,7 +54,7 @@ public class EntityFactory {
         entity.movementBehaviour = new Static(entity, location);
         entity.drawingBehaviour = new SimpleQuad(entity, 26, entity.r, entity.g, entity.b);
         entity.influenceBehaviour = new SimpleInfluence(entity, 5, 0);
-        entity.collisionBehaviour = new SimpleNoCollision(entity);
+        entity.collisionBehaviour = new SimpleCollision(entity, 26);
         entity.constructionBehaviour = new BasicConstruction(entity, faction);
 
         return entity;

@@ -20,6 +20,10 @@ public class Flocking extends BasicMovement {
 
     @Override
     public void updateSpecialisation() {
+        if (direction == null) {
+            direction = new Vector2D();
+            System.out.println("Direction was null");
+        }
         Vector2D separation = calculateSeparation();
 
         if (Utilities.distance(group.getX(), group.getY(), location.x, location.y) > group.getRadius()) {

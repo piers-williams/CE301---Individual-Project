@@ -21,7 +21,7 @@ public class Main {
     public static int MAP_HEIGHT = 900;
     public static int SQUARE_WIDTH = 6;
     public static int SQUARE_COUNT = 200;
-    public static boolean FULL_SCREEN = true;
+    public static boolean FULL_SCREEN = false;
     // Collision detection cell size
     public static final int CELL_SIZE = 75;
 

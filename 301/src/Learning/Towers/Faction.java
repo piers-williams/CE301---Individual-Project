@@ -49,7 +49,7 @@ public class Faction {
 
     public void makeEntity(double x, double y, Construction base) {
         // Create new entity
-        Entity entity = EntityFactory.getGroupedEntity(this, baseGroup.get(base), new Vector2D(x, y), 5);
+        Entity entity = EntityFactory.getGroupedEntity(this, baseGroup.get(base), new Vector2D(x, y), 2);
 
         // Add entity where necessary
         entities.add(entity);
