@@ -132,15 +132,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Offensive.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Offensive/Offensive.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="115" selection-start="153" selection-end="153" vertical-scroll-proportion="0.22141823">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Faction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -172,6 +163,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Entity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="43" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.6229839">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -182,7 +182,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleNoCollision.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Drawing/RadiusIndicator.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/KeyManager.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java" />
@@ -198,6 +197,7 @@
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/SimpleConstruction.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Faction.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Offensive/Offensive.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java" />
       </list>
     </option>
   </component>
@@ -1169,7 +1169,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1183,8 +1183,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3170391" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226257" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19176319" sideWeight="0.6773743" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27234638" sideWeight="0.997936" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19176319" sideWeight="0.7276536" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27234638" sideWeight="0.997936" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1298,13 +1298,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/BasicMovement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="44" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Flocking.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="35" selection-start="446" selection-end="446" vertical-scroll-proportion="0.4121212">
@@ -1315,13 +1308,6 @@
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Factions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="74" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="69" selection-start="1221" selection-end="1221" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1406,6 +1392,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/LWJGL/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="60" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.65966386">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Offensive/Offensive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="34" selection-start="153" selection-end="153" vertical-scroll-proportion="0.30846775">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/EntityFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="50" selection-start="3186" selection-end="3186" vertical-scroll-proportion="0.0">
@@ -1413,9 +1413,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Offensive/Offensive.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="115" selection-start="153" selection-end="153" vertical-scroll-proportion="0.22141823">
+        <state line="40" column="43" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.6229839">
           <folding />
         </state>
       </provider>

@@ -9,6 +9,7 @@ import Learning.Towers.Behaviours.Influence.SimpleInfluence;
 import Learning.Towers.Behaviours.Movement.Movement;
 import Learning.Towers.Behaviours.Movement.Static;
 import Learning.Towers.Behaviours.Movement.Wandering;
+import Learning.Towers.Behaviours.Offensive.Offensive;
 import Learning.Towers.Faction;
 import Learning.Towers.Influence.InfluenceGrid;
 import Learning.Towers.Main;
@@ -37,6 +38,7 @@ public class Entity {
     protected Drawing drawingBehaviour;
     protected Influence influenceBehaviour;
     protected Construction constructionBehaviour;
+    protected Offensive offensiveBehaviour;
 
     // Used for factories
     protected Entity(){
@@ -49,6 +51,7 @@ public class Entity {
         if(constructionBehaviour != null) constructionBehaviour.update();
         if(drawingBehaviour != null) drawingBehaviour.update();
         if(influenceBehaviour != null) influenceBehaviour.update();
+        if(offensiveBehaviour != null) offensiveBehaviour.update();
     }
 
     public void draw() {
