@@ -111,6 +111,6 @@ public class BaseConstruction implements Construction {
 
     @Override
     public Vector2D getSpawnPoint() {
-        return null;
+        return new Vector2D(500, 500);
     }
 }

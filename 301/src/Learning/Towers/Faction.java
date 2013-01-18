@@ -33,27 +33,29 @@ public class Faction {
         baseGroup = new Hashtable<>();
 
         Entity base = EntityFactory.getBase(this, Utilities.randomLocation(200), 100);
-        Vector2D groupLocation = new Vector2D(base.getMovementBehaviour().getLocation());
-        groupLocation.add(50, 50);
-        Group newGroup = new Group(r, g, b, groupLocation, 5, this);
+        Group newGroup = new Group(r, g, b, base.getConstructionBehaviour().getSpawnPoint(), 5, this);
         baseGroup.put(base.getConstructionBehaviour(), newGroup);
+
         Main.GAME_LOOP.addEntity(base);
         Main.GAME_LOOP.addEntity(newGroup);
+    }
+
+    public void makeEntity(Vector2D location, Construction base){
+        makeEntity(location.x, location.y, base);
     }
 
     public void makeEntity(double x, double y, Construction base) {
         // Create new entity
         Entity entity = EntityFactory.getGroupedEntity(this, baseGroup.get(base), new Vector2D(x, y), 2);
 
-        // Add entity where necessary
+        // Add entity to group
         baseGroup.get(base).addEntity(entity);
+        // register entity with game
         Main.GAME_LOOP.addEntity(entity);
 
         // House keeping on the groups
-        if (baseGroup.get(base).isFull()) {
-            Vector2D groupLocation = new Vector2D(base.getEntity().getMovementBehaviour().getLocation());
-            groupLocation.add(50, 50);
-            Group newGroup = new Group(r, g, b, groupLocation, 5, this);
+        if (baseGroup.get(base).isFull()) { ;
+            Group newGroup = new Group(r, g, b, base.getSpawnPoint(), 5, this);
             groups.add(baseGroup.get(base));
             baseGroup.get(base).switchToWander();
             baseGroup.put(base, newGroup);

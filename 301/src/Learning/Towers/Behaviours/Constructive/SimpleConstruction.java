@@ -11,11 +11,12 @@ public class SimpleConstruction implements Construction {
     private int maxResource = 30, resource = maxResource;
     private Faction faction;
     private Entity entity;
-    private Vector2D spawnPoint;
 
     public SimpleConstruction(Entity entity, Faction faction) {
         this.entity = entity;
         this.faction = faction;
+
+        faction.addConstruction(this, getSpawnPoint());
     }
 
     @Override
@@ -24,10 +25,8 @@ public class SimpleConstruction implements Construction {
         if (resource == 0) {
             resource = maxResource;
             // Create new entity near this one
-            faction.makeEntity(entity.getX() + 25, entity.getY() + 25, this);
+            faction.makeEntity(getSpawnPoint(), this);
         }
-
-
     }
 
     public Vector2D getSpawnPoint() {
