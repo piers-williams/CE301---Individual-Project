@@ -19,7 +19,6 @@ import java.util.Random;
 public class Faction {
     private final static Random random = new Random();
 
-    private ArrayList<Entity> entities;
     private ArrayList<Group> groups;
     private Dictionary<Construction, Group> baseGroup;
 
@@ -30,7 +29,6 @@ public class Faction {
         this.g = g;
         this.b = b;
 
-        entities = new ArrayList<>(10);
         groups = new ArrayList<>();
         baseGroup = new Hashtable<>();
 
@@ -43,16 +41,11 @@ public class Faction {
         Main.GAME_LOOP.addEntity(newGroup);
     }
 
-    public void addEntity(Entity entity) {
-        entities.add(entity);
-    }
-
     public void makeEntity(double x, double y, Construction base) {
         // Create new entity
         Entity entity = EntityFactory.getGroupedEntity(this, baseGroup.get(base), new Vector2D(x, y), 2);
 
         // Add entity where necessary
-        entities.add(entity);
         baseGroup.get(base).addEntity(entity);
         Main.GAME_LOOP.addEntity(entity);
 
@@ -90,10 +83,6 @@ public class Faction {
 
     public float getB() {
         return b;
-    }
-
-    public ArrayList<Entity> getEntities() {
-        return entities;
     }
 }
 

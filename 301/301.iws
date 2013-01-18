@@ -162,7 +162,7 @@
       <file leaf-file-name="Faction.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="45" selection-start="2395" selection-end="2395" vertical-scroll-proportion="0.54124457">
+            <state line="85" column="5" selection-start="2573" selection-end="2573" vertical-scroll-proportion="0.7293777">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -202,11 +202,11 @@
         <option value="$PROJECT_DIR$/src/Learning/Towers/CollisionBoard.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Main.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/EntityFactory.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Faction.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/Construction.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Vector2D.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/BaseConstruction.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/SimpleConstruction.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Faction.java" />
       </list>
     </option>
   </component>
@@ -1148,7 +1148,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1923,7 +1923,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="45" selection-start="2395" selection-end="2395" vertical-scroll-proportion="0.54124457">
+        <state line="85" column="5" selection-start="2573" selection-end="2573" vertical-scroll-proportion="0.7293777">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
