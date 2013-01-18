@@ -95,15 +95,33 @@ public final class Vector2D {
         add(v.getX(), v.getY());
     }
 
+    public static Vector2D add(final Vector2D first, final Vector2D second) {
+        Vector2D third = new Vector2D(first);
+        third.add(second);
+        return third;
+    }
+
     // add coordinate values
     public void add(double x, double y) {
         this.x += x;
         this.y += y;
     }
 
+    public static Vector2D add(final Vector2D first, double x, double y){
+        Vector2D third = new Vector2D(first);
+        third.add(x, y);
+        return third;
+    }
+
     // weighted add - frequently useful
     public void add(Vector2D v, double fac) {
         add(v.getX() * fac, v.getY() * fac);
+    }
+
+    public static Vector2D add(final Vector2D first, final Vector2D second, double fac){
+        Vector2D third = new Vector2D(first);
+        third.add(second.x * fac, second.y * fac);
+        return third;
     }
 
     // substract argument vector

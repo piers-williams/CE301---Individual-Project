@@ -2,6 +2,7 @@ package Learning.Towers.Entities;
 
 import Learning.Towers.*;
 import Learning.Towers.Behaviours.Collision.SimpleCollision;
+import Learning.Towers.Behaviours.Constructive.BaseConstruction;
 import Learning.Towers.Behaviours.Constructive.SimpleConstruction;
 import Learning.Towers.Behaviours.Drawing.SimpleQuad;
 import Learning.Towers.Behaviours.Influence.SimpleInfluence;
@@ -9,6 +10,7 @@ import Learning.Towers.Behaviours.Movement.Flocking;
 import Learning.Towers.Behaviours.Movement.Static;
 import Learning.Towers.Behaviours.Movement.Wandering;
 import Learning.Towers.Entities.Meta.Group;
+import com.sun.javafx.iio.common.SmoothMinifier;
 
 /**
  *
@@ -44,7 +46,21 @@ public class EntityFactory {
         return entity;
     }
 
-    public static Entity getBaseEntity(Faction faction, Vector2D location, int width) {
+    public static Entity getBase(Faction faction, Vector2D location, int radius){
+        Entity entity = new Entity();
+
+        setColour(entity, faction);
+        entity.faction = faction;
+        entity.movementBehaviour = new Static(entity, location);
+        entity.drawingBehaviour = new SimpleQuad(entity, 40, entity.r, entity.g, entity.b);
+        entity.influenceBehaviour = new SimpleInfluence(entity, 9, 1);
+        entity.collisionBehaviour = new SimpleCollision(entity, 40);
+        entity.constructionBehaviour = new BaseConstruction(entity, location, 100);
+
+        return entity;
+    }
+
+    public static Entity getShipyard(Faction faction, Vector2D location) {
         Entity entity = new Entity();
 
         setColour(entity, faction);

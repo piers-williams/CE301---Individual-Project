@@ -34,7 +34,7 @@ public class Faction {
         groups = new ArrayList<>();
         baseGroup = new Hashtable<>();
 
-        Entity base = EntityFactory.getBaseEntity(this, Utilities.randomLocation(100), 26);
+        Entity base = EntityFactory.getBase(this, Utilities.randomLocation(200), 100);
         Vector2D groupLocation = new Vector2D(base.getMovementBehaviour().getLocation());
         groupLocation.add(50, 50);
         Group newGroup = new Group(r, g, b, groupLocation, 5, this);
@@ -65,6 +65,14 @@ public class Faction {
             baseGroup.get(base).switchToWander();
             baseGroup.put(base, newGroup);
             Main.GAME_LOOP.addEntity(newGroup);
+        }
+    }
+
+    public void addConstruction(Construction construction, Vector2D spawnPoint){
+        if(baseGroup.get(construction) != null){
+            Group group = new Group(r, g, b, spawnPoint, 20, this);
+            Main.GAME_LOOP.addEntity(group);
+            baseGroup.put(construction, group);
         }
     }
 
