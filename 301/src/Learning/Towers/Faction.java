@@ -64,7 +64,7 @@ public class Faction {
     }
 
     public void addConstruction(Construction construction, Vector2D spawnPoint){
-        if(baseGroup.get(construction) != null){
+        if(baseGroup.get(construction) == null){
             Group group = new Group(r, g, b, spawnPoint, 20, this);
             Main.GAME_LOOP.addEntity(group);
             baseGroup.put(construction, group);
