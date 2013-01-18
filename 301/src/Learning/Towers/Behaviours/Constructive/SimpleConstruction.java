@@ -6,12 +6,12 @@ import Learning.Towers.Faction;
 /**
  *
  */
-public class BasicConstruction implements Construction {
+public class SimpleConstruction implements Construction {
     private int maxResource = 30, resource = maxResource;
     private Faction faction;
     private Entity entity;
 
-    public BasicConstruction(Entity entity, Faction faction) {
+    public SimpleConstruction(Entity entity, Faction faction) {
         this.entity = entity;
         this.faction = faction;
     }

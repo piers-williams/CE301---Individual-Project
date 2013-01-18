@@ -20,8 +20,8 @@ public class Main {
     public static int MAP_WIDTH = 1600;
     public static int MAP_HEIGHT = 900;
     public static int SQUARE_WIDTH = 6;
-    public static int SQUARE_COUNT = 200;
-    public static boolean FULL_SCREEN = false;
+    public static int SQUARE_COUNT = 0;
+    public static boolean FULL_SCREEN = true;
     // Collision detection cell size
     public static final int CELL_SIZE = 75;
 
@@ -82,9 +82,6 @@ public class Main {
         GAME_LOOP.setPaused(false);
         INFLUENCE_MAP.setPaused(false);
 
-        boolean stepping = false;
-        boolean paused = false;
-
         /**
          * Main render loop
          */
@@ -95,24 +92,10 @@ public class Main {
 
             }
 
-//            if(KEY_MANAGER.isKeyDown(Keyboard.KEY_M)){
-//                System.out.println("Key M Pushed");
-//            }
-
             // Keyboard release
             if (Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)) {
                 break;
             }
-
-//            if (KEY_MANAGER.isKeyDown(Keyboard.KEY_P)) {
-//                paused = !paused;
-//                COLLISION_BOARD.setPaused(paused);
-//                GAME_LOOP.setPaused(paused);
-//                INFLUENCE_MAP.setPaused(paused);
-//            }
-//            if (Keyboard.isKeyDown(Keyboard.KEY_S)) {
-//                stepping = !stepping;
-//            }
 
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
 

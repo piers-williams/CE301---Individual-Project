@@ -2,8 +2,7 @@ package Learning.Towers.Entities;
 
 import Learning.Towers.*;
 import Learning.Towers.Behaviours.Collision.SimpleCollision;
-import Learning.Towers.Behaviours.Collision.SimpleNoCollision;
-import Learning.Towers.Behaviours.Constructive.BasicConstruction;
+import Learning.Towers.Behaviours.Constructive.SimpleConstruction;
 import Learning.Towers.Behaviours.Drawing.SimpleQuad;
 import Learning.Towers.Behaviours.Influence.SimpleInfluence;
 import Learning.Towers.Behaviours.Movement.Flocking;
@@ -55,7 +54,22 @@ public class EntityFactory {
         entity.drawingBehaviour = new SimpleQuad(entity, 26, entity.r, entity.g, entity.b);
         entity.influenceBehaviour = new SimpleInfluence(entity, 5, 0);
         entity.collisionBehaviour = new SimpleCollision(entity, 26);
-        entity.constructionBehaviour = new BasicConstruction(entity, faction);
+        entity.constructionBehaviour = new SimpleConstruction(entity, faction);
+
+        return entity;
+    }
+
+    // TODO get an offensive behaviour
+    public static Entity getTower(Faction faction, Vector2D location){
+        Entity entity = new Entity();
+
+        setColour(entity, faction);
+        entity.faction = faction;
+
+        entity.movementBehaviour = new Static(entity, location);
+        entity.drawingBehaviour = new SimpleQuad(entity, 20, entity.r, entity.g, entity.b);
+        entity.influenceBehaviour = new SimpleInfluence(entity, 11, 10);
+        entity.collisionBehaviour = new SimpleCollision(entity, 20);
 
         return entity;
     }

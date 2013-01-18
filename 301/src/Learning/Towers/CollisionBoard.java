@@ -26,6 +26,8 @@ public class CollisionBoard implements Runnable {
     boolean running = true, paused = true;
     int tickDelay;
 
+    private ArrayList<Entity> collisionEntities, tl;
+
     public CollisionBoard( int cellSize) {
         this.cellSize = cellSize;
 
@@ -33,6 +35,9 @@ public class CollisionBoard implements Runnable {
         moveEntities = new ArrayList<>();
         addEntities = new ArrayList<>();
         deleteEntities = new ArrayList<>();
+
+        collisionEntities = new ArrayList<>();
+        tl = new ArrayList<>();
 
         tickDelay = 10;
     }
@@ -120,23 +125,25 @@ public class CollisionBoard implements Runnable {
     private void runCollisionDetection() {
         for (Vector2D cell : cellEntities.keySet()) {
             synchronized (_cellEntities) {
-                ArrayList<Entity> tl = cellEntities.get(cell);
+                tl.clear(); tl.addAll(cellEntities.get(cell));
 
-                ArrayList<Entity> entities = new ArrayList<>(tl);
+                collisionEntities.clear();
+                collisionEntities.addAll(tl);
+
                 if (cellEntities.containsKey(new Vector2D(cell.x + 1, cell.y))) {
-                    entities.addAll(cellEntities.get(new Vector2D(cell.x + 1, cell.y)));
+                    collisionEntities.addAll(cellEntities.get(new Vector2D(cell.x + 1, cell.y)));
                 }
                 if (cellEntities.containsKey(new Vector2D(cell.x, cell.y + 1))) {
-                    entities.addAll(cellEntities.get(new Vector2D(cell.x, cell.y + 1)));
+                    collisionEntities.addAll(cellEntities.get(new Vector2D(cell.x, cell.y + 1)));
                 }
                 if (cellEntities.containsKey(new Vector2D(cell.x + 1, cell.y + 1))) {
-                    entities.addAll(cellEntities.get(new Vector2D(cell.x + 1, cell.y + 1)));
+                    collisionEntities.addAll(cellEntities.get(new Vector2D(cell.x + 1, cell.y + 1)));
                 }
 
                 for (int i = 0; i < tl.size(); i++) {
-                    for (int j = i + 1; j < entities.size(); j++) {
-                        if (SimpleCollision.collidesWith(entities.get(i).getCollisionBehaviour(), entities.get(j).getCollisionBehaviour())) {
-                            SimpleCollision.bounce(entities.get(i).getCollisionBehaviour(), entities.get(j).getCollisionBehaviour());
+                    for (int j = i + 1; j < collisionEntities.size(); j++) {
+                        if (SimpleCollision.collidesWith(collisionEntities.get(i).getCollisionBehaviour(), collisionEntities.get(j).getCollisionBehaviour())) {
+                            SimpleCollision.bounce(collisionEntities.get(i).getCollisionBehaviour(), collisionEntities.get(j).getCollisionBehaviour());
                         }
                     }
                 }
