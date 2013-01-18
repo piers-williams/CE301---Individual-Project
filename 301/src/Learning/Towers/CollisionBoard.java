@@ -28,7 +28,7 @@ public class CollisionBoard implements Runnable {
 
     private ArrayList<Entity> collisionEntities, tl;
 
-    public CollisionBoard( int cellSize) {
+    public CollisionBoard(int cellSize) {
         this.cellSize = cellSize;
 
         cellEntities = new HashMap<>();
@@ -125,7 +125,8 @@ public class CollisionBoard implements Runnable {
     private void runCollisionDetection() {
         for (Vector2D cell : cellEntities.keySet()) {
             synchronized (_cellEntities) {
-                tl.clear(); tl.addAll(cellEntities.get(cell));
+                tl.clear();
+                tl.addAll(cellEntities.get(cell));
 
                 collisionEntities.clear();
                 collisionEntities.addAll(tl);

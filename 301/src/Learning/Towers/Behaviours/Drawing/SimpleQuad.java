@@ -14,6 +14,7 @@ public class SimpleQuad implements Drawing {
     private Movement movementBehaviour;
     private float r, g, b;
     private Entity entity;
+
     public SimpleQuad(Entity entity, int width, float r, float g, float b) {
         this.entity = entity;
         this.width = width;
@@ -43,6 +44,7 @@ public class SimpleQuad implements Drawing {
     public void update() {
         // Nothing to do in this case
     }
+
     @Override
     public Entity getEntity() {
         return entity;

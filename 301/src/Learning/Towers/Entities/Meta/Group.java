@@ -68,7 +68,7 @@ public class Group extends Entity {
         return radius;
     }
 
-    public void switchToWander(){
+    public void switchToWander() {
         movementBehaviour = new Wandering(this, movementBehaviour.getLocation());
     }
 }

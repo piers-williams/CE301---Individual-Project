@@ -9,5 +9,6 @@ import Learning.Towers.Influence.InfluenceGrid;
 public interface Influence extends Behaviour {
 
     public InfluenceGrid getInfluenceGrid();
+
     public double getStrength();
 }

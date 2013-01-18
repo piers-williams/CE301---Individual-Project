@@ -1,6 +1,5 @@
 package Learning.Towers.Entities;
 
-import Learning.Towers.*;
 import Learning.Towers.Behaviours.Collision.SimpleCollision;
 import Learning.Towers.Behaviours.Constructive.BaseConstruction;
 import Learning.Towers.Behaviours.Constructive.SimpleConstruction;
@@ -10,14 +9,14 @@ import Learning.Towers.Behaviours.Movement.Flocking;
 import Learning.Towers.Behaviours.Movement.Static;
 import Learning.Towers.Behaviours.Movement.Wandering;
 import Learning.Towers.Entities.Meta.Group;
-import com.sun.javafx.iio.common.SmoothMinifier;
+import Learning.Towers.*;
 
 /**
  *
  */
 public class EntityFactory {
 
-    public static Entity getNaturalEntity(){
+    public static Entity getNaturalEntity() {
         Entity entity = new Entity();
         entity.r = 1;
         entity.g = 1;
@@ -46,7 +45,7 @@ public class EntityFactory {
         return entity;
     }
 
-    public static Entity getBase(Faction faction, Vector2D location, int radius){
+    public static Entity getBase(Faction faction, Vector2D location, int radius) {
         Entity entity = new Entity();
 
         setColour(entity, faction);
@@ -76,7 +75,7 @@ public class EntityFactory {
     }
 
     // TODO get an offensive behaviour
-    public static Entity getTower(Faction faction, Vector2D location){
+    public static Entity getTower(Faction faction, Vector2D location) {
         Entity entity = new Entity();
 
         setColour(entity, faction);

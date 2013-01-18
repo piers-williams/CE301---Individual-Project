@@ -6,7 +6,7 @@ import Learning.Towers.Vector2D;
 /**
  *
  */
-public interface Construction extends Behaviour{
+public interface Construction extends Behaviour {
 
     public Vector2D getSpawnPoint();
 }

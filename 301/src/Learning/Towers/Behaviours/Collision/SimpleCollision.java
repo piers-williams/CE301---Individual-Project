@@ -40,6 +40,7 @@ public class SimpleCollision implements Collision {
         return entity;
     }
 
+    // Triggering too close
     public static boolean collidesWith(Collision first, Collision second) {
         if (first.getEntity().equals(second.getEntity())) return false;
 
@@ -48,7 +49,7 @@ public class SimpleCollision implements Collision {
 
         double distance = firstLocation.dist(secondLocation);
 
-        return (distance < first.getWidth() + second.getWidth());
+        return (distance < (first.getWidth() + second.getWidth())/2);
     }
 
     public static void bounce(Collision first, Collision second) {

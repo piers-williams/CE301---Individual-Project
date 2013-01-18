@@ -17,15 +17,16 @@ import java.util.HashMap;
  */
 public class InfluenceMap implements Runnable {
 
-    // Make this per faction
     private HashMap<Faction, double[][][]> influence;
+    // Indices for which part to calculate and which to draw
     private int calculateIndex, drawIndex;
-    private Faction currentlyDrawingFaction = Factions.Nature.getFaction();
+    // Which faction are we drawing
     private int factionIndex = 0;
-
+    // Width and height of the board in cells, size of cell
     private int width, height, cellSize;
-
+    // State markers
     private boolean running, paused;
+    // How long to stay asleep for between calculations
     private int tickDelay;
 
     public InfluenceMap(int width, int height, int cellSize, int tickDelay) {
@@ -39,7 +40,7 @@ public class InfluenceMap implements Runnable {
             System.out.println(faction + " : " + faction.getFaction());
             influence.put(faction.getFaction(), new double[2][width][height]);
         }
-//        influence = new double[2][width][height];
+
         calculateIndex = 0;
         drawIndex = 1;
     }
@@ -89,7 +90,7 @@ public class InfluenceMap implements Runnable {
         for (int x = -xWidth; x <= xWidth; x++) {
             for (int y = -yWidth; y <= yWidth; y++) {
                 try {
-                      if(influence.get(faction) == null) System.out.println(faction);
+                    if (influence.get(faction) == null) System.out.println(faction);
                     influence.get(faction)[calculateIndex][x + (int) point.x][y + (int) point.y] += grid.influence[x + xWidth][y + yWidth] / 32;
                 } catch (ArrayIndexOutOfBoundsException arrayIndexOutOrBoundsException) {
                 }
@@ -102,7 +103,7 @@ public class InfluenceMap implements Runnable {
     }
 
     public void draw() {
-        currentlyDrawingFaction = Factions.values()[factionIndex].getFaction();
+        Faction currentlyDrawingFaction = Factions.values()[factionIndex].getFaction();
 
         for (int x = 0, i = 0; x < width && i < influence.get(currentlyDrawingFaction)[drawIndex].length; x += cellSize, i++) {
             for (int y = 0, j = 0; y < height && j < influence.get(currentlyDrawingFaction)[drawIndex][i].length; y += cellSize, j++) {
@@ -121,8 +122,8 @@ public class InfluenceMap implements Runnable {
         }
     }
 
-    public void cycleFaction(){
+    public void cycleFaction() {
         factionIndex++;
-        if(factionIndex >= Factions.values().length) factionIndex = 0;
+        if (factionIndex >= Factions.values().length) factionIndex = 0;
     }
 }

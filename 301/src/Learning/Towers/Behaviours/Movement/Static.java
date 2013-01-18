@@ -24,7 +24,7 @@ public class Static implements Movement {
     @Override
     public void update() {
         // If we have somehow moved and need to reset
-        if(!location.equals(_location)){
+        if (!location.equals(_location)) {
             location.x = _location.x;
             location.y = _location.y;
         }

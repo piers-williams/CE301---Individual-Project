@@ -107,7 +107,7 @@ public final class Vector2D {
         this.y += y;
     }
 
-    public static Vector2D add(final Vector2D first, double x, double y){
+    public static Vector2D add(final Vector2D first, double x, double y) {
         Vector2D third = new Vector2D(first);
         third.add(x, y);
         return third;
@@ -118,7 +118,7 @@ public final class Vector2D {
         add(v.getX() * fac, v.getY() * fac);
     }
 
-    public static Vector2D add(final Vector2D first, final Vector2D second, double fac){
+    public static Vector2D add(final Vector2D first, final Vector2D second, double fac) {
         Vector2D third = new Vector2D(first);
         third.add(second.x * fac, second.y * fac);
         return third;

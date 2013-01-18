@@ -40,7 +40,7 @@ public class Faction {
         Main.GAME_LOOP.addEntity(newGroup);
     }
 
-    public void makeEntity(Vector2D location, Construction base){
+    public void makeEntity(Vector2D location, Construction base) {
         makeEntity(location.x, location.y, base);
     }
 
@@ -54,7 +54,8 @@ public class Faction {
         Main.GAME_LOOP.addEntity(entity);
 
         // House keeping on the groups
-        if (baseGroup.get(base).isFull()) { ;
+        if (baseGroup.get(base).isFull()) {
+            ;
             Group newGroup = new Group(r, g, b, base.getSpawnPoint(), 5, this);
             groups.add(baseGroup.get(base));
             baseGroup.get(base).switchToWander();
@@ -63,8 +64,8 @@ public class Faction {
         }
     }
 
-    public void addConstruction(Construction construction, Vector2D spawnPoint){
-        if(baseGroup.get(construction) == null){
+    public void addConstruction(Construction construction, Vector2D spawnPoint) {
+        if (baseGroup.get(construction) == null) {
             Group group = new Group(r, g, b, spawnPoint, 20, this);
             Main.GAME_LOOP.addEntity(group);
             baseGroup.put(construction, group);

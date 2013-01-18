@@ -73,7 +73,7 @@ public class Main {
         influence.setName("Influence Thread");
         influence.start();
 
-        for(Factions factions : Factions.values()){
+        for (Factions factions : Factions.values()) {
             GAME_LOOP.addFaction(factions.getFaction());
         }
 
