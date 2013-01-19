@@ -30,9 +30,10 @@ public class Main {
     public static InfluenceMap INFLUENCE_MAP;
 
     public static KeyManager KEY_MANAGER;
+    private Boolean paused;
 
     public Main() {
-
+        paused = true;
         Main.GAME_LOOP = new GameLoop(20);
         Main.COLLISION_BOARD = new CollisionBoard(CELL_SIZE);
         Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 30, 40);
@@ -77,10 +78,7 @@ public class Main {
             GAME_LOOP.addFaction(factions.getFaction());
         }
 
-        // Set the loops to do work
-        COLLISION_BOARD.setPaused(false);
-        GAME_LOOP.setPaused(false);
-        INFLUENCE_MAP.setPaused(false);
+
 
         /**
          * Main render loop
@@ -110,5 +108,17 @@ public class Main {
 
     public static void main(String[] args) {
         new Main();
+    }
+
+    /**
+     * Switches the game from a paused state to an un-paused state or vice visa
+     */
+    public void togglePause(){
+        paused = !paused;
+
+        // Set the loops to do work
+        COLLISION_BOARD.setPaused(paused);
+        GAME_LOOP.setPaused(paused);
+        INFLUENCE_MAP.setPaused(paused);
     }
 }

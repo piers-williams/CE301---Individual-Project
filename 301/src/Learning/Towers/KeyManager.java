@@ -20,6 +20,9 @@ public class KeyManager {
                     case Keyboard.KEY_M :
                         Main.INFLUENCE_MAP.cycleFaction();
                         break;
+                    case Keyboard.KEY_P :
+                        main.togglePause();
+                        break;
                 }
             }
         }
