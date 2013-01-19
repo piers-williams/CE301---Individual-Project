@@ -87,9 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="38" column="43" selection-start="1171" selection-end="1171" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -98,9 +96,7 @@
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/BaseConstruction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="113" column="36" selection-start="3809" selection-end="3809" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,10 +119,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleCollision.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SimpleCollision.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleCollision.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="67" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.6169355">
+            <state line="49" column="105" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeyManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/KeyManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="40" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,9 +141,7 @@
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/EntityFactory.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="79" column="0" selection-start="3140" selection-end="3140" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,9 +150,7 @@
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="27" column="19" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -163,10 +164,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Factions.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Factions.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Factions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="16" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+            <state line="25" column="37" selection-start="411" selection-end="411" vertical-scroll-proportion="0.71428573">
               <folding />
             </state>
           </provider>
@@ -182,7 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Meta/Group.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Flocking.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/CollisionBoard.java" />
@@ -196,8 +196,9 @@
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Offensive/Offensive.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Factions.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleCollision.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/KeyManager.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Factions.java" />
       </list>
     </option>
   </component>
@@ -807,9 +808,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1170,21 +1171,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3170391" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35335195" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3170391" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226257" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19176319" sideWeight="0.7276536" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27234638" sideWeight="0.997936" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19433719" sideWeight="0.7276536" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35335195" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27234638" sideWeight="0.997936" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1194,6 +1194,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1298,128 +1299,86 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/CollisionBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="30" selection-start="4128" selection-end="4128" vertical-scroll-proportion="0.74343437">
-          <folding>
-            <element signature="e#2261#2299#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="43" selection-start="1171" selection-end="1171" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Vector2D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/BaseConstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="36" selection-start="3809" selection-end="3809" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="21" column="0" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Meta/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="40" selection-start="979" selection-end="979" vertical-scroll-proportion="0.46848738">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="19" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="34" column="40" selection-start="979" selection-end="979" vertical-scroll-proportion="0.46848738" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/LWJGL/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="60" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.65966386">
-          <folding />
-        </state>
+        <state line="39" column="60" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.65966386" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Offensive/Offensive.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="153" selection-end="153" vertical-scroll-proportion="0.30846775">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/EntityFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="3140" selection-end="3140" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="9" column="34" selection-start="153" selection-end="153" vertical-scroll-proportion="0.30846775" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="53" selection-start="492" selection-end="492" vertical-scroll-proportion="0.46975806">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="15" column="53" selection-start="492" selection-end="492" vertical-scroll-proportion="0.46975806" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/Construction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.41129032">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="12" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.41129032" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="43" selection-start="1171" selection-end="1171" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/BaseConstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="36" selection-start="3809" selection-end="3809" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="536" selection-end="536" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/SimpleConstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="35" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleCollision.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="105" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/EntityFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="0" selection-start="3140" selection-end="3140" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="19" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="42" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.0">
+        <state line="45" column="42" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/KeyManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="40" selection-start="357" selection-end="357" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Factions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="16" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/SimpleConstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="35" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleCollision.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="67" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.6169355">
+        <state line="25" column="37" selection-start="411" selection-end="411" vertical-scroll-proportion="0.71428573">
           <folding />
         </state>
       </provider>

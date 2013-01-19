@@ -6,7 +6,7 @@ package Learning.Towers;
  */
 public enum Factions {
     Nature(1, 1, 1),
-    //Red(1, 0, 0),
+    Red(1, 0, 0),
     //Green(0, 1, 0)
     ;
 
