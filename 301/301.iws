@@ -86,10 +86,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="23" selection-start="309" selection-end="309" vertical-scroll-proportion="0.19318181">
+            <state line="18" column="19" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,13 +122,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Vector2D.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Vector2D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="17" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="CollisionBoard.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/CollisionBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="21" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.0">
+            <state line="147" column="55" selection-start="4530" selection-end="4530" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#2386#2424#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InfluenceMap.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="26" selection-start="866" selection-end="866" vertical-scroll-proportion="0.82197803">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,7 +174,6 @@
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/SimpleConstruction.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Offensive/Offensive.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Factions.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/KeyManager.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Vector2D.java" />
@@ -166,8 +183,9 @@
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Faction.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleCollision.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/CollisionBoard.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Main.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/CollisionBoard.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java" />
       </list>
     </option>
   </component>
@@ -372,32 +390,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Towers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Learning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Towers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CollisionBoard.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -805,6 +797,7 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35335195" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -813,8 +806,8 @@
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5451031" sideWeight="0.51536316" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226257" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25160876" sideWeight="0.64944136" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35055867" sideWeight="0.997936" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25160876" sideWeight="0.6703911" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35055867" sideWeight="0.997936" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -823,7 +816,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -943,19 +935,9 @@
         <state line="105" column="34" selection-start="3644" selection-end="3644" vertical-scroll-proportion="3.5711062" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Vector2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="18" selection-start="476" selection-end="476" vertical-scroll-proportion="0.5014749" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Behaviour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="26" selection-start="120" selection-end="120" vertical-scroll-proportion="0.15668203" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="27" selection-start="1675" selection-end="1675" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java">
@@ -1014,18 +996,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Vector2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="17" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="19" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/CollisionBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="21" selection-start="1540" selection-end="1540" vertical-scroll-proportion="0.0">
+        <state line="147" column="55" selection-start="4530" selection-end="4530" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#2386#2424#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="309" selection-end="309" vertical-scroll-proportion="0.19318181">
+        <state line="29" column="26" selection-start="866" selection-end="866" vertical-scroll-proportion="0.82197803">
           <folding />
         </state>
       </provider>

@@ -134,14 +134,14 @@ public class CollisionBoard implements Runnable {
                 collisionEntities.clear();
                 collisionEntities.addAll(temporaryEntityHolding);
 
-                if (cellEntities.containsKey(new Vector2D(cell.x + 1, cell.y))) {
-                    collisionEntities.addAll(cellEntities.get(new Vector2D(cell.x + 1, cell.y)));
+                if (cellEntities.containsKey(vector2DSource.getVector(cell.x + 1, cell.y))) {
+                    collisionEntities.addAll(cellEntities.get(vector2DSource.getVector(cell.x + 1, cell.y)));
                 }
-                if (cellEntities.containsKey(new Vector2D(cell.x, cell.y + 1))) {
-                    collisionEntities.addAll(cellEntities.get(new Vector2D(cell.x, cell.y + 1)));
+                if (cellEntities.containsKey(vector2DSource.getVector(cell.x, cell.y + 1))) {
+                    collisionEntities.addAll(cellEntities.get(vector2DSource.getVector(cell.x, cell.y + 1)));
                 }
-                if (cellEntities.containsKey(new Vector2D(cell.x + 1, cell.y + 1))) {
-                    collisionEntities.addAll(cellEntities.get(new Vector2D(cell.x + 1, cell.y + 1)));
+                if (cellEntities.containsKey(vector2DSource.getVector(cell.x + 1, cell.y + 1))) {
+                    collisionEntities.addAll(cellEntities.get(vector2DSource.getVector(cell.x + 1, cell.y + 1)));
                 }
 
                 for (int i = 0; i < temporaryEntityHolding.size(); i++) {
@@ -194,5 +194,9 @@ class CachedVector2DSource {
         if (!vectors.containsKey(x)) vectors.put(x, new HashMap<Integer, Vector2D>(Main.MAP_HEIGHT));
         if (!vectors.get(x).containsKey(y)) vectors.get(x).put(y, new Vector2D(x, y));
         return vectors.get(x).get(y);
+    }
+
+    public Vector2D getVector(double x, double y){
+        return getVector((int) x, (int) y);
     }
 }
