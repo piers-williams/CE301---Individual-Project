@@ -16,6 +16,8 @@ import Learning.Towers.*;
  */
 public class EntityFactory {
 
+
+    @SuppressWarnings("UnusedDeclaration")
     public static Entity getNaturalEntity() {
         Entity entity = new Entity();
         entity.r = 1;
@@ -45,7 +47,7 @@ public class EntityFactory {
         return entity;
     }
 
-    public static Entity getBase(Faction faction, Vector2D location, int radius) {
+    public static Entity getBase(Faction faction, Vector2D location) {
         Entity entity = new Entity();
 
         setColour(entity, faction);

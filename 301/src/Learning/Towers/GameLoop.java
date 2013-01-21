@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /**
- * Created with IntelliJ IDEA.
  * User: Piers
  * Date: 23/10/12
  * Time: 11:17

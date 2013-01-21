@@ -62,8 +62,6 @@ public class Main {
         physics.setName("Collision Detection");
         physics.start();
 
-        for (int i = 0; i < Main.SQUARE_COUNT; i++) Main.GAME_LOOP.addEntity(EntityFactory.getNaturalEntity());
-
         Thread loop = new Thread(GAME_LOOP);
         loop.setDaemon(true);
         loop.setName("Game Loop");
@@ -77,8 +75,6 @@ public class Main {
         for (Factions factions : Factions.values()) {
             GAME_LOOP.addFaction(factions.getFaction());
         }
-
-
 
         /**
          * Main render loop

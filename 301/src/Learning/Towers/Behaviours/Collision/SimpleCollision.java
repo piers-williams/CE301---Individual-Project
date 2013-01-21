@@ -40,7 +40,6 @@ public class SimpleCollision implements Collision {
         return entity;
     }
 
-    // Triggering too close
     public static boolean collidesWith(Collision first, Collision second) {
         if (first.getEntity().equals(second.getEntity())) return false;
 

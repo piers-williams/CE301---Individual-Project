@@ -32,7 +32,7 @@ public class Faction {
         groups = new ArrayList<>();
         baseGroup = new Hashtable<>();
 
-        Entity base = EntityFactory.getBase(this, Utilities.randomLocation(200), 100);
+        Entity base = EntityFactory.getBase(this, Utilities.randomLocation(200));
         Group newGroup = new Group(r, g, b, base.getConstructionBehaviour().getSpawnPoint(), 5, this);
         baseGroup.put(base.getConstructionBehaviour(), newGroup);
 
