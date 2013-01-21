@@ -10,7 +10,6 @@ import org.lwjgl.opengl.GL11;
 import java.util.HashMap;
 
 /**
- * Created with IntelliJ IDEA.
  * User: Piers
  * Date: 29/10/12
  * Time: 08:56
@@ -29,6 +28,7 @@ public class InfluenceMap implements Runnable {
     // How long to stay asleep for between calculations
     private int tickDelay;
 
+    // TODO cache the vector2D's used for points
     public InfluenceMap(int width, int height, int cellSize, int tickDelay) {
         this.width = width;
         this.height = height;
@@ -37,7 +37,6 @@ public class InfluenceMap implements Runnable {
         running = true;
         influence = new HashMap<>();
         for (Factions faction : Factions.values()) {
-            System.out.println(faction + " : " + faction.getFaction());
             influence.put(faction.getFaction(), new double[2][width][height]);
         }
 
