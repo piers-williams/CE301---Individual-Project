@@ -8,7 +8,6 @@ import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
 
 /**
- * Created with IntelliJ IDEA.
  * User: Piers
  * Date: 16/10/12
  * Time: 11:49

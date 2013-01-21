@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * Created with IntelliJ IDEA.
  * User: Piers
  * Date: 18/10/12
  * Time: 22:05
@@ -26,7 +25,9 @@ public class CollisionBoard implements Runnable {
     boolean running = true, paused = true;
     int tickDelay;
 
-    private ArrayList<Entity> collisionEntities, tl;
+    private ArrayList<Entity> collisionEntities, temporaryEntityHolding;
+
+    private CachedVector2DSource vector2DSource;
 
     public CollisionBoard(int cellSize) {
         this.cellSize = cellSize;
@@ -37,13 +38,15 @@ public class CollisionBoard implements Runnable {
         deleteEntities = new ArrayList<>();
 
         collisionEntities = new ArrayList<>();
-        tl = new ArrayList<>();
+        temporaryEntityHolding = new ArrayList<>();
 
         tickDelay = 10;
+
+        vector2DSource = new CachedVector2DSource();
     }
 
     public Vector2D getPoint(double x, double y) {
-        return new Vector2D((int) x / cellSize, (int) y / cellSize);
+        return vector2DSource.getVector((int) x / cellSize, (int) y / cellSize);
     }
 
     public Vector2D getPoint(Entity entity) {
@@ -125,11 +128,11 @@ public class CollisionBoard implements Runnable {
     private void runCollisionDetection() {
         for (Vector2D cell : cellEntities.keySet()) {
             synchronized (_cellEntities) {
-                tl.clear();
-                tl.addAll(cellEntities.get(cell));
+                temporaryEntityHolding.clear();
+                temporaryEntityHolding.addAll(cellEntities.get(cell));
 
                 collisionEntities.clear();
-                collisionEntities.addAll(tl);
+                collisionEntities.addAll(temporaryEntityHolding);
 
                 if (cellEntities.containsKey(new Vector2D(cell.x + 1, cell.y))) {
                     collisionEntities.addAll(cellEntities.get(new Vector2D(cell.x + 1, cell.y)));
@@ -141,7 +144,7 @@ public class CollisionBoard implements Runnable {
                     collisionEntities.addAll(cellEntities.get(new Vector2D(cell.x + 1, cell.y + 1)));
                 }
 
-                for (int i = 0; i < tl.size(); i++) {
+                for (int i = 0; i < temporaryEntityHolding.size(); i++) {
                     for (int j = i + 1; j < collisionEntities.size(); j++) {
                         if (SimpleCollision.collidesWith(collisionEntities.get(i).getCollisionBehaviour(), collisionEntities.get(j).getCollisionBehaviour())) {
                             SimpleCollision.bounce(collisionEntities.get(i).getCollisionBehaviour(), collisionEntities.get(j).getCollisionBehaviour());
@@ -177,5 +180,19 @@ final class EntityCellPair {
     EntityCellPair(Entity entity, Vector2D cell) {
         this.entity = entity;
         this.cell = cell;
+    }
+}
+
+class CachedVector2DSource {
+    private HashMap<Integer, HashMap<Integer, Vector2D>> vectors;
+
+    public CachedVector2DSource() {
+        vectors = new HashMap<>(Main.MAP_WIDTH);
+    }
+
+    public Vector2D getVector(int x, int y) {
+        if (!vectors.containsKey(x)) vectors.put(x, new HashMap<Integer, Vector2D>(Main.MAP_HEIGHT));
+        if (!vectors.get(x).containsKey(y)) vectors.get(x).put(y, new Vector2D(x, y));
+        return vectors.get(x).get(y);
     }
 }
