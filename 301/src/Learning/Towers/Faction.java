@@ -59,10 +59,11 @@ public class Faction {
 
         // House keeping on the groups
         if (baseGroup.get(base).isFull()) {
-            ;
+
             Group newGroup = new Group(r, g, b, base.getSpawnPoint(), 5, this);
             groups.add(baseGroup.get(base));
             baseGroup.get(base).switchToWander();
+            commander.groupFilled(baseGroup.get(base));
             baseGroup.put(base, newGroup);
             Main.GAME_LOOP.addEntity(newGroup);
         }
@@ -77,7 +78,7 @@ public class Faction {
     }
 
     public void update() {
-
+        commander.update();
     }
 
     public float getR() {

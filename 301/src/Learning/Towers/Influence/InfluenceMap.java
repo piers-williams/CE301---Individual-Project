@@ -27,7 +27,6 @@ public class InfluenceMap implements Runnable {
 
     private CachedVector2DSource vector2DSource;
 
-    // TODO cache the vector2D's used for points
     public InfluenceMap(int width, int height, int cellSize, int tickDelay) {
         this.width = width;
         this.height = height;
@@ -125,5 +124,26 @@ public class InfluenceMap implements Runnable {
     public void cycleFaction() {
         factionIndex++;
         if (factionIndex >= Factions.values().length) factionIndex = 0;
+    }
+
+    /**
+     * Returns the summation of the influence of the other factions to the one specified
+     * @param ourFaction the faction we wish to exclude from the calculations
+     * @return the resulting calculation
+     */
+    public double[][] getEnemyInfluence(Faction ourFaction){
+        double[][] finalResult = new double[width][height];
+        for(Factions factions : Factions.values()){
+            Faction faction = factions.getFaction();
+            if(faction != ourFaction){
+                for(int x = 0; x <  influence.get(faction)[drawIndex].length; x++){
+                    for(int y = 0; y < influence.get(faction)[drawIndex][x].length; y++){
+                        finalResult[x][y] += influence.get(faction)[drawIndex][x][y];
+                    }
+                }
+            }
+        }
+
+        return finalResult;
     }
 }

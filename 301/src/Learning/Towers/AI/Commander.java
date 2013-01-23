@@ -1,7 +1,10 @@
 package Learning.Towers.AI;
 
+import Learning.Towers.Entities.Meta.Group;
 import Learning.Towers.Faction;
 import Learning.Towers.Influence.InfluenceMap;
+import Learning.Towers.Main;
+import Learning.Towers.Vector2D;
 
 /**
  * Primary AI class
@@ -16,31 +19,40 @@ public class Commander {
     private AttackFinder attackFinder;
     private DefenseFinder defenseFinder;
 
-    public Commander(Faction faction){
+    public Commander(Faction faction) {
         this.faction = faction;
 
-        attackFinder = new AttackFinder(30);
-        defenseFinder = new DefenseFinder(30);
+        attackFinder = new AttackFinder(this, 30);
+        defenseFinder = new DefenseFinder(this, 30);
     }
 
-    private void update() {
+    public void update() {
         attackFinder.update();
         defenseFinder.update();
+    }
+
+    public Faction getFaction() {
+        return faction;
+    }
+
+    public void groupFilled(Group group){
+        System.out.println("Group filled");
     }
 }
 
 abstract class TacticalAnalysis {
     private int tickFrequency, currentTick;
 
-    private Commander commander;
+    protected Commander commander;
 
-    public TacticalAnalysis(int tickFrequency) {
+    public TacticalAnalysis(Commander commander, int tickFrequency) {
+        this.commander = commander;
         this.tickFrequency = tickFrequency;
     }
 
     public final void update() {
         currentTick = (currentTick == tickFrequency) ? 0 : currentTick + 1;
-        updateSpecialisation();
+        if (currentTick == 0) updateSpecialisation();
     }
 
     public abstract void updateSpecialisation();
@@ -50,13 +62,46 @@ abstract class TacticalAnalysis {
  * This will churn out attack orders
  */
 class AttackFinder extends TacticalAnalysis {
+    double[][] enemyInfluence;
 
-    AttackFinder(int tickFrequency) {
-        super(tickFrequency);
+    Vector2D nextTarget;
+
+    AttackFinder(Commander commander, int tickFrequency) {
+        super(commander, tickFrequency);
     }
 
     public void updateSpecialisation() {
+        System.out.println(Main.INFLUENCE_MAP == null);
+        System.out.println(commander.getFaction() == null);
 
+        enemyInfluence = Main.INFLUENCE_MAP.getEnemyInfluence(commander.getFaction());
+
+        int lowX = 0, lowY = 0;
+        boolean foundSomewhere = false;
+        for (int x = 0; x < enemyInfluence.length; x++) {
+            for (int y = 0; y < enemyInfluence[x].length; y++) {
+                if (enemyInfluence[x][y] != 0) {
+                    if (!foundSomewhere) {
+                        foundSomewhere = true;
+                        lowX = x;
+                        lowY = y;
+                    } else if (enemyInfluence[x][y] < enemyInfluence[lowX][lowY]) {
+                        lowX = x;
+                        lowY = y;
+                    }
+                }
+            }
+        }
+
+        // It is possible not to find anything at all
+        if(foundSomewhere){
+            nextTarget = new Vector2D(lowX, lowY);
+            System.out.println("Found somewhere");
+            System.out.println("Location: " + nextTarget);
+            System.out.println("Value: " + enemyInfluence[lowX][lowY]);
+
+            System.out.println();
+        }
     }
 }
 
@@ -65,8 +110,8 @@ class AttackFinder extends TacticalAnalysis {
  */
 class DefenseFinder extends TacticalAnalysis {
 
-    DefenseFinder(int tickFrequency) {
-        super(tickFrequency);
+    DefenseFinder(Commander commander, int tickFrequency) {
+        super(commander, tickFrequency);
     }
 
     public void updateSpecialisation() {
