@@ -27,6 +27,7 @@ public class Main {
     public static GameLoop GAME_LOOP;
     public static CollisionBoard COLLISION_BOARD;
     public static InfluenceMap INFLUENCE_MAP;
+    public static CachedVector2DSource VECTOR2D_SOURCE;
 
     public static KeyManager KEY_MANAGER;
     private Boolean paused;
@@ -34,6 +35,7 @@ public class Main {
     public Main() {
         paused = true;
         Main.GAME_LOOP = new GameLoop(20);
+        VECTOR2D_SOURCE = new CachedVector2DSource();
         Main.COLLISION_BOARD = new CollisionBoard(CELL_SIZE);
         Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 30, 40);
         KEY_MANAGER = new KeyManager(this);

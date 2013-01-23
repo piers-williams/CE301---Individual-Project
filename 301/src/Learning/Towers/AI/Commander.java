@@ -16,6 +16,13 @@ public class Commander {
     private AttackFinder attackFinder;
     private DefenseFinder defenseFinder;
 
+    public Commander(Faction faction){
+        this.faction = faction;
+
+        attackFinder = new AttackFinder(30);
+        defenseFinder = new DefenseFinder(30);
+    }
+
     private void update() {
         attackFinder.update();
         defenseFinder.update();

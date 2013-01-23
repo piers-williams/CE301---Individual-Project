@@ -1,10 +1,7 @@
 package Learning.Towers.Influence;
 
+import Learning.Towers.*;
 import Learning.Towers.Entities.Entity;
-import Learning.Towers.Faction;
-import Learning.Towers.Factions;
-import Learning.Towers.Main;
-import Learning.Towers.Vector2D;
 import org.lwjgl.opengl.GL11;
 
 import java.util.HashMap;
@@ -28,6 +25,8 @@ public class InfluenceMap implements Runnable {
     // How long to stay asleep for between calculations
     private int tickDelay;
 
+    private CachedVector2DSource vector2DSource;
+
     // TODO cache the vector2D's used for points
     public InfluenceMap(int width, int height, int cellSize, int tickDelay) {
         this.width = width;
@@ -42,6 +41,8 @@ public class InfluenceMap implements Runnable {
 
         calculateIndex = 0;
         drawIndex = 1;
+
+        vector2DSource = Main.VECTOR2D_SOURCE;
     }
 
     @Override
@@ -79,7 +80,7 @@ public class InfluenceMap implements Runnable {
     }
 
     private Vector2D getPoint(Entity entity) {
-        return new Vector2D((int) (entity.getX() / cellSize), (int) (entity.getY() / cellSize));
+        return vector2DSource.getVector((entity.getX() / cellSize), (entity.getY() / cellSize));
     }
 
     private void addGridToInfluence(InfluenceGrid grid, Vector2D point, Faction faction) {

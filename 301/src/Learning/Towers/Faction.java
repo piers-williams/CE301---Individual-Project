@@ -1,5 +1,6 @@
 package Learning.Towers;
 
+import Learning.Towers.AI.Commander;
 import Learning.Towers.Behaviours.Constructive.Construction;
 import Learning.Towers.Entities.Entity;
 import Learning.Towers.Entities.EntityFactory;
@@ -11,7 +12,6 @@ import java.util.Hashtable;
 import java.util.Random;
 
 /**
- * Created with IntelliJ IDEA.
  * User: Piers
  * Date: 19/10/12
  * Time: 16:42
@@ -24,10 +24,14 @@ public class Faction {
 
     private float r, g, b;
 
+    private Commander commander;
+
     protected Faction(float r, float g, float b) {
         this.r = r;
         this.g = g;
         this.b = b;
+
+        commander = new Commander(this);
 
         groups = new ArrayList<>();
         baseGroup = new Hashtable<>();

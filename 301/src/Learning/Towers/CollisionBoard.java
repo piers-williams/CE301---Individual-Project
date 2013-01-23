@@ -42,7 +42,7 @@ public class CollisionBoard implements Runnable {
 
         tickDelay = 10;
 
-        vector2DSource = new CachedVector2DSource();
+        vector2DSource = Main.VECTOR2D_SOURCE;
     }
 
     public Vector2D getPoint(double x, double y) {
@@ -183,20 +183,4 @@ final class EntityCellPair {
     }
 }
 
-class CachedVector2DSource {
-    private HashMap<Integer, HashMap<Integer, Vector2D>> vectors;
 
-    public CachedVector2DSource() {
-        vectors = new HashMap<>(Main.MAP_WIDTH);
-    }
-
-    public Vector2D getVector(int x, int y) {
-        if (!vectors.containsKey(x)) vectors.put(x, new HashMap<Integer, Vector2D>(Main.MAP_HEIGHT));
-        if (!vectors.get(x).containsKey(y)) vectors.get(x).put(y, new Vector2D(x, y));
-        return vectors.get(x).get(y);
-    }
-
-    public Vector2D getVector(double x, double y){
-        return getVector((int) x, (int) y);
-    }
-}
