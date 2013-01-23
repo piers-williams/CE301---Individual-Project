@@ -69,7 +69,7 @@ public class EntityFactory {
 
         entity.movementBehaviour = new Static(entity, location);
         entity.drawingBehaviour = new SimpleQuad(entity, 26, entity.r, entity.g, entity.b);
-        entity.influenceBehaviour = new SimpleInfluence(entity, 5, 0);
+        entity.influenceBehaviour = new SimpleInfluence(entity, 5, 1);
         entity.collisionBehaviour = new SimpleCollision(entity, 26);
         entity.constructionBehaviour = new SimpleConstruction(entity, faction);
 

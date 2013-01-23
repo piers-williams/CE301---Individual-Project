@@ -1,5 +1,7 @@
 package Learning.Towers.AI;
 
+import Learning.Towers.Entities.Entity;
+import Learning.Towers.Entities.EntityFactory;
 import Learning.Towers.Entities.Meta.Group;
 import Learning.Towers.Faction;
 import Learning.Towers.Influence.InfluenceMap;
@@ -35,9 +37,18 @@ public class Commander {
         return faction;
     }
 
-    public void groupFilled(Group group){
+    public void groupFilled(Group group) {
         System.out.println("Group filled");
         group.switchToFollow(attackFinder.nextTarget);
+    }
+
+    public void buildTower() {
+        if (defenseFinder.nextTarget != null) {
+            Entity tower = EntityFactory.getTower(faction, defenseFinder.nextTarget);
+            Main.GAME_LOOP.addEntity(tower);
+
+            defenseFinder.nextTarget = null;
+        }
     }
 }
 
@@ -72,9 +83,6 @@ class AttackFinder extends TacticalAnalysis {
     }
 
     public void updateSpecialisation() {
-        System.out.println(Main.INFLUENCE_MAP == null);
-        System.out.println(commander.getFaction() == null);
-
         enemyInfluence = Main.INFLUENCE_MAP.getEnemyInfluence(commander.getFaction());
 
         int lowX = 0, lowY = 0;
@@ -95,13 +103,8 @@ class AttackFinder extends TacticalAnalysis {
         }
 
         // It is possible not to find anything at all
-        if(foundSomewhere){
+        if (foundSomewhere) {
             nextTarget = new Vector2D(lowX * Main.INFLUENCE_MAP.getCellSize(), lowY * Main.INFLUENCE_MAP.getCellSize());
-            System.out.println("Found somewhere");
-            System.out.println("Location: " + nextTarget);
-            System.out.println("Value: " + enemyInfluence[lowX][lowY]);
-
-            System.out.println();
         }
     }
 }
@@ -110,12 +113,39 @@ class AttackFinder extends TacticalAnalysis {
  * This class will locate the next location to build a tower
  */
 class DefenseFinder extends TacticalAnalysis {
+    double[][] influence;
+
+    Vector2D nextTarget;
 
     DefenseFinder(Commander commander, int tickFrequency) {
         super(commander, tickFrequency);
     }
 
     public void updateSpecialisation() {
+        influence = Main.INFLUENCE_MAP.getInfluence(commander.getFaction());
 
+        int lowX = 0, lowY = 0;
+        boolean foundSomewhere = false;
+        for (int x = 0; x < influence.length; x++) {
+            for (int y = 0; y < influence[x].length; y++) {
+                if (influence[x][y] > 1) {
+                    if (!foundSomewhere) foundSomewhere = true;
+                    if (influence[x][y] < influence[lowX][lowY]) {
+                        lowX = x;
+                        lowY = y;
+                    }
+                }
+            }
+        }
+
+        if (foundSomewhere) {
+            nextTarget = new Vector2D(lowX * Main.INFLUENCE_MAP.getCellSize(), lowY * Main.INFLUENCE_MAP.getCellSize());
+
+            System.out.println("Found somewhere");
+            System.out.println("Location: " + nextTarget);
+            System.out.println("Value: " + influence[lowX][lowY]);
+
+            System.out.println();
+        }
     }
 }

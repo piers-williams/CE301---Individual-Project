@@ -103,6 +103,7 @@ public class Main {
 
             Main.GAME_LOOP.draw();
             INFLUENCE_MAP.draw();
+
             GL11.glTranslated(-viewLocation.x, -viewLocation.y, 0);
 
             Display.update();
@@ -112,7 +113,7 @@ public class Main {
     }
 
     private void drawBoundary() {
-        GL11.glColor3f(0, 255, 255);
+        GL11.glColor4f(0, 255, 255, 255);
         // Left
         GL11.glBegin(GL11.GL_LINE);
         GL11.glVertex2d(0, 0);

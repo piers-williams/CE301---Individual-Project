@@ -71,21 +71,21 @@ public class BaseConstruction implements Construction {
                 }
             }
         }
-        if (resource > 30) {
-            for (int i = 0; i < towers.length; i++) {
-                if (towers[i] == null) {
-                    // Build tower
-                    Vector2D towerLocation = new Vector2D(towerLocations[i]);
-                    towerLocation.add(this.location);
-                    Entity tower = EntityFactory.getTower(faction, towerLocation);
-                    towers[i] = tower;
-                    Main.GAME_LOOP.addEntity(tower);
-                    resource -= 30;
-
-                    return;
-                }
-            }
-        }
+//        if (resource > 30) {
+//            for (int i = 0; i < towers.length; i++) {
+//                if (towers[i] == null) {
+//                    // Build tower
+//                    Vector2D towerLocation = new Vector2D(towerLocations[i]);
+//                    towerLocation.add(this.location);
+//                    Entity tower = EntityFactory.getTower(faction, towerLocation);
+//                    towers[i] = tower;
+//                    Main.GAME_LOOP.addEntity(tower);
+//                    resource -= 30;
+//
+//                    return;
+//                }
+//            }
+//        }
     }
 
     // TODO Need a notion of building cost

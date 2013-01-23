@@ -26,6 +26,8 @@ public class Faction {
 
     private Commander commander;
 
+    private int maxResource = 100, resource = maxResource;
+
     protected Faction(float r, float g, float b) {
         this.r = r;
         this.g = g;
@@ -59,7 +61,6 @@ public class Faction {
 
         // House keeping on the groups
         if (baseGroup.get(base).isFull()) {
-
             Group newGroup = new Group(r, g, b, base.getSpawnPoint(), 5, this);
             groups.add(baseGroup.get(base));
             baseGroup.get(base).switchToWander();
@@ -79,6 +80,13 @@ public class Faction {
 
     public void update() {
         commander.update();
+
+        // Build towers
+        resource--;
+        if (resource == 0) {
+            resource = maxResource;
+            commander.buildTower();
+        }
     }
 
     public float getR() {

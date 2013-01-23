@@ -147,6 +147,10 @@ public class InfluenceMap implements Runnable {
         return finalResult;
     }
 
+    public double[][] getInfluence(Faction ourFaction){
+        return influence.get(ourFaction)[drawIndex].clone();
+    }
+
     public int getCellSize() {
         return cellSize;
     }
