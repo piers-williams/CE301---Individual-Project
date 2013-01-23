@@ -85,93 +85,101 @@
     <favorites_list name="301" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="46" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Static.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="47" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleConstruction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/SimpleConstruction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="35" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleCollision.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleCollision.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="20" selection-start="1477" selection-end="1477" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Commander.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="58" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="31" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PathFollower.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/PathFollower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="29" selection-start="382" selection-end="382" vertical-scroll-proportion="0.63297874">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfluenceMap.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="138" column="51" selection-start="4890" selection-end="4890" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CollisionBoard.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Learning/Towers/CollisionBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="78" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="41" column="69" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Static.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="11" column="47" selection-start="294" selection-end="294" vertical-scroll-proportion="0.025335321">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="26" column="31" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PathFollower.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/PathFollower.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="12" column="12" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Group.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Meta/Group.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="76" column="14" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="InfluenceMap.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="149" column="30" selection-start="5229" selection-end="5229" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CollisionBoard.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Learning/Towers/CollisionBoard.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="23" column="78" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="PathFollower.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/PathFollower.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="30" column="0" selection-start="866" selection-end="866" vertical-scroll-proportion="0.7522124">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Wandering.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Wandering.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="17" column="20" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -181,8 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Factions.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/KeyManager.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Vector2D.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Behaviour.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Offensive/SimpleWeapon.java" />
@@ -193,10 +199,12 @@
         <option value="$PROJECT_DIR$/src/Learning/Towers/CachedVector2DSource.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/CollisionBoard.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Main.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Faction.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Pathfinding/Pathfinder.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/PathFollower.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/Meta/Group.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java" />
       </list>
     </option>
   </component>
@@ -482,6 +490,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Towers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Meta" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -881,7 +919,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3170391" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -889,11 +927,11 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226257" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25160876" sideWeight="0.58798885" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18404119" sideWeight="0.58798885" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39106146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35335195" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41201118" sideWeight="0.997936" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41201118" sideWeight="0.997936" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1009,16 +1047,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Offensive/SimpleWeapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="39" selection-start="472" selection-end="472" vertical-scroll-proportion="0.28654125" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/EntityFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="52" selection-start="1697" selection-end="1697" vertical-scroll-proportion="0.8895349" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/GameLoop.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="3" selection-start="126" selection-end="126" vertical-scroll-proportion="0.19767442" />
@@ -1050,50 +1078,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="46" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="47" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/SimpleConstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="35" selection-start="738" selection-end="738" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleCollision.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="20" selection-start="1477" selection-end="1477" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="51" selection-start="4890" selection-end="4890" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/CollisionBoard.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="78" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="58" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1104,12 +1092,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="69" selection-start="1302" selection-end="1302" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Wandering.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="20" selection-start="503" selection-end="503" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/PathFollower.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="29" selection-start="382" selection-end="382" vertical-scroll-proportion="0.63297874">
+        <state line="12" column="12" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Meta/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="14" selection-start="2122" selection-end="2122" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="149" column="30" selection-start="5229" selection-end="5229" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="49" selection-start="2561" selection-end="2561" vertical-scroll-proportion="1.2382445">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Collision/SimpleCollision.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="20" selection-start="1477" selection-end="1477" vertical-scroll-proportion="0.67173254">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Constructive/SimpleConstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="35" selection-start="738" selection-end="738" vertical-scroll-proportion="0.5395137">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Behaviours/Movement/Static.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="47" selection-start="294" selection-end="294" vertical-scroll-proportion="0.025335321">
+          <folding />
         </state>
       </provider>
     </entry>

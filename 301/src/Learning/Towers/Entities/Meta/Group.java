@@ -2,6 +2,7 @@ package Learning.Towers.Entities.Meta;
 
 import Learning.Towers.Behaviours.Drawing.RadiusIndicator;
 import Learning.Towers.Behaviours.Influence.SimpleInfluence;
+import Learning.Towers.Behaviours.Movement.PathFollower;
 import Learning.Towers.Behaviours.Movement.Static;
 import Learning.Towers.Behaviours.Movement.Wandering;
 import Learning.Towers.Entities.Entity;
@@ -70,5 +71,8 @@ public class Group extends Entity {
 
     public void switchToWander() {
         movementBehaviour = new Wandering(this, movementBehaviour.getLocation());
+    }
+    public void switchToFollow(Vector2D target){
+        movementBehaviour = new PathFollower(this, movementBehaviour.getLocation(), target, 5 );
     }
 }

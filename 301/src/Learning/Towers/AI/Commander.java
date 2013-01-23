@@ -37,6 +37,7 @@ public class Commander {
 
     public void groupFilled(Group group){
         System.out.println("Group filled");
+        group.switchToFollow(attackFinder.nextTarget);
     }
 }
 
@@ -95,7 +96,7 @@ class AttackFinder extends TacticalAnalysis {
 
         // It is possible not to find anything at all
         if(foundSomewhere){
-            nextTarget = new Vector2D(lowX, lowY);
+            nextTarget = new Vector2D(lowX * Main.INFLUENCE_MAP.getCellSize(), lowY * Main.INFLUENCE_MAP.getCellSize());
             System.out.println("Found somewhere");
             System.out.println("Location: " + nextTarget);
             System.out.println("Value: " + enemyInfluence[lowX][lowY]);

@@ -146,4 +146,8 @@ public class InfluenceMap implements Runnable {
 
         return finalResult;
     }
+
+    public int getCellSize() {
+        return cellSize;
+    }
 }
