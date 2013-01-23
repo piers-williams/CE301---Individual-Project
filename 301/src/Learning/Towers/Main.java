@@ -1,6 +1,5 @@
 package Learning.Towers;
 
-import Learning.Towers.Entities.EntityFactory;
 import Learning.Towers.Influence.InfluenceMap;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.Display;
@@ -20,7 +19,7 @@ public class Main {
     public static int MAP_HEIGHT = 900;
     public static int SQUARE_WIDTH = 6;
     public static int SQUARE_COUNT = 0;
-    public static boolean FULL_SCREEN = false;
+    public static boolean FULL_SCREEN = true;
     // Collision detection cell size
     public static final int CELL_SIZE = 75;
 
@@ -34,6 +33,7 @@ public class Main {
 
     // Where the view is located
     public static final Vector2D viewLocation = new Vector2D(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2);
+//    public static final Vector2D viewLocation = new Vector2D(0,0);
 
     public Main() {
         paused = true;
@@ -96,14 +96,46 @@ public class Main {
             }
 
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
+            GL11.glTranslated(viewLocation.x, viewLocation.y, 0);
+
+            // TODO Draw boundary lines
+            drawBoundary();
 
             Main.GAME_LOOP.draw();
             INFLUENCE_MAP.draw();
+            GL11.glTranslated(-viewLocation.x, -viewLocation.y, 0);
 
             Display.update();
             KEY_MANAGER.update();
         }
         Display.destroy();
+    }
+
+    private void drawBoundary() {
+        GL11.glColor3f(0, 255, 255);
+        // Left
+        GL11.glBegin(GL11.GL_LINE);
+        GL11.glVertex2d(0, 0);
+        GL11.glVertex2d(1, Main.MAP_HEIGHT);
+        GL11.glEnd();
+
+        // Top
+        GL11.glBegin(GL11.GL_LINE);
+        GL11.glVertex2d(0, 0);
+        GL11.glVertex2d(Main.MAP_WIDTH, 1);
+        GL11.glEnd();
+
+        // Bottom
+        GL11.glBegin(GL11.GL_LINE);
+        GL11.glVertex2d(0, Main.MAP_HEIGHT);
+        GL11.glVertex2d(Main.MAP_WIDTH, Main.MAP_HEIGHT);
+        GL11.glEnd();
+
+        // Right
+        GL11.glBegin(GL11.GL_LINE);
+        GL11.glVertex2d(Main.MAP_WIDTH, 0);
+        GL11.glVertex2d(Main.MAP_WIDTH, Main.MAP_HEIGHT);
+        GL11.glEnd();
     }
 
     public static void main(String[] args) {
@@ -113,7 +145,7 @@ public class Main {
     /**
      * Switches the game from a paused state to an un-paused state or vice visa
      */
-    public void togglePause(){
+    public void togglePause() {
         paused = !paused;
 
         // Set the loops to do work
@@ -122,7 +154,7 @@ public class Main {
         INFLUENCE_MAP.setPaused(paused);
     }
 
-    public void shiftView(Vector2D shiftAmount){
+    public void shiftView(Vector2D shiftAmount) {
         Main.viewLocation.add(shiftAmount);
     }
 }

@@ -24,7 +24,7 @@ public class KeyManager {
                         main.togglePause();
                         break;
                     case Keyboard.KEY_A :
-                        main.shiftView(new Vector2D(-50, 0));
+                        main.shiftView(new Vector2D(50, 0));
                         break;
                     case Keyboard.KEY_W:
                         main.shiftView(new Vector2D(0, -50));
@@ -33,7 +33,7 @@ public class KeyManager {
                         main.shiftView(new Vector2D(0, 50));
                         break;
                     case Keyboard.KEY_D :
-                        main.shiftView(new Vector2D(50, 0));
+                        main.shiftView(new Vector2D(-50, 0));
                         break;
                 }
             }
