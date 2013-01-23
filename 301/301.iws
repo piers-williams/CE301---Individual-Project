@@ -98,7 +98,7 @@
       <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="31" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
+            <state line="42" column="38" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,10 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Commander.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Commander.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="39" selection-start="3818" selection-end="3818" vertical-scroll-proportion="0.0">
+            <state line="134" column="33" selection-start="3812" selection-end="3812" vertical-scroll-proportion="0.589011">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,10 +153,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InfluenceMap.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="InfluenceMap.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="148" column="58" selection-start="5198" selection-end="5198" vertical-scroll-proportion="0.6637363">
+            <state line="143" column="28" selection-start="5152" selection-end="5152" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -186,8 +186,8 @@
         <option value="$PROJECT_DIR$/src/Learning/Towers/Faction.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Factions.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java" />
       </list>
     </option>
   </component>
@@ -1084,13 +1084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="31" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/KeyManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="14" selection-start="284" selection-end="284" vertical-scroll-proportion="0.2113402">
@@ -1156,19 +1149,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="39" selection-start="3818" selection-end="3818" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="143" column="28" selection-start="5152" selection-end="5152" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="58" selection-start="5198" selection-end="5198" vertical-scroll-proportion="0.6637363">
+        <state line="42" column="38" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="33" selection-start="3812" selection-end="3812" vertical-scroll-proportion="0.589011">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

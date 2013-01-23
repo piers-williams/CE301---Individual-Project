@@ -128,8 +128,12 @@ class DefenseFinder extends TacticalAnalysis {
         boolean foundSomewhere = false;
         for (int x = 0; x < influence.length; x++) {
             for (int y = 0; y < influence[x].length; y++) {
-                if (influence[x][y] > 1) {
-                    if (!foundSomewhere) foundSomewhere = true;
+                if (influence[x][y] != 0) {
+                    if (!foundSomewhere) {
+                        foundSomewhere = true;
+                        lowX = x;
+                        lowY = y;
+                    }
                     if (influence[x][y] < influence[lowX][lowY]) {
                         lowX = x;
                         lowY = y;
