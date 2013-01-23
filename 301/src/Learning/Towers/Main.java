@@ -32,6 +32,9 @@ public class Main {
     public static KeyManager KEY_MANAGER;
     private Boolean paused;
 
+    // Where the view is located
+    public static final Vector2D viewLocation = new Vector2D(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2);
+
     public Main() {
         paused = true;
         Main.GAME_LOOP = new GameLoop(20);
@@ -117,5 +120,9 @@ public class Main {
         COLLISION_BOARD.setPaused(paused);
         GAME_LOOP.setPaused(paused);
         INFLUENCE_MAP.setPaused(paused);
+    }
+
+    public void shiftView(Vector2D shiftAmount){
+        Main.viewLocation.add(shiftAmount);
     }
 }
