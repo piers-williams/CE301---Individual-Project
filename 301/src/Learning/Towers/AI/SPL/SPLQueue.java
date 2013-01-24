@@ -18,6 +18,11 @@ public class SPLQueue {
     private ArrayList<DefendOrder> defendOrders;
     private final Object _defendOrders = new Object();
 
+    public SPLQueue() {
+        attackOrders = new ArrayList<>();
+        defendOrders = new ArrayList<>();
+    }
+
     public void addAttackOrder(AttackOrder order) {
         synchronized (_attackOrders) {
             attackOrders.add(order);

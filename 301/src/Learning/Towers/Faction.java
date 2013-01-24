@@ -51,6 +51,8 @@ public class Faction {
         Main.GAME_LOOP.addEntity(newGroup);
 
         this.location = startLocation;
+
+        splQueue = new SPLQueue();
     }
 
     public void makeEntity(Vector2D location, Construction base) {
@@ -79,7 +81,7 @@ public class Faction {
 
     public void addConstruction(Construction construction, Vector2D spawnPoint) {
         if (baseGroup.get(construction) == null) {
-            Group group = new Group(r, g, b, spawnPoint, 20, this);
+            Group group = new Group(r, g, b, spawnPoint, 5, this);
             Main.GAME_LOOP.addEntity(group);
             baseGroup.put(construction, group);
         }
@@ -110,6 +112,10 @@ public class Faction {
 
     public Vector2D getLocation() {
         return location;
+    }
+
+    public SPLQueue getSplQueue() {
+        return splQueue;
     }
 }
 

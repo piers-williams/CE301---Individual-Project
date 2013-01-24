@@ -1,5 +1,6 @@
 package Learning.Towers.AI;
 
+import Learning.Towers.AI.SPL.Orders.AttackOrder;
 import Learning.Towers.Entities.Entity;
 import Learning.Towers.Entities.EntityFactory;
 import Learning.Towers.Entities.Meta.Group;
@@ -35,7 +36,9 @@ public class Commander {
 
     public void groupFilled(Group group) {
         System.out.println("Group filled");
-        group.switchToFollow(attackFinder.nextTarget);
+        if(faction.getSplQueue().hasAttackOrder()){
+            group.switchToFollow((Vector2D) faction.getSplQueue().getNextAttackOrder().getArguments()[0]);
+        }
     }
 
     public void buildTower() {
@@ -103,6 +106,14 @@ class AttackFinder extends TacticalAnalysis {
         // It is possible not to find anything at all
         if (foundSomewhere) {
             nextTarget = new Vector2D(lowX * Main.INFLUENCE_MAP.getCellSize(), lowY * Main.INFLUENCE_MAP.getCellSize());
+
+            commander.getFaction().getSplQueue().addAttackOrder(
+                    new AttackOrder(
+                            new Object[] {new Vector2D(lowX * Main.INFLUENCE_MAP.getCellSize(), lowY * Main.INFLUENCE_MAP.getCellSize()), 10},
+                            10,
+                            "Assassinate"
+                    )
+            );
         }
     }
 }
