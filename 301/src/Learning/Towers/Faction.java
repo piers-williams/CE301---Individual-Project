@@ -28,7 +28,9 @@ public class Faction {
 
     private int maxResource = 100, resource = maxResource;
 
-    protected Faction(float r, float g, float b) {
+    private Vector2D location;
+
+    protected Faction(float r, float g, float b, Vector2D startLocation) {
         this.r = r;
         this.g = g;
         this.b = b;
@@ -38,12 +40,14 @@ public class Faction {
         groups = new ArrayList<>();
         baseGroup = new Hashtable<>();
 
-        Entity base = EntityFactory.getBase(this, Utilities.randomLocation(200));
+        Entity base = EntityFactory.getBase(this, startLocation);
         Group newGroup = new Group(r, g, b, base.getConstructionBehaviour().getSpawnPoint(), 5, this);
         baseGroup.put(base.getConstructionBehaviour(), newGroup);
 
         Main.GAME_LOOP.addEntity(base);
         Main.GAME_LOOP.addEntity(newGroup);
+
+        this.location = startLocation;
     }
 
     public void makeEntity(Vector2D location, Construction base) {
@@ -99,6 +103,10 @@ public class Faction {
 
     public float getB() {
         return b;
+    }
+
+    public Vector2D getLocation() {
+        return location;
     }
 }
 

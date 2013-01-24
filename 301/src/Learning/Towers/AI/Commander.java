@@ -3,10 +3,8 @@ package Learning.Towers.AI;
 import Learning.Towers.Entities.Entity;
 import Learning.Towers.Entities.EntityFactory;
 import Learning.Towers.Entities.Meta.Group;
-import Learning.Towers.Faction;
+import Learning.Towers.*;
 import Learning.Towers.Influence.InfluenceMap;
-import Learning.Towers.Main;
-import Learning.Towers.Vector2D;
 
 /**
  * Primary AI class
@@ -134,10 +132,19 @@ class DefenseFinder extends TacticalAnalysis {
                         lowX = x;
                         lowY = y;
                     }
-                    if (influence[x][y] < influence[lowX][lowY]) {
+                    if (cost(x, y) < cost(lowX, lowY)) {
+                        if (commander.getFaction() == Factions.Nature.getFaction()) {
+                            System.out.println("Cost: " + cost(x, y));
+                            System.out.println("Lowest Cost: " + cost(lowX, lowY));
+                            System.out.println("Influence: " + influence[x][y]);
+                        }
                         lowX = x;
                         lowY = y;
                     }
+//                    if (influence[x][y] < influence[lowX][lowY]) {
+//                        lowX = x;
+//                        lowY = y;
+//                    }
                 }
             }
         }
@@ -151,5 +158,12 @@ class DefenseFinder extends TacticalAnalysis {
 
             System.out.println();
         }
+    }
+
+    private double cost(int x, int y) {
+        double cost = Utilities.distance(x * Main.INFLUENCE_MAP.getCellSize(), y * Main.INFLUENCE_MAP.getCellSize(), commander.getFaction().getLocation().x, commander.getFaction().getLocation().y);
+        cost += influence[x][y] * 120;
+
+        return cost;
     }
 }
