@@ -1,6 +1,7 @@
 package Learning.Towers;
 
 import Learning.Towers.AI.Commander;
+import Learning.Towers.AI.SPL.SPLQueue;
 import Learning.Towers.Behaviours.Constructive.Construction;
 import Learning.Towers.Entities.Entity;
 import Learning.Towers.Entities.EntityFactory;
@@ -29,6 +30,8 @@ public class Faction {
     private int maxResource = 100, resource = maxResource;
 
     private Vector2D location;
+
+    private SPLQueue splQueue;
 
     protected Faction(float r, float g, float b, Vector2D startLocation) {
         this.r = r;
