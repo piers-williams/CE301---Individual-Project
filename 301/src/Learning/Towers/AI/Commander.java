@@ -4,7 +4,6 @@ import Learning.Towers.Entities.Entity;
 import Learning.Towers.Entities.EntityFactory;
 import Learning.Towers.Entities.Meta.Group;
 import Learning.Towers.*;
-import Learning.Towers.Influence.InfluenceMap;
 
 /**
  * Primary AI class
@@ -14,7 +13,6 @@ import Learning.Towers.Influence.InfluenceMap;
 public class Commander {
 
     private Faction faction;
-    private InfluenceMap influence;
 
     private AttackFinder attackFinder;
     private DefenseFinder defenseFinder;
@@ -70,6 +68,8 @@ abstract class TacticalAnalysis {
 
 /**
  * This will churn out attack orders
+ * <p/>
+ * This one is global, they will go on the SPL queue
  */
 class AttackFinder extends TacticalAnalysis {
     double[][] enemyInfluence;
@@ -109,6 +109,9 @@ class AttackFinder extends TacticalAnalysis {
 
 /**
  * This class will locate the next location to build a tower
+ * Should be rebuilt so that it operates on a single base
+ * <p/>
+ * Could go back to actually following plans
  */
 class DefenseFinder extends TacticalAnalysis {
     double[][] influence;

@@ -108,19 +108,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Faction.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="Faction.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="28" selection-start="634" selection-end="634" vertical-scroll-proportion="0.3617021">
+                <state line="30" column="0" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Commander.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Commander.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="148" column="34" selection-start="4458" selection-end="4458" vertical-scroll-proportion="0.0">
+                <state line="14" column="28" selection-start="304" selection-end="304" vertical-scroll-proportion="0.3617021">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -180,7 +180,7 @@
           <file leaf-file-name="BasicOrder.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Learning/Towers/AI/SPL/Orders/BasicOrder.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="31" column="35" selection-start="697" selection-end="697" vertical-scroll-proportion="0.7020649">
+                <state line="32" column="76" selection-start="698" selection-end="698" vertical-scroll-proportion="0.72713864">
                   <folding />
                 </state>
               </provider>
@@ -202,7 +202,6 @@
         <option value="$PROJECT_DIR$/src/Learning/Towers/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Influence/InfluenceMap.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Factions.java" />
-        <option value="$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/AI/SPLQueue.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/AI/SPL/Orders/OrderType.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/AI/SPL/Orders/Order.java" />
@@ -214,6 +213,7 @@
         <option value="$PROJECT_DIR$/src/Learning/Towers/AI/SPL/Orders/AttackOrder.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/AI/SPL/SPLQueue.java" />
         <option value="$PROJECT_DIR$/src/Learning/Towers/Faction.java" />
+        <option value="$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java" />
       </list>
     </option>
   </component>
@@ -1298,13 +1298,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/AI/SPL/Orders/BasicOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/AI/SPL/Orders/AttackOrder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="49" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
@@ -1321,19 +1314,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java">
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/AI/SPL/Orders/BasicOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="148" column="34" selection-start="4458" selection-end="4458" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="8" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Learning/Towers/Faction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="28" selection-start="634" selection-end="634" vertical-scroll-proportion="0.3617021">
+        <state line="30" column="0" selection-start="756" selection-end="756" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Learning/Towers/AI/Commander.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="28" selection-start="304" selection-end="304" vertical-scroll-proportion="0.3617021">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
