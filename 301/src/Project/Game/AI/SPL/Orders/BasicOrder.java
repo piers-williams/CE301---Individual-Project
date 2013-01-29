@@ -3,7 +3,7 @@ package Project.Game.AI.SPL.Orders;
 /**
  * Represents an attack order
  */
-public abstract class BasicOrder implements Order{
+public abstract class BasicOrder implements SPLObject {
     private Object[] arguments;
     private double priority;
     private String type;
@@ -34,7 +34,7 @@ public abstract class BasicOrder implements Order{
     }
 
     @Override
-    public int compareTo(Order o) {
+    public int compareTo(SPLObject o) {
         return (int) (o.getPriority() - getPriority());
     }
 }

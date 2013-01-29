@@ -1,9 +1,9 @@
 package Project.Game.AI.SPL.Orders;
 
 /**
- *  Represents an SPL Order
+ *  Represents an SPL Object
  */
-public interface Order extends Comparable<Order>{
+public interface SPLObject extends Comparable<SPLObject>{
 
     public String getType();
 
