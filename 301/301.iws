@@ -97,10 +97,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BasicConverter.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="BasicConverter.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/NLP/BasicConverter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="10" selection-start="594" selection-end="594" vertical-scroll-proportion="0.5265487">
+                <state line="16" column="37" selection-start="472" selection-end="472" vertical-scroll-proportion="0.3259587">
                   <folding />
                 </state>
               </provider>
@@ -128,10 +128,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="BasicConverterTest.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="BasicConverterTest.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/NLP/Tests/BasicConverterTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="8" selection-start="318" selection-end="318" vertical-scroll-proportion="0.41823444">
+                <state line="21" column="25" selection-start="328" selection-end="328" vertical-scroll-proportion="0.5166426">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -1077,19 +1077,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/NLP/BasicConverter.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/NLP/Tests/BasicConverterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="10" selection-start="594" selection-end="594" vertical-scroll-proportion="0.5265487">
+        <state line="8" column="0" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/NLP/Tests/BasicConverterTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/NLP/BasicConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="8" selection-start="318" selection-end="318" vertical-scroll-proportion="0.41823444">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="16" column="37" selection-start="472" selection-end="472" vertical-scroll-proportion="0.3259587">
+          <folding />
         </state>
       </provider>
     </entry>
