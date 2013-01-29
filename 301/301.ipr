@@ -208,6 +208,13 @@
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
   <component name="libraryTable">
+    <library name="junit-4.10">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/junit-4.10.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
     <library name="lwjgl">
       <CLASSES>
         <root url="jar://$PROJECT_DIR$/../lwjgl-2.8.4/lwjgl-2.8.4/jar/lwjgl.jar!/" />
