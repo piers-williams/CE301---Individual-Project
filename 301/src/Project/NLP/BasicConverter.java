@@ -16,12 +16,16 @@ public class BasicConverter implements NLPConverter {
 
     @Override
     public SPLObject convert(String message) {
+
+        String[] sentences = message.split("\\.");
         String type = getType(message);
 
         switch (type) {
-            case "attack":
+            case "Query":
                 break;
-            case "defend":
+            case "Attack":
+                break;
+            case "Defend":
                 break;
         }
         return null;

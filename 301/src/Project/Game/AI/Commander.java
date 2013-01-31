@@ -155,10 +155,6 @@ class DefenseFinder extends TacticalAnalysis {
                         lowX = x;
                         lowY = y;
                     }
-//                    if (influence[x][y] < influence[lowX][lowY]) {
-//                        lowX = x;
-//                        lowY = y;
-//                    }
                 }
             }
         }
