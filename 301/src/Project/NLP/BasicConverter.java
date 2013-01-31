@@ -8,16 +8,17 @@ import Project.Game.AI.SPL.Orders.SPLObject;
 public class BasicConverter implements NLPConverter {
     String[] attackKeywords = new String[]{"attack", "destroy", "neutralise", "neutralize", "kill", "strike", "flank", "dominate"};
     String[] defendKeywords = new String[]{"defend", "protect", "guard", "entrench"};
-
+    String[] queryKeywords = new String[]{"how", "when", "why", "what"};
 
     public BasicConverter() {
+
     }
 
     @Override
     public SPLObject convert(String message) {
         String type = getType(message);
 
-        switch(type){
+        switch (type) {
             case "attack":
                 break;
             case "defend":
@@ -27,25 +28,30 @@ public class BasicConverter implements NLPConverter {
     }
 
     public String getType(String message) {
-        int attack = 0, defend = 0;
+        int attack = 0, defend = 0, query = 0;
         for (String word : message.split("\\s+")) {
-            System.out.println("Checking word: " + word);
             for (String keyword : attackKeywords) {
                 if (word.compareToIgnoreCase(keyword) == 0) {
                     attack++;
-                    //System.out.println("Attack found: " + keyword);
                 }
             }
 
-            for(String keyword : defendKeywords){
-                if(word.toLowerCase().contains(keyword)){
+            for (String keyword : defendKeywords) {
+                if (word.compareToIgnoreCase(keyword) == 0) {
                     defend++;
-                    //System.out.println("Defend found: " + keyword);
+                }
+            }
+
+            for (String keyword : queryKeywords) {
+                if (word.compareToIgnoreCase(keyword) == 0) {
+                    query++;
                 }
             }
         }
 
-        if(attack == 0 && defend == 0) return "Query";
-        return (attack > defend) ? "Attack" : "Defend";
+        if (attack > query && attack > defend) return "Attack";
+        if(defend > attack && defend > query) return "Defend";
+        if(query > attack && query > defend) return "Query";
+        return "N/A";
     }
 }
