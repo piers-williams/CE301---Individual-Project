@@ -54,8 +54,8 @@ public class BasicConverter implements NLPConverter {
         }
 
         if (attack > query && attack > defend) return "Attack";
-        if(defend > attack && defend > query) return "Defend";
-        if(query > attack && query > defend) return "Query";
+        if (defend > attack && defend > query) return "Defend";
+        if (query > attack && query > defend) return "Query";
         return "N/A";
     }
 }

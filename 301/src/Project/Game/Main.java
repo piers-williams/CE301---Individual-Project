@@ -12,14 +12,14 @@ import org.lwjgl.opengl.GL11;
  * Time: 11:49
  */
 public class Main {
-    public static int SCREEN_WIDTH = 800;
-    public static int SCREEN_HEIGHT = 450;
+    public static int SCREEN_WIDTH = 1600;
+    public static int SCREEN_HEIGHT = 900;
 
-    public static int MAP_WIDTH = 1600;
-    public static int MAP_HEIGHT = 900;
+    public static int MAP_WIDTH = 2000;
+    public static int MAP_HEIGHT = 2000;
     public static int SQUARE_WIDTH = 6;
     public static int SQUARE_COUNT = 0;
-    public static boolean FULL_SCREEN = false;
+    public static boolean FULL_SCREEN = true;
     // Collision detection cell size
     public static final int CELL_SIZE = 75;
 

@@ -10,7 +10,6 @@ import Project.Game.Entities.Meta.Group;
 import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.Hashtable;
-import java.util.Random;
 
 /**
  * User: Piers
@@ -18,8 +17,6 @@ import java.util.Random;
  * Time: 16:42
  */
 public class Faction {
-    private final static Random random = new Random();
-
     private ArrayList<Group> groups;
     private Dictionary<Construction, Group> baseGroup;
 
@@ -27,7 +24,7 @@ public class Faction {
 
     private Commander commander;
 
-    private int maxResource = 100, resource = maxResource;
+    private int maxResource = 10, resource = maxResource;
 
     private Vector2D location;
 

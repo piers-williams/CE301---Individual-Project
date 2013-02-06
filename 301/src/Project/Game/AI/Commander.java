@@ -146,10 +146,10 @@ class DefenseFinder extends TacticalAnalysis {
                         lowX = x;
                         lowY = y;
                     }
-                    if (cost(x, y) < cost(lowX, lowY)) {
+                    if (towerPlacementCost(x, y) < towerPlacementCost(lowX, lowY)) {
                         if (commander.getFaction() == Factions.Nature.getFaction()) {
-                            System.out.println("Cost: " + cost(x, y));
-                            System.out.println("Lowest Cost: " + cost(lowX, lowY));
+                            System.out.println("Cost: " + towerPlacementCost(x, y));
+                            System.out.println("Lowest Cost: " + towerPlacementCost(lowX, lowY));
                             System.out.println("Influence: " + influence[x][y]);
                         }
                         lowX = x;
@@ -170,9 +170,12 @@ class DefenseFinder extends TacticalAnalysis {
         }
     }
 
-    private double cost(int x, int y) {
+    private double towerPlacementCost(int x, int y) {
+        // Calculate distance from center of base
         double cost = Utilities.distance(x * Main.INFLUENCE_MAP.getCellSize(), y * Main.INFLUENCE_MAP.getCellSize(), commander.getFaction().getLocation().x, commander.getFaction().getLocation().y);
-        cost += influence[x][y] * 120;
+        //Score based on how far away from threshold we are
+        cost = Math.abs(250 - cost);
+        cost += influence[x][y] * 100;
 
         return cost;
     }
