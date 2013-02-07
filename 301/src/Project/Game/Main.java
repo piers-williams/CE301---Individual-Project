@@ -18,7 +18,6 @@ public class Main {
     public static int MAP_WIDTH = 2000;
     public static int MAP_HEIGHT = 2000;
     public static int SQUARE_WIDTH = 6;
-    public static int SQUARE_COUNT = 0;
     public static boolean FULL_SCREEN = true;
     // Collision detection cell size
     public static final int CELL_SIZE = 75;
@@ -32,8 +31,7 @@ public class Main {
     private Boolean paused;
 
     // Where the view is located
-    public static final Vector2D viewLocation = new Vector2D(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2);
-//    public static final Vector2D viewLocation = new Vector2D(0,0);
+    public static final Vector2D viewLocation = new Vector2D(0, 0);
 
     public Main() {
         paused = true;
@@ -113,7 +111,7 @@ public class Main {
     }
 
     private void drawBoundary() {
-        GL11.glColor4f(0, 255, 255, 255);
+        GL11.glColor4f(255, 255, 255, 255);
         // Left
         GL11.glBegin(GL11.GL_LINE);
         GL11.glVertex2d(0, 0);

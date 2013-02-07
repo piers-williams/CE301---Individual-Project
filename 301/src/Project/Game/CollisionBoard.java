@@ -40,7 +40,7 @@ public class CollisionBoard implements Runnable {
         collisionEntities = new ArrayList<>();
         temporaryEntityHolding = new ArrayList<>();
 
-        tickDelay = 10;
+        tickDelay = 20;
 
         vector2DSource = Main.VECTOR2D_SOURCE;
     }
@@ -80,7 +80,7 @@ public class CollisionBoard implements Runnable {
                 runCollisionDetection();
 
 //                System.out.println("Number of vectors: " + vector2DSource.numberOfVectors());
-                //System.gc();
+//                System.gc();
             }
         }
     }
