@@ -83,4 +83,25 @@
 			</Building>
 		</Buildings>
 	</Base>
+	<Base name="DefensiveLvl2">
+		<Upgrade>Null</Upgrade>
+		<Buildings>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="0" y = "50" />
+			</Building>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="0" y = "-50" />
+			</Building>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="50" y = "0" />
+			</Building>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="-50" y = "0" />
+			</Building>
+		</Buildings>
+	</Base>
 </Bases>
