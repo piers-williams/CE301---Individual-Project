@@ -1,9 +1,14 @@
 package Project.Game;
 
+import javax.xml.bind.annotation.XmlAttribute;
+
 public final class Vector2D {
 
     // fields
-    public double x, y;
+    @XmlAttribute(name = "x")
+    public double x;
+    @XmlAttribute(name = "y")
+    public double y;
 
     // construct a zero vector
     public Vector2D() {
