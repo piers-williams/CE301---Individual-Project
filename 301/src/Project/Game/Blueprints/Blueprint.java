@@ -1,4 +1,4 @@
-package Project.Game.Behaviours.Constructive;
+package Project.Game.Blueprints;
 
 import Project.Game.Vector2D;
 
