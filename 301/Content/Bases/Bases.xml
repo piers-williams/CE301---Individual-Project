@@ -1,0 +1,86 @@
+<Bases>
+	<Base name="HomeLvl1">
+		<Upgrade>HomeLvl2</Upgrade>
+		<Buildings>
+			<Building>
+				<Type>Center</Type>
+				<Offset x="0" y="0" />
+			</Building>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="100" y="100" />				
+			</Building>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="-100" y="100" />
+			</Building>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="100" y="-100" />
+			</Building>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="-100" y="-100" />
+			</Building>
+		</Buildings>
+	</Base>
+	<Base name="HomeLvl2">
+		<Upgrade>HomeLvl3</Upgrade>
+		<Buildings>
+			<Building>
+				<Type>Construction</Type>
+				<Offset x="50" y="0" />
+			</Building>
+			<Building>
+				<Type>Construction</Type>
+				<Offset x="-50" y="0" />
+			</Building>
+		</Buildings>
+	</Base>
+	<Base name="HomeLvl3">
+		<Upgrade>Null</Upgrade>
+		<Buildings>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="100" y="0" />
+			</Building>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="-100" y="0" />
+			</Building>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="0" y="100" />
+			</Building>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="0" y="-100" />
+			</Building>
+		</Buildings>
+	</Base>
+	<Base name="DefensiveLvl1">
+		<Upgrade>DefensiveLvl2</Upgrade>
+		<Buildings>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="0" y="0" />
+			</Building>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="25" y="25" />
+			</Building>	
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="-25" y="25" />
+			</Building>
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="-25" y="-25" />
+			</Building>	
+			<Building>
+				<Type>Tower</Type>
+				<Offset x="25" y="-25" />
+			</Building>
+		</Buildings>
+	</Base>
+</Bases>
