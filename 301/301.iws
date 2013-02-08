@@ -131,21 +131,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Blueprint.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Blueprint.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/Blueprint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="22" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vector2D.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="32" selection-start="273" selection-end="273" vertical-scroll-proportion="0.32409012">
+            <state line="4" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.113902844">
               <folding />
             </state>
           </provider>
@@ -175,8 +164,8 @@
         <option value="$PROJECT_DIR$/src/Project/Game/CollisionBoard.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Factions.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BaseConstruction.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/Blueprint.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Vector2D.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/Blueprint.java" />
       </list>
     </option>
   </component>
@@ -1308,18 +1297,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/Blueprint.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="22" selection-start="509" selection-end="509" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="24" column="33" selection-start="482" selection-end="482" vertical-scroll-proportion="0.4714038">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/Blueprint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="273" selection-end="273" vertical-scroll-proportion="0.32409012">
+        <state line="4" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="0.113902844">
           <folding />
         </state>
       </provider>
