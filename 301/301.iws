@@ -134,7 +134,7 @@
       <file leaf-file-name="BlueprintRegistry.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="25" selection-start="498" selection-end="498" vertical-scroll-proportion="0.5192926">
+            <state line="26" column="19" selection-start="645" selection-end="645" vertical-scroll-proportion="0.7106109">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1335,7 +1335,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="25" selection-start="498" selection-end="498" vertical-scroll-proportion="0.5192926">
+        <state line="26" column="19" selection-start="645" selection-end="645" vertical-scroll-proportion="0.7106109">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
