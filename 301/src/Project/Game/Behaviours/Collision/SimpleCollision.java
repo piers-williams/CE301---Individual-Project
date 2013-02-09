@@ -48,7 +48,7 @@ public class SimpleCollision implements Collision {
 
         double distance = firstLocation.dist(secondLocation);
 
-        return (distance < (first.getWidth() + second.getWidth())/2);
+        return (distance < (first.getWidth() + second.getWidth()) / 2);
     }
 
     public static void bounce(Collision first, Collision second) {

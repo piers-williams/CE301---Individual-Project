@@ -184,11 +184,12 @@ public final class Vector2D {
         return (Math.sqrt(tempx + tempy));
     }
 
-    public void clone(Vector2D target){
+    public void clone(Vector2D target) {
         this.x = target.x;
         this.y = target.y;
     }
-    public static void clone(Vector2D target, Vector2D source){
+
+    public static void clone(Vector2D target, Vector2D source) {
         source.x = target.x;
         source.y = target.y;
     }

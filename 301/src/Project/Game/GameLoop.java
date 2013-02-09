@@ -94,16 +94,17 @@ public class GameLoop implements Runnable {
 
     /**
      * Gets entities that are within a certain radius to the given location
+     *
      * @param location location of the search
-     * @param radius radius to search in
+     * @param radius   radius to search in
      * @return List of entities
      */
-    public ArrayList<Entity> getEntities(Vector2D location, int radius){
+    public ArrayList<Entity> getEntities(Vector2D location, int radius) {
         ArrayList<Entity> closeEntities = new ArrayList<>();
 
-        for(Entity entity : entities){
-            if(entity.isAlive()){
-                if(entity.getMovementBehaviour().getLocation().dist(location) < radius){
+        for (Entity entity : entities) {
+            if (entity.isAlive()) {
+                if (entity.getMovementBehaviour().getLocation().dist(location) < radius) {
                     closeEntities.add(entity);
                 }
             }

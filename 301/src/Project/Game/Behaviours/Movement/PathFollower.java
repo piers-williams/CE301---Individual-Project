@@ -23,7 +23,7 @@ public class PathFollower extends BasicMovement {
         if (!stopped) {
             if (location.dist(targetLocation) < distanceThreshold) {
                 stopped = true;
-            }else{
+            } else {
                 location.add(location.getNormalDirectionBetween(targetLocation));
             }
 

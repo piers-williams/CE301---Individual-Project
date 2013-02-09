@@ -91,9 +91,9 @@ public class EntityFactory {
         return entity;
     }
 
-    public static Entity getBuilding(Faction faction, Vector2D location, String type){
+    public static Entity getBuilding(Faction faction, Vector2D location, String type) {
 
-        switch(type){
+        switch (type) {
             case "Tower":
                 return getTower(faction, location);
             case "Base":

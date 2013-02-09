@@ -22,9 +22,9 @@ public class CachedVector2DSource {
         return getVector((int) x, (int) y);
     }
 
-    public int numberOfVectors(){
+    public int numberOfVectors() {
         int sum = 0;
-        for(HashMap<Integer, Vector2D> temp : vectors.values()){
+        for (HashMap<Integer, Vector2D> temp : vectors.values()) {
             sum += temp.size();
         }
         return sum;

@@ -72,7 +72,8 @@ public class Group extends Entity {
     public void switchToWander() {
         movementBehaviour = new Wandering(this, movementBehaviour.getLocation());
     }
-    public void switchToFollow(Vector2D target){
-        movementBehaviour = new PathFollower(this, movementBehaviour.getLocation(), target, 5 );
+
+    public void switchToFollow(Vector2D target) {
+        movementBehaviour = new PathFollower(this, movementBehaviour.getLocation(), target, 5);
     }
 }

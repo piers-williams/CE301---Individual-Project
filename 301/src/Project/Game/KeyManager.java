@@ -16,23 +16,23 @@ public class KeyManager {
     public void update() {
         while (Keyboard.next()) {
             if (Keyboard.getEventKeyState()) {
-                switch(Keyboard.getEventKey()){
-                    case Keyboard.KEY_M :
+                switch (Keyboard.getEventKey()) {
+                    case Keyboard.KEY_M:
                         Main.INFLUENCE_MAP.cycleFaction();
                         break;
-                    case Keyboard.KEY_P :
+                    case Keyboard.KEY_P:
                         main.togglePause();
                         break;
-                    case Keyboard.KEY_A :
+                    case Keyboard.KEY_A:
                         main.shiftView(new Vector2D(50, 0));
                         break;
                     case Keyboard.KEY_W:
                         main.shiftView(new Vector2D(0, -50));
                         break;
-                    case Keyboard.KEY_S :
+                    case Keyboard.KEY_S:
                         main.shiftView(new Vector2D(0, 50));
                         break;
-                    case Keyboard.KEY_D :
+                    case Keyboard.KEY_D:
                         main.shiftView(new Vector2D(-50, 0));
                         break;
                 }

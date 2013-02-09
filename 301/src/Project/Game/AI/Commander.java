@@ -36,7 +36,7 @@ public class Commander {
 
     public void groupFilled(Group group) {
         System.out.println("Group filled");
-        if(faction.getSplQueue().hasAttackOrder()){
+        if (faction.getSplQueue().hasAttackOrder()) {
             group.switchToFollow((Vector2D) faction.getSplQueue().getNextAttackOrder().getArguments()[0]);
         }
     }
@@ -109,7 +109,7 @@ class AttackFinder extends TacticalAnalysis {
 
             commander.getFaction().getSplQueue().addAttackOrder(
                     new AttackOrder(
-                            new Object[] {new Vector2D(lowX * Main.INFLUENCE_MAP.getCellSize(), lowY * Main.INFLUENCE_MAP.getCellSize()), 10},
+                            new Object[]{new Vector2D(lowX * Main.INFLUENCE_MAP.getCellSize(), lowY * Main.INFLUENCE_MAP.getCellSize()), 10},
                             10,
                             "Assassinate"
                     )

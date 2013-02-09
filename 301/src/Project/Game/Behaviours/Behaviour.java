@@ -3,7 +3,7 @@ package Project.Game.Behaviours;
 import Project.Game.Entities.Entity;
 
 /**
- *    Basic Behaviour for Entities
+ * Basic Behaviour for Entities
  */
 public interface Behaviour {
 
