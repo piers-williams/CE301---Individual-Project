@@ -43,7 +43,7 @@ public class Commander {
 
     public void buildTower() {
         if (defenseFinder.nextTarget != null) {
-            Entity tower = EntityFactory.getTower(faction, defenseFinder.nextTarget);
+            Entity tower = EntityFactory.getBuilding(faction, defenseFinder.nextTarget, "Tower");
             Main.GAME_LOOP.addEntity(tower);
 
             defenseFinder.nextTarget = null;

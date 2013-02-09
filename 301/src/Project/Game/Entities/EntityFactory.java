@@ -77,7 +77,7 @@ public class EntityFactory {
     }
 
     // TODO get an offensive behaviour
-    public static Entity getTower(Faction faction, Vector2D location) {
+    private static Entity getTower(Faction faction, Vector2D location) {
         Entity entity = new Entity();
 
         setColour(entity, faction);
@@ -89,6 +89,19 @@ public class EntityFactory {
         entity.collisionBehaviour = new SimpleCollision(entity, 20);
 
         return entity;
+    }
+
+    public static Entity getBuilding(Faction faction, Vector2D location, String type){
+
+        switch(type){
+            case "Tower":
+                return getTower(faction, location);
+            case "Base":
+                return getBase(faction, location);
+
+        }
+
+        throw new IllegalArgumentException("Type not recognised");
     }
 
     private static void setColour(Entity entity, Faction faction) {
