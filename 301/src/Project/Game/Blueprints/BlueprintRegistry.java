@@ -25,14 +25,19 @@ public class BlueprintRegistry {
         blueprints = new ArrayList<>();
     }
 
-    public void loadBlueprints(String filename) {
+    public static BlueprintRegistry load(String filename) {
 
         try {
             JAXBContext context = JAXBContext.newInstance(BlueprintRegistry.class);
+            Unmarshaller unmarshaller = context.createUnmarshaller();
+
+            return (BlueprintRegistry) unmarshaller.unmarshal(new File(filename));
+
         } catch (JAXBException e) {
             e.printStackTrace();
         }
 
+        throw new RuntimeException("Something went wrong loading blueprints");
     }
 
     public static void main(String[] args) {

@@ -1,5 +1,6 @@
 package Project.Game;
 
+import Project.Game.Blueprints.BlueprintRegistry;
 import Project.Game.Influence.InfluenceMap;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.Display;
@@ -15,8 +16,8 @@ public class Main {
     public static int SCREEN_WIDTH = 1600;
     public static int SCREEN_HEIGHT = 900;
 
-    public static int MAP_WIDTH = 2000;
-    public static int MAP_HEIGHT = 2000;
+    public static int MAP_WIDTH = 1600;
+    public static int MAP_HEIGHT = 900;
     public static int SQUARE_WIDTH = 6;
     public static boolean FULL_SCREEN = true;
     // Collision detection cell size
@@ -26,6 +27,7 @@ public class Main {
     public static CollisionBoard COLLISION_BOARD;
     public static InfluenceMap INFLUENCE_MAP;
     public static CachedVector2DSource VECTOR2D_SOURCE;
+    public static BlueprintRegistry BLUEPRINT_REGISTRY;
 
     public static KeyManager KEY_MANAGER;
     private Boolean paused;
@@ -39,6 +41,7 @@ public class Main {
         VECTOR2D_SOURCE = new CachedVector2DSource();
         Main.COLLISION_BOARD = new CollisionBoard(CELL_SIZE);
         Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 30, 40);
+        BLUEPRINT_REGISTRY = BlueprintRegistry.load("Content/Bases/Bases.xml");
         KEY_MANAGER = new KeyManager(this);
 
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
@@ -96,13 +99,11 @@ public class Main {
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
             GL11.glTranslated(viewLocation.x, viewLocation.y, 0);
 
-            // TODO Draw boundary lines
-            drawBoundary();
-
             Main.GAME_LOOP.draw();
             INFLUENCE_MAP.draw();
 
             GL11.glTranslated(-viewLocation.x, -viewLocation.y, 0);
+            drawBoundary();
 
             Display.update();
             KEY_MANAGER.update();
@@ -112,16 +113,17 @@ public class Main {
 
     private void drawBoundary() {
         GL11.glColor4f(255, 255, 255, 255);
+
         // Left
         GL11.glBegin(GL11.GL_LINE);
         GL11.glVertex2d(0, 0);
-        GL11.glVertex2d(1, Main.MAP_HEIGHT);
+        GL11.glVertex2d(10, Main.MAP_HEIGHT);
         GL11.glEnd();
 
         // Top
         GL11.glBegin(GL11.GL_LINE);
         GL11.glVertex2d(0, 0);
-        GL11.glVertex2d(Main.MAP_WIDTH, 1);
+        GL11.glVertex2d(Main.MAP_WIDTH, 10);
         GL11.glEnd();
 
         // Bottom
