@@ -7,19 +7,22 @@ import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
 
+import javax.swing.*;
+import java.awt.*;
+
 /**
  * User: Piers
  * Date: 16/10/12
  * Time: 11:49
  */
 public class Main {
-    public static int SCREEN_WIDTH = 1600;
-    public static int SCREEN_HEIGHT = 900;
+    public static int SCREEN_WIDTH = 800;
+    public static int SCREEN_HEIGHT = 600;
 
     public static int MAP_WIDTH = 1600;
     public static int MAP_HEIGHT = 900;
     public static int SQUARE_WIDTH = 6;
-    public static boolean FULL_SCREEN = true;
+    public static boolean FULL_SCREEN = false;
     // Collision detection cell size
     public static final int CELL_SIZE = 75;
 
@@ -36,6 +39,13 @@ public class Main {
     public static final Vector2D viewLocation = new Vector2D(0, 0);
 
     public Main() {
+
+        JFrame frame = new JFrame();
+
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        Canvas canvas = new Canvas();
+        frame.add(canvas);
+
         paused = true;
         Main.GAME_LOOP = new GameLoop(20);
         VECTOR2D_SOURCE = new CachedVector2DSource();
@@ -48,8 +58,9 @@ public class Main {
         // Set up the display
         try {
             Display.setDisplayMode(new DisplayMode(SCREEN_WIDTH, SCREEN_HEIGHT));
-            Display.setFullscreen(true);
+            Display.setFullscreen(false);
             Display.create();
+            Display.setParent(canvas);
 
             GL11.glMatrixMode(GL11.GL_PROJECTION);
             GL11.glLoadIdentity();
@@ -80,6 +91,9 @@ public class Main {
         for (Factions factions : Factions.values()) {
             GAME_LOOP.addFaction(factions.getFaction());
         }
+
+        frame.pack();
+        frame.setVisible(true);
 
         /**
          * Main render loop
