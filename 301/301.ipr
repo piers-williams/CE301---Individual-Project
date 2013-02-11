@@ -229,6 +229,13 @@
       <JAVADOC />
       <SOURCES />
     </library>
+    <library name="TWL">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../TWL.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
   </component>
 </project>
 

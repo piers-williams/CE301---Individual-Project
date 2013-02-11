@@ -85,112 +85,62 @@
     <favorites_list name="301" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4261772">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="SimpleConstruction.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/SimpleConstruction.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="24" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BaseConstruction.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BaseConstruction.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="19" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Commander.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="54" column="33" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Faction.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="35" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="60" column="39" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.50581396">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Blueprint.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="38" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Bases.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="20" column="29" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="EntityFactory.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="83" column="44" selection-start="3210" selection-end="3210" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="e#585#623#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BlueprintRegistry.java" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="35" column="29" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.72761196">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BlueprintConstruction.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="29" column="34" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="SimpleConstruction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/SimpleConstruction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="24" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseConstruction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BaseConstruction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="19" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Commander.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="33" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Faction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="35" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="21" selection-start="1954" selection-end="1954" vertical-scroll-proportion="0.50637525">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Blueprint.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="38" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -1083,7 +1033,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3170391" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1091,7 +1041,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226257" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1936937" sideWeight="0.801676" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27670527" sideWeight="0.801676" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3896648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35335195" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
@@ -1231,11 +1181,6 @@
         <state line="24" column="33" selection-start="482" selection-end="482" vertical-scroll-proportion="0.4714038" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/SimpleConstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_07/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1621" column="0" selection-start="68317" selection-end="68317" vertical-scroll-proportion="0.3318078">
@@ -1250,39 +1195,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="33" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BaseConstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="19" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="34" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="29" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="38" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1296,13 +1211,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="35" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="29" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.72761196">
@@ -1312,9 +1220,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="34" selection-start="808" selection-end="808" vertical-scroll-proportion="0.5354478">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/SimpleConstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="24" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BaseConstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="19" selection-start="420" selection-end="420" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="33" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="35" selection-start="630" selection-end="630" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="38" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="39" selection-start="1972" selection-end="1972" vertical-scroll-proportion="0.50581396">
+        <state line="60" column="21" selection-start="1954" selection-end="1954" vertical-scroll-proportion="0.50637525">
           <folding />
         </state>
       </provider>
@@ -1383,7 +1333,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>junit-4.10</last-edited>
+          <last-edited>TWL</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

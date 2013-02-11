@@ -60,7 +60,6 @@ public class Main {
             Display.setDisplayMode(new DisplayMode(SCREEN_WIDTH, SCREEN_HEIGHT));
             Display.setFullscreen(false);
             Display.create();
-            Display.setParent(canvas);
 
             GL11.glMatrixMode(GL11.GL_PROJECTION);
             GL11.glLoadIdentity();
