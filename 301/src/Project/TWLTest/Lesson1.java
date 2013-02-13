@@ -12,7 +12,6 @@ import org.lwjgl.opengl.GL11;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 
 /**
  *
@@ -44,7 +43,7 @@ public class Lesson1 extends Widget {
             renderer = new LWJGLRenderer();
 
 //            themeManager = ThemeManager.createThemeManager(getClass().getResource("Content/UITheme/Eforen.xml"), renderer);
-            themeManager = ThemeManager.createThemeManager(new File("Content/UITheme/Eforen.xml").toURL(), renderer);
+            themeManager = ThemeManager.createThemeManager(new File("Content/UITheme/simple.xml").toURL(), renderer);
 
         } catch (LWJGLException e) {
             e.printStackTrace();
@@ -82,7 +81,7 @@ public class Lesson1 extends Widget {
     protected void layout() {
         button.setPosition(100, 100);
         button.setSize(100, 33);
-
+        button.adjustSize();
     }
 
     private void gameLoop() {
