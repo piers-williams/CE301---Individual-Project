@@ -2,6 +2,11 @@ package Project.Game;
 
 import Project.Game.Blueprints.BlueprintRegistry;
 import Project.Game.Influence.InfluenceMap;
+import de.matthiasmann.twl.GUI;
+import de.matthiasmann.twl.Widget;
+import de.matthiasmann.twl.renderer.lwjgl.LWJGLRenderer;
+import de.matthiasmann.twl.theme.ThemeManager;
+import org.lwjgl.LWJGLException;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
@@ -9,13 +14,15 @@ import org.lwjgl.opengl.GL11;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 
 /**
  * User: Piers
  * Date: 16/10/12
  * Time: 11:49
  */
-public class Main {
+public class Main extends Widget{
     public static int SCREEN_WIDTH = 800;
     public static int SCREEN_HEIGHT = 600;
 
@@ -35,16 +42,14 @@ public class Main {
     public static KeyManager KEY_MANAGER;
     private Boolean paused;
 
+    private GUI gui;
+    private LWJGLRenderer renderer;
+    private ThemeManager themeManager;
+
     // Where the view is located
     public static final Vector2D viewLocation = new Vector2D(0, 0);
 
     public Main() {
-
-        JFrame frame = new JFrame();
-
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        Canvas canvas = new Canvas();
-        frame.add(canvas);
 
         paused = true;
         Main.GAME_LOOP = new GameLoop(20);
@@ -90,9 +95,6 @@ public class Main {
         for (Factions factions : Factions.values()) {
             GAME_LOOP.addFaction(factions.getFaction());
         }
-
-        frame.pack();
-        frame.setVisible(true);
 
         /**
          * Main render loop
@@ -170,5 +172,22 @@ public class Main {
 
     public void shiftView(Vector2D shiftAmount) {
         Main.viewLocation.add(shiftAmount);
+    }
+
+    private void initTWL() {
+        try {
+            renderer = new LWJGLRenderer();
+
+//            themeManager = ThemeManager.createThemeManager(getClass().getResource("Content/UITheme/Eforen.xml"), renderer);
+            themeManager = ThemeManager.createThemeManager(new File("Content/UITheme/simple.xml").toURL(), renderer);
+
+        } catch (LWJGLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        gui = new GUI(this, renderer);
+        gui.applyTheme(themeManager);
     }
 }
