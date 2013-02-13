@@ -2,6 +2,7 @@ package Project.Game;
 
 import Project.Game.Blueprints.BlueprintRegistry;
 import Project.Game.Influence.InfluenceMap;
+import de.matthiasmann.twl.Button;
 import de.matthiasmann.twl.GUI;
 import de.matthiasmann.twl.Widget;
 import de.matthiasmann.twl.renderer.lwjgl.LWJGLRenderer;
@@ -12,8 +13,6 @@ import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 import org.lwjgl.opengl.GL11;
 
-import javax.swing.*;
-import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
@@ -22,7 +21,7 @@ import java.io.IOException;
  * Date: 16/10/12
  * Time: 11:49
  */
-public class Main extends Widget{
+public class Main extends Widget {
     public static int SCREEN_WIDTH = 800;
     public static int SCREEN_HEIGHT = 600;
 
@@ -45,6 +44,7 @@ public class Main extends Widget{
     private GUI gui;
     private LWJGLRenderer renderer;
     private ThemeManager themeManager;
+    private Button button;
 
     // Where the view is located
     public static final Vector2D viewLocation = new Vector2D(0, 0);
@@ -58,7 +58,6 @@ public class Main extends Widget{
         Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 30, 40);
         BLUEPRINT_REGISTRY = BlueprintRegistry.load("Content/Bases/Bases.xml");
         KEY_MANAGER = new KeyManager(this);
-
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
         // Set up the display
         try {
@@ -73,6 +72,9 @@ public class Main extends Widget{
             GL11.glEnable(GL11.GL_BLEND);
             GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
 
+            initTWL();
+
+            button = new Button("Pause");
         } catch (Exception e) {
 
         }
@@ -119,7 +121,7 @@ public class Main extends Widget{
 
             GL11.glTranslated(-viewLocation.x, -viewLocation.y, 0);
             drawBoundary();
-
+            gui.update();
             Display.update();
             KEY_MANAGER.update();
         }
@@ -177,8 +179,6 @@ public class Main extends Widget{
     private void initTWL() {
         try {
             renderer = new LWJGLRenderer();
-
-//            themeManager = ThemeManager.createThemeManager(getClass().getResource("Content/UITheme/Eforen.xml"), renderer);
             themeManager = ThemeManager.createThemeManager(new File("Content/UITheme/simple.xml").toURL(), renderer);
 
         } catch (LWJGLException e) {
@@ -189,5 +189,12 @@ public class Main extends Widget{
 
         gui = new GUI(this, renderer);
         gui.applyTheme(themeManager);
+    }
+
+    @Override
+    protected void layout() {
+        button.setPosition(50, 50);
+        button.setSize(100, 50);
+        button.adjustSize();
     }
 }

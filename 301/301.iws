@@ -127,7 +127,7 @@
           <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="53" column="31" selection-start="1531" selection-end="1531" vertical-scroll-proportion="0.51428574">
+                <state line="124" column="63" selection-start="3934" selection-end="3934" vertical-scroll-proportion="0.64675325">
                   <folding />
                 </state>
               </provider>
@@ -169,7 +169,7 @@
           <file leaf-file-name="Lesson1.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/TWLTest/Lesson1.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="77" column="10" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.5407407">
+                <state line="86" column="22" selection-start="2186" selection-end="2186" vertical-scroll-proportion="1.8814815">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -1062,16 +1062,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="33" selection-start="482" selection-end="482" vertical-scroll-proportion="0.4714038" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_07/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1621" column="0" selection-start="68317" selection-end="68317" vertical-scroll-proportion="0.3318078" />
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_07/src.zip!/javax/xml/bind/Unmarshaller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="430" column="18" selection-start="17246" selection-end="17246" vertical-scroll-proportion="0.3318078" />
@@ -1134,6 +1124,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/../lwjgl-2.8.4/lwjgl-2.8.4/jar/lwjgl.jar!/org/lwjgl/opengl/GL11.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1352" column="0" selection-start="64560" selection-end="64560" vertical-scroll-proportion="0.35555556">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../TWL.jar!/de/matthiasmann/twl/renderer/lwjgl/LWJGLRenderer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="0" selection-start="6669" selection-end="6669" vertical-scroll-proportion="0.35555556">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/TWLTest/Lesson1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="74" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.0">
@@ -1145,7 +1149,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="31" selection-start="1531" selection-end="1531" vertical-scroll-proportion="0.51428574">
+        <state line="124" column="63" selection-start="3934" selection-end="3934" vertical-scroll-proportion="0.64675325">
           <folding />
         </state>
       </provider>
