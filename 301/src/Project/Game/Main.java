@@ -22,7 +22,7 @@ import java.io.IOException;
  * Date: 16/10/12
  * Time: 11:49
  */
-public class Main extends Widget {
+public class Main{
     public static int SCREEN_WIDTH = 800;
     public static int SCREEN_HEIGHT = 600;
 
@@ -38,6 +38,7 @@ public class Main extends Widget {
     public static InfluenceMap INFLUENCE_MAP;
     public static CachedVector2DSource VECTOR2D_SOURCE;
     public static BlueprintRegistry BLUEPRINT_REGISTRY;
+    public static Main MAIN;
 
     public static KeyManager KEY_MANAGER;
     private Boolean paused;
@@ -45,7 +46,6 @@ public class Main extends Widget {
     private GUI gui;
     private LWJGLRenderer renderer;
     private ThemeManager themeManager;
-    private Button button;
 
     private ButtonManager buttonManager;
 
@@ -54,6 +54,7 @@ public class Main extends Widget {
 
     public Main() {
 
+        Main.MAIN = this;
         paused = true;
         Main.GAME_LOOP = new GameLoop(20);
         VECTOR2D_SOURCE = new CachedVector2DSource();
@@ -75,7 +76,7 @@ public class Main extends Widget {
             GL11.glEnable(GL11.GL_BLEND);
             GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
 
-
+            BLUEPRINT_REGISTRY.calculateUpgrades();
             buttonManager = new ButtonManager("button");
             initTWL();
         } catch (Exception e) {

@@ -1,5 +1,6 @@
 package Project.Game.UI;
 
+import Project.Game.Main;
 import Project.Game.Vector2D;
 import com.sun.istack.internal.Nullable;
 import de.matthiasmann.twl.Button;
@@ -133,6 +134,8 @@ class ButtonsWrapper implements Iterable<InternalButton> {
                 button.button = new Button(button.title);
             }
         }
+
+        assignCallbacks();
     }
 
     /**
@@ -144,6 +147,26 @@ class ButtonsWrapper implements Iterable<InternalButton> {
         }
     }
 
+    public void assignCallbacks() {
+        for (InternalButton button : buttons) {
+            switch(button.action.type){
+                case "Pause":
+                    button.button.addCallback(getPauseFunction());
+                    break;
+                case "Build":
+
+            }
+        }
+    }
+
+    private Runnable getPauseFunction(){
+        return new Runnable() {
+            @Override
+            public void run() {
+                Main.MAIN.togglePause();
+            }
+        };
+    }
     @Override
     public Iterator<InternalButton> iterator() {
 

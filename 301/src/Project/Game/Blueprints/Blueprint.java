@@ -13,6 +13,8 @@ import java.util.ArrayList;
 @XmlRootElement
 public class Blueprint {
     @XmlElement(name = "Upgrade")
+    String upgradeString;
+
     Blueprint upgrade;
     @XmlElement(name = "FullName")
     String name;

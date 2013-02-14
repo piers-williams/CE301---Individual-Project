@@ -25,6 +25,15 @@ public class BlueprintRegistry {
         blueprints = new ArrayList<>();
     }
 
+    public void calculateUpgrades() {
+        for (Blueprint blueprint : blueprints) {
+            if (blueprint.upgradeString != "Null") {
+                if (contains(blueprint.upgradeString)) {
+                    blueprint.upgrade = get(blueprint.upgradeString);
+                }
+            }
+        }
+    }
 
     public boolean contains(String name) {
         for (Blueprint blueprint : blueprints) {
