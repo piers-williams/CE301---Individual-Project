@@ -76,6 +76,7 @@ public class Main extends Widget {
 
             button = new Button("Pause");
             button.setTheme("button");
+            add(button);
         } catch (Exception e) {
 
         }
