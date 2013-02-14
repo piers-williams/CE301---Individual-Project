@@ -30,7 +30,7 @@ public class ButtonManager extends Widget {
         buttons = ButtonManager.load("Content/UI.xml");
         buttons.constructAllButtons();
         removeAllChildren();
-        for(InternalButton button : buttons){
+        for (InternalButton button : buttons) {
             add(button.button);
         }
     }
