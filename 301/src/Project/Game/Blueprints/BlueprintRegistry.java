@@ -25,6 +25,21 @@ public class BlueprintRegistry {
         blueprints = new ArrayList<>();
     }
 
+
+    public boolean contains(String name) {
+        for (Blueprint blueprint : blueprints) {
+            if (blueprint.name.equalsIgnoreCase(name)) return true;
+        }
+        return false;
+    }
+
+    public Blueprint get(String name) {
+        for (Blueprint blueprint : blueprints) {
+            if (blueprint.name.equalsIgnoreCase(name)) return blueprint;
+        }
+        throw new IllegalArgumentException("Blueprint not found");
+    }
+
     public static BlueprintRegistry load(String filename) {
 
         try {
@@ -47,6 +62,9 @@ public class BlueprintRegistry {
             Unmarshaller unmarshaller = context.createUnmarshaller();
             BlueprintRegistry registry = (BlueprintRegistry) unmarshaller.unmarshal(new File("Content/Bases/Bases.xml"));
 
+
+            System.out.println(registry.contains("Home Level 2"));
+            System.out.println(registry.contains("Home Level 4"));
             Marshaller marshaller = context.createMarshaller();
             marshaller.marshal(registry, System.out);
         } catch (JAXBException e) {
