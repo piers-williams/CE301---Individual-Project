@@ -46,7 +46,7 @@ public class ButtonManager extends Widget {
 
     public static ButtonsWrapper load(String filename) {
         try {
-            JAXBContext context = JAXBContext.newInstance(ArrayList.class);
+            JAXBContext context = JAXBContext.newInstance(ButtonsWrapper.class);
             Unmarshaller unmarshaller = context.createUnmarshaller();
 
             return (ButtonsWrapper) unmarshaller.unmarshal(new File(filename));
@@ -71,14 +71,14 @@ public class ButtonManager extends Widget {
     }
 
     public static void main(String[] args) {
-        ButtonManager manager = new ButtonManager();
-        manager.buttons = ButtonManager.load("Content/UI.xml");
+        ButtonsWrapper wrapper;
+        wrapper = ButtonManager.load("Content/UI.xml");
 
         try {
             JAXBContext context = JAXBContext.newInstance(ButtonsWrapper.class);
             Marshaller marshaller = context.createMarshaller();
 
-            marshaller.marshal(manager, System.out);
+            marshaller.marshal(wrapper, System.out);
         } catch (JAXBException e) {
             e.printStackTrace();
         }
