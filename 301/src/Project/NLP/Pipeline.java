@@ -21,6 +21,8 @@ public class Pipeline implements NLPConverter{
         return null;
     }
 
+
+
     private void tagMessage(String message){
         try {
             MaxentTagger tagger = new MaxentTagger("Contents/NLPModels/english-bidirectional-distsim.tagger");
