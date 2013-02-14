@@ -9,9 +9,13 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
-import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Responsible for storing and dealing with all Buttons
@@ -20,16 +24,15 @@ public class ButtonManager extends Widget {
 
     private String buttonTheme;
 
-    @XmlElementWrapper(name = "Buttons")
-    @XmlElement(name = "Button")
-    private ArrayList<InternalButton> buttons;
 
-    public ButtonManager(){
+    private ButtonsWrapper buttons;
+
+    public ButtonManager() {
 
     }
 
     public ButtonManager(String buttonTheme) {
-        this.buttons = new ArrayList<>(20);
+        this.buttons = new ButtonsWrapper();
         this.buttonTheme = buttonTheme;
     }
 
@@ -41,16 +44,15 @@ public class ButtonManager extends Widget {
         buttons.add(new InternalButton(button, location, size));
     }
 
-    public static ArrayList<InternalButton> load(String filename) {
+    public static ButtonsWrapper load(String filename) {
         try {
             JAXBContext context = JAXBContext.newInstance(ArrayList.class);
             Unmarshaller unmarshaller = context.createUnmarshaller();
 
-            return (ArrayList<InternalButton>) unmarshaller.unmarshal(new File(filename));
+            return (ButtonsWrapper) unmarshaller.unmarshal(new File(filename));
         } catch (JAXBException e) {
             e.printStackTrace();
         }
-
 
 
         throw new RuntimeException("Something went wrong loading Buttons");
@@ -73,7 +75,7 @@ public class ButtonManager extends Widget {
         manager.buttons = ButtonManager.load("Content/UI.xml");
 
         try {
-            JAXBContext context = JAXBContext.newInstance(ButtonManager.class);
+            JAXBContext context = JAXBContext.newInstance(ButtonsWrapper.class);
             Marshaller marshaller = context.createMarshaller();
 
             marshaller.marshal(manager, System.out);
@@ -97,7 +99,7 @@ class InternalButton {
     @XmlElement(name = "Action")
     Action action;
 
-    public InternalButton(){
+    public InternalButton() {
 
     }
 
@@ -112,6 +114,45 @@ class InternalButton {
     }
 }
 
+
+@XmlRootElement(name = "Buttons")
+class ButtonsWrapper implements Iterable<InternalButton> {
+    @XmlElement(name = "Button")
+    ArrayList<InternalButton> buttons;
+
+    public ButtonsWrapper() {
+        buttons = new ArrayList<>();
+    }
+
+    public void add(InternalButton button) {
+        buttons.add(button);
+    }
+
+    @Override
+    public Iterator<InternalButton> iterator() {
+
+        return new Iterator<InternalButton>() {
+            int index = 0;
+
+            @Override
+            public boolean hasNext() {
+                return index < buttons.size();
+            }
+
+            @Override
+            public InternalButton next() {
+                index++;
+                return buttons.get(index);
+            }
+
+            @Override
+            public void remove() {
+                buttons.remove(index);
+            }
+        };
+    }
+}
+
 @XmlRootElement(name = "Action")
 class Action {
     @XmlElement(name = "Type")
@@ -120,7 +161,7 @@ class Action {
     @XmlElement(name = "Argument")
     String Argument;
 
-    public Action(){
+    public Action() {
 
     }
 }
