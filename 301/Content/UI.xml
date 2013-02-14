@@ -10,12 +10,21 @@
         </Action>
     </Button>
     <Button>
-        <Title>Build Base</Title>
+        <Title>Build Home</Title>
         <Location x="100" y="0"/>
         <Dimension x="100" y="50"/>
         <Action>
             <Type>Build</Type>
             <Argument>HomeLvl1</Argument>
+        </Action>
+    </Button>
+    <Button>
+        <Title>Build Home 2</Title>
+        <Location x="100" y="50" />
+        <Dimension x="100" y="50" />
+        <Action>
+            <Type>Build</Type>
+            <Argument>HomeLvl2</Argument>
         </Action>
     </Button>
 </Buttons>

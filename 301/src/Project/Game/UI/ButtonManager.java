@@ -24,7 +24,6 @@ public class ButtonManager extends Widget {
 
     private String buttonTheme;
 
-
     private ButtonsWrapper buttons;
 
     public ButtonManager() {
@@ -34,14 +33,7 @@ public class ButtonManager extends Widget {
     public ButtonManager(String buttonTheme) {
         this.buttons = new ButtonsWrapper();
         this.buttonTheme = buttonTheme;
-    }
-
-    public void addButton(String title, Vector2D location, Vector2D size) {
-        Button button = new Button(title);
-        button.setTheme(buttonTheme);
-        add(button);
-
-        buttons.add(new InternalButton(button, location, size));
+        this.setTheme("simple");
     }
 
     public static ButtonsWrapper load(String filename) {
