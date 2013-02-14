@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
 <Buttons>
+    <!-- Pause Button -->
     <Button>
         <Title>Pause</Title>
         <Location x="0" y="0"/>
@@ -9,22 +10,53 @@
             <Type>Pause</Type>
         </Action>
     </Button>
+
+    <!-- Home Base Buttons -->
     <Button>
         <Title>Build Home</Title>
         <Location x="100" y="0"/>
         <Dimension x="100" y="50"/>
         <Action>
             <Type>Build</Type>
-            <Argument>HomeLvl1</Argument>
+            <Argument>Home Level 1</Argument>
         </Action>
     </Button>
     <Button>
         <Title>Build Home 2</Title>
-        <Location x="100" y="50" />
-        <Dimension x="100" y="50" />
+        <Location x="100" y="50"/>
+        <Dimension x="100" y="50"/>
         <Action>
             <Type>Build</Type>
-            <Argument>HomeLvl2</Argument>
+            <Argument>Home Level 2</Argument>
+        </Action>
+    </Button>
+    <Button>
+        <Title>Build Home 3</Title>
+        <Location x="100" y="100"/>
+        <Dimension x="100" y="50"/>
+        <Action>
+            <Type>Build</Type>
+            <Argument>Home Level 3</Argument>
+        </Action>
+    </Button>
+
+    <!-- Defensive Buttons -->
+    <Button>
+        <Title>Build Defense 1</Title>
+        <Location x="200" y="0"/>
+        <Dimension x="100" y="50"/>
+        <Action>
+            <Type>Build</Type>
+            <Argument>Defensive Level 1</Argument>
+        </Action>
+    </Button>
+    <Button>
+        <Title>Build Defense 2</Title>
+        <Location x="200" y="50"/>
+        <Dimension x="100" y="50"/>
+        <Action>
+            <Type>Build</Type>
+            <Argument>Defensive Level 2</Argument>
         </Action>
     </Button>
 </Buttons>
