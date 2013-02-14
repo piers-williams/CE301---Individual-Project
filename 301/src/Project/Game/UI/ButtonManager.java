@@ -58,6 +58,10 @@ public class ButtonManager extends Widget {
         }
     }
 
+    public static void main(String[] args) {
+        ButtonManager.load("Content/UI.xml");
+    }
+
 }
 
 @XmlRootElement(name = "Button")

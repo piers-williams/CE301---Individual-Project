@@ -100,7 +100,7 @@
           <file leaf-file-name="BlueprintRegistry.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="33" column="66" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.64155847">
+                <state line="52" column="39" selection-start="1751" selection-end="1751" vertical-scroll-proportion="0.5584416">
                   <folding />
                 </state>
               </provider>
@@ -149,10 +149,19 @@
           <file leaf-file-name="ButtonManager.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="26" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.4952153">
+                <state line="63" column="10" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.5119617">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UI.xml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Content/UI.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="55" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -169,7 +178,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/BaseCommander.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/CollisionBoard.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Factions.java" />
@@ -185,6 +193,7 @@
         <option value="$PROJECT_DIR$/src/Project/Game/AI/Commander.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java" />
+        <option value="$PROJECT_DIR$/Content/UI.xml" />
       </list>
     </option>
   </component>
@@ -1120,16 +1129,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="44" selection-start="3210" selection-end="3210" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="34" selection-start="808" selection-end="808" vertical-scroll-proportion="0.5354478" />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../TWL.jar!/de/matthiasmann/twl/theme/ThemeManager.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="0" selection-start="7450" selection-end="7450" vertical-scroll-proportion="0.7935657" />
@@ -1202,16 +1201,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="55" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/UI.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="55" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="66" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.64155847">
+        <state line="52" column="39" selection-start="1751" selection-end="1751" vertical-scroll-proportion="0.5584416">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="26" selection-start="1132" selection-end="1132" vertical-scroll-proportion="0.4952153">
+        <state line="63" column="10" selection-start="1866" selection-end="1866" vertical-scroll-proportion="0.5119617">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
