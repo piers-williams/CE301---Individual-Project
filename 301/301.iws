@@ -127,7 +127,7 @@
       <file leaf-file-name="Factions.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="8" selection-start="577" selection-end="577" vertical-scroll-proportion="0.83732057">
+            <state line="11" column="56" selection-start="269" selection-end="269" vertical-scroll-proportion="0.4473684">
               <folding />
             </state>
           </provider>
@@ -1182,7 +1182,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="8" selection-start="577" selection-end="577" vertical-scroll-proportion="0.83732057">
+        <state line="11" column="56" selection-start="269" selection-end="269" vertical-scroll-proportion="0.4473684">
           <folding />
         </state>
       </provider>
