@@ -75,6 +75,7 @@ public class Main extends Widget {
             initTWL();
 
             button = new Button("Pause");
+            button.setTheme("button");
         } catch (Exception e) {
 
         }
