@@ -85,22 +85,22 @@
     <favorites_list name="301" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.4289176">
       <split-first>
         <leaf>
-          <file leaf-file-name="SimpleConstruction.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/SimpleConstruction.java">
+          <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="24" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
+                <state line="120" column="26" selection-start="3807" selection-end="3807" vertical-scroll-proportion="0.5220779">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
+          <file leaf-file-name="KeyManager.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/KeyManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="167" column="31" selection-start="5021" selection-end="5021" vertical-scroll-proportion="0.58271605">
+                <state line="25" column="51" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -137,11 +137,22 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Lesson1.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="Lesson1.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Project/TWLTest/Lesson1.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="36" column="15" selection-start="858" selection-end="858" vertical-scroll-proportion="0.67160493">
+                <state line="35" column="26" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ButtonManager.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="52" column="5" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.8133971">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -158,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Project/NLP/BasicConverter.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/BaseCommander.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/CollisionBoard.java" />
@@ -174,6 +184,7 @@
         <option value="$PROJECT_DIR$/src/Project/TWLTest/Lesson1.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/Commander.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java" />
       </list>
     </option>
   </component>
@@ -420,6 +431,58 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ButtonManager.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -825,12 +888,12 @@
     <list size="8">
       <item index="0" class="java.lang.String" itemvalue="Application.LWJGL" />
       <item index="1" class="java.lang.String" itemvalue="Application.Towers" />
-      <item index="2" class="java.lang.String" itemvalue="Application.BlueprintRegistry" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Lesson1" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BasicConverterTest" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Reader" />
-      <item index="6" class="java.lang.String" itemvalue="Application.CollisionMain" />
-      <item index="7" class="java.lang.String" itemvalue="Application.IntelligentAgentMain" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Reader" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CollisionMain" />
+      <item index="4" class="java.lang.String" itemvalue="Application.IntelligentAgentMain" />
+      <item index="5" class="java.lang.String" itemvalue="Application.BlueprintRegistry" />
+      <item index="6" class="java.lang.String" itemvalue="Application.Lesson1" />
+      <item index="7" class="java.lang.String" itemvalue="JUnit.BasicConverterTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -911,7 +974,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226257" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17696267" sideWeight="0.6187151" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20334621" sideWeight="0.6187151" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3896648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35335195" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
@@ -1031,16 +1094,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_07/src.zip!/javax/xml/bind/Unmarshaller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="430" column="18" selection-start="17246" selection-end="17246" vertical-scroll-proportion="0.3318078" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="29" selection-start="697" selection-end="697" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="83" column="44" selection-start="3210" selection-end="3210" vertical-scroll-proportion="0.0" />
@@ -1100,11 +1153,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/SimpleConstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="24" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/TWLTest/Lesson1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="74" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.0">
@@ -1112,9 +1160,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="5" selection-start="1322" selection-end="1322" vertical-scroll-proportion="0.8133971">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/KeyManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="51" selection-start="651" selection-end="651" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/SimpleConstruction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="24" selection-start="454" selection-end="454" vertical-scroll-proportion="0.044155844">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="31" selection-start="5021" selection-end="5021" vertical-scroll-proportion="0.58271605">
+        <state line="120" column="26" selection-start="3807" selection-end="3807" vertical-scroll-proportion="0.5220779">
           <folding />
         </state>
       </provider>

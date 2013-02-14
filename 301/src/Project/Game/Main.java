@@ -2,6 +2,7 @@ package Project.Game;
 
 import Project.Game.Blueprints.BlueprintRegistry;
 import Project.Game.Influence.InfluenceMap;
+import Project.Game.UI.ButtonManager;
 import de.matthiasmann.twl.Button;
 import de.matthiasmann.twl.GUI;
 import de.matthiasmann.twl.Widget;
@@ -46,6 +47,8 @@ public class Main extends Widget {
     private ThemeManager themeManager;
     private Button button;
 
+    private ButtonManager buttonManager;
+
     // Where the view is located
     public static final Vector2D viewLocation = new Vector2D(0, 0);
 
@@ -72,11 +75,9 @@ public class Main extends Widget {
             GL11.glEnable(GL11.GL_BLEND);
             GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
 
-            initTWL();
 
-            button = new Button("Pause");
-            button.setTheme("button");
-            add(button);
+            buttonManager = new ButtonManager("button");
+            initTWL();
         } catch (Exception e) {
 
         }
@@ -189,14 +190,8 @@ public class Main extends Widget {
             e.printStackTrace();
         }
 
-        gui = new GUI(this, renderer);
+        gui = new GUI(buttonManager, renderer);
         gui.applyTheme(themeManager);
     }
 
-    @Override
-    protected void layout() {
-        button.setPosition(0, 0);
-        button.setSize(100, 50);
-        button.adjustSize();
-    }
 }
