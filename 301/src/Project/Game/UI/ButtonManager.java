@@ -27,13 +27,17 @@ public class ButtonManager extends Widget {
     private ButtonsWrapper buttons;
 
     public ButtonManager() {
-
+        buttons = ButtonManager.load("Content/UI.xml");
+        buttons.constructAllButtons();
+        removeAllChildren();
+        for(InternalButton button : buttons){
+            add(button.button);
+        }
     }
 
     public ButtonManager(String buttonTheme) {
-        this.buttons = new ButtonsWrapper();
+        this();
         this.buttonTheme = buttonTheme;
-        this.setTheme("simple");
     }
 
     public static ButtonsWrapper load(String filename) {
@@ -81,7 +85,7 @@ public class ButtonManager extends Widget {
 @XmlRootElement(name = "Button")
 @XmlAccessorType(XmlAccessType.NONE)
 class InternalButton {
-    private Button button;
+    Button button;
     @XmlElement(name = "Title")
     String title;
     @XmlElement(name = "Location")
@@ -120,6 +124,26 @@ class ButtonsWrapper implements Iterable<InternalButton> {
         buttons.add(button);
     }
 
+    /**
+     * Constructs all non null buttons
+     */
+    public void constructAllButtons() {
+        for (InternalButton button : buttons) {
+            if (button.button == null) {
+                button.button = new Button(button.title);
+            }
+        }
+    }
+
+    /**
+     * Constructs and overwrites all buttons
+     */
+    public void reconstructAllButtons() {
+        for (InternalButton button : buttons) {
+            button.button = new Button(button.title);
+        }
+    }
+
     @Override
     public Iterator<InternalButton> iterator() {
 
@@ -133,8 +157,7 @@ class ButtonsWrapper implements Iterable<InternalButton> {
 
             @Override
             public InternalButton next() {
-                index++;
-                return buttons.get(index);
+                return buttons.get(index++);
             }
 
             @Override
