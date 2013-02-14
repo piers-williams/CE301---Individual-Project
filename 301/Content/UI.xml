@@ -1,1 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<ButtonManager>
+    <Buttons>
+        <Button>
+            <Title>Pause</Title>
+            <Location x="0"  y="0" />
+            <Dimension x="100" y="50" />
+        </Button>
+    </Buttons>
+</ButtonManager>
