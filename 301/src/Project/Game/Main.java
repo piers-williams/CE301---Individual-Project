@@ -195,7 +195,7 @@ public class Main extends Widget {
 
     @Override
     protected void layout() {
-        button.setPosition(50, 50);
+        button.setPosition(0, 0);
         button.setSize(100, 50);
         button.adjustSize();
     }
