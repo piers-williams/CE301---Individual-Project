@@ -147,11 +147,6 @@ class DefenseFinder extends TacticalAnalysis {
                         lowY = y;
                     }
                     if (towerPlacementCost(x, y) < towerPlacementCost(lowX, lowY)) {
-                        if (commander.getFaction() == Factions.Nature.getFaction()) {
-                            System.out.println("Cost: " + towerPlacementCost(x, y));
-                            System.out.println("Lowest Cost: " + towerPlacementCost(lowX, lowY));
-                            System.out.println("Influence: " + influence[x][y]);
-                        }
                         lowX = x;
                         lowY = y;
                     }
@@ -161,12 +156,6 @@ class DefenseFinder extends TacticalAnalysis {
 
         if (foundSomewhere) {
             nextTarget = new Vector2D(lowX * Main.INFLUENCE_MAP.getCellSize(), lowY * Main.INFLUENCE_MAP.getCellSize());
-
-            System.out.println("Found somewhere");
-            System.out.println("Location: " + nextTarget);
-            System.out.println("Value: " + influence[lowX][lowY]);
-
-            System.out.println();
         }
     }
 
