@@ -4,7 +4,11 @@ import Project.Game.Vector2D;
 import de.matthiasmann.twl.Button;
 import de.matthiasmann.twl.Widget;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.io.File;
 import java.util.ArrayList;
 
 /**
@@ -27,6 +31,19 @@ public class ButtonManager extends Widget {
         add(button);
 
         buttons.add(new InternalButton(button, location, size));
+    }
+
+    public static ButtonManager load(String filename){
+        try {
+            JAXBContext context = JAXBContext.newInstance(ButtonManager.class);
+            Unmarshaller unmarshaller = context.createUnmarshaller();
+
+            return (ButtonManager) unmarshaller.unmarshal(new File(filename));
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+
+        throw new RuntimeException("Something went wrong loading Buttons");
     }
 
     @Override
