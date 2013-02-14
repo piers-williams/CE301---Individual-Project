@@ -85,91 +85,82 @@
     <favorites_list name="301" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.56356275">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="52" column="29" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BlueprintRegistry.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="35" column="24" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Blueprint.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="15" column="25" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ButtonManager.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="137" column="26" selection-start="3668" selection-end="3668" vertical-scroll-proportion="0.8155844">
-                  <folding>
-                    <element signature="e#4264#4399#0" expanded="true" />
-                    <element signature="e#4388#4389#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UI.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Content/UI.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="60" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="KeyManager.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/KeyManager.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="32" column="36" selection-start="955" selection-end="955" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Lesson1.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/TWLTest/Lesson1.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="67" column="45" selection-start="1744" selection-end="1744" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Bases.xml" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="22" selection-start="920" selection-end="920" vertical-scroll-proportion="1.0574163">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="38" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlueprintRegistry.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="24" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Blueprint.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="25" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ButtonManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="163" column="31" selection-start="4382" selection-end="4382" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#4490#4491#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Factions.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="8" selection-start="577" selection-end="577" vertical-scroll-proportion="0.83732057">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UI.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Content/UI.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="60" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KeyManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/KeyManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="36" selection-start="955" selection-end="955" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lesson1.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/TWLTest/Lesson1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="45" selection-start="1744" selection-end="1744" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -181,7 +172,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/Project/Game/AI/BaseCommander.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/CollisionBoard.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Factions.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BaseConstruction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Vector2D.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/Blueprint.java" />
@@ -195,6 +185,7 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Factions.java" />
       </list>
     </option>
   </component>
@@ -1092,11 +1083,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Content/UITheme/Eforen.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="34" selection-start="2416" selection-end="2429" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="165" column="56" selection-start="5156" selection-end="5156" vertical-scroll-proportion="0.83896106" />
@@ -1136,30 +1122,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/TWLTest/Lesson1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="45" selection-start="1744" selection-end="1744" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/UI.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="60" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="22" selection-start="920" selection-end="920" vertical-scroll-proportion="1.0574163">
+        <state line="7" column="4" selection-start="224" selection-end="224" vertical-scroll-proportion="0.284689">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+        <state line="51" column="38" selection-start="1506" selection-end="1506" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1171,6 +1143,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="25" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/UI.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="60" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/KeyManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="36" selection-start="955" selection-end="955" vertical-scroll-proportion="0.0">
@@ -1178,20 +1164,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/TWLTest/Lesson1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="29" selection-start="1536" selection-end="1536" vertical-scroll-proportion="0.0">
+        <state line="67" column="45" selection-start="1744" selection-end="1744" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="26" selection-start="3668" selection-end="3668" vertical-scroll-proportion="0.8155844">
+        <state line="163" column="31" selection-start="4382" selection-end="4382" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#4264#4399#0" expanded="true" />
-            <element signature="e#4388#4389#0" expanded="true" />
+            <element signature="e#4490#4491#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="8" selection-start="577" selection-end="577" vertical-scroll-proportion="0.83732057">
+          <folding />
         </state>
       </provider>
     </entry>

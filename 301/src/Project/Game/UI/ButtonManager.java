@@ -149,17 +149,18 @@ class ButtonsWrapper implements Iterable<InternalButton> {
 
     public void assignCallbacks() {
         for (InternalButton button : buttons) {
-            switch(button.action.type){
+            switch (button.action.type) {
                 case "Pause":
                     button.button.addCallback(getPauseFunction());
                     break;
                 case "Build":
-
+                    button.button.addCallback(getBuildFunction(button));
+                    break;
             }
         }
     }
 
-    private Runnable getPauseFunction(){
+    private Runnable getPauseFunction() {
         return new Runnable() {
             @Override
             public void run() {
@@ -167,6 +168,16 @@ class ButtonsWrapper implements Iterable<InternalButton> {
             }
         };
     }
+
+    private Runnable getBuildFunction(InternalButton button) {
+        return new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        };
+    }
+
     @Override
     public Iterator<InternalButton> iterator() {
 
