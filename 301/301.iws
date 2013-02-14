@@ -85,7 +85,7 @@
     <favorites_list name="301" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.42891747">
+    <splitter split-orientation="horizontal" split-proportion="0.46314973">
       <split-first>
         <leaf>
           <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
@@ -106,10 +106,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ButtonManager.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="ButtonManager.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="82" column="31" selection-start="2416" selection-end="2416" vertical-scroll-proportion="0.47012988">
+                <state line="53" column="7" selection-start="1485" selection-end="1485" vertical-scroll-proportion="-0.9714286">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -157,10 +157,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UI.xml" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="UI.xml" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Content/UI.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="27" selection-start="565" selection-end="565" vertical-scroll-proportion="0.715311">
+                <state line="7" column="20" selection-start="193" selection-end="193" vertical-scroll-proportion="0.284689">
                   <folding />
                 </state>
               </provider>
@@ -192,8 +192,8 @@
         <option value="$PROJECT_DIR$/src/Project/TWLTest/Lesson1.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/Commander.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java" />
         <option value="$PROJECT_DIR$/Content/UI.xml" />
+        <option value="$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java" />
       </list>
     </option>
   </component>
@@ -632,29 +632,7 @@
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\src\Learning\ShootingEachOtherAgents" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Towers">
-    <configuration default="false" name="LWJGL" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Learning.LWJGL.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Learning.LWJGL.Main" />
-      <option name="VM_PARAMETERS" value=" -Djava.library.path=lib/windows -ea" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="301" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.ButtonManager">
     <configuration default="false" name="Towers" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -726,6 +704,30 @@
       </extension>
       <option name="MAIN_CLASS_NAME" value="Project.TWLTest.Lesson1" />
       <option name="VM_PARAMETERS" value=" -Djava.library.path=lib/windows -ea" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="301" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="false" name="ButtonManager" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Project.Game.UI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="Project.Game.UI.ButtonManager" />
+      <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -921,13 +923,13 @@
       </method>
     </configuration>
     <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="Application.LWJGL" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Towers" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Reader" />
-      <item index="3" class="java.lang.String" itemvalue="Application.CollisionMain" />
-      <item index="4" class="java.lang.String" itemvalue="Application.IntelligentAgentMain" />
-      <item index="5" class="java.lang.String" itemvalue="Application.BlueprintRegistry" />
-      <item index="6" class="java.lang.String" itemvalue="Application.Lesson1" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Towers" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Reader" />
+      <item index="2" class="java.lang.String" itemvalue="Application.CollisionMain" />
+      <item index="3" class="java.lang.String" itemvalue="Application.IntelligentAgentMain" />
+      <item index="4" class="java.lang.String" itemvalue="Application.BlueprintRegistry" />
+      <item index="5" class="java.lang.String" itemvalue="Application.Lesson1" />
+      <item index="6" class="java.lang.String" itemvalue="Application.ButtonManager" />
       <item index="7" class="java.lang.String" itemvalue="JUnit.BasicConverterTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1129,16 +1131,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../TWL.jar!/de/matthiasmann/twl/theme/ThemeManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="7450" selection-end="7450" vertical-scroll-proportion="0.7935657" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../lwjgl-2.8.4/lwjgl-2.8.4/jar/lwjgl.jar!/org/lwjgl/opengl/GL11.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1352" column="0" selection-start="64560" selection-end="64560" vertical-scroll-proportion="0.35555556" />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../TWL.jar!/de/matthiasmann/twl/renderer/lwjgl/LWJGLRenderer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="124" column="0" selection-start="6669" selection-end="6669" vertical-scroll-proportion="0.35555556" />
@@ -1203,7 +1195,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/TWLTest/Lesson1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="26" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
+        <state line="47" column="74" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1215,19 +1207,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
+    <entry file="jar://$PROJECT_DIR$/../TWL.jar!/de/matthiasmann/twl/Widget.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="31" selection-start="2416" selection-end="2416" vertical-scroll-proportion="0.47012988">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="5" column="13" selection-start="157" selection-end="157" vertical-scroll-proportion="-8.027778">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_07/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="13" selection-start="4129" selection-end="4129" vertical-scroll-proportion="0.26493508">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Content/UI.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="27" selection-start="565" selection-end="565" vertical-scroll-proportion="0.715311">
+        <state line="7" column="20" selection-start="193" selection-end="193" vertical-scroll-proportion="0.284689">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="7" selection-start="1485" selection-end="1485" vertical-scroll-proportion="-0.9714286">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
