@@ -12,6 +12,7 @@
     <orderEntry type="library" name="junit-4.10" level="project" />
     <orderEntry type="library" name="TWL" level="project" />
     <orderEntry type="library" name="xpp3-1.1.4c" level="project" />
+    <orderEntry type="library" name="stanford-postagger-3.1.4" level="project" />
   </component>
 </module>
 

@@ -229,6 +229,13 @@
       <JAVADOC />
       <SOURCES />
     </library>
+    <library name="stanford-postagger-3.1.4">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/../stanford-postagger-2012-11-11/stanford-postagger-2012-11-11/stanford-postagger-3.1.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
     <library name="TWL">
       <CLASSES>
         <root url="jar://$PROJECT_DIR$/../TWL.jar!/" />
