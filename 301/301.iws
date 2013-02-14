@@ -106,10 +106,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ButtonManager.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="ButtonManager.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="74" column="17" selection-start="2202" selection-end="2202" vertical-scroll-proportion="0.116883114">
+                <state line="82" column="31" selection-start="2416" selection-end="2416" vertical-scroll-proportion="0.47012988">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -157,10 +157,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="UI.xml" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="UI.xml" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Content/UI.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="40" selection-start="215" selection-end="215" vertical-scroll-proportion="0.284689">
+                <state line="19" column="27" selection-start="565" selection-end="565" vertical-scroll-proportion="0.715311">
                   <folding />
                 </state>
               </provider>
@@ -192,8 +192,8 @@
         <option value="$PROJECT_DIR$/src/Project/TWLTest/Lesson1.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/Commander.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
-        <option value="$PROJECT_DIR$/Content/UI.xml" />
         <option value="$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java" />
+        <option value="$PROJECT_DIR$/Content/UI.xml" />
       </list>
     </option>
   </component>
@@ -1203,7 +1203,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/TWLTest/Lesson1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="74" selection-start="1275" selection-end="1275" vertical-scroll-proportion="0.0">
+        <state line="35" column="26" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1215,19 +1215,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Content/UI.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="40" selection-start="215" selection-end="215" vertical-scroll-proportion="0.284689">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="17" selection-start="2202" selection-end="2202" vertical-scroll-proportion="0.116883114">
+        <state line="82" column="31" selection-start="2416" selection-end="2416" vertical-scroll-proportion="0.47012988">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/UI.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="27" selection-start="565" selection-end="565" vertical-scroll-proportion="0.715311">
+          <folding />
         </state>
       </provider>
     </entry>

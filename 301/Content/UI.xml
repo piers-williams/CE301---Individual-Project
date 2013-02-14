@@ -4,8 +4,20 @@
     <Buttons>
         <Button>
             <Title>Pause</Title>
-            <Location x="0"  y="0" />
-            <Dimension x="100" y="50" />
+            <Location x="0" y="0"/>
+            <Dimension x="100" y="50"/>
+            <Action>
+                <Type>Pause</Type>
+            </Action>
+        </Button>
+        <Button>
+            <Title>Build Base</Title>
+            <Location x="100" y="0"/>
+            <Dimension x="100" y="50"/>
+            <Action>
+                <Type>Build</Type>
+                <Argument>HomeLvl1</Argument>
+            </Action>
         </Button>
     </Buttons>
 </ButtonManager>

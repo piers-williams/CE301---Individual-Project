@@ -80,6 +80,8 @@ class InternalButton {
     Vector2D location;
     @XmlElement(name = "Dimension")
     Vector2D size;
+    @XmlElement(name = "Action")
+    String action;
 
     InternalButton(Button button, Vector2D location, Vector2D size) {
         this.button = button;
