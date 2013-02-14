@@ -2,7 +2,7 @@ package Project.Game;
 
 
 /**
- *
+ *  Must only be one non intelligent Faction
  */
 public enum Factions {
     Nature(1, 1, 1, new Vector2D(450, 450), false),
@@ -14,7 +14,7 @@ public enum Factions {
     private Boolean intelligent;
 
     private Factions(float r, float g, float b, Vector2D location, boolean intelligent) {
-        this.faction = new Faction(r, g, b, location);
+        this.faction = new Faction(r, g, b, location, intelligent);
         this.intelligent = intelligent;
     }
 

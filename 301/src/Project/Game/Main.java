@@ -23,13 +23,13 @@ import java.io.IOException;
  * Time: 11:49
  */
 public class Main{
-    public static int SCREEN_WIDTH = 800;
-    public static int SCREEN_HEIGHT = 600;
+    public static int SCREEN_WIDTH = 1600;
+    public static int SCREEN_HEIGHT = 900;
 
-    public static int MAP_WIDTH = 1600;
-    public static int MAP_HEIGHT = 900;
+    public static int MAP_WIDTH = 3200;
+    public static int MAP_HEIGHT = 1800;
     public static int SQUARE_WIDTH = 6;
-    public static boolean FULL_SCREEN = false;
+    public static boolean FULL_SCREEN = true;
     // Collision detection cell size
     public static final int CELL_SIZE = 75;
 
@@ -39,6 +39,9 @@ public class Main{
     public static CachedVector2DSource VECTOR2D_SOURCE;
     public static BlueprintRegistry BLUEPRINT_REGISTRY;
     public static Main MAIN;
+
+    // Please don't re-assign this one
+    public static Faction HUMAN_FACTION;
 
     public static KeyManager KEY_MANAGER;
     private Boolean paused;

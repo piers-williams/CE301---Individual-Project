@@ -38,7 +38,6 @@ public class Commander {
     }
 
     public void groupFilled(Group group) {
-        System.out.println("Group filled");
         if (faction.getSplQueue().hasAttackOrder()) {
             group.switchToFollow((Vector2D) faction.getSplQueue().getNextAttackOrder().getArguments()[0]);
         }

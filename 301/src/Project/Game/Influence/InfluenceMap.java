@@ -50,7 +50,7 @@ public class InfluenceMap implements Runnable {
             try {
                 Thread.sleep(tickDelay);
             } catch (InterruptedException ie) {
-                System.out.println(ie.getStackTrace());
+                System.err.println(ie.getStackTrace());
             }
             if (!paused) {
                 update();
@@ -89,7 +89,6 @@ public class InfluenceMap implements Runnable {
         for (int x = -xWidth; x <= xWidth; x++) {
             for (int y = -yWidth; y <= yWidth; y++) {
                 try {
-                    if (influence.get(faction) == null) System.out.println(faction);
                     influence.get(faction)[calculateIndex][x + (int) point.x][y + (int) point.y] += grid.influence[x + xWidth][y + yWidth] / 32;
                 } catch (ArrayIndexOutOfBoundsException arrayIndexOutOrBoundsException) {
                 }

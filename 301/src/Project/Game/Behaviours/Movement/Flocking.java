@@ -22,7 +22,6 @@ public class Flocking extends BasicMovement {
     public void updateSpecialisation() {
         if (direction == null) {
             direction = new Vector2D();
-            System.out.println("Direction was null");
         }
         Vector2D separation = calculateSeparation();
 

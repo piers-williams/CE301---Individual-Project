@@ -30,12 +30,14 @@ public class Faction {
 
     private SPLQueue splQueue;
 
-    protected Faction(float r, float g, float b, Vector2D startLocation) {
+    private Boolean intelligent;
+
+    protected Faction(float r, float g, float b, Vector2D startLocation, Boolean intelligent) {
         this.r = r;
         this.g = g;
         this.b = b;
-
-        commander = new Commander(this);
+        this.intelligent = intelligent;
+        if (intelligent) commander = new Commander(this);
 
         groups = new ArrayList<>();
         baseGroup = new Hashtable<>();
@@ -70,7 +72,7 @@ public class Faction {
             Group newGroup = new Group(r, g, b, base.getSpawnPoint(), 5, this);
             groups.add(baseGroup.get(base));
             baseGroup.get(base).switchToWander();
-            commander.groupFilled(baseGroup.get(base));
+            if (intelligent) commander.groupFilled(baseGroup.get(base));
             baseGroup.put(base, newGroup);
             Main.GAME_LOOP.addEntity(newGroup);
         }
@@ -85,13 +87,13 @@ public class Faction {
     }
 
     public void update() {
-        commander.update();
+        if (intelligent) commander.update();
 
         // Build towers
         resource--;
         if (resource == 0) {
             resource = maxResource;
-            commander.buildTower();
+            if (intelligent) commander.buildTower();
         }
     }
 
