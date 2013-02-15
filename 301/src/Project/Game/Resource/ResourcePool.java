@@ -84,9 +84,41 @@ public class ResourcePool {
     }
 
     public static void main(String[] args) {
-        ResourcePool pool = new ResourcePool();
+        final ResourcePool pool = new ResourcePool();
         Random random = new Random();
 
+        ArrayList<Runnable> runnables = new ArrayList<>();
+        for (int i = 0; i < 50; i++) {
+            runnables.add(new Runnable() {
+
+                Random random = new Random();
+
+                @Override
+                public void run() {
+                    while (true) {
+                        try {
+                            Thread.sleep(35);
+                            if (random.nextBoolean()) {
+                                pool.register(new ResourceGenerator(pool, random.nextInt(50) + 1));
+                            } else {
+                                pool.register(new ResourceDrain(pool, random.nextInt(50) + 1));
+                            }
+
+                            float rand = random.nextFloat();
+                            if (rand < 0.2) {
+                                pool.deRegister(pool.inputs.get(random.nextInt(pool.inputs.size())));
+                            }
+                            if (rand > 0.2 && rand < 0.4) {
+                                pool.deRegister(pool.drains.get(random.nextInt(pool.drains.size())));
+                            }
+
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            });
+        }
         for (int i = 0; i < 1000; i++) {
             pool.register(new ResourceGenerator(pool, 35));
         }
@@ -99,22 +131,14 @@ public class ResourcePool {
             try {
                 Thread.sleep(20);
                 pool.update();
-                if (random.nextBoolean()) {
-                    pool.register(new ResourceGenerator(pool, random.nextInt(50) + 1));
-                } else {
-                    pool.register(new ResourceDrain(pool, random.nextInt(50) + 1));
-                }
-
-                float rand = random.nextFloat();
-                if (rand < 0.2) {
-                    pool.deRegister(pool.inputs.get(random.nextInt(pool.inputs.size())));
-                }
-                if (rand > 0.2 && rand < 0.4) {
-                    pool.deRegister(pool.drains.get(random.nextInt(pool.drains.size())));
-                }
-
             } catch (InterruptedException e) {
                 e.printStackTrace();
+            }
+            if (i == 0) {
+                for (Runnable runnable : runnables) {
+                    Thread thread = new Thread(runnable);
+                    thread.start();
+                }
             }
         }
     }
