@@ -8,14 +8,19 @@ import java.util.Random;
  */
 public class ResourcePool {
 
-    ArrayList<ResourceGenerator> inputs;
-    ArrayList<ResourceGenerator> inputDeletions;
-    ArrayList<ResourceDrain> drains;
-    ArrayList<ResourceDrain> drainDeletions;
+    private ArrayList<ResourceGenerator> inputs;
+    private ArrayList<ResourceGenerator> inputDeletions;
+    private final Object _inputs = new Object();
+    private final Object _inputDeletions = new Object();
+
+    private ArrayList<ResourceDrain> drains;
+    private ArrayList<ResourceDrain> drainDeletions;
+    private final Object _drains = new Object();
+    private final Object _drainDeletions = new Object();
 
 
-    int totalIncomePerRound;
-    int totalOutcomePerRound;
+    private int totalIncomePerRound;
+    private int totalOutcomePerRound;
 
 
     public ResourcePool() {
@@ -26,61 +31,79 @@ public class ResourcePool {
     }
 
     public void update() {
-        // Clearing deleted ones out
 
         if (inputs.size() != 0 || drains.size() != 0) {
-            for (ResourceGenerator generator : inputDeletions) {
-                inputs.remove(generator);
+            synchronized (_inputDeletions) {
+                for (ResourceGenerator generator : inputDeletions) {
+                    synchronized (_inputs) {
+                        inputs.remove(generator);
+                    }
+                }
+                inputDeletions.clear();
             }
-            inputDeletions.clear();
-            for (ResourceDrain drain : drainDeletions) {
-                drains.remove(drain);
-            }
-            drainDeletions.clear();
-
-
-            totalIncomePerRound = 0;
-            for (ResourceGenerator generator : inputs) {
-                totalIncomePerRound += generator.getResourcePerTick();
-            }
-
-            // Distribute income to output
-            totalOutcomePerRound = 0;
-            for (ResourceDrain drain : drains) {
-                totalOutcomePerRound += drain.getMaxDrainPerTick();
+            synchronized (_drainDeletions) {
+                for (ResourceDrain drain : drainDeletions) {
+                    synchronized (_drains) {
+                        drains.remove(drain);
+                    }
+                }
+                drainDeletions.clear();
             }
 
-            if (totalOutcomePerRound >= totalIncomePerRound) {
+            synchronized (_inputs) {
+                totalIncomePerRound = 0;
+                for (ResourceGenerator generator : inputs) {
+                    totalIncomePerRound += generator.getResourcePerTick();
+                }
+            }
+
+            synchronized (_drains) {
+                // Distribute income to output
+                totalOutcomePerRound = 0;
                 for (ResourceDrain drain : drains) {
-                    drain.assignResource(drain.getMaxDrainPerTick());
+                    totalOutcomePerRound += drain.getMaxDrainPerTick();
                 }
 
-                System.out.println("Wasting resources");
-            } else {
-                for (ResourceDrain drain : drains) {
-                    drain.assignResource((totalOutcomePerRound / drain.getMaxDrainPerTick()) * totalIncomePerRound);
-                }
+                if (totalOutcomePerRound >= totalIncomePerRound) {
+                    for (ResourceDrain drain : drains) {
+                        drain.assignResource(drain.getMaxDrainPerTick());
+                    }
 
-                System.out.println("Not enough income");
+                    System.out.println("Wasting resources");
+                } else {
+                    for (ResourceDrain drain : drains) {
+                        drain.assignResource((totalOutcomePerRound / drain.getMaxDrainPerTick()) * totalIncomePerRound);
+                    }
+
+                    System.out.println("Not enough income");
+                }
             }
         }
 
     }
 
     public void register(ResourceGenerator generator) {
-        inputs.add(generator);
+        synchronized (_inputs) {
+            inputs.add(generator);
+        }
     }
 
     public void register(ResourceDrain drain) {
-        drains.add(drain);
+        synchronized (_drains) {
+            drains.add(drain);
+        }
     }
 
     public void deRegister(ResourceGenerator generator) {
-        inputDeletions.add(generator);
+        synchronized (_inputDeletions) {
+            inputDeletions.add(generator);
+        }
     }
 
     public void deRegister(ResourceDrain drain) {
-        drainDeletions.add(drain);
+        synchronized (_drainDeletions) {
+            drainDeletions.add(drain);
+        }
     }
 
     public static void main(String[] args) {

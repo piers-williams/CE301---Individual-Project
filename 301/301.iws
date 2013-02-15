@@ -107,7 +107,7 @@
       <file leaf-file-name="ResourcePool.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="68" selection-start="3069" selection-end="3069" vertical-scroll-proportion="1.7516483">
+            <state line="150" column="31" selection-start="4948" selection-end="4948" vertical-scroll-proportion="0.38494936">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -881,7 +881,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3896648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35335195" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32960895" sideWeight="0.9969325" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960895" sideWeight="0.9969325" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1074,7 +1074,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="68" selection-start="3069" selection-end="3069" vertical-scroll-proportion="1.7516483">
+        <state line="150" column="31" selection-start="4948" selection-end="4948" vertical-scroll-proportion="0.38494936">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
