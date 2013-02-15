@@ -27,39 +27,42 @@ public class ResourcePool {
 
     public void update() {
         // Clearing deleted ones out
-        for (ResourceGenerator generator : inputDeletions) {
-            inputs.remove(generator);
-        }
-        inputDeletions.clear();
-        for (ResourceDrain drain : drainDeletions) {
-            drains.remove(drain);
-        }
-        drainDeletions.clear();
+
+        if (inputs.size() != 0 || drains.size() != 0) {
+            for (ResourceGenerator generator : inputDeletions) {
+                inputs.remove(generator);
+            }
+            inputDeletions.clear();
+            for (ResourceDrain drain : drainDeletions) {
+                drains.remove(drain);
+            }
+            drainDeletions.clear();
 
 
-        totalIncomePerRound = 0;
-        for (ResourceGenerator generator : inputs) {
-            totalIncomePerRound += generator.getResourcePerTick();
-        }
-
-        // Distribute income to output
-        totalOutcomePerRound = 0;
-        for (ResourceDrain drain : drains) {
-            totalOutcomePerRound += drain.getMaxDrainPerTick();
-        }
-
-        if (totalOutcomePerRound >= totalIncomePerRound) {
-            for (ResourceDrain drain : drains) {
-                drain.assignResource(drain.getMaxDrainPerTick());
+            totalIncomePerRound = 0;
+            for (ResourceGenerator generator : inputs) {
+                totalIncomePerRound += generator.getResourcePerTick();
             }
 
-            System.out.println("Wasting resources");
-        } else {
+            // Distribute income to output
+            totalOutcomePerRound = 0;
             for (ResourceDrain drain : drains) {
-                drain.assignResource((totalOutcomePerRound / drain.getMaxDrainPerTick()) * totalIncomePerRound);
+                totalOutcomePerRound += drain.getMaxDrainPerTick();
             }
 
-            System.out.println("Not enough income");
+            if (totalOutcomePerRound >= totalIncomePerRound) {
+                for (ResourceDrain drain : drains) {
+                    drain.assignResource(drain.getMaxDrainPerTick());
+                }
+
+                System.out.println("Wasting resources");
+            } else {
+                for (ResourceDrain drain : drains) {
+                    drain.assignResource((totalOutcomePerRound / drain.getMaxDrainPerTick()) * totalIncomePerRound);
+                }
+
+                System.out.println("Not enough income");
+            }
         }
 
     }
@@ -97,17 +100,17 @@ public class ResourcePool {
                 Thread.sleep(20);
                 pool.update();
                 if (random.nextBoolean()) {
-                    pool.register(new ResourceGenerator(pool, random.nextInt(50)));
+                    pool.register(new ResourceGenerator(pool, random.nextInt(50) + 1));
                 } else {
-                    pool.register(new ResourceDrain(pool, random.nextInt(50)));
+                    pool.register(new ResourceDrain(pool, random.nextInt(50) + 1));
                 }
 
-               float rand = random.nextFloat();
-                if(rand < 0.2){
+                float rand = random.nextFloat();
+                if (rand < 0.2) {
                     pool.deRegister(pool.inputs.get(random.nextInt(pool.inputs.size())));
                 }
-                if(rand > 0.2 && rand < 0.4){
-                  pool.deRegister(pool.drains.get(random.nextInt(pool.drains.size())));
+                if (rand > 0.2 && rand < 0.4) {
+                    pool.deRegister(pool.drains.get(random.nextInt(pool.drains.size())));
                 }
 
             } catch (InterruptedException e) {
