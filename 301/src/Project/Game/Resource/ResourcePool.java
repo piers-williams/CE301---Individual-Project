@@ -69,13 +69,13 @@ public class ResourcePool {
                         drain.assignResource(drain.getMaxDrainPerTick());
                     }
 
-                    System.out.println("Wasting resources");
+//                    System.out.println("Wasting resources");
                 } else {
                     for (ResourceDrain drain : drains) {
                         drain.assignResource((totalOutcomePerRound / drain.getMaxDrainPerTick()) * totalIncomePerRound);
                     }
 
-                    System.out.println("Not enough income");
+//                    System.out.println("Not enough income");
                 }
             }
         }
@@ -120,12 +120,7 @@ public class ResourcePool {
                 public void run() {
                     while (true) {
                         try {
-                            Thread.sleep(random.nextInt(50) + 10);
-                            if (random.nextBoolean()) {
-                                pool.register(new ResourceGenerator(pool, random.nextInt(50) + 1));
-                            } else {
-                                pool.register(new ResourceDrain(pool, random.nextInt(50) + 1));
-                            }
+                            Thread.sleep(random.nextInt(10) + 10);
 
                             float rand = random.nextFloat();
                             if (rand < 0.2) {
@@ -133,6 +128,12 @@ public class ResourcePool {
                             }
                             if (rand > 0.2 && rand < 0.4) {
                                 pool.deRegister(pool.drains.get(random.nextInt(pool.drains.size())));
+                            }
+                            if (rand > 0.4 && rand < 0.6) {
+                                pool.register(new ResourceGenerator(pool, random.nextInt(50) + 1));
+                            }
+                            if (rand > 0.6 && rand < 0.8) {
+                                pool.register(new ResourceDrain(pool, random.nextInt(50) + 1));
                             }
 
                         } catch (InterruptedException e) {
@@ -150,7 +151,10 @@ public class ResourcePool {
             pool.register(new ResourceDrain(pool, 20));
         }
 
-        for (int i = 0; i < 50 * 60; i++) {
+        for (int i = 0; i < 50 * 120; i++) {
+            if (i % 50 == 0) {
+                System.out.println("Seconds Taken: " + i / 50);
+            }
             try {
                 Thread.sleep(20);
                 pool.update();
