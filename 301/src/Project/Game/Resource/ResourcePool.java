@@ -150,7 +150,7 @@ public class ResourcePool {
             pool.register(new ResourceDrain(pool, 20));
         }
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 100; i++) {
             try {
                 Thread.sleep(20);
                 pool.update();
@@ -160,6 +160,7 @@ public class ResourcePool {
             if (i == 0) {
                 for (Runnable runnable : runnables) {
                     Thread thread = new Thread(runnable);
+                    thread.setDaemon(true);
                     thread.start();
                 }
             }

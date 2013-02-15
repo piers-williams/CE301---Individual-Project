@@ -11,7 +11,7 @@ public final class ResourceDrain {
 
     public ResourceDrain(ResourcePool pool, int maxDrainPerTick) {
         this.pool = pool;
-        this.maxDrainPerTick = maxDrainPerTick;
+        this.maxDrainPerTick = (maxDrainPerTick <= 0) ? 1 : maxDrainPerTick;
     }
 
     public int getMaxDrainPerTick() {

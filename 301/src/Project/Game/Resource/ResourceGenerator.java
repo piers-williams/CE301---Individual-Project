@@ -11,7 +11,7 @@ public final class ResourceGenerator {
 
     public ResourceGenerator(ResourcePool pool, int resourcePerTick) {
         this.pool = pool;
-        this.resourcePerTick = resourcePerTick;
+        this.resourcePerTick = (resourcePerTick <= 0) ? 1 : resourcePerTick;
     }
 
     public int getResourcePerTick() {
