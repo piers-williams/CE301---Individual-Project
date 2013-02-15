@@ -1,6 +1,7 @@
 package Project.Game.Behaviours.Constructive;
 
 import Project.Game.Entities.Entity;
+import Project.Game.Faction;
 import Project.Game.Resource.ResourceDrain;
 import Project.Game.Resource.ResourcePool;
 
@@ -15,8 +16,10 @@ public abstract class BasicConstruction implements Construction {
     protected int resource = 0;
 
     private Entity entity;
+    private Faction faction;
 
-    protected BasicConstruction(Entity entity, ResourcePool resourcePool) {
+    protected BasicConstruction(Faction faction, Entity entity, ResourcePool resourcePool) {
+        this.faction = faction;
         this.entity = entity;
         this.resourcePool = resourcePool;
     }

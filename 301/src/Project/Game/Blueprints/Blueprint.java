@@ -1,7 +1,5 @@
 package Project.Game.Blueprints;
 
-import Project.Game.Vector2D;
-
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -20,17 +18,23 @@ public class Blueprint {
     String name;
 
     @XmlElementWrapper(name = "Buildings")
-    @XmlElement(name = "Building")
-    ArrayList<Building> buildings;
+    @XmlElement(name = "BlueprintBuilding")
+    ArrayList<BlueprintBuilding> blueprintBuildings;
+
+    public String getUpgradeString() {
+        return upgradeString;
+    }
+
+    public Blueprint getUpgrade() {
+        return upgrade;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public ArrayList<BlueprintBuilding> getBlueprintBuildings() {
+        return blueprintBuildings;
+    }
 }
 
-@XmlRootElement
-class Building {
-    // Type of the building
-    @XmlElement(name = "Type")
-    String type;
-    // Offset x, y
-    @XmlElement(name = "Offset")
-    Vector2D offset;
-
-}

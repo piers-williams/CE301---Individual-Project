@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Buildings>
+    <Building>
+        <Name>Tower</Name>
+        <Size x="10" y="10"/>
+        <Cost>500</Cost>
+        <BuildTime>60</BuildTime>
+    </Building>
+</Buildings>
