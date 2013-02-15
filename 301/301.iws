@@ -155,19 +155,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ResourceDrain.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="ResourceDrain.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="41" column="20" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.78855723">
+                <state line="37" column="77" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ResourceGenerator.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="ResourceGenerator.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceGenerator.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="62" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
+                <state line="25" column="21" selection-start="589" selection-end="589" vertical-scroll-proportion="0.4402985">
                   <folding />
                 </state>
               </provider>
@@ -219,10 +219,10 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
         <option value="$PROJECT_DIR$/src/Project/NLP/Pipeline.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrains.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Resource/ResourceGenerator.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BasicConstruction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Resource/ResourceGenerator.java" />
       </list>
     </option>
   </component>
@@ -1153,13 +1153,6 @@
         <state line="17" column="26" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="62" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="13" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
@@ -1201,7 +1194,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="20" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.78855723">
+        <state line="37" column="77" selection-start="1101" selection-end="1101" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="21" selection-start="589" selection-end="589" vertical-scroll-proportion="0.4402985">
           <folding />
         </state>
       </provider>
