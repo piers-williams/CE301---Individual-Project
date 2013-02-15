@@ -6,4 +6,16 @@
         <Cost>500</Cost>
         <BuildTime>60</BuildTime>
     </Building>
+    <Building>
+        <Name>Center</Name>
+        <Size x="25" y="25"/>
+        <Cost>1000</Cost>
+        <BuildTime>60</BuildTime>
+    </Building>
+    <Building>
+        <Name>Construction</Name>
+        <Size x="20" y="20"/>
+        <Cost>750</Cost>
+        <BuildTime>90</BuildTime>
+    </Building>
 </Buildings>

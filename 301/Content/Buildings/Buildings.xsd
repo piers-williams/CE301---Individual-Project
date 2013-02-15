@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Buildings" type="BuildingsType"/>
+  <xs:complexType name="SizeType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="x" use="optional"/>
+        <xs:attribute type="xs:string" name="y" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="BuildingsType">
+    <xs:sequence>
+      <xs:element type="BuildingType" name="Building" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="BuildingType">
+    <xs:sequence>
+      <xs:element name="Name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Tower"/>
+            <xs:enumeration value="Center"/>
+            <xs:enumeration value="Construction"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="SizeType" name="Size"/>
+      <xs:element name="Cost">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="500"/>
+            <xs:enumeration value="1000"/>
+            <xs:enumeration value="750"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="BuildTime">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="60"/>
+            <xs:enumeration value="90"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
