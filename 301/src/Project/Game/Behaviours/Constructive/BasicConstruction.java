@@ -12,6 +12,8 @@ public abstract class BasicConstruction implements Construction {
     protected ResourcePool resourcePool;
     protected ResourceDrain resourceDrain;
 
+    protected int resource = 0;
+
     private Entity entity;
 
     protected BasicConstruction(Entity entity, ResourcePool resourcePool) {
@@ -21,6 +23,7 @@ public abstract class BasicConstruction implements Construction {
 
     @Override
     public void update() {
+
     }
 
     @Override
