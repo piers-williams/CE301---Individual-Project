@@ -1,7 +1,23 @@
 package Project.Game.Buildings;
 
+import Project.Game.Vector2D;
+
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Actual stats about a building
  */
+@XmlRootElement(name = "Building")
 public class MetaBuilding {
+
+    @XmlElement(name = "Name")
+    String name;
+    @XmlElement(name = "Size")
+    Vector2D size;
+    @XmlElement(name = "Cost")
+    int cost;
+    @XmlElement(name = "BuildTime")
+    int buildTime;
+
 }

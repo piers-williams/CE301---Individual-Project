@@ -97,10 +97,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Bases.xml" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="Bases.xml" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="42" column="47" selection-start="1439" selection-end="1439" vertical-scroll-proportion="1.0184332">
+                <state line="14" column="54" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -142,11 +142,13 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="MetaBuilding.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="MetaBuilding.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="25" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-                  <folding />
+                <state line="13" column="28" selection-start="292" selection-end="292" vertical-scroll-proportion="0.33947772">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -182,10 +184,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Buildings.xml" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="Buildings.xml" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Content/Buildings/Buildings.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="33" selection-start="347" selection-end="347" vertical-scroll-proportion="0.2952243">
+                <state line="21" column="23" selection-start="531" selection-end="531" vertical-scroll-proportion="0.5166426">
                   <folding />
                 </state>
               </provider>
@@ -215,10 +217,10 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintBuilding.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/BuildingRegistry.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Buildings/Building.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Buildings/BuildingRegistry.java" />
         <option value="$PROJECT_DIR$/Content/Bases/Bases.xml" />
         <option value="$PROJECT_DIR$/Content/Buildings/Buildings.xml" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java" />
       </list>
     </option>
   </component>
@@ -1167,13 +1169,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/BuildingRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="5" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0">
@@ -1195,17 +1190,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
+    <entry file="file://$PROJECT_DIR$/Content/Buildings/Buildings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="47" selection-start="1439" selection-end="1439" vertical-scroll-proportion="1.0184332">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Content/Buildings/Buildings.xml">
+    <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="33" selection-start="347" selection-end="347" vertical-scroll-proportion="0.2952243">
+        <state line="14" column="54" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="28" selection-start="292" selection-end="292" vertical-scroll-proportion="0.33947772">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
