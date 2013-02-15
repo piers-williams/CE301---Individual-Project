@@ -120,7 +120,7 @@ public class ResourcePool {
                 public void run() {
                     while (true) {
                         try {
-                            Thread.sleep(35);
+                            Thread.sleep(random.nextInt(50) + 10);
                             if (random.nextBoolean()) {
                                 pool.register(new ResourceGenerator(pool, random.nextInt(50) + 1));
                             } else {
@@ -150,7 +150,7 @@ public class ResourcePool {
             pool.register(new ResourceDrain(pool, 20));
         }
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 50 * 60; i++) {
             try {
                 Thread.sleep(20);
                 pool.update();
