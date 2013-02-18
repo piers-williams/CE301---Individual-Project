@@ -85,106 +85,344 @@
     <favorites_list name="301" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="BlueprintConstruction.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="66" column="68" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Bases.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="54" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Bases.xsd" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xsd">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="38" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Buildings.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Content/Buildings/Buildings.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BlueprintBuilding.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintBuilding.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="42" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BuildingRegistry.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/BuildingRegistry.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="32" selection-start="301" selection-end="301" vertical-scroll-proportion="0.31962398">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="MetaBuilding.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="22" column="40" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ResourceDrain.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="39" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UI.xml" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Content/UI.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="17" column="26" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Buildings.xml" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Content/Buildings/Buildings.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="63" selection-start="551" selection-end="551" vertical-scroll-proportion="0.3708381">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="BlueprintConstruction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="66" column="68" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bases.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="54" selection-start="498" selection-end="498" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bases.xsd" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="38" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Buildings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Content/Buildings/Buildings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlueprintBuilding.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintBuilding.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="42" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BuildingRegistry.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/BuildingRegistry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="51" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/Project.Game" pinned="false" current="true" current-in-tab="true">
+        <entry file="uml://JAVA/Project.Game">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>Project.Game</OriginalElement>
+              <nodes>
+                <node x="4179.501470588236" y="158.0">Project.Game.Behaviours.Drawing.Drawing</node>
+                <node x="4005.236864524031" y="2794.0">Project.Game.Entities.EntityFactory</node>
+                <node x="0.0" y="1392.0">Project.Game.AI.SPL.SPLQueue</node>
+                <node x="30.0" y="128.0">Project.Game.AI.SPL.Orders.SPLObject</node>
+                <node x="2955.591102677629" y="168.0">Project.Game.Behaviours.Offensive.Offensive</node>
+                <node x="3860.0181372549023" y="1640.0">Project.Game.Resource.ResourcePool</node>
+                <node x="139.0" y="1204.0">Project.Game.AI.SPL.Orders.AttackOrder</node>
+                <node x="675.4826978573637" y="1154.0">Project.Game.Utilities</node>
+                <node x="1239.4013991013044" y="2416.0">Project.Game.Blueprints.BlueprintRegistry</node>
+                <node x="2122.1430657679707" y="1432.0">Project.Game.AI.DefenseFinder</node>
+                <node x="2066.2001307848404" y="1660.0">Project.Game.AI.Commander</node>
+                <node x="1480.801470588236" y="1442.0">Project.Game.Buildings.BuildingRegistry</node>
+                <node x="3889.5181372549023" y="1422.0">Project.Game.Resource.ResourceGenerator</node>
+                <node x="2074.1430657679707" y="1184.0">Project.Game.AI.TacticalAnalysis</node>
+                <node x="2029.3001307848408" y="1918.0">Project.Game.Faction</node>
+                <node x="3175.0181372549023" y="1144.0">Project.Game.Behaviours.Movement.Static</node>
+                <node x="13.0" y="1204.0">Project.Game.AI.SPL.Orders.DefendOrder</node>
+                <node x="4495.286241895952" y="148.0">Project.Game.Behaviours.Influence.Influence</node>
+                <node x="1706.3652879901929" y="2446.0">Project.Game.Factions</node>
+                <node x="3511.0181372549023" y="1154.0">Project.Game.Behaviours.Collision.SimpleCollision</node>
+                <node x="2796.1431372549023" y="1184.0">Project.Game.Behaviours.Offensive.SimpleWeapon</node>
+                <node x="2954.1431372549023" y="1124.0">Project.Game.Behaviours.Movement.BasicMovement</node>
+                <node x="1230.301470588236" y="1184.0">Project.Game.Blueprints.BlueprintBuilding</node>
+                <node x="1499.4013991013044" y="2466.0">Project.Game.AI.BaseCommander</node>
+                <node x="4067.3514705882358" y="1174.0">Project.Game.Behaviours.Drawing.SimpleQuad</node>
+                <node x="2299.6709150326806" y="356.0">Project.Game.Vector2D</node>
+                <node x="4282.851470588235" y="2406.0">Project.Game.Behaviours.Constructive.BaseConstruction</node>
+                <node x="274.17647058823604" y="2456.0">Project.Game.KeyManager</node>
+                <node x="3852.2306372549024" y="148.0">Project.Game.Behaviours.Collision.Collision</node>
+                <node x="722.426470588236" y="1978.0">Project.Game.CachedVector2DSource</node>
+                <node x="437.67647058823604" y="1690.0">Project.Game.UI.InternalButton</node>
+                <node x="1917.1430657679707" y="1442.0">Project.Game.AI.AttackFinder</node>
+                <node x="3857.3514705882358" y="1948.0">Project.Game.Resource.ResourceDrain</node>
+                <node x="2824.6431372549023" y="1442.0">Project.Game.Behaviours.Movement.PathFollower</node>
+                <node x="2692.696586746253" y="2396.0">Project.Game.GameLoop</node>
+                <node x="4663.286241895952" y="1164.0">Project.Game.Influence.InfluenceGrid</node>
+                <node x="2508.17091503268" y="1432.0">Project.Game.Behaviours.Movement.Wandering</node>
+                <node x="3567.5389705882358" y="128.0">Project.Game.Behaviours.Movement.Movement</node>
+                <node x="3774.0181372549023" y="1164.0">Project.Game.Behaviours.Drawing.RadiusIndicator</node>
+                <node x="688.1959331514818" y="2814.0">Project.Game.Main</node>
+                <node x="2905.9847324346374" y="1978.0">Project.Game.Behaviours.Movement.Flocking</node>
+                <node x="4841.351470588235" y="158.0">Project.Game.Behaviours.Constructive.Construction</node>
+                <node x="452.92647058823604" y="1452.0">Project.Game.UI.Action</node>
+                <node x="3382.0181372549023" y="1204.0">Project.Game.EntityCellPair</node>
+                <node x="4093.501470588236" y="0.0">Project.Game.Behaviours.Behaviour</node>
+                <node x="4593.351470588235" y="1412.0">Project.Game.Behaviours.Influence.SimpleInfluence</node>
+                <node x="4177.726470588235" y="506.0">Project.Game.Entities.Entity</node>
+                <node x="3125.884086746253" y="2834.0">Project.Game.Behaviours.Constructive.BlueprintConstruction</node>
+                <node x="3976.8514705882358" y="2446.0">Project.Game.Behaviours.Constructive.BasicConstruction</node>
+                <node x="380.67647058823604" y="1938.0">Project.Game.UI.ButtonsWrapper</node>
+                <node x="4146.851470588235" y="2466.0">Project.Game.Behaviours.Constructive.BlueprintState</node>
+                <node x="414.17647058823604" y="2436.0">Project.Game.UI.ButtonManager</node>
+                <node x="1157.801470588236" y="1968.0">Project.Game.Blueprints.Blueprint</node>
+                <node x="3129.3931372549023" y="1630.0">Project.Game.Entities.Meta.Group</node>
+                <node x="4491.851470588235" y="2436.0">Project.Game.Behaviours.Constructive.SimpleConstruction</node>
+                <node x="30.0" y="566.0">Project.Game.AI.SPL.Orders.BasicOrder</node>
+                <node x="882.4013991013044" y="2366.0">Project.Game.Influence.InfluenceMap</node>
+                <node x="1530.301470588236" y="1204.0">Project.Game.Buildings.MetaBuilding</node>
+                <node x="1903.3652879901929" y="2336.0">Project.Game.CollisionBoard</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="Project.Game.Behaviours.Constructive.SimpleConstruction" target="Project.Game.Behaviours.Constructive.Construction">
+                  <point x="60.66666666666674" y="-44.0" />
+                  <point x="4643.518137254902" y="2316.0" />
+                  <point x="4975.786241895952" y="2316.0" />
+                  <point x="4975.786241895952" y="336.0" />
+                  <point x="5005.1514705882355" y="336.0" />
+                  <point x="72.79999999999995" y="24.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Constructive.BaseConstruction" target="Project.Game.Behaviours.Constructive.Construction">
+                  <point x="82.25" y="-74.0" />
+                  <point x="4459.101470588235" y="2306.0" />
+                  <point x="4964.786241895952" y="2306.0" />
+                  <point x="4964.786241895952" y="336.0" />
+                  <point x="4968.751470588236" y="336.0" />
+                  <point x="36.40000000000009" y="24.0" />
+                </edge>
+                <edge source="Project.Game.AI.SPL.Orders.AttackOrder" target="Project.Game.AI.SPL.Orders.BasicOrder">
+                  <point x="0.0" y="-14.0" />
+                  <point x="191.0" y="1104.0" />
+                  <point x="177.75" y="1104.0" />
+                  <point x="49.25" y="64.0" />
+                </edge>
+                <edge source="Project.Game.AI.SPL.Orders.BasicOrder" target="Project.Game.AI.SPL.Orders.SPLObject">
+                  <point x="0.0" y="-64.0" />
+                  <point x="0.0" y="54.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Offensive.SimpleWeapon" target="Project.Game.Behaviours.Offensive.Offensive">
+                  <point x="17.25" y="-34.0" />
+                  <point x="2882.3931372549023" y="1034.0" />
+                  <point x="2977.341102677629" y="1034.0" />
+                  <point x="-21.75" y="14.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Constructive.BasicConstruction" target="Project.Game.Behaviours.Constructive.Construction">
+                  <point x="55.200000000000045" y="-34.0" />
+                  <point x="4101.051470588236" y="2296.0" />
+                  <point x="4953.786241895952" y="2296.0" />
+                  <point x="4953.786241895952" y="326.0" />
+                  <point x="4932.351470588235" y="326.0" />
+                  <point x="0.0" y="24.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Movement.Movement" target="Project.Game.Behaviours.Behaviour">
+                  <point x="0.0" y="-54.0" />
+                  <point x="3661.0389705882358" y="98.0" />
+                  <point x="4128.001470588236" y="98.0" />
+                  <point x="-34.5" y="34.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Influence.Influence" target="Project.Game.Behaviours.Behaviour">
+                  <point x="0.0" y="-34.0" />
+                  <point x="4600.286241895952" y="98.0" />
+                  <point x="4197.001470588236" y="98.0" />
+                  <point x="34.5" y="34.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Drawing.SimpleQuad" target="Project.Game.Behaviours.Drawing.Drawing">
+                  <point x="0.0" y="-44.0" />
+                  <point x="4136.351470588235" y="1034.0" />
+                  <point x="4102.786241895952" y="1034.0" />
+                  <point x="4102.786241895952" y="336.0" />
+                  <point x="4234.501470588236" y="336.0" />
+                  <point x="0.0" y="24.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Constructive.Construction" target="Project.Game.Behaviours.Behaviour">
+                  <point x="0.0" y="-24.0" />
+                  <point x="4932.351470588235" y="88.0" />
+                  <point x="4220.001470588236" y="88.0" />
+                  <point x="57.5" y="34.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Collision.SimpleCollision" target="Project.Game.Behaviours.Collision.Collision">
+                  <point x="30.375" y="-64.0" />
+                  <point x="3662.8931372549023" y="924.0" />
+                  <point x="3580.6097324346374" y="924.0" />
+                  <point x="3580.6097324346374" y="316.0" />
+                  <point x="3886.7306372549024" y="316.0" />
+                  <point x="-34.5" y="34.0" />
+                </edge>
+                <edge source="Project.Game.AI.DefenseFinder" target="Project.Game.AI.TacticalAnalysis">
+                  <point x="-76.0" y="-34.0" />
+                  <point x="2160.1430657679707" y="1372.0" />
+                  <point x="2166.1430657679707" y="1372.0" />
+                  <point x="0.0" y="34.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Collision.Collision" target="Project.Game.Behaviours.Behaviour">
+                  <point x="0.0" y="-34.0" />
+                  <point x="3921.2306372549024" y="108.0" />
+                  <point x="4151.001470588236" y="108.0" />
+                  <point x="-11.5" y="34.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Movement.Flocking" target="Project.Game.Behaviours.Movement.BasicMovement">
+                  <point x="0.0" y="-44.0" />
+                  <point x="3007.9847324346374" y="1838.0" />
+                  <point x="3019.1431372549023" y="1838.0" />
+                  <point x="3019.1431372549023" y="1372.0" />
+                  <point x="3109.9764705882358" y="1372.0" />
+                  <point x="62.33333333333326" y="94.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Movement.BasicMovement" target="Project.Game.Behaviours.Movement.Movement">
+                  <point x="23.375" y="-94.0" />
+                  <point x="3071.0181372549023" y="1034.0" />
+                  <point x="3165.9661026776284" y="1034.0" />
+                  <point x="3165.9661026776284" y="296.0" />
+                  <point x="3586.238970588236" y="296.0" />
+                  <point x="-74.79999999999995" y="54.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Drawing.RadiusIndicator" target="Project.Game.Behaviours.Drawing.Drawing">
+                  <point x="0.0" y="-54.0" />
+                  <point x="3873.5181372549023" y="1024.0" />
+                  <point x="3791.2347324346374" y="1024.0" />
+                  <point x="3791.2347324346374" y="326.0" />
+                  <point x="4197.834803921569" y="326.0" />
+                  <point x="-36.666666666666515" y="24.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Offensive.Offensive" target="Project.Game.Behaviours.Behaviour">
+                  <point x="0.0" y="-14.0" />
+                  <point x="2999.091102677629" y="88.0" />
+                  <point x="4105.001470588236" y="88.0" />
+                  <point x="-57.5" y="34.0" />
+                </edge>
+                <edge source="Project.Game.Entities.Meta.Group" target="Project.Game.Entities.Entity">
+                  <point x="63.75" y="-84.0" />
+                  <point x="3295.1431372549023" y="1600.0" />
+                  <point x="4305.318065767971" y="1600.0" />
+                  <point x="4305.318065767971" y="1094.0" />
+                  <point x="4284.826470588236" y="1094.0" />
+                  <point x="-18.90000000000009" y="124.0" />
+                </edge>
+                <edge source="Project.Game.AI.AttackFinder" target="Project.Game.AI.TacticalAnalysis">
+                  <point x="69.0" y="-24.0" />
+                  <point x="2078.1430657679707" y="1372.0" />
+                  <point x="2104.8097324346377" y="1372.0" />
+                  <point x="-61.33333333333326" y="34.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Drawing.Drawing" target="Project.Game.Behaviours.Behaviour">
+                  <point x="0.0" y="-24.0" />
+                  <point x="4234.501470588236" y="108.0" />
+                  <point x="4174.001470588236" y="108.0" />
+                  <point x="11.5" y="34.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Movement.Static" target="Project.Game.Behaviours.Movement.Movement">
+                  <point x="23.375" y="-74.0" />
+                  <point x="3291.8931372549023" y="1034.0" />
+                  <point x="3372.9661026776284" y="1034.0" />
+                  <point x="3372.9661026776284" y="306.0" />
+                  <point x="3623.6389705882357" y="306.0" />
+                  <point x="-37.40000000000009" y="54.0" />
+                </edge>
+                <edge source="Project.Game.AI.SPL.Orders.DefendOrder" target="Project.Game.AI.SPL.Orders.BasicOrder">
+                  <point x="0.0" y="-14.0" />
+                  <point x="66.0" y="1104.0" />
+                  <point x="79.25" y="1104.0" />
+                  <point x="-49.25" y="64.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Influence.SimpleInfluence" target="Project.Game.Behaviours.Influence.Influence">
+                  <point x="0.0" y="-54.0" />
+                  <point x="4698.351470588235" y="1372.0" />
+                  <point x="4652.786241895952" y="1372.0" />
+                  <point x="52.5" y="34.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Movement.PathFollower" target="Project.Game.Behaviours.Movement.BasicMovement">
+                  <point x="46.0" y="-24.0" />
+                  <point x="2962.6431372549023" y="1362.0" />
+                  <point x="3047.6431372549023" y="1362.0" />
+                  <point x="0.0" y="94.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Constructive.BlueprintConstruction" target="Project.Game.Behaviours.Constructive.BasicConstruction">
+                  <point x="34.125" y="-44.0" />
+                  <point x="3251.009086746253" y="2754.0" />
+                  <point x="4045.8514705882358" y="2754.0" />
+                  <point x="0.0" y="34.0" />
+                </edge>
+                <edge source="Project.Game.Behaviours.Movement.Wandering" target="Project.Game.Behaviours.Movement.BasicMovement">
+                  <point x="61.33333333333326" y="-34.0" />
+                  <point x="2661.5042483660136" y="1352.0" />
+                  <point x="2985.3098039215693" y="1352.0" />
+                  <point x="-62.33333333333326" y="94.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="618.0000000000001" y="1507.6666666666665" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MetaBuilding.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="40" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResourceDrain.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="39" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UI.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Content/UI.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="26" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -637,7 +875,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="fileTemplates" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="project.structure.side.proportion" value="0.16103059" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -909,7 +1147,7 @@
     <option name="LOCK_ON_CHECKOUT" value="false" />
     <option name="UNLOCK_ON_CHECKIN" value="false" />
   </component>
-  <component name="SvnConfiguration" maxAnnotateRevisions="500">
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
     <option name="mySSHConnectionTimeout" value="30000" />
@@ -924,6 +1162,7 @@
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
     <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
     <configuration useDefault="false">C:\Users\Piers\AppData\Roaming\Subversion</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
   </component>
@@ -957,7 +1196,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1022,7 +1261,7 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
@@ -1090,6 +1329,58 @@
         <state line="17" column="46" selection-start="814" selection-end="814" vertical-scroll-proportion="-0.5862069" />
       </provider>
     </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="" y="">classes</node>
+            <node x="" y="">com</node>
+            <node x="" y="">netscape</node>
+            <node x="" y="">junit</node>
+            <node x="" y="">org</node>
+            <node x="" y="">oracle</node>
+            <node x="" y="">javafx</node>
+            <node x="" y="">META-INF</node>
+            <node x="" y="">sun</node>
+            <node x="" y="">de</node>
+            <node x="" y="">sunw</node>
+            <node x="" y="">javax</node>
+            <node x="" y="">java</node>
+            <node x="" y="">Project</node>
+            <node x="" y="">edu</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="180.5" y="160.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Project">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Project</OriginalElement>
+          <nodes>
+            <node x="" y="">Project.TWLTest</node>
+            <node x="" y="">Project.NLP</node>
+            <node x="" y="">Project.Game</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="63.5" y="87.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="68" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.0" />
@@ -1105,9 +1396,28 @@
         <state line="5" column="38" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Content/Buildings/Buildings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintBuilding.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="42" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/BuildingRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="51" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="40" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java">
@@ -1120,22 +1430,256 @@
         <state line="17" column="26" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Content/Buildings/Buildings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="40" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/BuildingRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="32" selection-start="301" selection-end="301" vertical-scroll-proportion="0.31962398">
-          <folding />
+    <entry file="uml://JAVA/Project.Game">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Project.Game</OriginalElement>
+          <nodes>
+            <node x="4179.501470588236" y="158.0">Project.Game.Behaviours.Drawing.Drawing</node>
+            <node x="4005.236864524031" y="2794.0">Project.Game.Entities.EntityFactory</node>
+            <node x="0.0" y="1392.0">Project.Game.AI.SPL.SPLQueue</node>
+            <node x="30.0" y="128.0">Project.Game.AI.SPL.Orders.SPLObject</node>
+            <node x="2955.591102677629" y="168.0">Project.Game.Behaviours.Offensive.Offensive</node>
+            <node x="3860.0181372549023" y="1640.0">Project.Game.Resource.ResourcePool</node>
+            <node x="139.0" y="1204.0">Project.Game.AI.SPL.Orders.AttackOrder</node>
+            <node x="675.4826978573637" y="1154.0">Project.Game.Utilities</node>
+            <node x="1239.4013991013044" y="2416.0">Project.Game.Blueprints.BlueprintRegistry</node>
+            <node x="2122.1430657679707" y="1432.0">Project.Game.AI.DefenseFinder</node>
+            <node x="2066.2001307848404" y="1660.0">Project.Game.AI.Commander</node>
+            <node x="1480.801470588236" y="1442.0">Project.Game.Buildings.BuildingRegistry</node>
+            <node x="3889.5181372549023" y="1422.0">Project.Game.Resource.ResourceGenerator</node>
+            <node x="2074.1430657679707" y="1184.0">Project.Game.AI.TacticalAnalysis</node>
+            <node x="2029.3001307848408" y="1918.0">Project.Game.Faction</node>
+            <node x="3175.0181372549023" y="1144.0">Project.Game.Behaviours.Movement.Static</node>
+            <node x="13.0" y="1204.0">Project.Game.AI.SPL.Orders.DefendOrder</node>
+            <node x="4495.286241895952" y="148.0">Project.Game.Behaviours.Influence.Influence</node>
+            <node x="1706.3652879901929" y="2446.0">Project.Game.Factions</node>
+            <node x="3511.0181372549023" y="1154.0">Project.Game.Behaviours.Collision.SimpleCollision</node>
+            <node x="2796.1431372549023" y="1184.0">Project.Game.Behaviours.Offensive.SimpleWeapon</node>
+            <node x="2954.1431372549023" y="1124.0">Project.Game.Behaviours.Movement.BasicMovement</node>
+            <node x="1230.301470588236" y="1184.0">Project.Game.Blueprints.BlueprintBuilding</node>
+            <node x="1499.4013991013044" y="2466.0">Project.Game.AI.BaseCommander</node>
+            <node x="4067.3514705882358" y="1174.0">Project.Game.Behaviours.Drawing.SimpleQuad</node>
+            <node x="2299.6709150326806" y="356.0">Project.Game.Vector2D</node>
+            <node x="4282.851470588235" y="2406.0">Project.Game.Behaviours.Constructive.BaseConstruction</node>
+            <node x="274.17647058823604" y="2456.0">Project.Game.KeyManager</node>
+            <node x="3852.2306372549024" y="148.0">Project.Game.Behaviours.Collision.Collision</node>
+            <node x="722.426470588236" y="1978.0">Project.Game.CachedVector2DSource</node>
+            <node x="437.67647058823604" y="1690.0">Project.Game.UI.InternalButton</node>
+            <node x="1917.1430657679707" y="1442.0">Project.Game.AI.AttackFinder</node>
+            <node x="3857.3514705882358" y="1948.0">Project.Game.Resource.ResourceDrain</node>
+            <node x="2824.6431372549023" y="1442.0">Project.Game.Behaviours.Movement.PathFollower</node>
+            <node x="2692.696586746253" y="2396.0">Project.Game.GameLoop</node>
+            <node x="4663.286241895952" y="1164.0">Project.Game.Influence.InfluenceGrid</node>
+            <node x="2508.17091503268" y="1432.0">Project.Game.Behaviours.Movement.Wandering</node>
+            <node x="3567.5389705882358" y="128.0">Project.Game.Behaviours.Movement.Movement</node>
+            <node x="3774.0181372549023" y="1164.0">Project.Game.Behaviours.Drawing.RadiusIndicator</node>
+            <node x="688.1959331514818" y="2814.0">Project.Game.Main</node>
+            <node x="2905.9847324346374" y="1978.0">Project.Game.Behaviours.Movement.Flocking</node>
+            <node x="4841.351470588235" y="158.0">Project.Game.Behaviours.Constructive.Construction</node>
+            <node x="452.92647058823604" y="1452.0">Project.Game.UI.Action</node>
+            <node x="3382.0181372549023" y="1204.0">Project.Game.EntityCellPair</node>
+            <node x="4093.501470588236" y="0.0">Project.Game.Behaviours.Behaviour</node>
+            <node x="4593.351470588235" y="1412.0">Project.Game.Behaviours.Influence.SimpleInfluence</node>
+            <node x="4177.726470588235" y="506.0">Project.Game.Entities.Entity</node>
+            <node x="3125.884086746253" y="2834.0">Project.Game.Behaviours.Constructive.BlueprintConstruction</node>
+            <node x="3976.8514705882358" y="2446.0">Project.Game.Behaviours.Constructive.BasicConstruction</node>
+            <node x="380.67647058823604" y="1938.0">Project.Game.UI.ButtonsWrapper</node>
+            <node x="4146.851470588235" y="2466.0">Project.Game.Behaviours.Constructive.BlueprintState</node>
+            <node x="414.17647058823604" y="2436.0">Project.Game.UI.ButtonManager</node>
+            <node x="1157.801470588236" y="1968.0">Project.Game.Blueprints.Blueprint</node>
+            <node x="3129.3931372549023" y="1630.0">Project.Game.Entities.Meta.Group</node>
+            <node x="4491.851470588235" y="2436.0">Project.Game.Behaviours.Constructive.SimpleConstruction</node>
+            <node x="30.0" y="566.0">Project.Game.AI.SPL.Orders.BasicOrder</node>
+            <node x="882.4013991013044" y="2366.0">Project.Game.Influence.InfluenceMap</node>
+            <node x="1530.301470588236" y="1204.0">Project.Game.Buildings.MetaBuilding</node>
+            <node x="1903.3652879901929" y="2336.0">Project.Game.CollisionBoard</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="Project.Game.Behaviours.Constructive.SimpleConstruction" target="Project.Game.Behaviours.Constructive.Construction">
+              <point x="60.66666666666674" y="-44.0" />
+              <point x="4643.518137254902" y="2316.0" />
+              <point x="4975.786241895952" y="2316.0" />
+              <point x="4975.786241895952" y="336.0" />
+              <point x="5005.1514705882355" y="336.0" />
+              <point x="72.79999999999995" y="24.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Constructive.BaseConstruction" target="Project.Game.Behaviours.Constructive.Construction">
+              <point x="82.25" y="-74.0" />
+              <point x="4459.101470588235" y="2306.0" />
+              <point x="4964.786241895952" y="2306.0" />
+              <point x="4964.786241895952" y="336.0" />
+              <point x="4968.751470588236" y="336.0" />
+              <point x="36.40000000000009" y="24.0" />
+            </edge>
+            <edge source="Project.Game.AI.SPL.Orders.AttackOrder" target="Project.Game.AI.SPL.Orders.BasicOrder">
+              <point x="0.0" y="-14.0" />
+              <point x="191.0" y="1104.0" />
+              <point x="177.75" y="1104.0" />
+              <point x="49.25" y="64.0" />
+            </edge>
+            <edge source="Project.Game.AI.SPL.Orders.BasicOrder" target="Project.Game.AI.SPL.Orders.SPLObject">
+              <point x="0.0" y="-64.0" />
+              <point x="0.0" y="54.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Offensive.SimpleWeapon" target="Project.Game.Behaviours.Offensive.Offensive">
+              <point x="17.25" y="-34.0" />
+              <point x="2882.3931372549023" y="1034.0" />
+              <point x="2977.341102677629" y="1034.0" />
+              <point x="-21.75" y="14.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Constructive.BasicConstruction" target="Project.Game.Behaviours.Constructive.Construction">
+              <point x="55.200000000000045" y="-34.0" />
+              <point x="4101.051470588236" y="2296.0" />
+              <point x="4953.786241895952" y="2296.0" />
+              <point x="4953.786241895952" y="326.0" />
+              <point x="4932.351470588235" y="326.0" />
+              <point x="0.0" y="24.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Movement.Movement" target="Project.Game.Behaviours.Behaviour">
+              <point x="0.0" y="-54.0" />
+              <point x="3661.0389705882358" y="98.0" />
+              <point x="4128.001470588236" y="98.0" />
+              <point x="-34.5" y="34.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Influence.Influence" target="Project.Game.Behaviours.Behaviour">
+              <point x="0.0" y="-34.0" />
+              <point x="4600.286241895952" y="98.0" />
+              <point x="4197.001470588236" y="98.0" />
+              <point x="34.5" y="34.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Drawing.SimpleQuad" target="Project.Game.Behaviours.Drawing.Drawing">
+              <point x="0.0" y="-44.0" />
+              <point x="4136.351470588235" y="1034.0" />
+              <point x="4102.786241895952" y="1034.0" />
+              <point x="4102.786241895952" y="336.0" />
+              <point x="4234.501470588236" y="336.0" />
+              <point x="0.0" y="24.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Constructive.Construction" target="Project.Game.Behaviours.Behaviour">
+              <point x="0.0" y="-24.0" />
+              <point x="4932.351470588235" y="88.0" />
+              <point x="4220.001470588236" y="88.0" />
+              <point x="57.5" y="34.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Collision.SimpleCollision" target="Project.Game.Behaviours.Collision.Collision">
+              <point x="30.375" y="-64.0" />
+              <point x="3662.8931372549023" y="924.0" />
+              <point x="3580.6097324346374" y="924.0" />
+              <point x="3580.6097324346374" y="316.0" />
+              <point x="3886.7306372549024" y="316.0" />
+              <point x="-34.5" y="34.0" />
+            </edge>
+            <edge source="Project.Game.AI.DefenseFinder" target="Project.Game.AI.TacticalAnalysis">
+              <point x="-76.0" y="-34.0" />
+              <point x="2160.1430657679707" y="1372.0" />
+              <point x="2166.1430657679707" y="1372.0" />
+              <point x="0.0" y="34.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Collision.Collision" target="Project.Game.Behaviours.Behaviour">
+              <point x="0.0" y="-34.0" />
+              <point x="3921.2306372549024" y="108.0" />
+              <point x="4151.001470588236" y="108.0" />
+              <point x="-11.5" y="34.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Movement.Flocking" target="Project.Game.Behaviours.Movement.BasicMovement">
+              <point x="0.0" y="-44.0" />
+              <point x="3007.9847324346374" y="1838.0" />
+              <point x="3019.1431372549023" y="1838.0" />
+              <point x="3019.1431372549023" y="1372.0" />
+              <point x="3109.9764705882358" y="1372.0" />
+              <point x="62.33333333333326" y="94.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Movement.BasicMovement" target="Project.Game.Behaviours.Movement.Movement">
+              <point x="23.375" y="-94.0" />
+              <point x="3071.0181372549023" y="1034.0" />
+              <point x="3165.9661026776284" y="1034.0" />
+              <point x="3165.9661026776284" y="296.0" />
+              <point x="3586.238970588236" y="296.0" />
+              <point x="-74.79999999999995" y="54.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Drawing.RadiusIndicator" target="Project.Game.Behaviours.Drawing.Drawing">
+              <point x="0.0" y="-54.0" />
+              <point x="3873.5181372549023" y="1024.0" />
+              <point x="3791.2347324346374" y="1024.0" />
+              <point x="3791.2347324346374" y="326.0" />
+              <point x="4197.834803921569" y="326.0" />
+              <point x="-36.666666666666515" y="24.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Offensive.Offensive" target="Project.Game.Behaviours.Behaviour">
+              <point x="0.0" y="-14.0" />
+              <point x="2999.091102677629" y="88.0" />
+              <point x="4105.001470588236" y="88.0" />
+              <point x="-57.5" y="34.0" />
+            </edge>
+            <edge source="Project.Game.Entities.Meta.Group" target="Project.Game.Entities.Entity">
+              <point x="63.75" y="-84.0" />
+              <point x="3295.1431372549023" y="1600.0" />
+              <point x="4305.318065767971" y="1600.0" />
+              <point x="4305.318065767971" y="1094.0" />
+              <point x="4284.826470588236" y="1094.0" />
+              <point x="-18.90000000000009" y="124.0" />
+            </edge>
+            <edge source="Project.Game.AI.AttackFinder" target="Project.Game.AI.TacticalAnalysis">
+              <point x="69.0" y="-24.0" />
+              <point x="2078.1430657679707" y="1372.0" />
+              <point x="2104.8097324346377" y="1372.0" />
+              <point x="-61.33333333333326" y="34.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Drawing.Drawing" target="Project.Game.Behaviours.Behaviour">
+              <point x="0.0" y="-24.0" />
+              <point x="4234.501470588236" y="108.0" />
+              <point x="4174.001470588236" y="108.0" />
+              <point x="11.5" y="34.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Movement.Static" target="Project.Game.Behaviours.Movement.Movement">
+              <point x="23.375" y="-74.0" />
+              <point x="3291.8931372549023" y="1034.0" />
+              <point x="3372.9661026776284" y="1034.0" />
+              <point x="3372.9661026776284" y="306.0" />
+              <point x="3623.6389705882357" y="306.0" />
+              <point x="-37.40000000000009" y="54.0" />
+            </edge>
+            <edge source="Project.Game.AI.SPL.Orders.DefendOrder" target="Project.Game.AI.SPL.Orders.BasicOrder">
+              <point x="0.0" y="-14.0" />
+              <point x="66.0" y="1104.0" />
+              <point x="79.25" y="1104.0" />
+              <point x="-49.25" y="64.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Influence.SimpleInfluence" target="Project.Game.Behaviours.Influence.Influence">
+              <point x="0.0" y="-54.0" />
+              <point x="4698.351470588235" y="1372.0" />
+              <point x="4652.786241895952" y="1372.0" />
+              <point x="52.5" y="34.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Movement.PathFollower" target="Project.Game.Behaviours.Movement.BasicMovement">
+              <point x="46.0" y="-24.0" />
+              <point x="2962.6431372549023" y="1362.0" />
+              <point x="3047.6431372549023" y="1362.0" />
+              <point x="0.0" y="94.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Constructive.BlueprintConstruction" target="Project.Game.Behaviours.Constructive.BasicConstruction">
+              <point x="34.125" y="-44.0" />
+              <point x="3251.009086746253" y="2754.0" />
+              <point x="4045.8514705882358" y="2754.0" />
+              <point x="0.0" y="34.0" />
+            </edge>
+            <edge source="Project.Game.Behaviours.Movement.Wandering" target="Project.Game.Behaviours.Movement.BasicMovement">
+              <point x="61.33333333333326" y="-34.0" />
+              <point x="2661.5042483660136" y="1352.0" />
+              <point x="2985.3098039215693" y="1352.0" />
+              <point x="-62.33333333333326" y="94.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="618.0000000000001" y="1507.6666666666665" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
