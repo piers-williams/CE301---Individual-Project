@@ -1,5 +1,12 @@
 package Project.Game.Buildings;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Unmarshaller;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -16,6 +23,34 @@ public class BuildingRegistry {
     }
 
     public MetaBuilding getBuilding(String name) {
-        return null;
+
+        if (buildings.containsKey(name)) return buildings.get(name);
+        throw new IllegalArgumentException("Building not in registry");
     }
+
+    public void load(String filename) {
+        try {
+            JAXBContext context = JAXBContext.newInstance(BuildingsWrapper.class);
+            Unmarshaller unmarshaller = context.createUnmarshaller();
+
+            BuildingsWrapper temp = (BuildingsWrapper) unmarshaller.unmarshal(new File(filename));
+
+            for (MetaBuilding building : temp.buildings) {
+                buildings.put(building.name, building);
+            }
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+}
+
+
+class BuildingsWrapper {
+
+    @XmlElementWrapper(name = "Buildings")
+    @XmlElement(name = "Building")
+    ArrayList<MetaBuilding> buildings;
+
 }
