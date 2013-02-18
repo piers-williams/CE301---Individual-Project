@@ -5,17 +5,20 @@
         <Size x="10" y="10"/>
         <Cost>500</Cost>
         <BuildTime>60</BuildTime>
+        <Construction>Null</Construction>
     </Building>
     <Building>
         <Name>Center</Name>
         <Size x="25" y="25"/>
         <Cost>1000</Cost>
         <BuildTime>60</BuildTime>
+        <Construction>Null</Construction>
     </Building>
     <Building>
         <Name>Construction</Name>
         <Size x="20" y="20"/>
         <Cost>750</Cost>
         <BuildTime>90</BuildTime>
+        <Construction>Entity</Construction>
     </Building>
 </Buildings>
