@@ -20,4 +20,8 @@ public class MetaBuilding {
     @XmlElement(name = "BuildTime")
     int buildTime;
 
+    @Override
+    public String toString() {
+        return "Building: " + name + " |::| " + size + " |::| " + cost + " |::| " + buildTime;
+    }
 }

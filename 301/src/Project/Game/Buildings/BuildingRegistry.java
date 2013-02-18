@@ -4,7 +4,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,13 +43,19 @@ public class BuildingRegistry {
         }
     }
 
+    public static void main(String[] args) {
 
+        BuildingRegistry registry = new BuildingRegistry();
+        registry.load("Content/Buildings/Buildings.xml");
+
+        System.out.println(registry.getBuilding("Tower"));
+    }
 }
 
-
+@XmlRootElement(name = "Buildings")
 class BuildingsWrapper {
 
-    @XmlElementWrapper(name = "Buildings")
+
     @XmlElement(name = "Building")
     ArrayList<MetaBuilding> buildings;
 
