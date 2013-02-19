@@ -58,8 +58,6 @@ public class BuildingRegistry {
 
 @XmlRootElement(name = "Buildings")
 class BuildingsWrapper {
-
-
     @XmlElement(name = "Building")
     ArrayList<MetaBuilding> buildings;
 

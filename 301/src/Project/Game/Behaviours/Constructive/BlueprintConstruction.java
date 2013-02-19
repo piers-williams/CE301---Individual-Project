@@ -59,23 +59,26 @@ public class BlueprintConstruction extends BasicConstruction {
     }
 
     private void findAndBuildNext() {
-        Vector2D centerLocation = getEntity().getMovementBehaviour().getLocation();
+        //Vector2D centerLocation = getEntity().getMovementBehaviour().getLocation();
 
         for (BlueprintBuilding blueprintBuilding : blueprint.getBlueprintBuildings()) {
-            // Only find first one
             if (!buildings.containsKey(blueprintBuilding.getOffset())) {
                 resourceDrain.deRegister();
                 // Need to put this type of information into the blueprint
                 resourceDrain = new ResourceDrain(resourcePool, 10);
+                // Only find first one
                 break;
             }
         }
+
+        state = BlueprintState.AllConstructed;
     }
     private void constructionWork(){
         ticksTillFinished++;
 
         if(ticksTillFinished == 0){
             // Switch state
+            state = BlueprintState.Looking;
         }
     }
 }
