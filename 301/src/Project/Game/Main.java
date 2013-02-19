@@ -138,7 +138,7 @@ public class Main{
         }
         Display.destroy();
     }
-
+     // TODO Get this working
     private void drawBoundary() {
         GL11.glColor4f(255, 255, 255, 255);
 
