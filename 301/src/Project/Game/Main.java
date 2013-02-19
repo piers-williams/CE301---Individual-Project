@@ -1,6 +1,7 @@
 package Project.Game;
 
 import Project.Game.Blueprints.BlueprintRegistry;
+import Project.Game.Buildings.BuildingRegistry;
 import Project.Game.Influence.InfluenceMap;
 import Project.Game.UI.ButtonManager;
 import de.matthiasmann.twl.Button;
@@ -38,6 +39,7 @@ public class Main{
     public static InfluenceMap INFLUENCE_MAP;
     public static CachedVector2DSource VECTOR2D_SOURCE;
     public static BlueprintRegistry BLUEPRINT_REGISTRY;
+    public static BuildingRegistry BUILDING_REGISTRY;
     public static Main MAIN;
 
     // Please don't re-assign this one
@@ -64,6 +66,8 @@ public class Main{
         Main.COLLISION_BOARD = new CollisionBoard(CELL_SIZE);
         Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 30, 40);
         BLUEPRINT_REGISTRY = BlueprintRegistry.load("Content/Bases/Bases.xml");
+        BUILDING_REGISTRY = new BuildingRegistry();
+        BUILDING_REGISTRY.load();
         KEY_MANAGER = new KeyManager(this);
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
         // Set up the display

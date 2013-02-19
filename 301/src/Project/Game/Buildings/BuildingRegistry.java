@@ -28,6 +28,10 @@ public class BuildingRegistry {
         throw new IllegalArgumentException("Building not in registry");
     }
 
+    public void load() {
+        load("Content/Buildings/Buildings.xml");
+    }
+
     public void load(String filename) {
         try {
             JAXBContext context = JAXBContext.newInstance(BuildingsWrapper.class);

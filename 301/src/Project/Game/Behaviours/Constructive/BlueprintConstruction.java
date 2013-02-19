@@ -25,6 +25,8 @@ public class BlueprintConstruction extends BasicConstruction {
 
     private BlueprintState state;
 
+    private int ticksTillFinished;
+
     public BlueprintConstruction(Faction faction, Entity entity, ResourcePool resourcePool, Vector2D location, Blueprint blueprint) {
         super(faction, entity, resourcePool);
         this.faction = faction;
@@ -67,6 +69,13 @@ public class BlueprintConstruction extends BasicConstruction {
                 resourceDrain = new ResourceDrain(resourcePool, 10);
                 break;
             }
+        }
+    }
+    private void constructionWork(){
+        ticksTillFinished++;
+
+        if(ticksTillFinished == 0){
+            // Switch state
         }
     }
 }
