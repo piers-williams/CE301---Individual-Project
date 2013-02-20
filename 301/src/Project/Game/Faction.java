@@ -6,6 +6,8 @@ import Project.Game.Behaviours.Constructive.Construction;
 import Project.Game.Entities.Entity;
 import Project.Game.Entities.EntityFactory;
 import Project.Game.Entities.Meta.Group;
+import Project.Game.Resource.ResourceGenerator;
+import Project.Game.Resource.ResourcePool;
 
 import java.util.ArrayList;
 import java.util.Dictionary;
@@ -32,11 +34,19 @@ public class Faction {
 
     private Boolean intelligent;
 
+    // The resource pool for the faction
+    private ResourcePool resourcePool;
+
     protected Faction(float r, float g, float b, Vector2D startLocation, Boolean intelligent) {
         this.r = r;
         this.g = g;
         this.b = b;
         this.intelligent = intelligent;
+
+        // Set up initial resource generator
+        resourcePool = new ResourcePool();
+        resourcePool.register(new ResourceGenerator(resourcePool, 10));
+
         if (intelligent) commander = new Commander(this);
 
         groups = new ArrayList<>();
