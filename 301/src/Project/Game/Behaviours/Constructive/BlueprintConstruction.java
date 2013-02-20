@@ -49,6 +49,7 @@ public class BlueprintConstruction extends BasicConstruction {
 
     @Override
     public void update() {
+        lookForDeadBuildings();
         switch (state) {
             case Looking:
                 // Find the next building to build
@@ -58,6 +59,17 @@ public class BlueprintConstruction extends BasicConstruction {
                 break;
             case Constructing:
                 break;
+        }
+
+    }
+
+    private void lookForDeadBuildings() {
+        for (Vector2D buildingOffset : buildings.keySet()) {
+            Entity building = buildings.get(buildingOffset);
+            if (!building.isAlive()) {
+                // Might not like this while it is traversing
+                buildings.remove(buildingOffset);
+            }
         }
 
     }
