@@ -54,12 +54,12 @@ public class Faction {
         groups = new ArrayList<>();
         baseGroup = new Hashtable<>();
 
-        Entity base = EntityFactory.getBase(this, startLocation);
-        Group newGroup = new Group(r, g, b, base.getConstructionBehaviour().getSpawnPoint(), 5, this);
-        baseGroup.put(base.getConstructionBehaviour(), newGroup);
-
-        Main.GAME_LOOP.addEntity(base);
-        Main.GAME_LOOP.addEntity(newGroup);
+//        Entity base = EntityFactory.getBase(this, startLocation);
+//        Group newGroup = new Group(r, g, b, base.getConstructionBehaviour().getSpawnPoint(), 5, this);
+//        baseGroup.put(base.getConstructionBehaviour(), newGroup);
+//
+//        Main.GAME_LOOP.addEntity(base);
+//        Main.GAME_LOOP.addEntity(newGroup);
 
         this.location = startLocation;
 
