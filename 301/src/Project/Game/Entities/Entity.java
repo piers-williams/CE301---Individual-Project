@@ -6,6 +6,7 @@ import Project.Game.Behaviours.Drawing.Drawing;
 import Project.Game.Behaviours.Influence.Influence;
 import Project.Game.Behaviours.Movement.Movement;
 import Project.Game.Behaviours.Offensive.Offensive;
+import Project.Game.Behaviours.Resource.Resource;
 import Project.Game.Faction;
 import Project.Game.Influence.InfluenceGrid;
 
@@ -27,6 +28,7 @@ public class Entity {
     protected Influence influenceBehaviour;
     protected Construction constructionBehaviour;
     protected Offensive offensiveBehaviour;
+    protected Resource resourceBehaviour;
 
     // Used for factories
     protected Entity() {
@@ -34,12 +36,13 @@ public class Entity {
     }
 
     public void update() {
-        movementBehaviour.update();
+        if (movementBehaviour != null) movementBehaviour.update();
         if (collisionBehaviour != null) collisionBehaviour.update();
         if (constructionBehaviour != null) constructionBehaviour.update();
         if (drawingBehaviour != null) drawingBehaviour.update();
         if (influenceBehaviour != null) influenceBehaviour.update();
         if (offensiveBehaviour != null) offensiveBehaviour.update();
+        if (resourceBehaviour != null) resourceBehaviour.update();
     }
 
     public void draw() {
