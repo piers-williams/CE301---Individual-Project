@@ -91,7 +91,16 @@
           <file leaf-file-name="BlueprintConstruction.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="77" column="40" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.640873">
+                <state line="103" column="33" selection-start="3178" selection-end="3178" vertical-scroll-proportion="0.7638889">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EntityFactory.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="99" column="40" selection-start="3798" selection-end="3798" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -158,7 +167,7 @@
           <file leaf-file-name="MetaBuilding.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="29" selection-start="639" selection-end="639" vertical-scroll-proportion="0.77862597">
+                <state line="23" column="49" selection-start="507" selection-end="507" vertical-scroll-proportion="0.648855">
                   <folding />
                 </state>
               </provider>
@@ -504,6 +513,32 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="ButtonManager.java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1090,38 +1125,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="" y="">classes</node>
-            <node x="" y="">com</node>
-            <node x="" y="">netscape</node>
-            <node x="" y="">junit</node>
-            <node x="" y="">org</node>
-            <node x="" y="">oracle</node>
-            <node x="" y="">javafx</node>
-            <node x="" y="">META-INF</node>
-            <node x="" y="">sun</node>
-            <node x="" y="">de</node>
-            <node x="" y="">sunw</node>
-            <node x="" y="">javax</node>
-            <node x="" y="">Project</node>
-            <node x="" y="">java</node>
-            <node x="" y="">edu</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="181.0" y="160.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/Project">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1271,13 +1274,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="29" selection-start="639" selection-end="639" vertical-scroll-proportion="0.77862597">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="30" selection-start="1426" selection-end="1426" vertical-scroll-proportion="1.7876984">
@@ -1292,9 +1288,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="49" selection-start="507" selection-end="507" vertical-scroll-proportion="0.648855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="40" selection-start="3798" selection-end="3798" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="40" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.640873">
+        <state line="103" column="33" selection-start="3178" selection-end="3178" vertical-scroll-proportion="0.7638889">
           <folding />
         </state>
       </provider>

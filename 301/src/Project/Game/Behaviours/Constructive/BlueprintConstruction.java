@@ -4,6 +4,7 @@ import Project.Game.Blueprints.Blueprint;
 import Project.Game.Blueprints.BlueprintBuilding;
 import Project.Game.Buildings.MetaBuilding;
 import Project.Game.Entities.Entity;
+import Project.Game.Entities.EntityFactory;
 import Project.Game.Faction;
 import Project.Game.Main;
 import Project.Game.Resource.ResourceDrain;
@@ -25,6 +26,8 @@ public class BlueprintConstruction extends BasicConstruction {
     private HashMap<Vector2D, Entity> buildings;
 
     private BlueprintState state;
+    BlueprintBuilding currentBlueprint;
+    MetaBuilding currentlyBuilding;
 
     private int ticksTillFinished;
 
@@ -65,16 +68,16 @@ public class BlueprintConstruction extends BasicConstruction {
         for (BlueprintBuilding blueprintBuilding : blueprint.getBlueprintBuildings()) {
             if (!buildings.containsKey(blueprintBuilding.getOffset())) {
                 resourceDrain.deRegister();
-
-                MetaBuilding building = Main.BUILDING_REGISTRY.getBuilding(blueprintBuilding.getType());
+                currentBlueprint = blueprintBuilding;
+                currentlyBuilding = Main.BUILDING_REGISTRY.getBuilding(blueprintBuilding.getType());
                 // Need to put this type of information into the blueprint
 
-                int drainPerTick = building.getCost() / building.getBuildTime();
+                int drainPerTick = currentlyBuilding.getCost() / currentlyBuilding.getBuildTime();
                 resourceDrain = new ResourceDrain(resourcePool, drainPerTick);
                 // Register the resourceDrain
                 resourcePool.register(resourceDrain);
-                // Only find first one
-                break;
+                // Only find first one but don't change the state
+                return;
             }
         }
 
@@ -88,7 +91,12 @@ public class BlueprintConstruction extends BasicConstruction {
             // Switch state
             state = BlueprintState.Looking;
 
-            // Place building
+            // Obtain building
+            Entity entity = EntityFactory.getBuilding(
+                    faction,
+                    Vector2D.add(location, currentBlueprint.getOffset()),
+                    currentlyBuilding.getName()
+                    );
         }
     }
 }
