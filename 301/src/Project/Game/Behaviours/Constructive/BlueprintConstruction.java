@@ -50,6 +50,7 @@ public class BlueprintConstruction extends BasicConstruction {
     @Override
     public void update() {
         lookForDeadBuildings();
+        System.out.println(state);
         switch (state) {
             case Looking:
                 // Find the next building to build
@@ -58,6 +59,7 @@ public class BlueprintConstruction extends BasicConstruction {
             case AllConstructed:
                 break;
             case Constructing:
+                constructionWork();
                 break;
         }
 
@@ -69,6 +71,7 @@ public class BlueprintConstruction extends BasicConstruction {
             if (!building.isAlive()) {
                 // Might not like this while it is traversing
                 buildings.remove(buildingOffset);
+                if(state == BlueprintState.AllConstructed) state = BlueprintState.Looking;
             }
         }
 
@@ -76,18 +79,22 @@ public class BlueprintConstruction extends BasicConstruction {
 
     private void findAndBuildNext() {
 
+        //System.out.println(blueprint.getBlueprintBuildings().size());
+        // Is empty ...
         for (BlueprintBuilding blueprintBuilding : blueprint.getBlueprintBuildings()) {
             if (!buildings.containsKey(blueprintBuilding.getOffset())) {
-                resourceDrain.deRegister();
+                if(resourceDrain != null) resourceDrain.deRegister();
                 currentBlueprint = blueprintBuilding;
                 currentlyBuilding = Main.BUILDING_REGISTRY.getBuilding(blueprintBuilding.getType());
                 // Need to put this type of information into the blueprint
 
                 int drainPerTick = currentlyBuilding.getCost() / currentlyBuilding.getBuildTime();
+                ticksTillFinished = currentlyBuilding.getBuildTime();
                 resourceDrain = new ResourceDrain(resourcePool, drainPerTick);
                 // Register the resourceDrain
                 resourcePool.register(resourceDrain);
                 // Only find first one but don't change the state
+                state = BlueprintState.Constructing;
                 return;
             }
         }
@@ -96,7 +103,7 @@ public class BlueprintConstruction extends BasicConstruction {
     }
 
     private void constructionWork() {
-        ticksTillFinished++;
+        ticksTillFinished--;
 
         if (ticksTillFinished == 0) {
             // Switch state

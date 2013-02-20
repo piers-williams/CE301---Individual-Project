@@ -18,7 +18,7 @@ public class Blueprint {
     String name;
 
     @XmlElementWrapper(name = "Buildings")
-    @XmlElement(name = "BlueprintBuilding")
+    @XmlElement(name = "Building")
     ArrayList<BlueprintBuilding> blueprintBuildings;
 
     public String getUpgradeString() {
