@@ -128,6 +128,10 @@ public class Faction {
     public SPLQueue getSplQueue() {
         return splQueue;
     }
+
+    public ResourcePool getResourcePool() {
+        return resourcePool;
+    }
 }
 
 

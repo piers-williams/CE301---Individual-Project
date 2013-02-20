@@ -113,19 +113,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Faction.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Faction.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="43" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
+            <state line="131" column="43" selection-start="3704" selection-end="3704" vertical-scroll-proportion="0.7145522">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourcePool.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ResourcePool.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="36" selection-start="3516" selection-end="3516" vertical-scroll-proportion="0.55597013">
+            <state line="108" column="46" selection-start="3289" selection-end="3289" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -191,8 +191,8 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Buildings/BuildingRegistry.java" />
         <option value="$PROJECT_DIR$/Content/Bases/Bases.xml" />
         <option value="$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
       </list>
     </option>
   </component>
@@ -1392,16 +1392,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="43" selection-start="987" selection-end="987" vertical-scroll-proportion="0.0">
+        <state line="108" column="46" selection-start="3289" selection-end="3289" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="36" selection-start="3516" selection-end="3516" vertical-scroll-proportion="0.55597013">
+        <state line="131" column="43" selection-start="3704" selection-end="3704" vertical-scroll-proportion="0.7145522">
           <folding />
         </state>
       </provider>
