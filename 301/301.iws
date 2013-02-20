@@ -125,7 +125,7 @@
       <file leaf-file-name="ResourcePool.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="67" selection-start="506" selection-end="506" vertical-scroll-proportion="0.47574627">
+            <state line="114" column="36" selection-start="3516" selection-end="3516" vertical-scroll-proportion="0.55597013">
               <folding />
             </state>
           </provider>
@@ -1401,7 +1401,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="67" selection-start="506" selection-end="506" vertical-scroll-proportion="0.47574627">
+        <state line="114" column="36" selection-start="3516" selection-end="3516" vertical-scroll-proportion="0.55597013">
           <folding />
         </state>
       </provider>

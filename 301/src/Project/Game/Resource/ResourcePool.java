@@ -106,6 +106,20 @@ public class ResourcePool {
         }
     }
 
+    /**
+     * Gets the difference between in and out for the pool
+     *
+     * @return int positive number means too much in , negative means too much out
+     */
+    public int getDifference() {
+        return totalIncomePerRound - totalOutcomePerRound;
+    }
+
+    /**
+     * Serves as a simple stress test
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         final ResourcePool pool = new ResourcePool();
         Random random = new Random();
