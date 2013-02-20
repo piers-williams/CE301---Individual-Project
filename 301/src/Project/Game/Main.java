@@ -60,14 +60,14 @@ public class Main{
     public Main() {
 
         Main.MAIN = this;
+        BLUEPRINT_REGISTRY = BlueprintRegistry.load("Content/Bases/Bases.xml");
+        BUILDING_REGISTRY = new BuildingRegistry();
+        BUILDING_REGISTRY.load();
         paused = true;
         Main.GAME_LOOP = new GameLoop(20);
         VECTOR2D_SOURCE = new CachedVector2DSource();
         Main.COLLISION_BOARD = new CollisionBoard(CELL_SIZE);
         Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 30, 40);
-        BLUEPRINT_REGISTRY = BlueprintRegistry.load("Content/Bases/Bases.xml");
-        BUILDING_REGISTRY = new BuildingRegistry();
-        BUILDING_REGISTRY.load();
         KEY_MANAGER = new KeyManager(this);
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
         // Set up the display

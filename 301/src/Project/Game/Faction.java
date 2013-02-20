@@ -99,14 +99,10 @@ public class Faction {
     }
 
     public void update() {
+        // sort out resource for this tick
+        resourcePool.update();
+        // if necessary update the AI
         if (intelligent) commander.update();
-
-        // Build towers
-        resource--;
-        if (resource == 0) {
-            resource = maxResource;
-            if (intelligent) commander.buildTower();
-        }
     }
 
     public float getR() {

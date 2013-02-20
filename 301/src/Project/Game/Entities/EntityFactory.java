@@ -2,6 +2,7 @@ package Project.Game.Entities;
 
 import Project.Game.Behaviours.Collision.SimpleCollision;
 import Project.Game.Behaviours.Constructive.BaseConstruction;
+import Project.Game.Behaviours.Constructive.BlueprintConstruction;
 import Project.Game.Behaviours.Constructive.SimpleConstruction;
 import Project.Game.Behaviours.Drawing.SimpleQuad;
 import Project.Game.Behaviours.Influence.SimpleInfluence;
@@ -56,7 +57,8 @@ public class EntityFactory {
         entity.drawingBehaviour = new SimpleQuad(entity, 40, entity.r, entity.g, entity.b);
         entity.influenceBehaviour = new SimpleInfluence(entity, 9, 1);
         entity.collisionBehaviour = new SimpleCollision(entity, 40);
-        entity.constructionBehaviour = new BaseConstruction(entity, location, 100);
+        //entity.constructionBehaviour = new BaseConstruction(entity, location, 100);
+        entity.constructionBehaviour = new BlueprintConstruction(faction, entity, faction.getResourcePool(), location, Main.BLUEPRINT_REGISTRY.get("Home Level 1"));
 
         return entity;
     }
