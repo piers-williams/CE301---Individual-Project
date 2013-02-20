@@ -24,4 +24,20 @@ public class MetaBuilding {
     public String toString() {
         return "Building: " + name + " |::| " + size + " |::| " + cost + " |::| " + buildTime;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public Vector2D getSize() {
+        return size;
+    }
+
+    public int getCost() {
+        return cost;
+    }
+
+    public int getBuildTime() {
+        return buildTime;
+    }
 }

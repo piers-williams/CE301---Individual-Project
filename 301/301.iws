@@ -91,7 +91,7 @@
           <file leaf-file-name="BlueprintConstruction.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="73" column="61" selection-start="2134" selection-end="2134" vertical-scroll-proportion="0.62896824">
+                <state line="77" column="40" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.640873">
                   <folding />
                 </state>
               </provider>
@@ -118,7 +118,7 @@
           <file leaf-file-name="BlueprintBuilding.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintBuilding.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="42" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
+                <state line="21" column="36" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -128,15 +128,6 @@
             <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/BuildingRegistry.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="22" column="5" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ResourceDrain.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="39" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -167,7 +158,7 @@
           <file leaf-file-name="MetaBuilding.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="74" selection-start="611" selection-end="611" vertical-scroll-proportion="0.77862597">
+                <state line="27" column="29" selection-start="639" selection-end="639" vertical-scroll-proportion="0.77862597">
                   <folding />
                 </state>
               </provider>
@@ -197,9 +188,9 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Buildings/Building.java" />
         <option value="$PROJECT_DIR$/Content/Bases/Bases.xml" />
         <option value="$PROJECT_DIR$/Content/Buildings/Buildings.xml" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Buildings/BuildingRegistry.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java" />
       </list>
     </option>
@@ -1247,26 +1238,9 @@
         <state line="11" column="51" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="39" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintBuilding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="42" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="189" column="40" selection-start="5735" selection-end="5735" vertical-scroll-proportion="1.0702479">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/BuildingRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="5" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1290,16 +1264,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintBuilding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="36" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="74" selection-start="611" selection-end="611" vertical-scroll-proportion="0.77862597">
+        <state line="27" column="29" selection-start="639" selection-end="639" vertical-scroll-proportion="0.77862597">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="30" selection-start="1426" selection-end="1426" vertical-scroll-proportion="1.7876984">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/BuildingRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="5" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="61" selection-start="2134" selection-end="2134" vertical-scroll-proportion="0.62896824">
+        <state line="77" column="40" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.640873">
           <folding />
         </state>
       </provider>

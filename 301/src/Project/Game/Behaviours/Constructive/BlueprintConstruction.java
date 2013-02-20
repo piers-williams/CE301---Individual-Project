@@ -2,6 +2,7 @@ package Project.Game.Behaviours.Constructive;
 
 import Project.Game.Blueprints.Blueprint;
 import Project.Game.Blueprints.BlueprintBuilding;
+import Project.Game.Buildings.MetaBuilding;
 import Project.Game.Entities.Entity;
 import Project.Game.Faction;
 import Project.Game.Main;
@@ -64,8 +65,14 @@ public class BlueprintConstruction extends BasicConstruction {
         for (BlueprintBuilding blueprintBuilding : blueprint.getBlueprintBuildings()) {
             if (!buildings.containsKey(blueprintBuilding.getOffset())) {
                 resourceDrain.deRegister();
+
+                MetaBuilding building = Main.BUILDING_REGISTRY.getBuilding(blueprintBuilding.getType());
                 // Need to put this type of information into the blueprint
-                resourceDrain = new ResourceDrain(resourcePool, 10);
+
+                int drainPerTick = building.getCost() / building.getBuildTime();
+                resourceDrain = new ResourceDrain(resourcePool, drainPerTick);
+                // Register the resourceDrain
+                resourcePool.register(resourceDrain);
                 // Only find first one
                 break;
             }
@@ -73,12 +80,15 @@ public class BlueprintConstruction extends BasicConstruction {
 
         state = BlueprintState.AllConstructed;
     }
-    private void constructionWork(){
+
+    private void constructionWork() {
         ticksTillFinished++;
 
-        if(ticksTillFinished == 0){
+        if (ticksTillFinished == 0) {
             // Switch state
             state = BlueprintState.Looking;
+
+            // Place building
         }
     }
 }
