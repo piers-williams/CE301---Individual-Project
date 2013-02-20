@@ -63,7 +63,6 @@ public class BlueprintConstruction extends BasicConstruction {
     }
 
     private void findAndBuildNext() {
-        //Vector2D centerLocation = getEntity().getMovementBehaviour().getLocation();
 
         for (BlueprintBuilding blueprintBuilding : blueprint.getBlueprintBuildings()) {
             if (!buildings.containsKey(blueprintBuilding.getOffset())) {
@@ -96,7 +95,7 @@ public class BlueprintConstruction extends BasicConstruction {
                     faction,
                     Vector2D.add(location, currentBlueprint.getOffset()),
                     currentlyBuilding.getName()
-                    );
+            );
 
             buildings.put(currentBlueprint.getOffset(), entity);
             Main.GAME_LOOP.addEntity(entity);
