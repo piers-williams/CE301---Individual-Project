@@ -46,4 +46,12 @@ public class MetaBuilding {
     public int getBuildTime() {
         return buildTime;
     }
+
+    public String getConstruction() {
+        return construction;
+    }
+
+    public int getProductionPerTick() {
+        return productionPerTick;
+    }
 }
