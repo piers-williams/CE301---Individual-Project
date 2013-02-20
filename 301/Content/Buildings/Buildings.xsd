@@ -22,6 +22,7 @@
             <xs:enumeration value="Tower"/>
             <xs:enumeration value="Center"/>
             <xs:enumeration value="Construction"/>
+            <xs:enumeration value="PowerStation"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -32,6 +33,7 @@
             <xs:enumeration value="500"/>
             <xs:enumeration value="1000"/>
             <xs:enumeration value="750"/>
+            <xs:enumeration value="100"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -40,6 +42,16 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="60"/>
             <xs:enumeration value="90"/>
+            <xs:enumeration value="15"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="Production" minOccurs="0"/>
+      <xs:element name="Construction">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Null"/>
+            <xs:enumeration value="Entity"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>

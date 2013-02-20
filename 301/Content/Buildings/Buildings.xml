@@ -21,4 +21,12 @@
         <BuildTime>90</BuildTime>
         <Construction>Entity</Construction>
     </Building>
+    <Building>
+        <Name>PowerStation</Name>
+        <Size x="15" y="15" />
+        <Cost>100</Cost>
+        <BuildTime>15</BuildTime>
+        <Production>10</Production>
+        <Construction>Null</Construction>
+    </Building>
 </Buildings>
