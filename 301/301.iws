@@ -91,7 +91,7 @@
           <file leaf-file-name="BlueprintConstruction.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="103" column="33" selection-start="3178" selection-end="3178" vertical-scroll-proportion="0.7638889">
+                <state line="91" column="30" selection-start="2863" selection-end="2863" vertical-scroll-proportion="0.39285713">
                   <folding />
                 </state>
               </provider>
@@ -167,7 +167,7 @@
           <file leaf-file-name="MetaBuilding.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="49" selection-start="507" selection-end="507" vertical-scroll-proportion="0.648855">
+                <state line="22" column="65" selection-start="476" selection-end="476" vertical-scroll-proportion="0.6164122">
                   <folding />
                 </state>
               </provider>
@@ -1125,26 +1125,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://JAVA/Project">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>Project</OriginalElement>
-          <nodes>
-            <node x="" y="">Project.TWLTest</node>
-            <node x="" y="">Project.NLP</node>
-            <node x="" y="">Project.Game</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="64.0" y="87.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/Project.Game">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1288,13 +1268,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="49" selection-start="507" selection-end="507" vertical-scroll-proportion="0.648855">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="40" selection-start="3798" selection-end="3798" vertical-scroll-proportion="0.0">
@@ -1302,9 +1275,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/MetaBuilding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="65" selection-start="476" selection-end="476" vertical-scroll-proportion="0.6164122">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="42" selection-start="637" selection-end="637" vertical-scroll-proportion="-1.2480159">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="33" selection-start="3178" selection-end="3178" vertical-scroll-proportion="0.7638889">
+        <state line="91" column="30" selection-start="2863" selection-end="2863" vertical-scroll-proportion="0.39285713">
           <folding />
         </state>
       </provider>

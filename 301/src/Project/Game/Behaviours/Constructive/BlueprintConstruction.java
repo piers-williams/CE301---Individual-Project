@@ -97,6 +97,9 @@ public class BlueprintConstruction extends BasicConstruction {
                     Vector2D.add(location, currentBlueprint.getOffset()),
                     currentlyBuilding.getName()
                     );
+
+            buildings.put(currentBlueprint.getOffset(), entity);
+            Main.GAME_LOOP.addEntity(entity);
         }
     }
 }
