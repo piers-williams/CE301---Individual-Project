@@ -86,10 +86,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EntityFactory.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EntityFactory.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="46" selection-start="4180" selection-end="4180" vertical-scroll-proportion="0.86821705">
+            <state line="97" column="141" selection-start="3888" selection-end="3888" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#652#690#0" expanded="true" />
               </folding>
@@ -97,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlueprintConstruction.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="BlueprintConstruction.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="93" column="23" selection-start="3100" selection-end="3100" vertical-scroll-proportion="0.0">
+            <state line="53" column="18" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.20930232">
               <folding />
             </state>
           </provider>
@@ -145,7 +145,7 @@
       <file leaf-file-name="Bases.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="42" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+            <state line="18" column="114" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -202,8 +202,8 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java" />
       </list>
     </option>
   </component>
@@ -1460,26 +1460,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="141" selection-start="3888" selection-end="3888" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#652#690#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="42" selection-start="562" selection-end="562" vertical-scroll-proportion="0.0">
+        <state line="18" column="114" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="23" selection-start="3100" selection-end="3100" vertical-scroll-proportion="0.0">
+        <state line="53" column="18" selection-start="1489" selection-end="1489" vertical-scroll-proportion="0.20930232">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="46" selection-start="4180" selection-end="4180" vertical-scroll-proportion="0.86821705">
-          <folding>
-            <element signature="e#652#690#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

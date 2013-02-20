@@ -50,7 +50,7 @@ public class BlueprintConstruction extends BasicConstruction {
     @Override
     public void update() {
         lookForDeadBuildings();
-        System.out.println(state);
+//        System.out.println(state);
         switch (state) {
             case Looking:
                 // Find the next building to build
