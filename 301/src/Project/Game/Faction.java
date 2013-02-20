@@ -18,6 +18,8 @@ import java.util.Hashtable;
  * Date: 19/10/12
  * Time: 16:42
  */
+
+// TODO extract the group/construction thing into another class
 public class Faction {
     private ArrayList<Group> groups;
     private Dictionary<Construction, Group> baseGroup;

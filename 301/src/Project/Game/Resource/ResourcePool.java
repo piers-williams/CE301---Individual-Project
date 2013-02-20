@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /**
- * Polls together all incoming Streams and can register outgoing streams
+ * Pulls together all incoming Streams and can register outgoing streams
  */
 public class ResourcePool {
 
