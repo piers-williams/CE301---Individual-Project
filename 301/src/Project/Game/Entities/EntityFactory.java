@@ -42,6 +42,7 @@ public class EntityFactory {
 
         setColour(entity, faction);
         entity.faction = faction;
+        entity.health = 30;
         entity.movementBehaviour = new Flocking(entity, location, group);
         entity.drawingBehaviour = new SimpleQuad(entity, Main.SQUARE_WIDTH, entity.r, entity.g, entity.b);
         entity.influenceBehaviour = new SimpleInfluence(entity, 7, strength);
