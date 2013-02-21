@@ -23,7 +23,6 @@ public class PlanningGrid {
 
     public PlanningGrid(int cellSize, int Rp, int Rt, int Rc) {
         this.cellSize = cellSize;
-//        grid = new char[Main.MAP_WIDTH / cellSize][Main.MAP_HEIGHT / cellSize][4];
         grid = new HashMap<>();
         particles = new ArrayList<>(300);
         // Perform conversion to cells from actual radius
