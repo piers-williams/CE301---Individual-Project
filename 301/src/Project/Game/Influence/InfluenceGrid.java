@@ -10,10 +10,7 @@ public class InfluenceGrid {
      // Don't want this in the XML
     protected double[][] influence;
 
-    @XmlAttribute(name = "Size")
-    int size;
-    @XmlAttribute(name = "Strength")
-    double strength;
+
 
     // Stores grids already calculated to save computation
     // In all cases, create a grid with strength 1, for ease of calculating grids of any strength

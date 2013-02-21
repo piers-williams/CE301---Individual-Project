@@ -2,6 +2,7 @@ package Project.Game.Buildings;
 
 import Project.Game.Vector2D;
 
+import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -28,6 +29,9 @@ public class MetaBuilding {
 
     @XmlElement(name = "Health")
     int health;
+
+    @XmlElement(name = "Influence")
+    InfluenceStub influence;
 
     @Override
     public String toString() {
@@ -57,4 +61,12 @@ public class MetaBuilding {
     public int getProductionPerTick() {
         return productionPerTick;
     }
+}
+
+@XmlRootElement(name = "Influence")
+class InfluenceStub{
+    @XmlAttribute(name = "size")
+    int size;
+    @XmlAttribute(name = "strength")
+    double strength;
 }

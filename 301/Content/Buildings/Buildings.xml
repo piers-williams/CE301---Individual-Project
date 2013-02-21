@@ -6,6 +6,7 @@
         <Cost>500</Cost>
         <BuildTime>60</BuildTime>
         <Construction>Null</Construction>
+        <Influence size="11" strength="10" />
         <Health>100</Health>
     </Building>
     <Building>
@@ -14,6 +15,7 @@
         <Cost>1000</Cost>
         <BuildTime>60</BuildTime>
         <Construction>Null</Construction>
+        <Influence size="19" strength="7" />
         <Health>500</Health>
     </Building>
     <Building>
@@ -22,6 +24,7 @@
         <Cost>750</Cost>
         <BuildTime>90</BuildTime>
         <Construction>Entity</Construction>
+        <Influence size="11" strength="5" />
         <Health>75</Health>
     </Building>
     <Building>
@@ -31,6 +34,7 @@
         <BuildTime>15</BuildTime>
         <Production>10</Production>
         <Construction>Null</Construction>
+        <Influence size="5" strength="3" />
         <Health>60</Health>
     </Building>
 </Buildings>
