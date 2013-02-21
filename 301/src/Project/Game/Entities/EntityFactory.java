@@ -9,6 +9,8 @@ import Project.Game.Behaviours.Influence.SimpleInfluence;
 import Project.Game.Behaviours.Movement.Flocking;
 import Project.Game.Behaviours.Movement.Static;
 import Project.Game.Behaviours.Movement.Wandering;
+import Project.Game.Behaviours.Offensive.SimpleWeapon;
+import Project.Game.Buildings.MetaBuilding;
 import Project.Game.Entities.Meta.Group;
 import Project.Game.*;
 
@@ -89,13 +91,14 @@ public class EntityFactory {
         entity.drawingBehaviour = new SimpleQuad(entity, 20, entity.r, entity.g, entity.b);
         entity.influenceBehaviour = new SimpleInfluence(entity, 11, 10);
         entity.collisionBehaviour = new SimpleCollision(entity, 20);
+        entity.offensiveBehaviour = new SimpleWeapon(entity, 50, 10, 60);
 
         return entity;
     }
 
-    public static Entity getBuilding(Faction faction, Vector2D location, String type) {
+    public static Entity getBuilding(Faction faction, Vector2D location, MetaBuilding type) {
 
-        switch (type) {
+        switch (type.getName()) {
             case "Tower":
                 return getTower(faction, location);
             case "Base":
