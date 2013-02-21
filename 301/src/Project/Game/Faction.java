@@ -21,12 +21,9 @@ import java.util.Hashtable;
 
 // TODO extract the group/construction thing into another class
 public class Faction {
-    private ArrayList<Group> groups;
-    private Dictionary<Construction, Group> baseGroup;
-
     private float r, g, b;
 
-    private Commander commander;
+    protected Commander commander;
 
     private int maxResource = 10, resource = maxResource;
 
@@ -34,10 +31,12 @@ public class Faction {
 
     private SPLQueue splQueue;
 
-    private Boolean intelligent;
+    protected Boolean intelligent;
 
     // The resource pool for the faction
     private ResourcePool resourcePool;
+
+    private ConstructionGroupHandler constructionGroupHandler;
 
     protected Faction(float r, float g, float b, Vector2D startLocation, Boolean intelligent) {
         this.r = r;
@@ -51,8 +50,6 @@ public class Faction {
 
         if (intelligent) commander = new Commander(this);
 
-        groups = new ArrayList<>();
-        baseGroup = new Hashtable<>();
 
 //        Entity base = EntityFactory.getBase(this, startLocation);
 //        Group newGroup = new Group(r, g, b, base.getConstructionBehaviour().getSpawnPoint(), 5, this);
@@ -64,6 +61,8 @@ public class Faction {
         this.location = startLocation;
 
         splQueue = new SPLQueue();
+
+        constructionGroupHandler = new ConstructionGroupHandler(this);
     }
 
     public void makeEntity(Vector2D location, Construction base) {
@@ -71,31 +70,11 @@ public class Faction {
     }
 
     public void makeEntity(double x, double y, Construction base) {
-        // Create new entity
-        Entity entity = EntityFactory.getGroupedEntity(this, baseGroup.get(base), new Vector2D(x, y), 2);
-
-        // Add entity to group
-        baseGroup.get(base).addEntity(entity);
-        // register entity with game
-        Main.GAME_LOOP.addEntity(entity);
-
-        // House keeping on the groups
-        if (baseGroup.get(base).isFull()) {
-            Group newGroup = new Group(r, g, b, base.getSpawnPoint(), 5, this);
-            groups.add(baseGroup.get(base));
-            baseGroup.get(base).switchToWander();
-            if (intelligent) commander.groupFilled(baseGroup.get(base));
-            baseGroup.put(base, newGroup);
-            Main.GAME_LOOP.addEntity(newGroup);
-        }
+        constructionGroupHandler.makeEntity(x, y, base);
     }
 
     public void addConstruction(Construction construction, Vector2D spawnPoint) {
-        if (baseGroup.get(construction) == null) {
-            Group group = new Group(r, g, b, spawnPoint, 5, this);
-            Main.GAME_LOOP.addEntity(group);
-            baseGroup.put(construction, group);
-        }
+        constructionGroupHandler.addConstruction(construction, spawnPoint);
     }
 
     public void update() {
@@ -127,6 +106,49 @@ public class Faction {
 
     public ResourcePool getResourcePool() {
         return resourcePool;
+    }
+}
+
+class ConstructionGroupHandler {
+
+    private ArrayList<Group> groups;
+    private Dictionary<Construction, Group> baseGroup;
+    private Faction faction;
+
+
+    public ConstructionGroupHandler(Faction faction) {
+        this.faction = faction;
+        groups = new ArrayList<>();
+        baseGroup = new Hashtable<>();
+
+    }
+
+    public void addConstruction(Construction construction, Vector2D spawnPoint) {
+        if (baseGroup.get(construction) == null) {
+            Group group = new Group(faction.getR(), faction.getG(), faction.getB(), spawnPoint, 5, faction);
+            Main.GAME_LOOP.addEntity(group);
+            baseGroup.put(construction, group);
+        }
+    }
+
+    public void makeEntity(double x, double y, Construction base) {
+        // Create new entity
+        Entity entity = EntityFactory.getGroupedEntity(faction, baseGroup.get(base), new Vector2D(x, y), 2);
+
+        // Add entity to group
+        baseGroup.get(base).addEntity(entity);
+        // register entity with game
+        Main.GAME_LOOP.addEntity(entity);
+
+        // House keeping on the groups
+        if (baseGroup.get(base).isFull()) {
+            Group newGroup = new Group(faction.getR(), faction.getG(), faction.getB(), base.getSpawnPoint(), 5, faction);
+            groups.add(baseGroup.get(base));
+            baseGroup.get(base).switchToWander();
+            if (faction.intelligent) faction.commander.groupFilled(baseGroup.get(base));
+            baseGroup.put(base, newGroup);
+            Main.GAME_LOOP.addEntity(newGroup);
+        }
     }
 }
 
