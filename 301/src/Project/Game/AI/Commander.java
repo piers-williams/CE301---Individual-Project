@@ -1,5 +1,6 @@
 package Project.Game.AI;
 
+import Project.Game.AI.ParticleSwarm.PlanningGrid;
 import Project.Game.AI.SPL.Orders.AttackOrder;
 import Project.Game.Entities.Meta.Group;
 import Project.Game.Faction;
@@ -18,11 +19,14 @@ public class Commander {
     private AttackFinder attackFinder;
     private NewBaseBuilder newBaseBuilder;
 
+    private PlanningGrid planningGrid;
+
     public Commander(Faction faction) {
         this.faction = faction;
 
         attackFinder = new AttackFinder(this, 30);
         newBaseBuilder = new NewBaseBuilder(this, 400);
+        planningGrid = new PlanningGrid(10, 50, 50, 400);
     }
 
     public void update() {

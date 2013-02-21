@@ -13,7 +13,6 @@ import java.util.HashMap;
  */
 public class PlanningGrid {
 
-    // TODO Encode information about whether something already exists here
     HashMap<Vector2D, ArrayList<Character>> grid;
     int cellSize;
     ArrayList<BasicParticle> particles;
