@@ -51,11 +51,11 @@ public class Faction {
         if (intelligent) commander = new Commander(this);
 
 
-//        Entity base = EntityFactory.getBase(this, startLocation);
+        Entity base = EntityFactory.getBase(this, startLocation);
 //        Group newGroup = new Group(r, g, b, base.getConstructionBehaviour().getSpawnPoint(), 5, this);
 //        baseGroup.put(base.getConstructionBehaviour(), newGroup);
 //
-//        Main.GAME_LOOP.addEntity(base);
+        Main.GAME_LOOP.addEntity(base);
 //        Main.GAME_LOOP.addEntity(newGroup);
 
         this.location = startLocation;
