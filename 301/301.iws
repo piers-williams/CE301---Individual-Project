@@ -133,11 +133,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Commander.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Commander.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="42" selection-start="3377" selection-end="3377" vertical-scroll-proportion="0.68017364">
+            <state line="111" column="96" selection-start="3190" selection-end="3190" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlanningGrid.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/ParticleSwarm/PlanningGrid.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="16" selection-start="644" selection-end="644" vertical-scroll-proportion="0.7347243">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -170,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/Entity.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/GameLoop.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Offensive/SimpleWeapon.java" />
@@ -186,6 +196,7 @@
         <option value="$PROJECT_DIR$/src/Project/Game/AI/BaseLocationFinder.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/Commander.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/AI/ParticleSwarm/PlanningGrid.java" />
       </list>
     </option>
   </component>
@@ -902,6 +913,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParticleSwarm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Content" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1528,8 +1569,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="42" selection-start="3377" selection-end="3377" vertical-scroll-proportion="0.68017364">
+        <state line="111" column="96" selection-start="3190" selection-end="3190" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/ParticleSwarm/PlanningGrid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="16" selection-start="644" selection-end="644" vertical-scroll-proportion="0.7347243">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
