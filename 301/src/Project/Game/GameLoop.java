@@ -114,6 +114,21 @@ public class GameLoop implements Runnable {
         return closeEntities;
     }
 
+    public ArrayList<Entity> getEntities(Vector2D location, int radius, Faction faction){
+        ArrayList<Entity> closeEntities = new ArrayList<>();
+        synchronized (_entities) {
+            for (Entity entity : entities) {
+                if (entity.isAlive() && entity.getFaction() == faction) {
+                    if (entity.getMovementBehaviour().getLocation().dist(location) < radius) {
+                        closeEntities.add(entity);
+                    }
+                }
+            }
+        }
+
+        return closeEntities;
+    }
+
     public void draw() {
         synchronized (_entities) {
             for (Entity entity : entities) {
