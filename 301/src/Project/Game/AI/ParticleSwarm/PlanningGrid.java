@@ -30,6 +30,19 @@ public class PlanningGrid {
         // Need to know Rp, Rt, Rc
     }
 
+    private double calculateGlobalBest() {
+        BasicParticle bestSoFar = null;
+        double bestFitnessSoFar = Double.MAX_VALUE;
+        for (BasicParticle particle : particles) {
+            if (bestSoFar == null || particle.fitness() < bestFitnessSoFar) {
+                bestSoFar = particle;
+                bestFitnessSoFar = particle.fitness();
+            }
+        }
+
+        return bestFitnessSoFar;
+    }
+
 }
 
 
