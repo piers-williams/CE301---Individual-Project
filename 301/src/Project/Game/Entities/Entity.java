@@ -30,6 +30,8 @@ public class Entity {
     protected Offensive offensiveBehaviour;
     protected Resource resourceBehaviour;
 
+    protected int health;
+
     // Used for factories
     protected Entity() {
 
@@ -57,6 +59,11 @@ public class Entity {
 
     public boolean isAlive() {
         return alive;
+    }
+
+    public void damage(int damage){
+        health -= damage;
+        alive = (health > 0);
     }
 
     public double getX() {
