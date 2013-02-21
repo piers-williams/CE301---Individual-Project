@@ -26,6 +26,9 @@ public class MetaBuilding {
     @XmlElement(name = "Production")
     int productionPerTick;
 
+    @XmlElement(name = "Health")
+    int health;
+
     @Override
     public String toString() {
         return "Building: " + name + " |::| " + size + " |::| " + cost + " |::| " + buildTime;
