@@ -2,24 +2,27 @@
 <Buildings>
     <Building>
         <Name>Tower</Name>
-        <Size x="10" y="10"/>
+        <Size x="20" y="20"/>
         <Cost>500</Cost>
         <BuildTime>60</BuildTime>
         <Construction>Null</Construction>
+        <Health>100</Health>
     </Building>
     <Building>
         <Name>Center</Name>
-        <Size x="25" y="25"/>
+        <Size x="40" y="40"/>
         <Cost>1000</Cost>
         <BuildTime>60</BuildTime>
         <Construction>Null</Construction>
+        <Health>500</Health>
     </Building>
     <Building>
         <Name>Construction</Name>
-        <Size x="20" y="20"/>
+        <Size x="26" y="26"/>
         <Cost>750</Cost>
         <BuildTime>90</BuildTime>
         <Construction>Entity</Construction>
+        <Health>75</Health>
     </Building>
     <Building>
         <Name>PowerStation</Name>
@@ -28,5 +31,6 @@
         <BuildTime>15</BuildTime>
         <Production>10</Production>
         <Construction>Null</Construction>
+        <Health>60</Health>
     </Building>
 </Buildings>
