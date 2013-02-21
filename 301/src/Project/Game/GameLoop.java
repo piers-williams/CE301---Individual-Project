@@ -101,11 +101,12 @@ public class GameLoop implements Runnable {
      */
     public ArrayList<Entity> getEntities(Vector2D location, int radius) {
         ArrayList<Entity> closeEntities = new ArrayList<>();
-
-        for (Entity entity : entities) {
-            if (entity.isAlive()) {
-                if (entity.getMovementBehaviour().getLocation().dist(location) < radius) {
-                    closeEntities.add(entity);
+        synchronized (_entities) {
+            for (Entity entity : entities) {
+                if (entity.isAlive()) {
+                    if (entity.getMovementBehaviour().getLocation().dist(location) < radius) {
+                        closeEntities.add(entity);
+                    }
                 }
             }
         }

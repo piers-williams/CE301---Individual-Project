@@ -101,6 +101,7 @@ public class EntityFactory {
             case "Base":
                 return getBase(faction, location);
             case "Center":
+                // TODO Implement better than this
                 return getTower(faction, location);
 
         }

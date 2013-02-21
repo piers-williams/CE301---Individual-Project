@@ -86,21 +86,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EntityFactory.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EntityFactory.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="39" selection-start="4069" selection-end="4069" vertical-scroll-proportion="1.0">
-              <folding>
-                <element signature="e#652#690#0" expanded="true" />
-              </folding>
+            <state line="76" column="46" selection-start="3193" selection-end="3193" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlueprintConstruction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
+      <file leaf-file-name="GameLoop.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/GameLoop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="98" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0">
+            <state line="111" column="9" selection-start="3071" selection-end="3071" vertical-scroll-proportion="0.8118669">
               <folding />
             </state>
           </provider>
@@ -188,7 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/Building.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintBuilding.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/BuildingRegistry.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Buildings/Building.java" />
@@ -201,9 +198,10 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/GameLoop.java" />
       </list>
     </option>
   </component>
@@ -867,9 +865,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1097,9 +1095,9 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ResourcePool" />
       <item index="1" class="java.lang.String" itemvalue="Application.BuildingRegistry" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BasicConverterTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.BlueprintRegistry" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BasicConverterTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.BlueprintRegistry" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1171,22 +1169,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33519554" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3896648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35335195" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31424582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226257" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1956242" sideWeight="0.78351957" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21648045" sideWeight="0.9969325" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1981982" sideWeight="0.78351957" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3896648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35335195" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21592443" sideWeight="0.9969325" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1196,6 +1192,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33519554" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31424582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1300,18 +1298,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="42" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/BuildingRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="21" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="32" column="21" selection-start="832" selection-end="832" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Content/UI.xml">
@@ -1342,15 +1331,15 @@
             <node x="" y="">Project.Game.Blueprints.BlueprintRegistry</node>
             <node x="" y="">Project.Game.AI.DefenseFinder</node>
             <node x="" y="">Project.Game.AI.Commander</node>
-            <node x="" y="">Project.Game.Buildings.BuildingRegistry</node>
             <node x="" y="">Project.Game.Resource.ResourceGenerator</node>
+            <node x="" y="">Project.Game.Buildings.BuildingRegistry</node>
             <node x="" y="">Project.Game.AI.TacticalAnalysis</node>
             <node x="" y="">Project.Game.Faction</node>
             <node x="" y="">Project.Game.Behaviours.Movement.Static</node>
             <node x="" y="">Project.NLP.BasicConverter</node>
             <node x="" y="">Project.Game.Behaviours.Influence.Influence</node>
-            <node x="" y="">Project.Game.Factions</node>
             <node x="" y="">Project.Game.Behaviours.Collision.SimpleCollision</node>
+            <node x="" y="">Project.Game.Factions</node>
             <node x="" y="">Project.Game.Behaviours.Offensive.SimpleWeapon</node>
             <node x="" y="">Project.Game.Behaviours.Movement.BasicMovement</node>
             <node x="" y="">Project.Game.Blueprints.BlueprintBuilding</node>
@@ -1378,10 +1367,10 @@
             <node x="" y="">Project.Game.Behaviours.Constructive.Construction</node>
             <node x="" y="">Project.Game.UI.Action</node>
             <node x="" y="">Project.Game.EntityCellPair</node>
-            <node x="" y="">Project.Game.Behaviours.Influence.SimpleInfluence</node>
             <node x="" y="">Project.Game.Behaviours.Behaviour</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.BlueprintConstruction</node>
+            <node x="" y="">Project.Game.Behaviours.Influence.SimpleInfluence</node>
             <node x="" y="">Project.Game.Entities.Entity</node>
+            <node x="" y="">Project.Game.Behaviours.Constructive.BlueprintConstruction</node>
             <node x="" y="">Project.Game.Behaviours.Constructive.BasicConstruction</node>
             <node x="" y="">Project.Game.UI.ButtonsWrapper</node>
             <node x="" y="">Project.Game.Behaviours.Constructive.BlueprintState</node>
@@ -1396,7 +1385,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="1375.6666666666656" y="604.9999999999995" />
+          <settings layout="Hierarchic Group" zoom="0.30000000000000016" x="1376.0" y="605.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -1406,80 +1395,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="46" selection-start="3289" selection-end="3289" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="25" selection-start="2404" selection-end="2404" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Influence/InfluenceMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="53" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="73" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/Buildings/Buildings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="41" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="42" selection-start="2369" selection-end="2369" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="24" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="114" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="108" column="46" selection-start="3289" selection-end="3289" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="98" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="55" column="98" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="24" selection-start="486" selection-end="486" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="42" selection-start="2369" selection-end="2369" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="12" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="58" column="12" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/Buildings/Buildings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="41" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="114" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Influence/InfluenceMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="53" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="25" selection-start="2404" selection-end="2404" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="73" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="39" selection-start="4069" selection-end="4069" vertical-scroll-proportion="1.0">
-          <folding>
-            <element signature="e#652#690#0" expanded="true" />
-          </folding>
+        <state line="76" column="46" selection-start="3193" selection-end="3193" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/GameLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="9" selection-start="3071" selection-end="3071" vertical-scroll-proportion="0.8118669">
+          <folding />
         </state>
       </provider>
     </entry>
