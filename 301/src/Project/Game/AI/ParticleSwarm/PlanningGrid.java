@@ -18,15 +18,18 @@ public class PlanningGrid {
     int cellSize;
     ArrayList<BasicParticle> particles;
 
+    ArrayList<BuildingShadow> buildingShadows;
+
     // Map existing buildings onto the grid using basic collision based on the radius.
     // assign a shadow to each particle to use to check for collisions with existing buildings
-
     public PlanningGrid(int cellSize, int Rp, int Rt, int Rc) {
         this.cellSize = cellSize;
         grid = new HashMap<>();
         particles = new ArrayList<>(300);
         // Perform conversion to cells from actual radius
         constructGrid(Rp / cellSize, Rt / cellSize, Rc / cellSize);
+
+        buildingShadows = new ArrayList<>();
     }
 
     /**
@@ -79,6 +82,25 @@ public class PlanningGrid {
         return bestSoFar.location;
     }
 
+}
+
+class BuildingShadow {
+    Vector2D location;
+    Vector2D size;
+
+    BuildingShadow(Vector2D location, Vector2D size) {
+        this.location = location;
+        this.size = size;
+    }
+
+    static boolean collides(BuildingShadow first, BuildingShadow second) {
+
+        return (
+                Math.abs(first.location.x - second.location.x) <= Math.abs(first.size.x - second.size.x)
+                        &&
+                        Math.abs(first.location.y - second.location.y) <= Math.abs(first.size.y - second.size.y)
+        );
+    }
 }
 
 
