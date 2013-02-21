@@ -1,7 +1,6 @@
 package Project.Game.Entities;
 
 import Project.Game.Behaviours.Collision.SimpleCollision;
-import Project.Game.Behaviours.Constructive.BaseConstruction;
 import Project.Game.Behaviours.Constructive.BlueprintConstruction;
 import Project.Game.Behaviours.Constructive.SimpleConstruction;
 import Project.Game.Behaviours.Drawing.SimpleQuad;
@@ -81,7 +80,6 @@ public class EntityFactory {
         return entity;
     }
 
-    // TODO get an offensive behaviour
     private static Entity getTower(Faction faction, Vector2D location) {
         Entity entity = new Entity();
 
@@ -99,18 +97,21 @@ public class EntityFactory {
 
     public static Entity getBuilding(Faction faction, Vector2D location, MetaBuilding type) {
 
+        Entity entity = new Entity();
+        setColour(entity, faction);
+        entity.faction = faction;
+
+        entity.movementBehaviour = new Static(entity, location);
+        entity.drawingBehaviour = new SimpleQuad(entity, (int) type.getSize().x, entity.r, entity.g, entity.b);
+        entity.influenceBehaviour = new SimpleInfluence(entity, type.getInfluence().getSize(), type.getInfluence().getStrength());
+        entity.collisionBehaviour = new SimpleCollision(entity, (int) type.getSize().x);
+
         switch (type.getName()) {
             case "Tower":
-                return getTower(faction, location);
-            case "Base":
-                return getBase(faction, location);
-            case "Center":
-                // TODO Implement better than this
-                return getTower(faction, location);
-
+                entity.offensiveBehaviour = new SimpleWeapon(entity, 50, 10, 60);
         }
 
-        throw new IllegalArgumentException("Type not recognised");
+        return entity;
     }
 
     private static void setColour(Entity entity, Faction faction) {

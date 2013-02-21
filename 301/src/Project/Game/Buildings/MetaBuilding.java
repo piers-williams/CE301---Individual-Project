@@ -61,12 +61,13 @@ public class MetaBuilding {
     public int getProductionPerTick() {
         return productionPerTick;
     }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public InfluenceStub getInfluence() {
+        return influence;
+    }
 }
 
-@XmlRootElement(name = "Influence")
-class InfluenceStub{
-    @XmlAttribute(name = "size")
-    int size;
-    @XmlAttribute(name = "strength")
-    double strength;
-}
