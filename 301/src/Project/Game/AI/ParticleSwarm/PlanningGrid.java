@@ -20,17 +20,40 @@ public class PlanningGrid {
     int cellSize;
     ArrayList<BasicParticle> particles;
 
-    public PlanningGrid(int cellSize) {
+    public PlanningGrid(int cellSize, int Rp, int Rt, int Rc) {
         this.cellSize = cellSize;
         grid = new char[Main.MAP_WIDTH / cellSize][Main.MAP_HEIGHT / cellSize][3];
         particles = new ArrayList<>(300);
+
+        constructGrid(Rp / cellSize, Rt / cellSize, Rc / cellSize);
     }
 
-    private void constructGrid() {
-        // Need to know Rp, Rt, Rc
+    /**
+     * Creates the grid and fills it with where we can build things
+     *
+     * @param Rp Radius in cells of the Production bases
+     * @param Rt Radius in cells of the Tower bases
+     * @param Rc Radius in cells of the Construction bases
+     */
+    private void constructGrid(int Rp, int Rt, int Rc) {
+        for (int x = 0; x < grid.length; x += Rp) {
+            for (int y = 0; y < grid[x].length; y += Rp) {
+                grid[x][y][0] = 'p';
+            }
+        }
+        for (int x = 0; x < grid.length; x += Rt) {
+            for (int y = 0; y < grid[x].length; y += Rt) {
+                grid[x][y][1] = 't';
+            }
+        }
+        for (int x = 0; x < grid.length; x += Rc) {
+            for (int y = 0; y < grid[x].length; y += Rc) {
+                grid[x][y][2] = 'c';
+            }
+        }
     }
 
-    private double calculateGlobalBest() {
+    private Vector2D calculateGlobalBest() {
         BasicParticle bestSoFar = null;
         double bestFitnessSoFar = Double.MAX_VALUE;
         for (BasicParticle particle : particles) {
@@ -40,7 +63,7 @@ public class PlanningGrid {
             }
         }
 
-        return bestFitnessSoFar;
+        return bestSoFar.location;
     }
 
 }
