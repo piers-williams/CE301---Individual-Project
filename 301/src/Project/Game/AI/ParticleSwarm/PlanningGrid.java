@@ -33,6 +33,15 @@ public class PlanningGrid {
     }
 
     /**
+     * Adds a new shadow to the grid
+     * @param location location of the shadow center
+     * @param size size of the shadow
+     */
+    public void addBuilding(Vector2D location, Vector2D size){
+        buildingShadows.add(new BuildingShadow(location, size));
+    }
+
+    /**
      * Creates the grid and fills it with where we can build things
      *
      * @param Rp Radius in cells of the Production bases
@@ -96,9 +105,9 @@ class BuildingShadow {
     static boolean collides(BuildingShadow first, BuildingShadow second) {
 
         return (
-                Math.abs(first.location.x - second.location.x) <= Math.abs(first.size.x - second.size.x)
+                Math.abs(first.location.x - second.location.x) <= Math.abs((first.size.x + second.size.x) / 2)
                         &&
-                        Math.abs(first.location.y - second.location.y) <= Math.abs(first.size.y - second.size.y)
+                        Math.abs(first.location.y - second.location.y) <= Math.abs((first.size.y + second.size.y) / 2)
         );
     }
 }
@@ -110,15 +119,17 @@ class BasicParticle {
     PlanningGrid grid;
     FitnessFunction fitnessFunction;
 
-    protected BasicParticle(Vector2D location, Vector2D velocity, PlanningGrid grid, FitnessFunction fitnessFunction) {
+    BuildingShadow shadow;
+
+    protected BasicParticle(Vector2D location, Vector2D velocity, PlanningGrid grid, FitnessFunction fitnessFunction, BuildingShadow shadow) {
         this.location = location;
         this.velocity = velocity;
         this.grid = grid;
         this.fitnessFunction = fitnessFunction;
+        this.shadow = shadow;
     }
 
     protected void update(Vector2D globalBest) {
-
         // Use new velocity to move
         location.add(velocity);
     }
@@ -134,10 +145,11 @@ class BasicParticle {
      * @param velocity        new velocity to begin with
      * @param fitnessFunction new fitness function to calculate with
      */
-    protected void reset(Vector2D location, Vector2D velocity, FitnessFunction fitnessFunction) {
+    protected void reset(Vector2D location, Vector2D velocity, FitnessFunction fitnessFunction, BuildingShadow shadow) {
         this.location = location;
         this.velocity = velocity;
         this.fitnessFunction = fitnessFunction;
+        this.shadow = shadow;
     }
 }
 
