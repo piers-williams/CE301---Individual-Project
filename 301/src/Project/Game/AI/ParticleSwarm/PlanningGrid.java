@@ -1,27 +1,30 @@
 package Project.Game.AI.ParticleSwarm;
 
-import Project.Game.Factions;
+import Project.Game.Faction;
 import Project.Game.Main;
 import Project.Game.Vector2D;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
 
 /**
  * Stores a grid of allowed points and runs swarms to find best
  * <p/>
  * Might need to thread this one out and use callbacks of a kind
  */
-public class PlanningGrid {
+public class PlanningGrid implements Runnable {
 
     HashMap<Vector2D, ArrayList<Character>> grid;
     int cellSize;
     ArrayList<BasicParticle> particles;
 
+    LinkedList<JobPairing> jobQueue;
+
     static ArrayList<BuildingShadow> buildingShadows;
     private final static Object _buildingShadows = new Object();
-
-    static private ArrayList<PlanningGrid> PLANNING_GRIDS = new ArrayList<>(Factions.values().length);
+    // Don't need this now the shadows are static
+//    static private ArrayList<PlanningGrid> PLANNING_GRIDS = new ArrayList<>(Factions.values().length);
 
     // Map existing buildings onto the grid using basic collision based on the radius.
     // assign a shadow to each particle to use to check for collisions with existing buildings
@@ -34,7 +37,19 @@ public class PlanningGrid {
 
         buildingShadows = new ArrayList<>();
 
-        PLANNING_GRIDS.add(this);
+//        PLANNING_GRIDS.add(this);
+    }
+
+    @Override
+    public void run() {
+
+        while (true) {
+            try {
+                Thread.sleep(20);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     /**
@@ -43,9 +58,9 @@ public class PlanningGrid {
      * @param location location of the shadow center
      * @param size     size of the shadow
      */
-    public static void addBuilding(Vector2D location, Vector2D size) {
+    public static void addBuilding(Vector2D location, Vector2D size, Faction faction) {
         synchronized (_buildingShadows) {
-            buildingShadows.add(new BuildingShadow(location, size));
+            buildingShadows.add(new BuildingShadow(location, size, faction));
         }
     }
 
@@ -101,11 +116,18 @@ public class PlanningGrid {
 
 }
 
+class JobPairing {
+    char type;
+    Faction faction;
+}
+
 class BuildingShadow {
     Vector2D location;
     Vector2D size;
+    // Needed to help the planner work out which buildings emit particles
+    Faction faction;
 
-    BuildingShadow(Vector2D location, Vector2D size) {
+    BuildingShadow(Vector2D location, Vector2D size, Faction faction) {
         this.location = location;
         this.size = size;
     }
