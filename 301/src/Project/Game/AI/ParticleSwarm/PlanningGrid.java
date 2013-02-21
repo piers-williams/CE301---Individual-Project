@@ -7,6 +7,7 @@ import Project.Game.Vector2D;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.Queue;
 
 /**
  * Stores a grid of allowed points and runs swarms to find best
@@ -19,7 +20,7 @@ public class PlanningGrid implements Runnable {
     int cellSize;
     ArrayList<BasicParticle> particles;
 
-    LinkedList<JobPairing> jobQueue;
+    Queue<JobPairing> jobQueue;
 
     static ArrayList<BuildingShadow> buildingShadows;
     private final static Object _buildingShadows = new Object();
@@ -38,6 +39,7 @@ public class PlanningGrid implements Runnable {
         buildingShadows = new ArrayList<>();
 
 //        PLANNING_GRIDS.add(this);
+        jobQueue = new LinkedList<>();
     }
 
     @Override
