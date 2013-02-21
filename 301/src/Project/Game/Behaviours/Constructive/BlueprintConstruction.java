@@ -71,7 +71,7 @@ public class BlueprintConstruction extends BasicConstruction {
             if (!building.isAlive()) {
                 // Might not like this while it is traversing
                 buildings.remove(buildingOffset);
-                if(state == BlueprintState.AllConstructed) state = BlueprintState.Looking;
+                if (state == BlueprintState.AllConstructed) state = BlueprintState.Looking;
             }
         }
 
@@ -83,7 +83,7 @@ public class BlueprintConstruction extends BasicConstruction {
         // Is empty ...
         for (BlueprintBuilding blueprintBuilding : blueprint.getBlueprintBuildings()) {
             if (!buildings.containsKey(blueprintBuilding.getOffset())) {
-                if(resourceDrain != null) resourceDrain.deRegister();
+                if (resourceDrain != null) resourceDrain.deRegister();
                 currentBlueprint = blueprintBuilding;
                 currentlyBuilding = Main.BUILDING_REGISTRY.getBuilding(blueprintBuilding.getType());
                 // Need to put this type of information into the blueprint
@@ -113,7 +113,7 @@ public class BlueprintConstruction extends BasicConstruction {
             Entity entity = EntityFactory.getBuilding(
                     faction,
                     Vector2D.add(location, currentBlueprint.getOffset()),
-                    currentlyBuilding.getName()
+                    currentlyBuilding
             );
 
             buildings.put(currentBlueprint.getOffset(), entity);
