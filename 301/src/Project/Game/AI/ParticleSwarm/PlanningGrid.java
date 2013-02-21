@@ -17,7 +17,9 @@ public class PlanningGrid {
     int cellSize;
     ArrayList<BasicParticle> particles;
 
-    ArrayList<BuildingShadow> buildingShadows;
+    static ArrayList<BuildingShadow> buildingShadows;
+
+    static private ArrayList<PlanningGrid> PLANNING_GRIDS;
 
     // Map existing buildings onto the grid using basic collision based on the radius.
     // assign a shadow to each particle to use to check for collisions with existing buildings
@@ -29,6 +31,8 @@ public class PlanningGrid {
         constructGrid(Rp / cellSize, Rt / cellSize, Rc / cellSize);
 
         buildingShadows = new ArrayList<>();
+
+        PLANNING_GRIDS.add(this);
     }
 
     /**
@@ -36,7 +40,7 @@ public class PlanningGrid {
      * @param location location of the shadow center
      * @param size size of the shadow
      */
-    public void addBuilding(Vector2D location, Vector2D size){
+    public static void addBuilding(Vector2D location, Vector2D size){
         buildingShadows.add(new BuildingShadow(location, size));
     }
 

@@ -106,10 +106,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Commander.java" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="Commander.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="45" selection-start="718" selection-end="718" vertical-scroll-proportion="0.6128527">
+                <state line="21" column="38" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
                   <folding />
                 </state>
               </provider>
@@ -144,10 +144,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PlanningGrid.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="PlanningGrid.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/ParticleSwarm/PlanningGrid.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="27" column="51" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
+                <state line="42" column="17" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.39968652">
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -177,19 +177,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Commander.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="Commander.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="53" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Bases.xml" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="80" column="59" selection-start="2763" selection-end="2763" vertical-scroll-proportion="-0.54992765">
+                <state line="21" column="24" selection-start="477" selection-end="477" vertical-scroll-proportion="0.40117994">
                   <folding />
                 </state>
               </provider>
@@ -221,8 +212,8 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/BaseLocationFinder.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/AI/ParticleSwarm/PlanningGrid.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/Commander.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/AI/ParticleSwarm/PlanningGrid.java" />
       </list>
     </option>
   </component>
@@ -1579,15 +1570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/ParticleSwarm/PlanningGrid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="51" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Buildings/BuildingRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="58" column="43" selection-start="1632" selection-end="1632" vertical-scroll-proportion="0.0">
@@ -1597,15 +1579,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="59" selection-start="2763" selection-end="2763" vertical-scroll-proportion="-0.54992765">
+        <state line="119" column="28" selection-start="4062" selection-end="4062" vertical-scroll-proportion="0.40955138">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="45" selection-start="718" selection-end="718" vertical-scroll-proportion="0.6128527">
+        <state line="21" column="38" selection-start="491" selection-end="491" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/ParticleSwarm/PlanningGrid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="17" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.39968652">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
