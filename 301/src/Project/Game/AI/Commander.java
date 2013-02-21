@@ -1,8 +1,6 @@
 package Project.Game.AI;
 
 import Project.Game.AI.SPL.Orders.AttackOrder;
-import Project.Game.Entities.Entity;
-import Project.Game.Entities.EntityFactory;
 import Project.Game.Entities.Meta.Group;
 import Project.Game.Faction;
 import Project.Game.Main;
@@ -40,15 +38,6 @@ public class Commander {
     public void groupFilled(Group group) {
         if (faction.getSplQueue().hasAttackOrder()) {
             group.switchToFollow((Vector2D) faction.getSplQueue().getNextAttackOrder().getArguments()[0]);
-        }
-    }
-
-    public void buildTower() {
-        if (defenseFinder.nextTarget != null) {
-            Entity tower = EntityFactory.getBuilding(faction, defenseFinder.nextTarget, "Tower");
-            Main.GAME_LOOP.addEntity(tower);
-
-            defenseFinder.nextTarget = null;
         }
     }
 }
