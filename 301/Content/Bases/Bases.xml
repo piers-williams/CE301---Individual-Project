@@ -5,25 +5,25 @@
             <Upgrade>HomeLvl2</Upgrade>
             <FullName>Home Level 1</FullName>
             <Buildings>
+                <!--<Building>-->
+                    <!--<Type>Center</Type>-->
+                    <!--<Offset x="0" y="0"/>-->
+                <!--</Building>-->
                 <Building>
-                    <Type>Center</Type>
-                    <Offset x="0" y="0"/>
+                    <Type>Tower</Type>
+                    <Offset x="200" y="200"/>
                 </Building>
                 <Building>
                     <Type>Tower</Type>
-                    <Offset x="100" y="100"/>
+                    <Offset x="-200" y="200"/>
                 </Building>
                 <Building>
                     <Type>Tower</Type>
-                    <Offset x="-100" y="100"/>
+                    <Offset x="200" y="-200"/>
                 </Building>
                 <Building>
                     <Type>Tower</Type>
-                    <Offset x="100" y="-100"/>
-                </Building>
-                <Building>
-                    <Type>Tower</Type>
-                    <Offset x="-100" y="-100"/>
+                    <Offset x="-200" y="-200"/>
                 </Building>
             </Buildings>
         </Base>
@@ -33,11 +33,11 @@
             <Buildings>
                 <Building>
                     <Type>Construction</Type>
-                    <Offset x="50" y="0"/>
+                    <Offset x="100" y="0"/>
                 </Building>
                 <Building>
                     <Type>Construction</Type>
-                    <Offset x="-50" y="0"/>
+                    <Offset x="-100" y="0"/>
                 </Building>
             </Buildings>
         </Base>
@@ -47,19 +47,19 @@
             <Buildings>
                 <Building>
                     <Type>Tower</Type>
-                    <Offset x="100" y="0"/>
+                    <Offset x="200" y="0"/>
                 </Building>
                 <Building>
                     <Type>Tower</Type>
-                    <Offset x="-100" y="0"/>
+                    <Offset x="-200" y="0"/>
                 </Building>
                 <Building>
                     <Type>Tower</Type>
-                    <Offset x="0" y="100"/>
+                    <Offset x="0" y="200"/>
                 </Building>
                 <Building>
                     <Type>Tower</Type>
-                    <Offset x="0" y="-100"/>
+                    <Offset x="0" y="-200"/>
                 </Building>
             </Buildings>
         </Base>

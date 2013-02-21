@@ -52,7 +52,7 @@ public class BuildingRegistry {
         BuildingRegistry registry = new BuildingRegistry();
         registry.load("Content/Buildings/Buildings.xml");
 
-        System.out.println(registry.getBuilding("Tower").influence.size);
+        System.out.println(registry.getBuilding("Tower").health);
     }
 }
 

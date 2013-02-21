@@ -101,6 +101,7 @@ public class EntityFactory {
         setColour(entity, faction);
         entity.faction = faction;
         System.out.println(location);
+        entity.health = type.getHealth();
         entity.movementBehaviour = new Static(entity, location);
         entity.drawingBehaviour = new SimpleQuad(entity, (int) type.getSize().x, entity.r, entity.g, entity.b);
         entity.influenceBehaviour = new SimpleInfluence(entity, type.getInfluence().getSize(), type.getInfluence().getStrength());
