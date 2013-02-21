@@ -1,15 +1,25 @@
 package Project.Game.Influence;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
 import java.util.HashMap;
 
 // Grid used by Entities to affect the influence maps
+@XmlRootElement(name = "Influence")
 public class InfluenceGrid {
+     // Don't want this in the XML
+    protected double[][] influence;
 
-    double[][] influence;
+    @XmlAttribute(name = "Size")
+    int size;
+    @XmlAttribute(name = "Strength")
+    double strength;
 
     // Stores grids already calculated to save computation
     // In all cases, create a grid with strength 1, for ease of calculating grids of any strength
     private static HashMap<Integer, HashMap<Double, InfluenceGrid>> cachedGrids = new HashMap<>();
+
+
 
     private InfluenceGrid(double[][] influence) {
         this.influence = influence;
