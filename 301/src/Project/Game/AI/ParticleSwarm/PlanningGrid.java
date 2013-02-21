@@ -19,6 +19,7 @@ public class PlanningGrid {
     ArrayList<BasicParticle> particles;
 
     static ArrayList<BuildingShadow> buildingShadows;
+    private final static Object _buildingShadows = new Object();
 
     static private ArrayList<PlanningGrid> PLANNING_GRIDS = new ArrayList<>(Factions.values().length);
 
@@ -38,11 +39,14 @@ public class PlanningGrid {
 
     /**
      * Adds a new shadow to the grid
+     *
      * @param location location of the shadow center
-     * @param size size of the shadow
+     * @param size     size of the shadow
      */
-    public static void addBuilding(Vector2D location, Vector2D size){
-        buildingShadows.add(new BuildingShadow(location, size));
+    public static void addBuilding(Vector2D location, Vector2D size) {
+        synchronized (_buildingShadows) {
+            buildingShadows.add(new BuildingShadow(location, size));
+        }
     }
 
     /**
