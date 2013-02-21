@@ -1,5 +1,6 @@
 package Project.Game.AI.ParticleSwarm;
 
+import Project.Game.Factions;
 import Project.Game.Main;
 import Project.Game.Vector2D;
 
@@ -19,7 +20,7 @@ public class PlanningGrid {
 
     static ArrayList<BuildingShadow> buildingShadows;
 
-    static private ArrayList<PlanningGrid> PLANNING_GRIDS;
+    static private ArrayList<PlanningGrid> PLANNING_GRIDS = new ArrayList<>(Factions.values().length);
 
     // Map existing buildings onto the grid using basic collision based on the radius.
     // assign a shadow to each particle to use to check for collisions with existing buildings

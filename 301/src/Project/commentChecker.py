@@ -23,7 +23,7 @@ def checkJava(fileContents):
     for line in fileContents:
         #print(line)
         #numOfWords = numOfWords + len(re.findall(r'[A-Za-z0-9\-*+]+', line))
-        numOfWords = numOfWords + len(re.findall(r'[A-Za-z0-9.]+', line))
+        numOfWords = numOfWords + len(re.findall(r'[A-Za-z0-9\.]+', line))
         #numOfWords = numOfWords + len(re.findall(r'\S+', line))
         if comment:
             numOfComments += 1
