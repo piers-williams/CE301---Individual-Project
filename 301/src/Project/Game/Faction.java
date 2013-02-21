@@ -19,7 +19,6 @@ import java.util.Hashtable;
  * Time: 16:42
  */
 
-// TODO extract the group/construction thing into another class
 public class Faction {
     private float r, g, b;
 

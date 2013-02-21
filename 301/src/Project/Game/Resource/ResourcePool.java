@@ -116,6 +116,18 @@ public class ResourcePool {
     }
 
     /**
+     * Gets the percentage of the income that the drain is
+     * <p/>
+     * Higher than 100 and we are draining too much, lower and we are producing too much
+     *
+     * @return
+     */
+    public int getPercentage() {
+        if(totalOutcomePerRound == 0) return 0;
+        return (int) (totalIncomePerRound * 100 / totalOutcomePerRound * 1.0);
+    }
+
+    /**
      * Serves as a simple stress test
      *
      * @param args
@@ -161,13 +173,15 @@ public class ResourcePool {
             pool.register(new ResourceGenerator(pool, 35));
         }
 
-        for (int i = 0; i < 1500; i++) {
+        for (int i = 0; i < 750; i++) {
             pool.register(new ResourceDrain(pool, 20));
         }
 
         for (int i = 0; i < 50 * 120; i++) {
             if (i % 50 == 0) {
                 System.out.println("Seconds Taken: " + i / 50);
+                System.out.println("Percentage: " + pool.getPercentage());
+                System.out.println("Difference: " + pool.getDifference());
             }
             try {
                 Thread.sleep(20);

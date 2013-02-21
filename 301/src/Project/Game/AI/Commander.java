@@ -4,31 +4,29 @@ import Project.Game.AI.SPL.Orders.AttackOrder;
 import Project.Game.Entities.Meta.Group;
 import Project.Game.Faction;
 import Project.Game.Main;
-import Project.Game.Utilities;
 import Project.Game.Vector2D;
 
 /**
  * Primary AI class
  * <p/>
- * Gives the actual orders
+ * Co ordinates everything
  */
 public class Commander {
 
     private Faction faction;
 
     private AttackFinder attackFinder;
-    private DefenseFinder defenseFinder;
+    private NewBaseBuilder newBaseBuilder;
 
     public Commander(Faction faction) {
         this.faction = faction;
 
         attackFinder = new AttackFinder(this, 30);
-        defenseFinder = new DefenseFinder(this, 30);
+        newBaseBuilder = new NewBaseBuilder(this, 400);
     }
 
     public void update() {
         attackFinder.update();
-        defenseFinder.update();
     }
 
     public Faction getFaction() {
@@ -109,54 +107,22 @@ class AttackFinder extends TacticalAnalysis {
     }
 }
 
-/**
- * This class will locate the next location to build a tower
- * Should be rebuilt so that it operates on a single base
- * <p/>
- * Could go back to actually following plans
- */
-class DefenseFinder extends TacticalAnalysis {
-    double[][] influence;
+class NewBaseBuilder extends TacticalAnalysis {
 
-    Vector2D nextTarget;
-
-    DefenseFinder(Commander commander, int tickFrequency) {
+    NewBaseBuilder(Commander commander, int tickFrequency) {
         super(commander, tickFrequency);
     }
 
+    @Override
     public void updateSpecialisation() {
-        influence = Main.INFLUENCE_MAP.getInfluence(commander.getFaction());
+        int percentage = commander.getFaction().getResourcePool().getPercentage();
 
-        int lowX = 0, lowY = 0;
-        boolean foundSomewhere = false;
-        for (int x = 0; x < influence.length; x++) {
-            for (int y = 0; y < influence[x].length; y++) {
-                if (influence[x][y] != 0) {
-                    if (!foundSomewhere) {
-                        foundSomewhere = true;
-                        lowX = x;
-                        lowY = y;
-                    }
-                    if (towerPlacementCost(x, y) < towerPlacementCost(lowX, lowY)) {
-                        lowX = x;
-                        lowY = y;
-                    }
-                }
-            }
+        if (percentage > 120) {
+            // Build something to introduce drains
+        } else {
+            // Improve economy
+
         }
-
-        if (foundSomewhere) {
-            nextTarget = new Vector2D(lowX * Main.INFLUENCE_MAP.getCellSize(), lowY * Main.INFLUENCE_MAP.getCellSize());
-        }
-    }
-
-    private double towerPlacementCost(int x, int y) {
-        // Calculate distance from center of base
-        double cost = Utilities.distance(x * Main.INFLUENCE_MAP.getCellSize(), y * Main.INFLUENCE_MAP.getCellSize(), commander.getFaction().getLocation().x, commander.getFaction().getLocation().y);
-        //Score based on how far away from threshold we are
-        cost = Math.abs(250 - cost);
-        cost += influence[x][y] * 100;
-
-        return cost;
     }
 }
+
