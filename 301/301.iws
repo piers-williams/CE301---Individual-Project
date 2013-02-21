@@ -145,7 +145,7 @@
       <file leaf-file-name="PlanningGrid.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/ParticleSwarm/PlanningGrid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="58" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.3690304">
+            <state line="77" column="58" selection-start="3141" selection-end="3141" vertical-scroll-proportion="0.7872648">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1576,7 +1576,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/ParticleSwarm/PlanningGrid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="58" selection-start="1014" selection-end="1014" vertical-scroll-proportion="0.3690304">
+        <state line="77" column="58" selection-start="3141" selection-end="3141" vertical-scroll-proportion="0.7872648">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
