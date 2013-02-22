@@ -16,6 +16,7 @@ public enum Factions {
     private Factions(float r, float g, float b, Vector2D location, boolean intelligent) {
         this.faction = new Faction(r, g, b, location, intelligent);
         this.intelligent = intelligent;
+        if(!intelligent) Main.HUMAN_FACTION = faction;
     }
 
     public Faction getFaction() {

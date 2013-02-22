@@ -35,7 +35,7 @@ public class Faction {
     // The resource pool for the faction
     private ResourcePool resourcePool;
 
-    private ConstructionGroupHandler constructionGroupHandler;
+    private GroupHandler groupHandler;
 
     protected Faction(float r, float g, float b, Vector2D startLocation, Boolean intelligent) {
         this.r = r;
@@ -61,7 +61,7 @@ public class Faction {
 
         splQueue = new SPLQueue();
 
-        constructionGroupHandler = new ConstructionGroupHandler(this);
+        groupHandler = new GroupHandler(this);
     }
 
     public void makeEntity(Vector2D location, Construction base) {
@@ -69,11 +69,15 @@ public class Faction {
     }
 
     public void makeEntity(double x, double y, Construction base) {
-        constructionGroupHandler.makeEntity(x, y, base);
+        groupHandler.makeEntity(x, y, base);
+    }
+
+    public void addEntity(Entity entity){
+
     }
 
     public void addConstruction(Construction construction, Vector2D spawnPoint) {
-        constructionGroupHandler.addConstruction(construction, spawnPoint);
+        groupHandler.addConstruction(construction, spawnPoint);
     }
 
     public void update() {
@@ -108,14 +112,14 @@ public class Faction {
     }
 }
 
-class ConstructionGroupHandler {
+class GroupHandler {
 
     private ArrayList<Group> groups;
     private Dictionary<Construction, Group> baseGroup;
     private Faction faction;
 
 
-    public ConstructionGroupHandler(Faction faction) {
+    public GroupHandler(Faction faction) {
         this.faction = faction;
         groups = new ArrayList<>();
         baseGroup = new Hashtable<>();

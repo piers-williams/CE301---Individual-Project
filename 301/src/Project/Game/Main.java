@@ -53,6 +53,7 @@ public class Main{
     private ThemeManager themeManager;
 
     private ButtonManager buttonManager;
+    public String blueprintToBuild;
 
     // Where the view is located
     public static final Vector2D viewLocation = new Vector2D(0, 0);

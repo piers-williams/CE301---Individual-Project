@@ -38,7 +38,6 @@ public class PlanningGrid implements Runnable {
 
         buildingShadows = new ArrayList<>();
 
-//        PLANNING_GRIDS.add(this);
         jobQueue = new LinkedList<>();
     }
 
@@ -48,6 +47,10 @@ public class PlanningGrid implements Runnable {
         while (true) {
             try {
                 Thread.sleep(20);
+
+                if(!jobQueue.isEmpty()){
+                    // Run the next job
+                }
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

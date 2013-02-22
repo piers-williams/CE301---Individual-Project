@@ -65,6 +65,16 @@ public class EntityFactory {
         return entity;
     }
 
+    public static Entity getBlueprint(Faction faction, Vector2D location, String blueprint){
+        Entity entity = new Entity();
+
+        setColour(entity, faction);
+        entity.faction = faction;
+
+        entity.constructionBehaviour = new BlueprintConstruction(faction, entity, faction.getResourcePool(), location, Main.BLUEPRINT_REGISTRY.get(blueprint));
+        return entity;
+    }
+
     public static Entity getShipyard(Faction faction, Vector2D location) {
         Entity entity = new Entity();
 

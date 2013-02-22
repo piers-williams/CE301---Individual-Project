@@ -49,7 +49,7 @@ public class Entity {
 
     public void draw() {
         if (alive) {
-            drawingBehaviour.draw();
+            if(drawingBehaviour != null) drawingBehaviour.draw();
         }
     }
 

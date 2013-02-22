@@ -1,5 +1,6 @@
 package Project.Game.UI;
 
+import Project.Game.Entities.EntityFactory;
 import Project.Game.Main;
 import Project.Game.Vector2D;
 import com.sun.istack.internal.Nullable;
@@ -169,11 +170,11 @@ class ButtonsWrapper implements Iterable<InternalButton> {
         };
     }
 
-    private Runnable getBuildFunction(InternalButton button) {
+    private Runnable getBuildFunction(final InternalButton button) {
         return new Runnable() {
             @Override
             public void run() {
-
+                Main.MAIN.blueprintToBuild = button.action.Argument;
             }
         };
     }

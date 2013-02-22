@@ -72,7 +72,9 @@ public class InfluenceMap implements Runnable {
             }
             synchronized (Main.GAME_LOOP._entities) {
                 for (Entity entity : Main.GAME_LOOP.getEntities()) {
-                    addGridToInfluence(entity.getInfluenceGrid(), getPoint(entity), entity.getFaction());
+                    if (entity.getInfluenceGrid() != null) {
+                        addGridToInfluence(entity.getInfluenceGrid(), getPoint(entity), entity.getFaction());
+                    }
                 }
             }
         }

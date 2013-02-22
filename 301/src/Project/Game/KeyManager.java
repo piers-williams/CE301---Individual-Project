@@ -1,6 +1,9 @@
 package Project.Game;
 
+import Project.Game.Entities.Entity;
+import Project.Game.Entities.EntityFactory;
 import org.lwjgl.input.Keyboard;
+import org.lwjgl.input.Mouse;
 
 /**
  *
@@ -38,5 +41,14 @@ public class KeyManager {
                 }
             }
         }
+        // Handle the mouse
+        if (Mouse.isButtonDown(0)) {
+            if (main.blueprintToBuild != null) {
+                Entity entity = EntityFactory.getBlueprint(Main.HUMAN_FACTION, new Vector2D(Mouse.getX(), Mouse.getY()), main.blueprintToBuild);
+                Main.GAME_LOOP.addEntity(entity);
+                main.blueprintToBuild = null;
+            }
+        }
+
     }
 }
