@@ -5,7 +5,7 @@
     <Button>
         <Title>Pause</Title>
         <Location x="0" y="0"/>
-        <Dimension x="100" y="50"/>
+        <Dimension x="125" y="50"/>
         <Action>
             <Type>Pause</Type>
         </Action>
@@ -14,8 +14,8 @@
     <!-- Home Base Buttons -->
     <Button>
         <Title>Build Home</Title>
-        <Location x="100" y="0"/>
-        <Dimension x="100" y="50"/>
+        <Location x="125" y="0"/>
+        <Dimension x="125" y="50"/>
         <Action>
             <Type>Build</Type>
             <Argument>Home Level 1</Argument>
@@ -23,8 +23,8 @@
     </Button>
     <Button>
         <Title>Build Home 2</Title>
-        <Location x="100" y="50"/>
-        <Dimension x="100" y="50"/>
+        <Location x="125" y="50"/>
+        <Dimension x="125" y="50"/>
         <Action>
             <Type>Build</Type>
             <Argument>Home Level 2</Argument>
@@ -32,8 +32,8 @@
     </Button>
     <Button>
         <Title>Build Home 3</Title>
-        <Location x="100" y="100"/>
-        <Dimension x="100" y="50"/>
+        <Location x="125" y="100"/>
+        <Dimension x="125" y="50"/>
         <Action>
             <Type>Build</Type>
             <Argument>Home Level 3</Argument>
@@ -43,8 +43,8 @@
     <!-- Defensive Buttons -->
     <Button>
         <Title>Build Defense 1</Title>
-        <Location x="200" y="0"/>
-        <Dimension x="100" y="50"/>
+        <Location x="250" y="0"/>
+        <Dimension x="125" y="50"/>
         <Action>
             <Type>Build</Type>
             <Argument>Defensive Level 1</Argument>
@@ -52,8 +52,8 @@
     </Button>
     <Button>
         <Title>Build Defense 2</Title>
-        <Location x="200" y="50"/>
-        <Dimension x="100" y="50"/>
+        <Location x="250" y="50"/>
+        <Dimension x="125" y="50"/>
         <Action>
             <Type>Build</Type>
             <Argument>Defensive Level 2</Argument>
@@ -63,8 +63,8 @@
     <!-- Productive Buttons -->
     <Button>
         <Title>Build Production 1</Title>
-        <Location x="300" y="0" />
-        <Dimension x="100" y="50" />
+        <Location x="375" y="0" />
+        <Dimension x="125" y="50" />
         <Action>
             <Type>Build</Type>
             <Argument>Power Level 1</Argument>

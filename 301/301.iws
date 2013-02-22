@@ -86,13 +86,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ControlManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/ControlManager.java">
+      <file leaf-file-name="Vector2D.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="35" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="133" column="42" selection-start="3460" selection-end="3460" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,26 +98,20 @@
       <file leaf-file-name="UI.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Content/UI.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="16" selection-start="1814" selection-end="1814" vertical-scroll-proportion="0.0">
+            <state line="68" column="29" selection-start="1796" selection-end="1796" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
+      <file leaf-file-name="ButtonManager.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="32" selection-start="4191" selection-end="4191" vertical-scroll-proportion="0.69863015">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vector2D.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="42" selection-start="3460" selection-end="3460" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="214" column="23" selection-start="5463" selection-end="5463" vertical-scroll-proportion="0.8003914">
+              <folding>
+                <element signature="e#4627#4790#0" expanded="true" />
+                <element signature="e#4779#4780#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,7 +185,6 @@
         <option value="$PROJECT_DIR$/src/Project/Game/AI/ParticleSwarm/PlanningGrid.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Factions.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/Entity.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Influence/InfluenceMap.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/GameLoop.java" />
@@ -201,9 +192,10 @@
         <option value="$PROJECT_DIR$/src/Project/Game/KeyManager.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Vector2D.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/ControlManager.java" />
-        <option value="$PROJECT_DIR$/Content/UI.xml" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
+        <option value="$PROJECT_DIR$/Content/UI.xml" />
+        <option value="$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java" />
       </list>
     </option>
   </component>
@@ -433,6 +425,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Faction.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ButtonManager.java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -972,15 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="50" selection-start="4791" selection-end="4791" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#4638#4801#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="54" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0">
@@ -1028,32 +1041,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="42" selection-start="3460" selection-end="3460" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/ControlManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="35" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Content/Bases/Bases.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="99" column="60" selection-start="3394" selection-end="3394" vertical-scroll-proportion="0.6">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/UI.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="16" selection-start="1814" selection-end="1814" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1074,8 +1064,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="32" selection-start="4191" selection-end="4191" vertical-scroll-proportion="0.69863015">
+        <state line="133" column="40" selection-start="4315" selection-end="4315" vertical-scroll-proportion="0.83170253">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/ControlManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="35" selection-start="1455" selection-end="1455" vertical-scroll-proportion="0.99196786">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="133" column="42" selection-start="3460" selection-end="3460" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/UI.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="29" selection-start="1796" selection-end="1796" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/ButtonManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="214" column="23" selection-start="5463" selection-end="5463" vertical-scroll-proportion="0.8003914">
+          <folding>
+            <element signature="e#4627#4790#0" expanded="true" />
+            <element signature="e#4779#4780#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

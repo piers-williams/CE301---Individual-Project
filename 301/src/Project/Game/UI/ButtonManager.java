@@ -1,10 +1,10 @@
 package Project.Game.UI;
 
-import Project.Game.Entities.EntityFactory;
 import Project.Game.Main;
 import Project.Game.Vector2D;
 import com.sun.istack.internal.Nullable;
 import de.matthiasmann.twl.Button;
+import de.matthiasmann.twl.Label;
 import de.matthiasmann.twl.Widget;
 
 import javax.xml.bind.JAXBContext;
@@ -112,7 +112,6 @@ class InternalButton {
     }
 }
 
-
 @XmlRootElement(name = "Buttons")
 class ButtonsWrapper implements Iterable<InternalButton> {
     @XmlElement(name = "Button")
@@ -181,25 +180,7 @@ class ButtonsWrapper implements Iterable<InternalButton> {
 
     @Override
     public Iterator<InternalButton> iterator() {
-
-        return new Iterator<InternalButton>() {
-            int index = 0;
-
-            @Override
-            public boolean hasNext() {
-                return index < buttons.size();
-            }
-
-            @Override
-            public InternalButton next() {
-                return buttons.get(index++);
-            }
-
-            @Override
-            public void remove() {
-                buttons.remove(index);
-            }
-        };
+        return buttons.iterator();
     }
 }
 
@@ -213,5 +194,28 @@ class Action {
 
     public Action() {
 
+    }
+}
+
+
+@XmlRootElement(name = "Label")
+@XmlAccessorType(XmlAccessType.NONE)
+class InternalLabel {
+    Label label;
+    @XmlElement(name = "Service")
+    String service;
+    @XmlElement(name = "Location")
+    Vector2D location;
+    @XmlElement(name = "Dimension")
+    Vector2D size;
+}
+
+class LabelWrapper implements Iterable<InternalLabel>{
+
+    ArrayList<InternalLabel> labels;
+
+    @Override
+    public Iterator<InternalLabel> iterator() {
+        return labels.iterator();
     }
 }
