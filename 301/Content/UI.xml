@@ -59,4 +59,15 @@
             <Argument>Defensive Level 2</Argument>
         </Action>
     </Button>
+
+    <!-- Productive Buttons -->
+    <Button>
+        <Title>Build Production 1</Title>
+        <Location x="300" y="0" />
+        <Dimension x="100" y="50" />
+        <Action>
+            <Type>Build</Type>
+            <Argument>Power Level 1</Argument>
+        </Action>
+    </Button>
 </Buttons>

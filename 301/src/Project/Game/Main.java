@@ -21,7 +21,7 @@ import java.io.IOException;
  * Date: 16/10/12
  * Time: 11:49
  */
-public class Main{
+public class Main {
     public static int SCREEN_WIDTH = 1600;
     public static int SCREEN_HEIGHT = 900;
 
@@ -137,7 +137,8 @@ public class Main{
         }
         Display.destroy();
     }
-     // TODO Get this working
+
+    // TODO Get this working
     private void drawBoundary() {
         GL11.glColor4f(255, 255, 255, 255);
 
