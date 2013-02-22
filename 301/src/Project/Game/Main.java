@@ -4,9 +4,7 @@ import Project.Game.Blueprints.BlueprintRegistry;
 import Project.Game.Buildings.BuildingRegistry;
 import Project.Game.Influence.InfluenceMap;
 import Project.Game.UI.ButtonManager;
-import de.matthiasmann.twl.Button;
 import de.matthiasmann.twl.GUI;
-import de.matthiasmann.twl.Widget;
 import de.matthiasmann.twl.renderer.lwjgl.LWJGLRenderer;
 import de.matthiasmann.twl.theme.ThemeManager;
 import org.lwjgl.LWJGLException;
@@ -45,7 +43,7 @@ public class Main{
     // Please don't re-assign this one
     public static Faction HUMAN_FACTION;
 
-    public static KeyManager KEY_MANAGER;
+    public static ControlManager Control_MANAGER;
     private Boolean paused;
 
     private GUI gui;
@@ -69,7 +67,7 @@ public class Main{
         VECTOR2D_SOURCE = new CachedVector2DSource();
         Main.COLLISION_BOARD = new CollisionBoard(CELL_SIZE);
         Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 30, 40);
-        KEY_MANAGER = new KeyManager(this);
+        Control_MANAGER = new ControlManager(this);
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
         // Set up the display
         try {
@@ -135,7 +133,7 @@ public class Main{
             drawBoundary();
             gui.update();
             Display.update();
-            KEY_MANAGER.update();
+            Control_MANAGER.update();
         }
         Display.destroy();
     }

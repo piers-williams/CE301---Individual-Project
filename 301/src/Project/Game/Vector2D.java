@@ -129,9 +129,15 @@ public final class Vector2D {
         return third;
     }
 
-    // substract argument vector
+    // subtract argument vector
     public void subtract(Vector2D v) {
         subtract(v.getX(), v.getY());
+    }
+
+    public static Vector2D subtract(final Vector2D first, final Vector2D second) {
+        Vector2D third = new Vector2D(first);
+        third.subtract(second);
+        return third;
     }
 
     // subtract coordinate values

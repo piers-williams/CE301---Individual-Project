@@ -120,7 +120,7 @@ public class EntityFactory {
 
         switch (type.getName()) {
             case "Tower":
-                entity.offensiveBehaviour = new SimpleWeapon(entity, 50, 10, 60);
+//                entity.offensiveBehaviour = new SimpleWeapon(entity, 50, 10, 60);
         }
 
         return entity;
