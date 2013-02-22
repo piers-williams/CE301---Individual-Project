@@ -65,12 +65,13 @@ public class EntityFactory {
         return entity;
     }
 
-    public static Entity getBlueprint(Faction faction, Vector2D location, String blueprint){
+    public static Entity getBlueprint(Faction faction, Vector2D location, String blueprint) {
         Entity entity = new Entity();
 
         setColour(entity, faction);
         entity.faction = faction;
-
+        entity.movementBehaviour = new Static(entity, location);
+        entity.influenceBehaviour = new SimpleInfluence(entity, 5, 0.0);
         entity.constructionBehaviour = new BlueprintConstruction(faction, entity, faction.getResourcePool(), location, Main.BLUEPRINT_REGISTRY.get(blueprint));
         return entity;
     }

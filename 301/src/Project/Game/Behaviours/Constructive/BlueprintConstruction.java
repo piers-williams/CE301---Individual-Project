@@ -11,6 +11,7 @@ import Project.Game.Resource.ResourceDrain;
 import Project.Game.Resource.ResourcePool;
 import Project.Game.Vector2D;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -24,6 +25,7 @@ public class BlueprintConstruction extends BasicConstruction {
 
     // Use the offset as a key to locate buildings
     private HashMap<Vector2D, Entity> buildings;
+    private final Object _buildings = new Object();
 
     private BlueprintState state;
     BlueprintBuilding currentBlueprint;
@@ -66,36 +68,42 @@ public class BlueprintConstruction extends BasicConstruction {
     }
 
     private void lookForDeadBuildings() {
-        for (Vector2D buildingOffset : buildings.keySet()) {
-            Entity building = buildings.get(buildingOffset);
-            if (!building.isAlive()) {
-                // Might not like this while it is traversing
-                buildings.remove(buildingOffset);
-                if (state == BlueprintState.AllConstructed) state = BlueprintState.Looking;
+        ArrayList<Vector2D> removals = new ArrayList<>();
+        synchronized (_buildings) {
+            for (Vector2D buildingOffset : buildings.keySet()) {
+                Entity building = buildings.get(buildingOffset);
+                if (!building.isAlive()) {
+                    removals.add(buildingOffset);
+                    if (state == BlueprintState.AllConstructed) state = BlueprintState.Looking;
+                }
             }
         }
 
+        synchronized (_buildings){
+            for(Vector2D offset : removals){
+                buildings.remove(offset);
+            }
+        }
     }
 
     private void findAndBuildNext() {
+        synchronized (_buildings) {
+            for (BlueprintBuilding blueprintBuilding : blueprint.getBlueprintBuildings()) {
+                if (!buildings.containsKey(blueprintBuilding.getOffset())) {
+                    if (resourceDrain != null) resourceDrain.deRegister();
+                    currentBlueprint = blueprintBuilding;
+                    currentlyBuilding = Main.BUILDING_REGISTRY.getBuilding(blueprintBuilding.getType());
+                    // Need to put this type of information into the blueprint
 
-        //System.out.println(blueprint.getBlueprintBuildings().size());
-        // Is empty ...
-        for (BlueprintBuilding blueprintBuilding : blueprint.getBlueprintBuildings()) {
-            if (!buildings.containsKey(blueprintBuilding.getOffset())) {
-                if (resourceDrain != null) resourceDrain.deRegister();
-                currentBlueprint = blueprintBuilding;
-                currentlyBuilding = Main.BUILDING_REGISTRY.getBuilding(blueprintBuilding.getType());
-                // Need to put this type of information into the blueprint
-
-                int drainPerTick = currentlyBuilding.getCost() / currentlyBuilding.getBuildTime();
-                ticksTillFinished = currentlyBuilding.getBuildTime();
-                resourceDrain = new ResourceDrain(resourcePool, drainPerTick);
-                // Register the resourceDrain
-                resourcePool.register(resourceDrain);
-                // Only find first one but don't change the state
-                state = BlueprintState.Constructing;
-                return;
+                    int drainPerTick = currentlyBuilding.getCost() / currentlyBuilding.getBuildTime();
+                    ticksTillFinished = currentlyBuilding.getBuildTime();
+                    resourceDrain = new ResourceDrain(resourcePool, drainPerTick);
+                    // Register the resourceDrain
+                    resourcePool.register(resourceDrain);
+                    // Only find first one but don't change the state
+                    state = BlueprintState.Constructing;
+                    return;
+                }
             }
         }
 
@@ -115,8 +123,9 @@ public class BlueprintConstruction extends BasicConstruction {
                     Vector2D.add(location, currentBlueprint.getOffset()),
                     currentlyBuilding
             );
-
-            buildings.put(currentBlueprint.getOffset(), entity);
+            synchronized (_buildings) {
+                buildings.put(currentBlueprint.getOffset(), entity);
+            }
             Main.GAME_LOOP.addEntity(entity);
         }
     }
