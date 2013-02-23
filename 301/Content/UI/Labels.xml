@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<Labels>
+    <Label>
+        <Service>Production Difference</Service>
+        <Location x="1500" y="0" />
+        <Dimension x="100" y="50"/>
+    </Label>
+</Labels>

@@ -110,6 +110,14 @@ public class Faction {
     public ResourcePool getResourcePool() {
         return resourcePool;
     }
+
+    public Object getService(String service){
+        switch(service){
+            case "Resource Difference":
+                return resourcePool.getDifference();
+        }
+        return "";
+    }
 }
 
 class GroupHandler {

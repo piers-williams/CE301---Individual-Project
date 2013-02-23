@@ -3,7 +3,7 @@ package Project.Game;
 import Project.Game.Blueprints.BlueprintRegistry;
 import Project.Game.Buildings.BuildingRegistry;
 import Project.Game.Influence.InfluenceMap;
-import Project.Game.UI.ButtonManager;
+import Project.Game.UI.UIManager;
 import de.matthiasmann.twl.GUI;
 import de.matthiasmann.twl.renderer.lwjgl.LWJGLRenderer;
 import de.matthiasmann.twl.theme.ThemeManager;
@@ -50,7 +50,7 @@ public class Main {
     private LWJGLRenderer renderer;
     private ThemeManager themeManager;
 
-    private ButtonManager buttonManager;
+    private UIManager UIManager;
     public String blueprintToBuild;
 
     // Where the view is located
@@ -83,7 +83,7 @@ public class Main {
             GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
 
             BLUEPRINT_REGISTRY.calculateUpgrades();
-            buttonManager = new ButtonManager("button");
+            UIManager = new UIManager("button");
             initTWL();
         } catch (Exception e) {
 
@@ -198,7 +198,7 @@ public class Main {
             e.printStackTrace();
         }
 
-        gui = new GUI(buttonManager, renderer);
+        gui = new GUI(UIManager, renderer);
         gui.applyTheme(themeManager);
     }
 

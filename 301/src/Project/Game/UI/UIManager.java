@@ -1,5 +1,6 @@
 package Project.Game.UI;
 
+import Project.Game.Faction;
 import Project.Game.Main;
 import Project.Game.Vector2D;
 import com.sun.istack.internal.Nullable;
@@ -22,14 +23,15 @@ import java.util.Iterator;
 /**
  * Responsible for storing and dealing with all Buttons
  */
-public class ButtonManager extends Widget {
+public class UIManager extends Widget {
 
     private String buttonTheme;
 
     private ButtonsWrapper buttons;
+    private LabelWrapper labels;
 
-    public ButtonManager() {
-        buttons = ButtonManager.load("Content/UI.xml");
+    public UIManager() {
+        buttons = UIManager.loadButtons("Content/UI/Buttons.xml");
         buttons.constructAllButtons();
         removeAllChildren();
         for (InternalButton button : buttons) {
@@ -37,12 +39,16 @@ public class ButtonManager extends Widget {
         }
     }
 
-    public ButtonManager(String buttonTheme) {
+    public UIManager(String buttonTheme) {
         this();
         this.buttonTheme = buttonTheme;
     }
 
-    public static ButtonsWrapper load(String filename) {
+    public void update(Faction faction) {
+        for (InternalLabel label : labels) label.update(faction);
+    }
+
+    public static ButtonsWrapper loadButtons(String filename) {
         try {
             JAXBContext context = JAXBContext.newInstance(ButtonsWrapper.class);
             Unmarshaller unmarshaller = context.createUnmarshaller();
@@ -54,6 +60,19 @@ public class ButtonManager extends Widget {
 
 
         throw new RuntimeException("Something went wrong loading Buttons");
+    }
+
+    public static LabelWrapper loadLabels(String filename) {
+        try {
+            JAXBContext context = JAXBContext.newInstance(LabelWrapper.class);
+            Unmarshaller unmarshaller = context.createUnmarshaller();
+
+            return (LabelWrapper) unmarshaller.unmarshal(new File(filename));
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+
+        throw new RuntimeException("Something went wrong loading labels");
     }
 
     @Override
@@ -70,7 +89,7 @@ public class ButtonManager extends Widget {
 
     public static void main(String[] args) {
         ButtonsWrapper wrapper;
-        wrapper = ButtonManager.load("Content/UI.xml");
+        wrapper = UIManager.loadButtons("Content/Buttons.xml");
 
         try {
             JAXBContext context = JAXBContext.newInstance(ButtonsWrapper.class);
@@ -208,9 +227,13 @@ class InternalLabel {
     Vector2D location;
     @XmlElement(name = "Dimension")
     Vector2D size;
+
+    public void update(Faction faction) {
+        label.setText(faction.getService(service).toString());
+    }
 }
 
-class LabelWrapper implements Iterable<InternalLabel>{
+class LabelWrapper implements Iterable<InternalLabel> {
 
     ArrayList<InternalLabel> labels;
 
