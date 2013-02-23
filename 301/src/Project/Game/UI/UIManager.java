@@ -33,15 +33,19 @@ public class UIManager extends Widget {
     public UIManager() {
         buttons = UIManager.loadButtons("Content/UI/Buttons.xml");
         buttons.constructAllButtons();
+        labels = UIManager.loadLabels("Content/UI/Labels.xml");
+        labels.constructAllLabels();
         removeAllChildren();
         for (InternalButton button : buttons) {
             add(button.button);
         }
+        for (InternalLabel label : labels) add(label.label);
     }
 
     public UIManager(String buttonTheme) {
         this();
         this.buttonTheme = buttonTheme;
+
     }
 
     public void update(Faction faction) {
@@ -57,8 +61,6 @@ public class UIManager extends Widget {
         } catch (JAXBException e) {
             e.printStackTrace();
         }
-
-
         throw new RuntimeException("Something went wrong loading Buttons");
     }
 
@@ -83,6 +85,14 @@ public class UIManager extends Widget {
                 button.getButton().setSize((int) button.size.x, (int) button.size.y);
             } else {
                 button.getButton().adjustSize();
+            }
+        }
+        for (InternalLabel label : labels) {
+            label.label.setPosition((int) label.location.x, (int) label.location.y);
+            if (label.size != null) {
+                label.label.setSize((int) label.size.x, (int) label.size.y);
+            } else {
+                label.label.adjustSize();
             }
         }
     }
@@ -233,12 +243,17 @@ class InternalLabel {
     }
 }
 
+@XmlRootElement(name = "Labels")
 class LabelWrapper implements Iterable<InternalLabel> {
-
+    @XmlElement(name = "Label")
     ArrayList<InternalLabel> labels;
 
     @Override
     public Iterator<InternalLabel> iterator() {
         return labels.iterator();
+    }
+
+    public void constructAllLabels() {
+        for (InternalLabel label : labels) label.label = new Label();
     }
 }

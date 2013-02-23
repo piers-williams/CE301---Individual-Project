@@ -86,7 +86,7 @@ public class Main {
             UIManager = new UIManager("button");
             initTWL();
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
 
         Thread physics = new Thread(Main.COLLISION_BOARD);
@@ -122,6 +122,7 @@ public class Main {
             if (Keyboard.isKeyDown(Keyboard.KEY_ESCAPE)) {
                 break;
             }
+            UIManager.update(HUMAN_FACTION);
 
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
             GL11.glTranslated(viewLocation.x, viewLocation.y, 0);
