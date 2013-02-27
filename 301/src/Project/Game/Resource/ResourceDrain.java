@@ -27,21 +27,17 @@ public final class ResourceDrain {
 
     /**
      * Should be guarded by a call to hasResource()
-     *
-     * @param resource amount we want
      * @return the amount returned
      */
-    public int claimResource(int resource) {
-        if (this.resource < resource) throw new IllegalArgumentException("Does not have this much");
-        // Very deliberately only want the one passed in, not this.resource
-        int returnAmount = resource;
-        this.resource -= resource;
+    public int claimResource() {
+        int returnAmount = this.resource;
+        this.resource = 0;
         return returnAmount;
     }
 
 
-    public boolean hasResource(int resource) {
-        return this.resource >= resource;
+    public boolean hasResource() {
+        return this.resource >= 1;
     }
 
     // Detach this from a pool

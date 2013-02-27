@@ -31,7 +31,8 @@ public class BlueprintConstruction extends BasicConstruction {
     BlueprintBuilding currentBlueprint;
     MetaBuilding currentlyBuilding;
 
-    private int ticksTillFinished;
+    // TODO Rewrite to do properly
+    private int resourceTillFinished;
 
     public BlueprintConstruction(Faction faction, Entity entity, ResourcePool resourcePool, Vector2D location, Blueprint blueprint) {
         super(faction, entity, resourcePool);
@@ -79,8 +80,8 @@ public class BlueprintConstruction extends BasicConstruction {
             }
         }
 
-        synchronized (_buildings){
-            for(Vector2D offset : removals){
+        synchronized (_buildings) {
+            for (Vector2D offset : removals) {
                 buildings.remove(offset);
             }
         }
@@ -96,7 +97,7 @@ public class BlueprintConstruction extends BasicConstruction {
                     // Need to put this type of information into the blueprint
 
                     int drainPerTick = currentlyBuilding.getCost() / currentlyBuilding.getBuildTime();
-                    ticksTillFinished = currentlyBuilding.getBuildTime();
+                    resourceTillFinished = currentlyBuilding.getCost();
                     resourceDrain = new ResourceDrain(resourcePool, drainPerTick);
                     // Register the resourceDrain
                     resourcePool.register(resourceDrain);
@@ -111,9 +112,11 @@ public class BlueprintConstruction extends BasicConstruction {
     }
 
     private void constructionWork() {
-        ticksTillFinished--;
+        if (resourceDrain.hasResource()) {
+            resourceTillFinished -= resourceDrain.claimResource();
+        }
 
-        if (ticksTillFinished == 0) {
+        if (resourceTillFinished <= 0) {
             // Switch state
             state = BlueprintState.Looking;
 
@@ -127,6 +130,9 @@ public class BlueprintConstruction extends BasicConstruction {
                 buildings.put(currentBlueprint.getOffset(), entity);
             }
             Main.GAME_LOOP.addEntity(entity);
+
+            resourceDrain.deRegister();
+            resourceDrain = null;
         }
     }
 }

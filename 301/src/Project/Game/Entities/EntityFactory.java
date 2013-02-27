@@ -9,9 +9,12 @@ import Project.Game.Behaviours.Movement.Flocking;
 import Project.Game.Behaviours.Movement.Static;
 import Project.Game.Behaviours.Movement.Wandering;
 import Project.Game.Behaviours.Offensive.SimpleWeapon;
+import Project.Game.Behaviours.Resource.Resource;
 import Project.Game.Buildings.MetaBuilding;
 import Project.Game.Entities.Meta.Group;
 import Project.Game.*;
+import Project.Game.Resource.ResourceGenerator;
+import Project.Game.Resource.ResourcePool;
 
 /**
  *
@@ -106,9 +109,9 @@ public class EntityFactory {
         return entity;
     }
 
-    public static Entity getBuilding(Faction faction, Vector2D location, MetaBuilding type) {
+    public static Entity getBuilding(final Faction faction, final Vector2D location, final MetaBuilding type) {
 
-        Entity entity = new Entity();
+        final Entity entity = new Entity();
         setColour(entity, faction);
         entity.faction = faction;
 
@@ -121,6 +124,33 @@ public class EntityFactory {
         switch (type.getName()) {
             case "Tower":
 //                entity.offensiveBehaviour = new SimpleWeapon(entity, 50, 10, 60);
+                break;
+            case "Production":
+                entity.resourceBehaviour = new Resource() {
+                    ResourcePool pool = faction.getResourcePool();
+                    ResourceGenerator generator = new ResourceGenerator(pool, type.getProductionPerTick());
+                    boolean registered = false;
+
+                    @Override
+                    public void update() {
+                        if (!registered) {
+                            registered = true;
+                            pool.register(generator);
+                        }
+                    }
+
+                    @Override
+                    public Entity getEntity() {
+                        return entity;
+                    }
+
+                    @Override
+                    public void deRegister() {
+                        pool.deRegister(generator);
+                    }
+                };
+                break;
+
         }
 
         return entity;
