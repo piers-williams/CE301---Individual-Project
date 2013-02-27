@@ -45,7 +45,6 @@ public class UIManager extends Widget {
     public UIManager(String buttonTheme) {
         this();
         this.buttonTheme = buttonTheme;
-
     }
 
     public void update(Faction faction) {
@@ -230,7 +229,7 @@ class Action {
 @XmlRootElement(name = "Label")
 @XmlAccessorType(XmlAccessType.NONE)
 class InternalLabel {
-    Label label;
+    Button label;
     @XmlElement(name = "Service")
     String service;
     @XmlElement(name = "Location")
@@ -254,6 +253,7 @@ class LabelWrapper implements Iterable<InternalLabel> {
     }
 
     public void constructAllLabels() {
-        for (InternalLabel label : labels) label.label = new Label();
+        System.out.println("Number of Labels: " + labels.size());
+        for (InternalLabel label : labels) label.label = new Button();
     }
 }

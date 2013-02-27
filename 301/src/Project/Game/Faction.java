@@ -113,7 +113,7 @@ public class Faction {
 
     public Object getService(String service){
         switch(service){
-            case "Resource Difference":
+            case "Production Difference":
                 return resourcePool.getDifference();
         }
         return "";

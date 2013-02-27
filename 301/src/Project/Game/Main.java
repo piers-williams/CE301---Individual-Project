@@ -80,6 +80,7 @@ public class Main {
             GL11.glOrtho(0, SCREEN_WIDTH, 0, SCREEN_HEIGHT, 1, -1);
             GL11.glMatrixMode(GL11.GL_MODELVIEW);
             GL11.glEnable(GL11.GL_BLEND);
+            //GL11.glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
             GL11.glBlendFunc(GL11.GL_SRC_ALPHA, GL11.GL_ONE_MINUS_SRC_ALPHA);
 
             BLUEPRINT_REGISTRY.calculateUpgrades();
