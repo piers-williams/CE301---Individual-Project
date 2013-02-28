@@ -29,7 +29,10 @@ public class BlueprintRegistry {
         for (Blueprint blueprint : blueprints) {
             if (blueprint.upgradeString != "Null") {
                 if (contains(blueprint.upgradeString)) {
+                    // set upgrade
                     blueprint.upgrade = get(blueprint.upgradeString);
+                    // Set downgrade
+                    blueprint.upgrade.downgrade = blueprint;
                 }
             }
         }

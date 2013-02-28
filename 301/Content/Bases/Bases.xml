@@ -2,7 +2,7 @@
 <Registry>
     <Bases>
         <Base name="HomeLvl1">
-            <Upgrade>HomeLvl2</Upgrade>
+            <Upgrade>Home Level 2</Upgrade>
             <FullName>Home Level 1</FullName>
             <Buildings>
                 <!--<Building>-->
@@ -28,7 +28,7 @@
             </Buildings>
         </Base>
         <Base name="HomeLvl2">
-            <Upgrade>HomeLvl3</Upgrade>
+            <Upgrade>Home Level 3</Upgrade>
             <FullName>Home Level 2</FullName>
             <Buildings>
                 <Building>
@@ -64,7 +64,7 @@
             </Buildings>
         </Base>
         <Base name="DefensiveLvl1">
-            <Upgrade>DefensiveLvl2</Upgrade>
+            <Upgrade>Defensive Level 2</Upgrade>
             <FullName>Defensive Level 1</FullName>
             <Buildings>
                 <Building>
