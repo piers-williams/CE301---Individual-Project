@@ -118,7 +118,7 @@ public class GameLoop implements Runnable {
         ArrayList<Entity> closeEntities = new ArrayList<>();
         synchronized (_entities) {
             for (Entity entity : entities) {
-                if (entity.isAlive() && entity.getFaction() == faction) {
+                if (entity.isAlive() && entity.getFaction() != faction) {
                     if (entity.getMovementBehaviour().getLocation().dist(location) < radius) {
                         closeEntities.add(entity);
                     }

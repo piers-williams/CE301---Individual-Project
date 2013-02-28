@@ -85,89 +85,115 @@
     <favorites_list name="301" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="35" selection-start="2830" selection-end="2830" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UIManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="240" column="36" selection-start="6609" selection-end="6609" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Faction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="38" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResourcePool.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="60" selection-start="2650" selection-end="2650" vertical-scroll-proportion="-3.6484375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Labels.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Content/UI/Labels.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="38" selection-start="95" selection-end="116" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="54" selection-start="5696" selection-end="5696" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Resource.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Resource/Resource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Entity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="34" selection-start="2390" selection-end="2390" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResourceDrain.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="36" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="82" column="35" selection-start="2830" selection-end="2830" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UIManager.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="240" column="36" selection-start="6609" selection-end="6609" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Faction.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="51" column="45" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Labels.xml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Content/UI/Labels.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="38" selection-start="95" selection-end="116" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EntityFactory.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="117" column="50" selection-start="4817" selection-end="4817" vertical-scroll-proportion="0.43841335">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SimpleWeapon.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Offensive/SimpleWeapon.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="29" column="43" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Resource.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Resource/Resource.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="11" column="0" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Entity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="86" column="34" selection-start="2390" selection-end="2390" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ResourceDrain.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="39" column="36" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="SimpleWeapon.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Offensive/SimpleWeapon.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="33" column="27" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GameLoop.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/GameLoop.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="122" column="47" selection-start="3558" selection-end="3558" vertical-scroll-proportion="0.6252505">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -177,7 +203,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Project/Game/GameLoop.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/KeyManager.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Vector2D.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/ControlManager.java" />
@@ -188,11 +213,12 @@
         <option value="$PROJECT_DIR$/src/Project/Game/UI/UIManager.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Resource/Resource.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/GameLoop.java" />
       </list>
     </option>
   </component>
@@ -1072,16 +1098,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Influence/InfluenceGrid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="99" selection-start="606" selection-end="606" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/GameLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="23" selection-start="3625" selection-end="3625" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Content/UITheme/simple.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="415" column="49" selection-start="18422" selection-end="18422" vertical-scroll-proportion="0.0">
@@ -1131,13 +1147,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="54" selection-start="5696" selection-end="5696" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="36" selection-start="971" selection-end="971" vertical-scroll-proportion="0.0">
@@ -1166,16 +1175,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="38" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.0">
+        <state line="205" column="44" selection-start="6776" selection-end="6776" vertical-scroll-proportion="0.66796875">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Resource/ResourcePool.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="60" selection-start="2650" selection-end="2650" vertical-scroll-proportion="-3.6484375">
+        <state line="51" column="45" selection-start="1293" selection-end="1293" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Offensive/SimpleWeapon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="43" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/GameLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="47" selection-start="3558" selection-end="3558" vertical-scroll-proportion="0.6252505">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="50" selection-start="4817" selection-end="4817" vertical-scroll-proportion="0.43841335">
           <folding />
         </state>
       </provider>
