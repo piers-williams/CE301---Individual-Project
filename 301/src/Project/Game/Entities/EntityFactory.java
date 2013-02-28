@@ -63,7 +63,7 @@ public class EntityFactory {
         entity.influenceBehaviour = new SimpleInfluence(entity, 9, 1);
         entity.collisionBehaviour = new SimpleCollision(entity, 40);
         //entity.constructionBehaviour = new BaseConstruction(entity, location, 100);
-        entity.constructionBehaviour = new BlueprintConstruction(faction, entity, faction.getResourcePool(), location, Main.BLUEPRINT_REGISTRY.get("Home Level 2"));
+        entity.constructionBehaviour = new BlueprintConstruction(faction, entity, faction.getResourcePool(), location, Main.BLUEPRINT_REGISTRY.get("Home Level 3"));
 
         return entity;
     }
