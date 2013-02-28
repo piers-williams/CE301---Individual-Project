@@ -152,6 +152,12 @@ public final class Vector2D {
         this.y *= fac;
     }
 
+    public static Vector2D multiply(Vector2D first, double fac){
+        Vector2D second = new Vector2D(first);
+        second.multiply(fac);
+        return second;
+    }
+
 // "wrap" vector with respect to given positive values w and h
 
     // method assumes that x >= -w and y >= -h

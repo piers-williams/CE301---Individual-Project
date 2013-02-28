@@ -69,12 +69,10 @@ public class PlanningGrid implements Runnable {
     public static void addBuilding(Vector2D location, Vector2D size, Faction faction, boolean scaled) {
         synchronized (_buildingShadows) {
             if (!scaled) {
-                location.multiply(1 / cellSize);
-                size.multiply(1 / cellSize);
+                buildingShadows.add(new BuildingShadow(Vector2D.multiply(location, 1.0d / cellSize), Vector2D.multiply(size, 1.0d / cellSize), faction));
+            } else {
+                buildingShadows.add(new BuildingShadow(location, size, faction));
             }
-            System.out.println("Location: " + location);
-            System.out.println("Size: " + size);
-            buildingShadows.add(new BuildingShadow(location, size, faction));
         }
     }
 
