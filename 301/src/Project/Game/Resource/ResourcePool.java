@@ -51,35 +51,34 @@ public class ResourcePool {
             }
 
             synchronized (_inputs) {
-                totalIncomePerRound = 0;
-                for (ResourceGenerator generator : inputs) {
-                    totalIncomePerRound += generator.getResourcePerTick();
-                }
-            }
+                synchronized (_drains) {
 
-            synchronized (_drains) {
-                // Distribute income to output
-                totalOutcomePerRound = 0;
-                for (ResourceDrain drain : drains) {
-                    totalOutcomePerRound += drain.getMaxDrainPerTick();
-                }
-
-                if (totalOutcomePerRound >= totalIncomePerRound) {
-                    for (ResourceDrain drain : drains) {
-                        drain.assignResource(drain.getMaxDrainPerTick());
+                    totalIncomePerRound = 0;
+                    for (ResourceGenerator generator : inputs) {
+                        totalIncomePerRound += generator.getResourcePerTick();
                     }
+                    // Distribute income to output
+                    totalOutcomePerRound = 0;
+                    for (ResourceDrain drain : drains) {
+                        totalOutcomePerRound += drain.getMaxDrainPerTick();
+                    }
+
+                    if (totalOutcomePerRound >= totalIncomePerRound) {
+                        for (ResourceDrain drain : drains) {
+                            drain.assignResource(drain.getMaxDrainPerTick());
+                        }
 
 //                    System.out.println("Wasting resources");
-                } else {
-                    for (ResourceDrain drain : drains) {
-                        drain.assignResource((totalOutcomePerRound / drain.getMaxDrainPerTick()) * totalIncomePerRound);
-                    }
+                    } else {
+                        for (ResourceDrain drain : drains) {
+                            drain.assignResource((totalOutcomePerRound / drain.getMaxDrainPerTick()) * totalIncomePerRound);
+                        }
 
 //                    System.out.println("Not enough income");
+                    }
                 }
             }
         }
-
     }
 
     public void register(ResourceGenerator generator) {
@@ -112,7 +111,11 @@ public class ResourcePool {
      * @return int positive number means too much in , negative means too much out
      */
     public int getDifference() {
-        return totalIncomePerRound - totalOutcomePerRound;
+        synchronized (_inputs) {
+            synchronized (_drains) {
+                return totalIncomePerRound - totalOutcomePerRound;
+            }
+        }
     }
 
     /**
@@ -123,8 +126,12 @@ public class ResourcePool {
      * @return
      */
     public int getPercentage() {
-        if(totalOutcomePerRound == 0) return 0;
-        return (int) (totalIncomePerRound * 100 / totalOutcomePerRound * 1.0);
+        synchronized (_inputs) {
+            synchronized (_drains) {
+                if (totalOutcomePerRound == 0) return 0;
+                return (int) (totalIncomePerRound * 100 / totalOutcomePerRound * 1.0);
+            }
+        }
     }
 
     /**
