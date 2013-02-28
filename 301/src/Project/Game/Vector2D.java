@@ -147,7 +147,7 @@ public final class Vector2D {
     }
 
     // multiply with factor
-    public void mult(double fac) {
+    public void multiply(double fac) {
         this.x *= fac;
         this.y *= fac;
     }
@@ -206,7 +206,7 @@ public final class Vector2D {
 
     public void normalise() {
         if (x != 0 || y != 0) {
-            mult(1 / mag());
+            multiply(1 / mag());
         }
     }
 

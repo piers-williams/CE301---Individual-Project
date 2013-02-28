@@ -1,5 +1,7 @@
 package Project.Game.Blueprints;
 
+import Project.Game.Vector2D;
+
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -13,7 +15,6 @@ public class Blueprint {
     @XmlElement(name = "Upgrade")
     String upgradeString;
 
-
     // The next blueprint in the upgrade chain
     Blueprint upgrade;
     // The previous blueprint in the upgrade chain
@@ -25,6 +26,8 @@ public class Blueprint {
     @XmlElementWrapper(name = "Buildings")
     @XmlElement(name = "Building")
     ArrayList<BlueprintBuilding> blueprintBuildings;
+
+    Vector2D size;
     private boolean buildingsCalculated = false;
 
     public String getUpgradeString() {
@@ -43,6 +46,21 @@ public class Blueprint {
         return name;
     }
 
+    public void calculate() {
+        blueprintBuildings = getBlueprintBuildings();
+        int maxX = 0, maxY = 0, lowX = 0, lowY = 0;
+        for (BlueprintBuilding building : blueprintBuildings) {
+            Vector2D offset = building.getOffset();
+
+            if (offset.x > maxX) maxX = (int) offset.x;
+            if (offset.x < lowX) lowX = (int) offset.x;
+            if (offset.y > maxY) maxY = (int) offset.y;
+            if (offset.y < maxY) maxY = (int) offset.y;
+        }
+
+        size = new Vector2D(maxX - lowX, maxY - lowY);
+    }
+
     public ArrayList<BlueprintBuilding> getBlueprintBuildings() {
         if (downgrade != null && buildingsCalculated == false) {
             ArrayList<BlueprintBuilding> buildings = new ArrayList<>();
@@ -54,6 +72,10 @@ public class Blueprint {
             buildingsCalculated = true;
         }
         return blueprintBuildings;
+    }
+
+    public Vector2D getSize() {
+        return size;
     }
 }
 

@@ -1,5 +1,6 @@
 package Project.Game;
 
+import Project.Game.AI.ParticleSwarm.PlanningGrid;
 import Project.Game.Blueprints.BlueprintRegistry;
 import Project.Game.Buildings.BuildingRegistry;
 import Project.Game.Influence.InfluenceMap;
@@ -39,6 +40,7 @@ public class Main {
     public static BlueprintRegistry BLUEPRINT_REGISTRY;
     public static BuildingRegistry BUILDING_REGISTRY;
     public static Main MAIN;
+    public static PlanningGrid PLANNING_GRID;
 
     // Please don't re-assign this one
     public static Faction HUMAN_FACTION;
@@ -68,6 +70,7 @@ public class Main {
         Main.COLLISION_BOARD = new CollisionBoard(CELL_SIZE);
         Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 30, 40);
         Control_MANAGER = new ControlManager(this);
+        PLANNING_GRID = new PlanningGrid(50, 50, 100, 400);
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
         // Set up the display
         try {
@@ -104,6 +107,11 @@ public class Main {
         influence.setDaemon(true);
         influence.setName("Influence Thread");
         influence.start();
+
+        Thread planning = new Thread(PLANNING_GRID);
+        planning.setDaemon(true);
+        planning.setName("Planning Grid Thread");
+        planning.start();
 
         for (Factions factions : Factions.values()) {
             GAME_LOOP.addFaction(factions.getFaction());

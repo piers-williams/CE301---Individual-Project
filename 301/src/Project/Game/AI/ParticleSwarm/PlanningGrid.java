@@ -17,7 +17,7 @@ import java.util.Queue;
 public class PlanningGrid implements Runnable {
 
     HashMap<Vector2D, ArrayList<Character>> grid;
-    int cellSize;
+    static int cellSize;
     ArrayList<BasicParticle> particles;
 
     Queue<JobPairing> jobQueue;
@@ -30,7 +30,7 @@ public class PlanningGrid implements Runnable {
     // Map existing buildings onto the grid using basic collision based on the radius.
     // assign a shadow to each particle to use to check for collisions with existing buildings
     public PlanningGrid(int cellSize, int Rp, int Rt, int Rc) {
-        this.cellSize = cellSize;
+        PlanningGrid.cellSize = cellSize;
         grid = new HashMap<>();
         particles = new ArrayList<>(300);
         // Perform conversion to cells from actual radius
@@ -48,8 +48,11 @@ public class PlanningGrid implements Runnable {
             try {
                 Thread.sleep(20);
 
-                if(!jobQueue.isEmpty()){
+                if (!jobQueue.isEmpty()) {
                     // Run the next job
+                    System.out.println("Have a job");
+
+
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -63,8 +66,14 @@ public class PlanningGrid implements Runnable {
      * @param location location of the shadow center
      * @param size     size of the shadow
      */
-    public static void addBuilding(Vector2D location, Vector2D size, Faction faction) {
+    public static void addBuilding(Vector2D location, Vector2D size, Faction faction, boolean scaled) {
         synchronized (_buildingShadows) {
+            if (!scaled) {
+                location.multiply(1 / cellSize);
+                size.multiply(1 / cellSize);
+            }
+            System.out.println("Location: " + location);
+            System.out.println("Size: " + size);
             buildingShadows.add(new BuildingShadow(location, size, faction));
         }
     }

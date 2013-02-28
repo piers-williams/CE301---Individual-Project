@@ -36,6 +36,9 @@ public class BlueprintRegistry {
                 }
             }
         }
+        for (Blueprint blueprint : blueprints) {
+            blueprint.calculate();
+        }
     }
 
     public boolean contains(String name) {

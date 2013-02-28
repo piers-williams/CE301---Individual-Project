@@ -125,6 +125,8 @@ public class EntityFactory {
             case "Tower":
                 entity.offensiveBehaviour = new SimpleWeapon(entity, 50, 10, 60);
                 break;
+            case "Construction":
+                entity.constructionBehaviour = new SimpleConstruction(entity, faction);
             case "Production":
                 entity.resourceBehaviour = new Resource() {
                     ResourcePool pool = faction.getResourcePool();
