@@ -4,6 +4,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Blueprints for Bases
@@ -44,19 +45,16 @@ public class Blueprint {
     }
 
     public ArrayList<BlueprintBuilding> getBlueprintBuildings() {
-        System.out.println("Downgrade: " + downgrade);
-        System.out.println("Calculated: " + buildingsCalculated);
         if(downgrade != null && buildingsCalculated == false){
             ArrayList<BlueprintBuilding> buildings = new ArrayList<>();
-
             // Add all our buildings
             buildings.addAll(blueprintBuildings);
             // Add the downgrades buildings as well
             buildings.addAll(downgrade.getBlueprintBuildings());
             blueprintBuildings = buildings;
-
+            // Reverse them
+            Collections.reverse(blueprintBuildings);
             buildingsCalculated = true;
-            System.out.println("working out buildings for : " + name);
         }
         return blueprintBuildings;
     }

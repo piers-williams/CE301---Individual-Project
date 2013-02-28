@@ -97,19 +97,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BlueprintBuilding.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="BlueprintBuilding.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintBuilding.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="13" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Blueprint.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="47" column="63" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.64837396">
+                <state line="11" column="13" selection-start="245" selection-end="245" vertical-scroll-proportion="0.27642277">
                   <folding />
                 </state>
               </provider>
@@ -176,7 +167,7 @@
           <file leaf-file-name="GameLoop.java" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Project/Game/GameLoop.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="124" column="27" selection-start="3601" selection-end="3601" vertical-scroll-proportion="0.6933868">
+                <state line="116" column="22" selection-start="3132" selection-end="3132" vertical-scroll-proportion="0.4208417">
                   <folding />
                 </state>
               </provider>
@@ -208,8 +199,8 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java" />
         <option value="$PROJECT_DIR$/Content/Bases/Bases.xml" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java" />
       </list>
     </option>
   </component>
@@ -1217,13 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/GameLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="27" selection-start="3601" selection-end="3601" vertical-scroll-proportion="0.6933868">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="33" selection-start="2674" selection-end="2674" vertical-scroll-proportion="0.0">
@@ -1234,13 +1218,6 @@
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="30" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintBuilding.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1268,7 +1245,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="63" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.64837396">
+        <state line="53" column="53" selection-start="1475" selection-end="1475" vertical-scroll-proportion="1.4085366">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/GameLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="22" selection-start="3132" selection-end="3132" vertical-scroll-proportion="0.4208417">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintBuilding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="245" selection-end="245" vertical-scroll-proportion="0.27642277">
           <folding />
         </state>
       </provider>
