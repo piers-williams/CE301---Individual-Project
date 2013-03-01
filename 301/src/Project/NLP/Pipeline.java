@@ -1,12 +1,11 @@
 package Project.NLP;
 
+import Project.Game.AI.SPL.Orders.DefendOrder;
 import Project.Game.AI.SPL.Orders.SPLObject;
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.StringReader;
 import java.util.ArrayList;
@@ -75,7 +74,15 @@ public class Pipeline implements NLPConverter {
     public SPLObject extractOrder(ArrayList<TaggedWord> words) {
         String taggedSentence = buildTaggedSentence(words);
 
+        // Hunt for simple order
         List<TaggedWord> match = getFirstInstance(words, "VB", "DT", "NN");
+        if (match != null) {
+            switch(match.get(0).value().toLowerCase()){
+                case "build":
+//                    return new DefendOrder();
+                    break;
+            }
+        }
         return null;
     }
 
@@ -87,14 +94,16 @@ public class Pipeline implements NLPConverter {
 
     /**
      * Gets the first single instance of words that match the input
+     *
      * @param words Words to search through
-     * @param tags Tag array to look for in words
-     * @return  Sublist of the input that contains the matched sequence, null if not found
+     * @param tags  Tag array to look for in words
+     * @return Sublist of the input that contains the matched sequence, null if not found
      */
     public List<TaggedWord> getFirstInstance(ArrayList<TaggedWord> words, String... tags) {
         outerLoop:
         for (int i = 0; i < (words.size() - tags.length) + 1; i++) {
-            for (int j = 0; j < tags.length; j++) if (!words.get(i + j).tag().equalsIgnoreCase(tags[j])) continue outerLoop;
+            for (int j = 0; j < tags.length; j++)
+                if (!words.get(i + j).tag().equalsIgnoreCase(tags[j])) continue outerLoop;
             // If we reach here then we got a match for every tag in sequence
             return words.subList(i, i + tags.length);
         }
