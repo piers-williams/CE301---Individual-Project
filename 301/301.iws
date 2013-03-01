@@ -85,53 +85,70 @@
     <favorites_list name="301" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Pipeline.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="56" selection-start="883" selection-end="883" vertical-scroll-proportion="0.38494936">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefendOrder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/DefendOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="7" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicOrder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="45" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PipelineTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/NLP/Tests/PipelineTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="33" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/NLP/UI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="34" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="Pipeline.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="85" column="50" selection-start="2648" selection-end="2648" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DefendOrder.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/DefendOrder.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="9" column="7" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BasicOrder.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="18" column="45" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PipelineTest.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Project/NLP/Tests/PipelineTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="25" column="5" selection-start="507" selection-end="507" vertical-scroll-proportion="0.5320417">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UI.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/NLP/UI.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="29" column="34" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="PipelineTest.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Project/NLP/Tests/PipelineTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="25" column="5" selection-start="507" selection-end="507" vertical-scroll-proportion="0.5166426">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -831,10 +848,10 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.BuildingRegistry" />
       <item index="1" class="java.lang.String" itemvalue="Application.BlueprintRegistry" />
-      <item index="2" class="java.lang.String" itemvalue="Application.UI" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BasicConverterTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PipelineTest" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="3" class="java.lang.String" itemvalue="Application.UI" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BasicConverterTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.PipelineTest" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1090,11 +1107,6 @@
         <state line="122" column="12" selection-start="3523" selection-end="3523" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/NLP/Tests/PipelineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="33" selection-start="305" selection-end="305" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/NLP/UI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="34" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0" />
@@ -1116,7 +1128,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="56" selection-start="883" selection-end="883" vertical-scroll-proportion="0.38494936">
+        <state line="85" column="50" selection-start="2648" selection-end="2648" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/NLP/Tests/PipelineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="5" selection-start="507" selection-end="507" vertical-scroll-proportion="0.5166426">
           <folding />
         </state>
       </provider>
