@@ -21,10 +21,16 @@ public class Pipeline implements NLPConverter {
     @Override
     public SPLObject convert(String message) {
         String[] temp = extractSenderAndMessage(message);
+        // This is needed when we integrate with the game
         String address = temp[0];
+
         String strippedMessage = temp[1];
-        tagMessage(strippedMessage);
-        return null;
+        // Store the tagged message
+        ArrayList<TaggedWord> taggedMessage = tagMessage(strippedMessage);
+
+        SPLObject splObject = extractOrder(taggedMessage);
+
+        return splObject;
     }
 
     public String[] extractSenderAndMessage(String message) {
@@ -35,14 +41,14 @@ public class Pipeline implements NLPConverter {
 
         Pattern pattern = Pattern.compile(regexForStripping);
         Matcher matcher = pattern.matcher(message);
-        while(matcher.find()){
-            data[1] =  message.substring(matcher.end());
+        while (matcher.find()) {
+            data[1] = message.substring(matcher.end());
         }
 
         pattern = Pattern.compile(regexForSender);
         matcher = pattern.matcher(message);
-        while(matcher.find()){
-            data[0] = message.substring(matcher.start(), matcher.end()-1);
+        while (matcher.find()) {
+            data[0] = message.substring(matcher.start(), matcher.end() - 1);
         }
 
         return data;
@@ -63,5 +69,9 @@ public class Pipeline implements NLPConverter {
             e.printStackTrace();
         }
         throw new RuntimeException("Tagging went wrong");
+    }
+
+    public SPLObject extractOrder(ArrayList<TaggedWord> words) {
+        return null;
     }
 }
