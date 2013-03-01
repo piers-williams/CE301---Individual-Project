@@ -74,7 +74,7 @@ public class Pipeline implements NLPConverter {
     public SPLObject extractOrder(ArrayList<TaggedWord> words) {
         String taggedSentence = buildTaggedSentence(words);
 
-        ArrayList<TaggedWord> match = getFirstInstance(words, "VB", "DT", "NN");
+        List<TaggedWord> match = getFirstInstance(words, "VB", "DT", "NN");
         return null;
     }
 
@@ -90,11 +90,12 @@ public class Pipeline implements NLPConverter {
      * @param tags Tag array to look for in words
      * @return  Sublist of the input that contains the matched sequence, null if not found
      */
-    public ArrayList<TaggedWord> getFirstInstance(ArrayList<TaggedWord> words, String... tags) {
-        for (int i = 0; i < words.size() - tags.length; i++) {
-            for (int j = 0; j < tags.length; j++) if (!words.get(i + j).tag().equalsIgnoreCase(tags[j])) continue;
+    public List<TaggedWord> getFirstInstance(ArrayList<TaggedWord> words, String... tags) {
+        outerLoop:
+        for (int i = 0; i < (words.size() - tags.length) + 1; i++) {
+            for (int j = 0; j < tags.length; j++) if (!words.get(i + j).tag().equalsIgnoreCase(tags[j])) continue outerLoop;
             // If we reach here then we got a match for every tag in sequence
-            return (ArrayList<TaggedWord>) words.subList(i, i + tags.length);
+            return words.subList(i, i + tags.length);
         }
         return null;
     }
