@@ -32,15 +32,15 @@ public class PipelineTest {
     }
 
     @Test
-    public void testGetFirstInstance(){
-        ArrayList<TaggedWord> words = new ArrayList<>();
-        words.add(new TaggedWord("Build", "VB"));
-        words.add(new TaggedWord("a", "DT"));
-        words.add(new TaggedWord("base", "NN"));
+    public void testGetFirstInstance() {
+        ArrayList<TaggedWord> words = pipeline.tagMessage("Build a base over there");
 
         List<TaggedWord> result = pipeline.getFirstInstance(words, "VB", "DT", "NN");
         assertNotNull(result);
         assertEquals(3, result.size());
+        assertEquals("Build", result.get(0).value());
+        assertEquals("a", result.get(1).value());
+        assertEquals("base", result.get(2).value());
 
     }
 }

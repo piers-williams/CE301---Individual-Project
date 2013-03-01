@@ -8,6 +8,7 @@ import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -56,9 +57,9 @@ public class Pipeline implements NLPConverter {
 
     public ArrayList<TaggedWord> tagMessage(String message) {
         try {
-            MaxentTagger tagger = new MaxentTagger("Contents/NLPModels/english-bidirectional-distsim.tagger");
+            MaxentTagger tagger = new MaxentTagger("Content/NLPModels/english-bidirectional-distsim.tagger");
 
-            List<List<HasWord>> sentences = MaxentTagger.tokenizeText(new BufferedReader(new FileReader("Content/Orders/Orders.txt")));
+            List<List<HasWord>> sentences = MaxentTagger.tokenizeText(new StringReader(message));
 
             return tagger.tagSentence(sentences.get(0));
 
