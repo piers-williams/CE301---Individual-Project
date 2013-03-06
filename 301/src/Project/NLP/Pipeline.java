@@ -90,6 +90,12 @@ public class Pipeline implements NLPConverter {
         return null;
     }
 
+    /**
+     * Work on this
+     *
+     * @param words
+     * @return
+     */
     private SPLObject getSimpleOrder(ArrayList<TaggedWord> words) {
         // Hunt for simple order
         List<TaggedWord> match = getFirstInstance(words, "VB", "NN");
