@@ -64,7 +64,11 @@ public class Pipeline implements NLPConverter {
             MaxentTagger tagger = new MaxentTagger("Content/NLPModels/english-bidirectional-distsim.tagger");
 
             List<List<HasWord>> sentences = MaxentTagger.tokenizeText(new StringReader(message));
-            for (TaggedWord word : tagger.tagSentence(sentences.get(0))) System.out.println(word);
+            for (TaggedWord word : tagger.tagSentence(sentences.get(0))) {
+                // Override so that Attack is always VB
+                if (word.value().equalsIgnoreCase("Attack")) word.setTag("VB");
+                System.out.println(word);
+            }
             return tagger.tagSentence(sentences.get(0));
 
 
@@ -81,6 +85,7 @@ public class Pipeline implements NLPConverter {
 
         object = getSimpleOrder(words);
         if (object != null) return object;
+
 
         return null;
     }
@@ -105,6 +110,16 @@ public class Pipeline implements NLPConverter {
                     break;
             }
         }
+        // Attack/VB Red/NNP 's/POS base/NN
+        // Attack/VB Reds/NNP  base/NN
+        match = getFirstInstance(words, "VB", "NNP", "POS", "NN");
+        if (match != null) {
+            switch (match.get(0).value().toLowerCase()) {
+                case "attack":
+                    break;
+            }
+        }
+
         return null;
     }
 
