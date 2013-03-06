@@ -77,8 +77,15 @@ public class Pipeline implements NLPConverter {
     }
 
     public SPLObject extractOrder(ArrayList<TaggedWord> words) {
-        String taggedSentence = buildTaggedSentence(words);
+        SPLObject object;
 
+        object = getSimpleOrder(words);
+        if (object != null) return object;
+
+        return null;
+    }
+
+    private SPLObject getSimpleOrder(ArrayList<TaggedWord> words) {
         // Hunt for simple order
         List<TaggedWord> match = getFirstInstance(words, "VB", "NN");
         if (match != null) {
