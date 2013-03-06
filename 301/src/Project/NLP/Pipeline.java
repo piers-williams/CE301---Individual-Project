@@ -1,6 +1,7 @@
 package Project.NLP;
 
 import Project.Game.AI.SPL.Orders.AttackOrder;
+import Project.Game.AI.SPL.Orders.DefendOrder;
 import Project.Game.AI.SPL.Orders.SPLObject;
 import Project.Game.Registries.BaseRegistry;
 import Project.NLP.Dummy.DummyBaseRegistry;
@@ -83,9 +84,16 @@ public class Pipeline implements NLPConverter {
         if (match != null) {
             switch (match.get(0).value().toLowerCase()) {
                 case "attack":
+                case "destroy":
+                case "kill":
                     // check if Noun is in the game
                     if (baseRegistry.has(match.get(1).value())) {
                         return new AttackOrder(baseRegistry.get(match.get(1).value()).getLocation(), 5);
+                    }
+                    break;
+                case "defend":
+                    if (baseRegistry.has(match.get(1).value())) {
+                        return new DefendOrder(baseRegistry.get(match.get(1).value()).getLocation(), 5);
                     }
                     break;
             }
