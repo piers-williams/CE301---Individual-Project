@@ -86,7 +86,6 @@ public class Pipeline implements NLPConverter {
         object = getSimpleOrder(words);
         if (object != null) return object;
 
-
         return null;
     }
 
@@ -119,6 +118,7 @@ public class Pipeline implements NLPConverter {
         // Attack/VB Red/NNP 's/POS base/NN
         // Attack/VB Reds/NNP  base/NN
         match = getFirstInstance(words, "VB", "NNP", "POS", "NN");
+        if (match == null) match = getFirstInstance(words, "VB", "NNP", "NN");
         if (match != null) {
             switch (match.get(0).value().toLowerCase()) {
                 case "attack":
