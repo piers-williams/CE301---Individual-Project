@@ -1,7 +1,9 @@
 package Project.NLP;
 
-import Project.Game.AI.SPL.Orders.DefendOrder;
+import Project.Game.AI.SPL.Orders.AttackOrder;
 import Project.Game.AI.SPL.Orders.SPLObject;
+import Project.Game.Registries.BaseRegistry;
+import Project.NLP.Dummy.DummyBaseRegistry;
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
@@ -17,6 +19,8 @@ import java.util.regex.Pattern;
  *
  */
 public class Pipeline implements NLPConverter {
+
+    BaseRegistry baseRegistry = new DummyBaseRegistry();
 
     @Override
     public SPLObject convert(String message) {
@@ -59,7 +63,7 @@ public class Pipeline implements NLPConverter {
             MaxentTagger tagger = new MaxentTagger("Content/NLPModels/english-bidirectional-distsim.tagger");
 
             List<List<HasWord>> sentences = MaxentTagger.tokenizeText(new StringReader(message));
-
+            for (TaggedWord word : tagger.tagSentence(sentences.get(0))) System.out.println(word);
             return tagger.tagSentence(sentences.get(0));
 
 
@@ -75,11 +79,14 @@ public class Pipeline implements NLPConverter {
         String taggedSentence = buildTaggedSentence(words);
 
         // Hunt for simple order
-        List<TaggedWord> match = getFirstInstance(words, "VB", "DT", "NN");
+        List<TaggedWord> match = getFirstInstance(words, "VB", "NN");
         if (match != null) {
-            switch(match.get(0).value().toLowerCase()){
-                case "build":
-//                    return new DefendOrder();
+            switch (match.get(0).value().toLowerCase()) {
+                case "attack":
+                    // check if Noun is in the game
+                    if (baseRegistry.has(match.get(1).value())) {
+                        return new AttackOrder(baseRegistry.get(match.get(1).value()).getLocation(), 5);
+                    }
                     break;
             }
         }

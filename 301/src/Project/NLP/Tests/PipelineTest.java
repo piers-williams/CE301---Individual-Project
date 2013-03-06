@@ -33,7 +33,7 @@ public class PipelineTest {
 
     @Test
     public void testGetFirstInstance() {
-        ArrayList<TaggedWord> words = pipeline.tagMessage("Build a base over there");
+        ArrayList<TaggedWord> words = pipeline.tagMessage("Build a base here");
 
         List<TaggedWord> result = pipeline.getFirstInstance(words, "VB", "DT", "NN");
         assertNotNull(result);

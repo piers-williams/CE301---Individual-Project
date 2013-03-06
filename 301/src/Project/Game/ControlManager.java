@@ -10,6 +10,7 @@ import org.lwjgl.input.Mouse;
  */
 public class ControlManager {
     Main main;
+    public boolean paused;
 
     public ControlManager(Main main) {
         this.main = main;
@@ -17,27 +18,26 @@ public class ControlManager {
 
     // Call at end of round
     public void update() {
-        while (Keyboard.next()) {
-            if (Keyboard.getEventKeyState()) {
-                switch (Keyboard.getEventKey()) {
-                    case Keyboard.KEY_M:
-                        Main.INFLUENCE_MAP.cycleFaction();
-                        break;
-                    case Keyboard.KEY_P:
-                        main.togglePause();
-                        break;
-                    case Keyboard.KEY_A:
-                        main.shiftView(new Vector2D(50, 0));
-                        break;
-                    case Keyboard.KEY_W:
-                        main.shiftView(new Vector2D(0, -50));
-                        break;
-                    case Keyboard.KEY_S:
-                        main.shiftView(new Vector2D(0, 50));
-                        break;
-                    case Keyboard.KEY_D:
-                        main.shiftView(new Vector2D(-50, 0));
-                        break;
+        if (!paused) {
+            while (Keyboard.next()) {
+                if (Keyboard.getEventKeyState()) {
+                    switch (Keyboard.getEventKey()) {
+                        case Keyboard.KEY_M:
+                            Main.INFLUENCE_MAP.cycleFaction();
+                            break;
+                        case Keyboard.KEY_A:
+                            main.shiftView(new Vector2D(50, 0));
+                            break;
+                        case Keyboard.KEY_W:
+                            main.shiftView(new Vector2D(0, -50));
+                            break;
+                        case Keyboard.KEY_S:
+                            main.shiftView(new Vector2D(0, 50));
+                            break;
+                        case Keyboard.KEY_D:
+                            main.shiftView(new Vector2D(-50, 0));
+                            break;
+                    }
                 }
             }
         }

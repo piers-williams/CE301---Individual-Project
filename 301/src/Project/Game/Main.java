@@ -72,6 +72,10 @@ public class Main {
         Control_MANAGER = new ControlManager(this);
         PLANNING_GRID = new PlanningGrid(50, 50, 100, 400);
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
+
+    }
+
+    public void start() {
         // Set up the display
         try {
             Display.setDisplayMode(new DisplayMode(SCREEN_WIDTH, SCREEN_HEIGHT));
@@ -178,7 +182,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        new Main();
+        new Main().start();
     }
 
     /**
@@ -191,6 +195,8 @@ public class Main {
         COLLISION_BOARD.setPaused(paused);
         GAME_LOOP.setPaused(paused);
         INFLUENCE_MAP.setPaused(paused);
+        UIManager.showInput = paused;
+        Control_MANAGER.paused = paused;
     }
 
     public void shiftView(Vector2D shiftAmount) {

@@ -24,8 +24,6 @@ public class Faction {
 
     protected Commander commander;
 
-    private int maxResource = 10, resource = maxResource;
-
     private Vector2D location;
 
     private SPLQueue splQueue;
@@ -72,7 +70,7 @@ public class Faction {
         groupHandler.makeEntity(x, y, base);
     }
 
-    public void addEntity(Entity entity){
+    public void addEntity(Entity entity) {
 
     }
 
@@ -111,8 +109,8 @@ public class Faction {
         return resourcePool;
     }
 
-    public Object getService(String service){
-        switch(service){
+    public Object getService(String service) {
+        switch (service) {
             case "Production Difference":
                 return resourcePool.getPercentage();
         }

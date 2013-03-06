@@ -5,7 +5,7 @@ import Project.Game.Main;
 import Project.Game.Vector2D;
 import com.sun.istack.internal.Nullable;
 import de.matthiasmann.twl.Button;
-import de.matthiasmann.twl.Label;
+import de.matthiasmann.twl.EditField;
 import de.matthiasmann.twl.Widget;
 
 import javax.xml.bind.JAXBContext;
@@ -29,6 +29,8 @@ public class UIManager extends Widget {
 
     private ButtonsWrapper buttons;
     private LabelWrapper labels;
+    private EditField naturalLanguageInput;
+    public boolean showInput = false;
 
     public UIManager() {
         buttons = UIManager.loadButtons("Content/UI/Buttons.xml");
@@ -40,6 +42,9 @@ public class UIManager extends Widget {
             add(button.button);
         }
         for (InternalLabel label : labels) add(label.label);
+
+        naturalLanguageInput = new EditField();
+        add(naturalLanguageInput);
     }
 
     public UIManager(String buttonTheme) {
@@ -93,6 +98,10 @@ public class UIManager extends Widget {
             } else {
                 label.label.adjustSize();
             }
+        }
+        if (showInput) {
+            naturalLanguageInput.setSize(300, 50);
+            naturalLanguageInput.setPosition((Main.SCREEN_WIDTH - 300) / 2, 50);
         }
     }
 

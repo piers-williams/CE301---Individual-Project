@@ -9,6 +9,7 @@ import Project.Game.Behaviours.Offensive.Offensive;
 import Project.Game.Behaviours.Resource.Resource;
 import Project.Game.Faction;
 import Project.Game.Influence.InfluenceGrid;
+import Project.Game.Vector2D;
 
 /**
  * Entity class
@@ -49,7 +50,7 @@ public class Entity {
 
     public void draw() {
         if (alive) {
-            if(drawingBehaviour != null) drawingBehaviour.draw();
+            if (drawingBehaviour != null) drawingBehaviour.draw();
         }
     }
 
@@ -61,7 +62,7 @@ public class Entity {
         return alive;
     }
 
-    public void damage(int damage){
+    public void damage(int damage) {
         health -= damage;
         alive = (health > 0);
     }
@@ -84,6 +85,11 @@ public class Entity {
 
     public Movement getMovementBehaviour() {
         return movementBehaviour;
+    }
+
+    public Vector2D getLocation() {
+        if (movementBehaviour != null) return movementBehaviour.getLocation();
+        return null;
     }
 
     public Construction getConstructionBehaviour() {

@@ -89,63 +89,79 @@
       <file leaf-file-name="Pipeline.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="22" selection-start="2583" selection-end="2583" vertical-scroll-proportion="0.0">
+            <state line="105" column="68" selection-start="3486" selection-end="3486" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefendOrder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/DefendOrder.java">
+      <file leaf-file-name="UIManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="61" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
+            <state line="32" column="37" selection-start="960" selection-end="960" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Commander.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
+      <file leaf-file-name="ControlManager.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/ControlManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="28" selection-start="2634" selection-end="2634" vertical-scroll-proportion="0.24891461">
+            <state line="22" column="50" selection-start="490" selection-end="490" vertical-scroll-proportion="0.22959183">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AttackOrder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="35" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+            <state line="198" column="40" selection-start="6141" selection-end="6141" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuildOrder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BuildOrder.java">
+      <file leaf-file-name="BlueprintRegistry.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="6" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SPLObject.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/SPLObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="59" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
+            <state line="19" column="32" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicOrder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
+      <file leaf-file-name="NameRegistry.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/NameRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="25" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
+            <state line="9" column="36" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseRegistry.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/BaseRegistry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="29" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DummyBaseRegistry.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/NLP/Dummy/DummyBaseRegistry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="30" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="23" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,16 +170,7 @@
       <file leaf-file-name="PipelineTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/NLP/Tests/PipelineTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="31" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/NLP/UI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="34" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
+            <state line="37" column="59" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -179,22 +186,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/ControlManager.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Vector2D.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/AI/ParticleSwarm/PlanningGrid.java" />
-        <option value="$PROJECT_DIR$/src/Project/NLP/NLPUI.java" />
-        <option value="$PROJECT_DIR$/src/Project/NLP/UI.java" />
-        <option value="$PROJECT_DIR$/src/Project/NLP/Tests/PipelineTest.java" />
-        <option value="$PROJECT_DIR$/src/Project/NLP/Pipeline.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/SPLObject.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BuildOrder.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/DefendOrder.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/Commander.java" />
+        <option value="$PROJECT_DIR$/src/Project/NLP/Tests/PipelineTest.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Registries/NameRegistry.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Registries/BaseRegistry.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Entities/Entity.java" />
+        <option value="$PROJECT_DIR$/src/Project/NLP/Pipeline.java" />
+        <option value="$PROJECT_DIR$/src/Project/NLP/Dummy/DummyBaseRegistry.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Factions.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/UI/UIManager.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/ControlManager.java" />
       </list>
     </option>
   </component>
@@ -208,7 +215,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
+    <option name="width" value="1612" />
     <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -333,6 +340,30 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -435,6 +466,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="NLP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dummy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -461,7 +518,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AI" />
+              <option name="myItemId" value="Faction.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UIManager.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Registries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -487,45 +600,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SPL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SPL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Orders" />
+              <option name="myItemId" value="Entities" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -563,30 +638,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Favorites" />
     </panes>
   </component>
@@ -606,9 +657,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -629,7 +680,7 @@
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\Content\UI" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PipelineTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="BuildingRegistry" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -860,7 +911,13 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="301" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" enabled="true" />
@@ -869,10 +926,10 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.BuildingRegistry" />
       <item index="1" class="java.lang.String" itemvalue="Application.BlueprintRegistry" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="3" class="java.lang.String" itemvalue="Application.UI" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BasicConverterTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.PipelineTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.UI" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BasicConverterTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PipelineTest" />
+      <item index="5" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -944,7 +1001,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31284916" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -953,11 +1010,11 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226257" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21750322" sideWeight="0.68715084" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3896648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18967742" sideWeight="0.6103352" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3896648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35335195" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25418994" sideWeight="0.9969325" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25139666" sideWeight="0.9969325" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1073,39 +1130,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/ControlManager.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/DefendOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="111" selection-start="1946" selection-end="1946" vertical-scroll-proportion="0.7968128" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="28" selection-start="2579" selection-end="2579" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/BaseCommander.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/SPLQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="41" selection-start="1508" selection-end="1508" vertical-scroll-proportion="0.4741036" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/ParticleSwarm/PlanningGrid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="14" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.49514562" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Offensive/SimpleWeapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="27" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/GameLoop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="12" selection-start="3523" selection-end="3523" vertical-scroll-proportion="0.0" />
+        <state line="10" column="61" selection-start="199" selection-end="199" vertical-scroll-proportion="0.24602026" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/NLP/UI.java">
@@ -1113,60 +1140,80 @@
         <state line="29" column="34" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/GameLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="32" selection-start="1747" selection-end="1747" vertical-scroll-proportion="0.6952965" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="16" selection-start="1605" selection-end="1605" vertical-scroll-proportion="0.35714287" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="54" selection-start="775" selection-end="775" vertical-scroll-proportion="0.024602026" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="49" selection-start="664" selection-end="664" vertical-scroll-proportion="0.5166426" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="32" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/NameRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="36" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/BaseRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="29" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/NLP/Dummy/DummyBaseRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="30" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="23" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/NLP/Tests/PipelineTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="31" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="37" column="59" selection-start="840" selection-end="840" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="22" selection-start="2583" selection-end="2583" vertical-scroll-proportion="0.0">
+        <state line="105" column="68" selection-start="3486" selection-end="3486" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="25" selection-start="563" selection-end="563" vertical-scroll-proportion="0.0">
+        <state line="32" column="37" selection-start="960" selection-end="960" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/SPLObject.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="59" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
+        <state line="198" column="40" selection-start="6141" selection-end="6141" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BuildOrder.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/ControlManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="6" selection-start="564" selection-end="564" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/DefendOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="61" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="35" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="28" selection-start="2634" selection-end="2634" vertical-scroll-proportion="0.24891461">
+        <state line="22" column="50" selection-start="490" selection-end="490" vertical-scroll-proportion="0.22959183">
           <folding />
         </state>
       </provider>
