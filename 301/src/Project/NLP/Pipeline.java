@@ -113,17 +113,23 @@ public class Pipeline implements NLPConverter {
                     }
                     break;
             }
+            return null;
         }
-        // Attack/VB Red/NNP 's/POS base/NN
-        // Attack/VB Reds/NNP  base/NN
-        match = getFirstInstance(words, "VB", "NNP", "POS", "NN");
-        if (match == null) match = getFirstInstance(words, "VB", "NNP", "NN");
-        if (match != null) {
-            switch (match.get(0).value().toLowerCase()) {
-                case "attack":
-                    break;
-            }
-        }
+//        // Attack/VB Red/NNP 's/POS base/NN
+//        // Attack/VB Reds/NNP  base/NN
+//        match = getFirstInstance(words, "VB", "NNP", "POS", "NN");
+//        if (match == null) match = getFirstInstance(words, "VB", "NNP", "NN");
+//        if (match != null) {
+//            switch (match.get(0).value().toLowerCase()) {
+//                case "attack":
+//                case "destroy":
+//                case "kill":
+//                    // Not actually sure what to do here
+//                    break;
+//                case "defend":
+//                    break;
+//            }
+//        }
 
         return null;
     }

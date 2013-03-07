@@ -95,10 +95,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Pipeline.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Pipeline.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="6" selection-start="2833" selection-end="2833" vertical-scroll-proportion="0.23733719">
+            <state line="147" column="76" selection-start="4971" selection-end="4971" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#3854#3899#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UIManager.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="59" selection-start="3069" selection-end="3069" vertical-scroll-proportion="0.54587156">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UI.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/NLP/UI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="22" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -149,7 +169,6 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/Entity.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Factions.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/UI/UIManager.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/ControlManager.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/DefendOrder.java" />
@@ -157,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Project/NLP/Dummy/DummyBaseRegistry.java" />
         <option value="$PROJECT_DIR$/src/Project/NLP/Pipeline.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/UI/UIManager.java" />
       </list>
     </option>
   </component>
@@ -301,6 +321,20 @@
             <PATH_ELEMENT USER_OBJECT="Root">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -669,20 +703,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Favorites" />
     </panes>
   </component>
@@ -702,9 +722,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -725,7 +745,7 @@
       <recent name="C:\Users\Piers\SkyDrive\Documents\University\CE301 - Individual Project\301\Content\UI" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PipelineTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="BlueprintRegistry" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -977,8 +997,8 @@
       <item index="1" class="java.lang.String" itemvalue="Application.UI" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.BasicConverterTest" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.PipelineTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PipelineTest.testExtractOrder" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.PipelineTest.testExtractOrder" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1059,11 +1079,11 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226257" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23037323" sideWeight="0.6843575" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23359074" sideWeight="0.948324" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3896648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35335195" sideWeight="0.2920792" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31564245" sideWeight="0.9969325" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.05167598" sideWeight="0.9969325" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1179,29 +1199,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="40" selection-start="6141" selection-end="6141" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/NameRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="36" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/BaseRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="29" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/ControlManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="86" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.41728762" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="37" selection-start="960" selection-end="960" vertical-scroll-proportion="0.024602026" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java">
@@ -1224,49 +1229,64 @@
         <state line="89" column="23" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Collision/SimpleCollision.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="417" selection-end="417" vertical-scroll-proportion="0.33333334" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/NLP/Tests/PipelineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="57" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="31" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="28" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Collision/SimpleCollision.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="417" selection-end="417" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="0" selection-start="2486" selection-end="2486" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="63" column="0" selection-start="2486" selection-end="2486" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/NLP/UI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="31" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.0">
+        <state line="27" column="22" selection-start="719" selection-end="719" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/NLP/Dummy/DummyBaseRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="28" selection-start="713" selection-end="713" vertical-scroll-proportion="0.49204051">
+        <state line="22" column="54" selection-start="613" selection-end="613" vertical-scroll-proportion="0.5472103">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/NLP/Tests/PipelineTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/BaseRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="57" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0">
+        <state line="7" column="46" selection-start="100" selection-end="100" vertical-scroll-proportion="0.18195719">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="6" selection-start="2833" selection-end="2833" vertical-scroll-proportion="0.23733719">
+        <state line="147" column="76" selection-start="4971" selection-end="4971" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#3854#3899#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="59" selection-start="3069" selection-end="3069" vertical-scroll-proportion="0.54587156">
           <folding />
         </state>
       </provider>

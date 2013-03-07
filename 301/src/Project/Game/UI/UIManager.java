@@ -100,8 +100,11 @@ public class UIManager extends Widget {
             }
         }
         if (showInput) {
+            naturalLanguageInput.setVisible(true);
             naturalLanguageInput.setSize(300, 50);
             naturalLanguageInput.setPosition((Main.SCREEN_WIDTH - 300) / 2, 50);
+        } else{
+            naturalLanguageInput.setVisible(false);
         }
     }
 
