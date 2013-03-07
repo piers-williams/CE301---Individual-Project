@@ -89,15 +89,14 @@ public class Pipeline implements NLPConverter {
         return null;
     }
 
-    /**
+    /*
      * Work on this
      *
-     * @param words
-     * @return
      */
     private SPLObject getSimpleOrder(ArrayList<TaggedWord> words) {
-        // Hunt for simple order
-        List<TaggedWord> match = getFirstInstance(words, "VB", "NN");
+        // Hunt for simple order - not sure this one will come up much
+        // Attack BV-23
+        List<TaggedWord> match = getFirstInstance(words, "VB", "NNP");
         if (match != null) {
             switch (match.get(0).value().toLowerCase()) {
                 case "attack":

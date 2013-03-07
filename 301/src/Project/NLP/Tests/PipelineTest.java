@@ -1,5 +1,6 @@
 package Project.NLP.Tests;
 
+import Project.Game.AI.SPL.Orders.SPLObject;
 import Project.NLP.Pipeline;
 import edu.stanford.nlp.ling.TaggedWord;
 import org.junit.Before;
@@ -41,6 +42,16 @@ public class PipelineTest {
         assertEquals("Build", result.get(0).value());
         assertEquals("a", result.get(1).value());
         assertEquals("base", result.get(2).value());
+
+    }
+
+    @Test
+    public void testExtractOrder() {
+        ArrayList<TaggedWord> words = pipeline.tagMessage("Attack Turtle");
+
+        SPLObject object = pipeline.extractOrder(words);
+
+        assertNotNull(object);
 
     }
 }

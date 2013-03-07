@@ -79,6 +79,14 @@ public class EntityFactory {
         return entity;
     }
 
+    public static Entity getFakeEntity(Faction faction) {
+        Entity entity = new Entity();
+        setColour(entity, faction);
+        entity.faction = faction;
+        entity.movementBehaviour = new Static(entity, Utilities.randomLocation());
+        return entity;
+    }
+
     public static Entity getShipyard(Faction faction, Vector2D location) {
         Entity entity = new Entity();
 
