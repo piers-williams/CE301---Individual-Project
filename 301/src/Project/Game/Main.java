@@ -5,6 +5,7 @@ import Project.Game.Blueprints.BlueprintRegistry;
 import Project.Game.Buildings.BuildingRegistry;
 import Project.Game.Influence.InfluenceMap;
 import Project.Game.UI.UIManager;
+import Project.NLP.Pipeline;
 import de.matthiasmann.twl.GUI;
 import de.matthiasmann.twl.renderer.lwjgl.LWJGLRenderer;
 import de.matthiasmann.twl.theme.ThemeManager;
@@ -41,6 +42,7 @@ public class Main {
     public static BuildingRegistry BUILDING_REGISTRY;
     public static Main MAIN;
     public static PlanningGrid PLANNING_GRID;
+    public static Pipeline PIPELINE;
 
     // Please don't re-assign this one
     public static Faction HUMAN_FACTION;
@@ -71,6 +73,7 @@ public class Main {
         Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 30, 40);
         Control_MANAGER = new ControlManager(this);
         PLANNING_GRID = new PlanningGrid(50, 50, 100, 400);
+        PIPELINE = new Pipeline();
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
 
     }

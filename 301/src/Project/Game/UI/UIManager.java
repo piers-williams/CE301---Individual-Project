@@ -30,6 +30,7 @@ public class UIManager extends Widget {
     private ButtonsWrapper buttons;
     private LabelWrapper labels;
     private EditField naturalLanguageInput;
+    private Button naturalLanguageSubmit;
     public boolean showInput = false;
 
     public UIManager() {
@@ -44,7 +45,17 @@ public class UIManager extends Widget {
         for (InternalLabel label : labels) add(label.label);
 
         naturalLanguageInput = new EditField();
+        naturalLanguageSubmit = new Button("Submit");
+
+        naturalLanguageSubmit.addCallback(new Runnable() {
+            @Override
+            public void run() {
+                // Send text message stuff to pipeline
+            }
+        });
+
         add(naturalLanguageInput);
+        add(naturalLanguageSubmit);
     }
 
     public UIManager(String buttonTheme) {
@@ -103,8 +114,13 @@ public class UIManager extends Widget {
             naturalLanguageInput.setVisible(true);
             naturalLanguageInput.setSize(300, 50);
             naturalLanguageInput.setPosition((Main.SCREEN_WIDTH - 300) / 2, 50);
-        } else{
+
+            naturalLanguageSubmit.setVisible(true);
+            naturalLanguageSubmit.setSize(100, 50);
+            naturalLanguageSubmit.setPosition((Main.SCREEN_WIDTH / 2 + 150), 50);
+        } else {
             naturalLanguageInput.setVisible(false);
+            naturalLanguageSubmit.setVisible(false);
         }
     }
 
