@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- *   Represents a blueprints idea of a building
+ * Represents a blueprints idea of a building
  */
 @XmlRootElement
 public class BlueprintBuilding {

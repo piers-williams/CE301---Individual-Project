@@ -27,6 +27,7 @@ public final class ResourceDrain {
 
     /**
      * Should be guarded by a call to hasResource()
+     *
      * @return the amount returned
      */
     public int claimResource() {
@@ -47,7 +48,7 @@ public final class ResourceDrain {
 
     /**
      * Should not rely on this, will drain resources with nothing going away
-     *
+     * <p/>
      * Could return the resources somehow
      *
      * @throws Throwable

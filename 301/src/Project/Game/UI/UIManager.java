@@ -61,7 +61,7 @@ public class UIManager extends Widget {
                 //System.out.println((text == null) ? "Text was null" : Main.PIPELINE.convert(text));
                 if (text != null) {
                     SPLObject object = Main.PIPELINE.convert(text);
-                    if(object != null){
+                    if (object != null) {
                         System.out.println(object);
                     }
                 }

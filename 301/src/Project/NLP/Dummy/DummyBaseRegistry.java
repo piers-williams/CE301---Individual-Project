@@ -1,11 +1,9 @@
 package Project.NLP.Dummy;
 
-import Project.Game.Blueprints.BlueprintRegistry;
 import Project.Game.Entities.Entity;
 import Project.Game.Entities.EntityFactory;
 import Project.Game.Factions;
 import Project.Game.Registries.BaseRegistry;
-import Project.Game.Utilities;
 
 import java.util.HashMap;
 
