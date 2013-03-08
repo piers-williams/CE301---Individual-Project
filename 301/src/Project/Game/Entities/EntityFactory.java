@@ -13,6 +13,7 @@ import Project.Game.Behaviours.Resource.Resource;
 import Project.Game.Buildings.MetaBuilding;
 import Project.Game.Entities.Meta.Group;
 import Project.Game.*;
+import Project.Game.Registries.EntityRegistry;
 import Project.Game.Resource.ResourceGenerator;
 import Project.Game.Resource.ResourcePool;
 
@@ -49,7 +50,7 @@ public class EntityFactory {
         entity.drawingBehaviour = new SimpleQuad(entity, Main.SQUARE_WIDTH, entity.r, entity.g, entity.b);
         entity.influenceBehaviour = new SimpleInfluence(entity, 7, strength);
         entity.collisionBehaviour = new SimpleCollision(entity, Main.SQUARE_WIDTH);
-
+        entity.setName(EntityRegistry.getNewName("ES"));
         return entity;
     }
 
@@ -64,7 +65,7 @@ public class EntityFactory {
         entity.collisionBehaviour = new SimpleCollision(entity, 40);
         //entity.constructionBehaviour = new BaseConstruction(entity, location, 100);
         entity.constructionBehaviour = new BlueprintConstruction(faction, entity, faction.getResourcePool(), location, Main.BLUEPRINT_REGISTRY.get("Home Level 3"));
-
+        entity.setName(EntityRegistry.getNewName("BS"));
         return entity;
     }
 
@@ -76,6 +77,8 @@ public class EntityFactory {
         entity.movementBehaviour = new Static(entity, location);
         entity.influenceBehaviour = new SimpleInfluence(entity, 5, 0.0);
         entity.constructionBehaviour = new BlueprintConstruction(faction, entity, faction.getResourcePool(), location, Main.BLUEPRINT_REGISTRY.get(blueprint));
+        entity.setName(EntityRegistry.getNewName("BS"));
+
         return entity;
     }
 
