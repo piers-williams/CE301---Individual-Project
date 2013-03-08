@@ -47,7 +47,7 @@ public class Pipeline implements NLPConverter {
 
         SPLObject splObject = extractOrder(taggedMessage);
 
-        splObject.setAddress(address);
+        if (splObject != null) splObject.setAddress(address);
         return splObject;
     }
 
@@ -76,12 +76,13 @@ public class Pipeline implements NLPConverter {
         System.out.println("Tagging: " + message);
 
         List<List<HasWord>> sentences = MaxentTagger.tokenizeText(new StringReader(message));
-        for (TaggedWord word : tagger.tagSentence(sentences.get(0))) {
+        ArrayList<TaggedWord> words = tagger.tagSentence(sentences.get(0));
+        for (TaggedWord word : words) {
             // Override so that Attack is always VB
             if (word.value().equalsIgnoreCase("Attack")) word.setTag("VB");
             System.out.println(word);
         }
-        return tagger.tagSentence(sentences.get(0));
+        return words;
     }
 
     public SPLObject extractOrder(ArrayList<TaggedWord> words) {
@@ -100,7 +101,11 @@ public class Pipeline implements NLPConverter {
     private SPLObject getSimpleOrder(ArrayList<TaggedWord> words) {
         // Hunt for simple order - not sure this one will come up much
         // Attack BV-23
-        List<TaggedWord> match = getFirstInstance(words, "VB", "NNP");
+
+        System.out.println("Processing Simple Order:");
+        for (TaggedWord word : words) System.out.print(word + " ");
+        System.out.println("");
+        List<TaggedWord> match = getFirstInstance(words, "VB", "NN");
         if (match != null) {
             switch (match.get(0).value().toLowerCase()) {
                 case "attack":

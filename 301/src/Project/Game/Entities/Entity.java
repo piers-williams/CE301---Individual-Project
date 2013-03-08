@@ -33,6 +33,8 @@ public class Entity {
 
     protected int health;
 
+    protected String name;
+
     // Used for factories
     protected Entity() {
 
@@ -98,5 +100,13 @@ public class Entity {
 
     public Faction getFaction() {
         return faction;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
