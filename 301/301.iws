@@ -86,15 +86,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PipelineTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/NLP/Tests/PipelineTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="57" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Pipeline.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -107,11 +98,38 @@
       <file leaf-file-name="UIManager.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="46" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.8330059">
+            <state line="63" column="26" selection-start="2176" selection-end="2176" vertical-scroll-proportion="0.8670757">
               <folding>
-                <element signature="e#1612#2025#0" expanded="true" />
-                <element signature="e#2014#2015#0" expanded="true" />
+                <element signature="e#1657#2356#0" expanded="true" />
+                <element signature="e#2345#2346#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SPLObject.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/SPLObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="33" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttackOrder.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="40" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicOrder.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="36" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1209,21 +1227,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Blueprints/BlueprintRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="32" selection-start="585" selection-end="585" vertical-scroll-proportion="0.024602026" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/DefendOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="89" column="23" selection-start="2447" selection-end="2447" vertical-scroll-proportion="0.0" />
@@ -1290,12 +1293,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/SPLObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="33" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="40" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="36" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="46" selection-start="1997" selection-end="1997" vertical-scroll-proportion="0.8330059">
+        <state line="63" column="26" selection-start="2176" selection-end="2176" vertical-scroll-proportion="0.8670757">
           <folding>
-            <element signature="e#1612#2025#0" expanded="true" />
-            <element signature="e#2014#2015#0" expanded="true" />
+            <element signature="e#1657#2356#0" expanded="true" />
+            <element signature="e#2345#2346#0" expanded="true" />
           </folding>
         </state>
       </provider>

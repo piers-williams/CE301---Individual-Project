@@ -1,5 +1,6 @@
 package Project.Game.UI;
 
+import Project.Game.AI.SPL.Orders.SPLObject;
 import Project.Game.Faction;
 import Project.Game.Main;
 import Project.Game.Vector2D;
@@ -56,7 +57,14 @@ public class UIManager extends Widget {
                 naturalLanguageInput.selectAll();
                 String text = naturalLanguageInput.getText();
 
-                System.out.println((text == null) ? "Text was null" : Main.PIPELINE.convert(text));
+                // Do something with the object
+                //System.out.println((text == null) ? "Text was null" : Main.PIPELINE.convert(text));
+                if (text != null) {
+                    SPLObject object = Main.PIPELINE.convert(text);
+                    if(object != null){
+                        System.out.println(object);
+                    }
+                }
                 naturalLanguageInput.setText("");
 
             }
