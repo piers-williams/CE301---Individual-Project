@@ -103,27 +103,34 @@ public class InfluenceMap implements Runnable {
     }
 
     public void draw() {
-        Faction currentlyDrawingFaction = Factions.values()[factionIndex].getFaction();
+        if (factionIndex >= 0) {
+            Faction currentlyDrawingFaction = Factions.values()[factionIndex].getFaction();
 
-        for (int x = 0, i = 0; x < width && i < influence.get(currentlyDrawingFaction)[drawIndex].length; x += cellSize, i++) {
-            for (int y = 0, j = 0; y < height && j < influence.get(currentlyDrawingFaction)[drawIndex][i].length; y += cellSize, j++) {
+            for (int x = 0, i = 0; x < width && i < influence.get(currentlyDrawingFaction)[drawIndex].length; x += cellSize, i++) {
+                for (int y = 0, j = 0; y < height && j < influence.get(currentlyDrawingFaction)[drawIndex][i].length; y += cellSize, j++) {
 
-                float strength = (float) influence.get(currentlyDrawingFaction)[drawIndex][i][j];
-                if (strength > 255) strength = 255;
+                    float strength = (float) influence.get(currentlyDrawingFaction)[drawIndex][i][j];
+                    if (strength > 255) strength = 255;
 
-                GL11.glColor4f(strength, 0, 0, 0.5f);
-                GL11.glBegin(GL11.GL_QUADS);
-                GL11.glVertex2d(x, y);
-                GL11.glVertex2d(x + cellSize, y);
-                GL11.glVertex2d(x + cellSize, y + cellSize);
-                GL11.glVertex2d(x, y + cellSize);
-                GL11.glEnd();
+                    GL11.glColor4f(strength, 0, 0, 0.5f);
+                    GL11.glBegin(GL11.GL_QUADS);
+                    GL11.glVertex2d(x, y);
+                    GL11.glVertex2d(x + cellSize, y);
+                    GL11.glVertex2d(x + cellSize, y + cellSize);
+                    GL11.glVertex2d(x, y + cellSize);
+                    GL11.glEnd();
+                }
             }
         }
     }
 
     public void cycleFaction() {
         factionIndex++;
+        if (factionIndex >= Factions.values().length) factionIndex = 0;
+    }
+
+    public void cycleFaction(int value) {
+        factionIndex = value;
         if (factionIndex >= Factions.values().length) factionIndex = 0;
     }
 

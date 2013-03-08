@@ -47,6 +47,7 @@ public class Pipeline implements NLPConverter {
 
         SPLObject splObject = extractOrder(taggedMessage);
 
+        splObject.setAddress(address);
         return splObject;
     }
 

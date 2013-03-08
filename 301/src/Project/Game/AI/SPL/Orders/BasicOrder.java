@@ -6,11 +6,13 @@ package Project.Game.AI.SPL.Orders;
 public abstract class BasicOrder implements SPLObject {
     private double priority;
     private String type;
+    private String address;
 
-    protected BasicOrder( double priority, String type) {
+    protected BasicOrder(double priority, String type) {
         this.priority = priority;
         this.type = type;
     }
+
     @Override
     public double getPriority() {
         return priority;
@@ -18,6 +20,14 @@ public abstract class BasicOrder implements SPLObject {
 
     public String getType() {
         return type;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getAddress() {
+        return address;
     }
 
     @Override

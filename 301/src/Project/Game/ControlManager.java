@@ -25,6 +25,9 @@ public class ControlManager {
                         case Keyboard.KEY_M:
                             Main.INFLUENCE_MAP.cycleFaction();
                             break;
+                        case Keyboard.KEY_N :
+                            Main.INFLUENCE_MAP.cycleFaction(-1);
+                            break;
                         case Keyboard.KEY_A:
                             main.shiftView(new Vector2D(50, 0));
                             break;
