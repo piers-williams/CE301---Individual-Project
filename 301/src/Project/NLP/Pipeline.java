@@ -23,6 +23,18 @@ public class Pipeline implements NLPConverter {
 
     BaseRegistry baseRegistry = new DummyBaseRegistry();
 
+    MaxentTagger tagger;
+
+    public Pipeline() {
+        try {
+            tagger = new MaxentTagger("Content/NLPModels/english-bidirectional-distsim.tagger");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
     @Override
     public SPLObject convert(String message) {
         String[] temp = extractSenderAndMessage(message);
@@ -60,24 +72,15 @@ public class Pipeline implements NLPConverter {
     }
 
     public ArrayList<TaggedWord> tagMessage(String message) {
-        try {
-            MaxentTagger tagger = new MaxentTagger("Content/NLPModels/english-bidirectional-distsim.tagger");
+        System.out.println("Tagging: " + message);
 
-            List<List<HasWord>> sentences = MaxentTagger.tokenizeText(new StringReader(message));
-            for (TaggedWord word : tagger.tagSentence(sentences.get(0))) {
-                // Override so that Attack is always VB
-                if (word.value().equalsIgnoreCase("Attack")) word.setTag("VB");
-                System.out.println(word);
-            }
-            return tagger.tagSentence(sentences.get(0));
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+        List<List<HasWord>> sentences = MaxentTagger.tokenizeText(new StringReader(message));
+        for (TaggedWord word : tagger.tagSentence(sentences.get(0))) {
+            // Override so that Attack is always VB
+            if (word.value().equalsIgnoreCase("Attack")) word.setTag("VB");
+            System.out.println(word);
         }
-        throw new RuntimeException("Tagging went wrong");
+        return tagger.tagSentence(sentences.get(0));
     }
 
     public SPLObject extractOrder(ArrayList<TaggedWord> words) {

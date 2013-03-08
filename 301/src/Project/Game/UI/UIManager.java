@@ -45,12 +45,20 @@ public class UIManager extends Widget {
         for (InternalLabel label : labels) add(label.label);
 
         naturalLanguageInput = new EditField();
+        naturalLanguageInput.setReadOnly(false);
         naturalLanguageSubmit = new Button("Submit");
+
 
         naturalLanguageSubmit.addCallback(new Runnable() {
             @Override
             public void run() {
                 // Send text message stuff to pipeline
+                naturalLanguageInput.selectAll();
+                String text = naturalLanguageInput.getText();
+
+                System.out.println((text == null) ? "Text was null" : Main.PIPELINE.convert(text));
+                naturalLanguageInput.setText("");
+
             }
         });
 
