@@ -4,7 +4,7 @@ import Project.Game.AI.SPL.Orders.AttackOrder;
 import Project.Game.AI.SPL.Orders.DefendOrder;
 import Project.Game.AI.SPL.Orders.SPLObject;
 import Project.Game.Registries.BaseRegistry;
-import Project.NLP.Dummy.DummyBaseRegistry;
+import Project.Game.Registries.NameRegistry;
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
  */
 public class Pipeline implements NLPConverter {
 
-    BaseRegistry baseRegistry = new DummyBaseRegistry();
+    NameRegistry baseRegistry;
 
     MaxentTagger tagger;
 

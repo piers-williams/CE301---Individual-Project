@@ -86,19 +86,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Pipeline.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="14" selection-start="3186" selection-end="3186" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Entity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="26" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
+            <state line="41" column="30" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.3279743">
               <folding />
             </state>
           </provider>
@@ -117,20 +108,16 @@
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/EntityRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="34" column="97" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntityFactory.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="EntityFactory.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="84" selection-start="2949" selection-end="2949" vertical-scroll-proportion="0.28075254">
-              <folding>
-                <element signature="e#877#915#0" expanded="true" />
-              </folding>
+            <state line="75" column="139" selection-start="3148" selection-end="3148" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -157,10 +144,7 @@
         <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="38" column="38" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#1657#2358#0" expanded="true" />
-                <element signature="e#2347#2348#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -194,12 +178,12 @@
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/SPLObject.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Influence/InfluenceMap.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/ControlManager.java" />
-        <option value="$PROJECT_DIR$/src/Project/NLP/Pipeline.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/Entity.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Registries/NameRegistry.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Registries/EntityRegistry.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
+        <option value="$PROJECT_DIR$/src/Project/NLP/Pipeline.java" />
       </list>
     </option>
   </component>
@@ -211,10 +195,8 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="width" value="800" />
+    <option name="height" value="860" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -338,6 +320,20 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -429,32 +425,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NLP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Dummy" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -794,20 +764,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Favorites" />
     </panes>
   </component>
@@ -827,9 +783,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1102,8 +1058,8 @@
       <item index="1" class="java.lang.String" itemvalue="Application.UI" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.BasicConverterTest" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.PipelineTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.PipelineTest.testExtractOrder" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.PipelineTest.testExtractOrder" />
+      <item index="5" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1175,22 +1131,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="0" width="800" height="860" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33519554" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3896648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25418994" sideWeight="0.06885457" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31284916" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226257" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2072072" sideWeight="0.66480446" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3197832" sideWeight="0.68715084" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3896648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25418994" sideWeight="0.06885457" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25418994" sideWeight="0.9266409" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1200,6 +1154,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33519554" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31284916" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1311,106 +1267,80 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_07/src.zip!/java/io/StringReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="23" selection-start="690" selection-end="690" vertical-scroll-proportion="0.33202356">
-          <folding />
-        </state>
+        <state line="49" column="23" selection-start="690" selection-end="690" vertical-scroll-proportion="0.33202356" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="40" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="40" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/SPLObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="41" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="69" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Influence/InfluenceMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="9" selection-start="4298" selection-end="4298" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="11" column="41" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/ControlManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="56" selection-start="1544" selection-end="1544" vertical-scroll-proportion="1.5296524">
-          <folding />
-        </state>
+        <state line="47" column="56" selection-start="1544" selection-end="1544" vertical-scroll-proportion="1.5296524" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/BaseRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="39" selection-start="100" selection-end="100" vertical-scroll-proportion="0.24335378" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Content/NLPModels/README-Models.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="40" selection-start="775" selection-end="775" vertical-scroll-proportion="0.49440715" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/NameRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="31" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/EntityRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="97" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="139" selection-start="3148" selection-end="3148" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="40" selection-start="2689" selection-end="2689" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Influence/InfluenceMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="9" selection-start="4298" selection-end="4298" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="38" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1657#2358#0" expanded="true" />
-            <element signature="e#2347#2348#0" expanded="true" />
-          </folding>
-        </state>
+        <state line="38" column="38" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="69" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="14" selection-start="3186" selection-end="3186" vertical-scroll-proportion="0.0">
+        <state line="66" column="20" selection-start="1979" selection-end="1979" vertical-scroll-proportion="-0.87541527">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="26" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
+        <state line="41" column="30" selection-start="1131" selection-end="1131" vertical-scroll-proportion="0.3279743">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/BaseRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="39" selection-start="100" selection-end="100" vertical-scroll-proportion="0.24335378">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/NameRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/EntityRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="97" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="40" selection-start="2689" selection-end="2689" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="84" selection-start="2949" selection-end="2949" vertical-scroll-proportion="0.28075254">
-          <folding>
-            <element signature="e#877#915#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
