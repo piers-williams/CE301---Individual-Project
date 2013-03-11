@@ -118,7 +118,8 @@ public class Entity {
 
     public void layout(Widget widget, boolean visible) {
         if (label != null) {
-            if (!(label.getParent() == widget)) {
+            if (label.getRootWidget() != widget ) {
+                System.out.println("Adding widget Label");
                 widget.add(label);
             }
             if (visible) {
