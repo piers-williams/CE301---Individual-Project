@@ -10,6 +10,8 @@ import Project.Game.Behaviours.Resource.Resource;
 import Project.Game.Faction;
 import Project.Game.Influence.InfluenceGrid;
 import Project.Game.Vector2D;
+import de.matthiasmann.twl.Label;
+import de.matthiasmann.twl.Widget;
 
 /**
  * Entity class
@@ -34,6 +36,9 @@ public class Entity {
     protected int health;
 
     protected String name;
+
+    // Label for the entity
+    protected Label label;
 
     // Used for factories
     protected Entity() {
@@ -108,5 +113,20 @@ public class Entity {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void layout(Widget widget, boolean visible) {
+        if (label != null) {
+            if (!(label.getParent() == widget)) {
+                widget.add(label);
+            }
+            if (visible) {
+                // adjust this to account for view location
+                label.setPosition((int) getLocation().x, (int) getLocation().y);
+                label.setText(name);
+                label.adjustSize();
+            }
+            label.setVisible(visible);
+        }
     }
 }

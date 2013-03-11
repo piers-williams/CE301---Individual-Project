@@ -1,6 +1,7 @@
 package Project.Game.Registries;
 
 import Project.Game.Entities.Entity;
+import de.matthiasmann.twl.Widget;
 
 import java.util.HashMap;
 
@@ -18,6 +19,12 @@ public class EntityRegistry implements NameRegistry {
 
     public EntityRegistry() {
         dictionary = new HashMap<>(1000);
+    }
+
+    public void layout(Widget widget, boolean visible) {
+        for (Entity entity : dictionary.values()) {
+            entity.layout(widget, visible);
+        }
     }
 
     @Override

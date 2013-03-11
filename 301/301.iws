@@ -86,10 +86,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Entity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="25" selection-start="1718" selection-end="1718" vertical-scroll-proportion="0.0">
+            <state line="123" column="59" selection-start="3284" selection-end="3284" vertical-scroll-proportion="0.67096776">
               <folding />
             </state>
           </provider>
@@ -98,34 +98,16 @@
       <file leaf-file-name="EntityRegistry.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/EntityRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="97" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0">
+            <state line="25" column="41" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntityFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="68" column="0" selection-start="2915" selection-end="2915" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="29" selection-start="2443" selection-end="2443" vertical-scroll-proportion="0.33333334">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InfluenceMap.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Influence/InfluenceMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="9" selection-start="4298" selection-end="4298" vertical-scroll-proportion="0.0">
+            <state line="79" column="25" selection-start="2680" selection-end="2680" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,17 +116,19 @@
       <file leaf-file-name="UIManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="150" column="20" selection-start="5188" selection-end="5188" vertical-scroll-proportion="0.0">
+            <state line="139" column="45" selection-start="4871" selection-end="4871" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicOrder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
+      <file leaf-file-name="NameRegistry.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/NameRegistry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="69" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="14" column="19" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,17 +148,17 @@
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/DefendOrder.java" />
         <option value="$PROJECT_DIR$/src/Project/NLP/Tests/PipelineTest.java" />
         <option value="$PROJECT_DIR$/src/Project/NLP/Dummy/DummyBaseRegistry.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/UI/UIManager.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/SPLObject.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Influence/InfluenceMap.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/ControlManager.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Entities/Entity.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Registries/NameRegistry.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Registries/EntityRegistry.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Project/NLP/Pipeline.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/UI/UIManager.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Registries/NameRegistry.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Registries/EntityRegistry.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Entities/Entity.java" />
       </list>
     </option>
   </component>
@@ -1131,7 +1115,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226257" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26287264" sideWeight="0.74714285" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33197832" sideWeight="0.74714285" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3896648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25418994" sideWeight="0.06885457" order="7" side_tool="true" content_ui="tabs" />
@@ -1286,16 +1270,6 @@
         <state line="13" column="40" selection-start="775" selection-end="775" vertical-scroll-proportion="0.49440715" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/EntityRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="97" selection-start="782" selection-end="782" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Influence/InfluenceMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="9" selection-start="4298" selection-end="4298" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="69" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" />
@@ -1308,37 +1282,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Influence/InfluenceMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="150" column="20" selection-start="5188" selection-end="5188" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/NameRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="31" selection-start="259" selection-end="259" vertical-scroll-proportion="0.38931298">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="25" selection-start="1718" selection-end="1718" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="0" selection-start="2915" selection-end="2915" vertical-scroll-proportion="0.0">
+        <state line="123" column="9" selection-start="4298" selection-end="4298" vertical-scroll-proportion="0.03655914">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="29" selection-start="2443" selection-end="2443" vertical-scroll-proportion="0.33333334">
+        <state line="79" column="25" selection-start="2680" selection-end="2680" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="39" selection-start="2949" selection-end="2949" vertical-scroll-proportion="0.5526882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="139" column="45" selection-start="4871" selection-end="4871" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/NameRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="19" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/EntityRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="41" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="59" selection-start="3284" selection-end="3284" vertical-scroll-proportion="0.67096776">
           <folding />
         </state>
       </provider>

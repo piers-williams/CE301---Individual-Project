@@ -26,13 +26,12 @@ import java.util.Iterator;
  */
 public class UIManager extends Widget {
 
-    private String buttonTheme;
-
     private ButtonsWrapper buttons;
     private LabelWrapper labels;
     private EditField naturalLanguageInput;
     private Button naturalLanguageSubmit;
     public boolean showInput = false;
+    public boolean showLabels = false;
 
     public UIManager() {
         buttons = UIManager.loadButtons("Content/UI/Buttons.xml");
@@ -76,7 +75,6 @@ public class UIManager extends Widget {
 
     public UIManager(String buttonTheme) {
         this();
-        this.buttonTheme = buttonTheme;
     }
 
     public void update(Faction faction) {
@@ -138,6 +136,9 @@ public class UIManager extends Widget {
             naturalLanguageInput.setVisible(false);
             naturalLanguageSubmit.setVisible(false);
         }
+
+        Main.REGISTRY.layout(this, showLabels);
+
     }
 
     public static void main(String[] args) {
