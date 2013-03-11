@@ -16,6 +16,7 @@ import Project.Game.*;
 import Project.Game.Registries.EntityRegistry;
 import Project.Game.Resource.ResourceGenerator;
 import Project.Game.Resource.ResourcePool;
+import de.matthiasmann.twl.Label;
 
 /**
  *
@@ -66,6 +67,7 @@ public class EntityFactory {
         entity.collisionBehaviour = new SimpleCollision(entity, 40);
         entity.constructionBehaviour = new BlueprintConstruction(faction, entity, faction.getResourcePool(), location, Main.BLUEPRINT_REGISTRY.get("Home Level 3"));
         entity.setName(EntityRegistry.getNewName("BS"));
+        entity.label = new Label(entity.getName());
         Main.REGISTRY.add(entity);
         return entity;
     }
@@ -79,6 +81,7 @@ public class EntityFactory {
         entity.influenceBehaviour = new SimpleInfluence(entity, 5, 0.0);
         entity.constructionBehaviour = new BlueprintConstruction(faction, entity, faction.getResourcePool(), location, Main.BLUEPRINT_REGISTRY.get(blueprint));
         entity.setName(EntityRegistry.getNewName("BS"));
+        entity.label = new Label(entity.getName());
         Main.REGISTRY.add(entity);
         return entity;
     }

@@ -9,6 +9,7 @@ import Project.Game.Behaviours.Offensive.Offensive;
 import Project.Game.Behaviours.Resource.Resource;
 import Project.Game.Faction;
 import Project.Game.Influence.InfluenceGrid;
+import Project.Game.Main;
 import Project.Game.Vector2D;
 import de.matthiasmann.twl.Label;
 import de.matthiasmann.twl.Widget;
@@ -122,7 +123,8 @@ public class Entity {
             }
             if (visible) {
                 // adjust this to account for view location
-                label.setPosition((int) getLocation().x, (int) getLocation().y);
+                Vector2D labelLocation = Vector2D.subtract(getLocation(), Main.viewLocation);
+                label.setPosition((int) labelLocation.x, (int) labelLocation.y);
                 label.setText(name);
                 label.adjustSize();
             }

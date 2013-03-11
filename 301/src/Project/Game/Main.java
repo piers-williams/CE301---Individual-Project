@@ -225,4 +225,8 @@ public class Main {
         gui.applyTheme(themeManager);
     }
 
+    public void toggleLabels() {
+        UIManager.showLabels = !UIManager.showLabels;
+    }
+
 }

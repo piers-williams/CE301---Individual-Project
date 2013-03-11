@@ -138,7 +138,6 @@ public class UIManager extends Widget {
         }
 
         Main.REGISTRY.layout(this, showLabels);
-
     }
 
     public static void main(String[] args) {

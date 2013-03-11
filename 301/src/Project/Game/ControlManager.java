@@ -28,6 +28,10 @@ public class ControlManager {
                         case Keyboard.KEY_N:
                             Main.INFLUENCE_MAP.cycleFaction(-1);
                             break;
+                        case Keyboard.KEY_L :
+                            // show labels - toggle them
+                            main.toggleLabels();
+                            break;
                         case Keyboard.KEY_A:
                             main.shiftView(new Vector2D(50, 0));
                             break;
