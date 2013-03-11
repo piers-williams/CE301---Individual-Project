@@ -73,11 +73,11 @@ public class Main {
         Main.GAME_LOOP = new GameLoop(20);
         VECTOR2D_SOURCE = new CachedVector2DSource();
         Main.COLLISION_BOARD = new CollisionBoard(CELL_SIZE);
+        REGISTRY = new EntityRegistry();
         Main.INFLUENCE_MAP = new InfluenceMap(Main.MAP_WIDTH, Main.MAP_HEIGHT, 30, 40);
         Control_MANAGER = new ControlManager(this);
         PLANNING_GRID = new PlanningGrid(50, 50, 100, 400);
         PIPELINE = new Pipeline();
-        REGISTRY = new EntityRegistry();
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
 
     }
