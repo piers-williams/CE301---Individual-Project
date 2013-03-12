@@ -8,6 +8,7 @@ import Project.Game.Registries.EntityRegistry;
 import Project.Game.Registries.NameRegistry;
 import Project.Game.UI.UIManager;
 import Project.NLP.Pipeline;
+import de.matthiasmann.twl.DebugHook;
 import de.matthiasmann.twl.GUI;
 import de.matthiasmann.twl.renderer.lwjgl.LWJGLRenderer;
 import de.matthiasmann.twl.theme.ThemeManager;
@@ -19,6 +20,7 @@ import org.lwjgl.opengl.GL11;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.PrintStream;
 
 /**
  * User: Piers
@@ -100,6 +102,9 @@ public class Main {
             BLUEPRINT_REGISTRY.calculateUpgrades();
             UIManager = new UIManager("button");
             initTWL();
+
+            System.setErr(new PrintStream(new File("Content/Logs/Log")));
+
         } catch (Exception e) {
             e.printStackTrace();
         }
