@@ -150,10 +150,12 @@ public class Main {
 
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT | GL11.GL_DEPTH_BUFFER_BIT);
             GL11.glTranslated(viewLocation.x, viewLocation.y, 0);
+            GL11.glScaled(1, -1, 1);
 
             Main.GAME_LOOP.draw();
             INFLUENCE_MAP.draw();
 
+            GL11.glScaled(1, -1, 1);
             GL11.glTranslated(-viewLocation.x, -viewLocation.y, 0);
             drawBoundary();
             gui.update();
