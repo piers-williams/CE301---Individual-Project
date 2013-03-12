@@ -11,7 +11,7 @@ import Project.Game.Faction;
 import Project.Game.Influence.InfluenceGrid;
 import Project.Game.Main;
 import Project.Game.Vector2D;
-import de.matthiasmann.twl.Label;
+import de.matthiasmann.twl.Button;
 import de.matthiasmann.twl.Widget;
 
 /**
@@ -39,7 +39,7 @@ public class Entity {
     protected String name;
 
     // Label for the entity
-    protected Label label;
+    protected Button label;
 
     // Used for factories
     protected Entity() {
@@ -118,13 +118,14 @@ public class Entity {
 
     public void layout(Widget widget, boolean visible) {
         if (label != null) {
-            if (label.getRootWidget() != widget ) {
+            if (label.getParent() != widget) {
                 System.out.println("Adding widget Label");
                 widget.add(label);
             }
             if (visible) {
                 // adjust this to account for view location
-                Vector2D labelLocation = Vector2D.subtract(getLocation(), Main.viewLocation);
+                Vector2D labelLocation = Vector2D.subtract(getLocation(), -Main.viewLocation.x, (Main.viewLocation.y + Main.SCREEN_HEIGHT));
+//                Vector2D labelLocation = Vector2D.subtract( Main.viewLocation, getLocation());
                 label.setPosition((int) labelLocation.x, (int) labelLocation.y);
                 label.setText(name);
                 label.adjustSize();

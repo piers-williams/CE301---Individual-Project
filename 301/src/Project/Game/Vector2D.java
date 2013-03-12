@@ -145,6 +145,11 @@ public final class Vector2D {
         this.x -= x;
         this.y -= y;
     }
+    public static Vector2D subtract(final Vector2D first, double x, double y){
+        Vector2D third = new Vector2D(first);
+        third.subtract(x, y);
+        return third;
+    }
 
     // multiply with factor
     public void multiply(double fac) {
