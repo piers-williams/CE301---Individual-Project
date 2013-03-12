@@ -118,6 +118,7 @@ public class Pipeline implements NLPConverter {
                         Entity target = baseRegistry.get(match.get(1).value());
                         System.out.println("Getting: " + match.get(1).value());
                         System.out.println(target.getName());
+                        System.out.println(target.getFaction());
                         return new AttackOrder(target.getLocation(), 5);
                     }
                     break;

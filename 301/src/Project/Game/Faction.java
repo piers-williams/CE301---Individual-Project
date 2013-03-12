@@ -116,6 +116,12 @@ public class Faction {
         }
         return "";
     }
+
+
+    @Override
+    public String toString() {
+        return "Faction: R:" + Float.toString(r) + "G:" + Float.toString(g) + "B:" + Float.toString(b);
+    }
 }
 
 class GroupHandler {
@@ -159,6 +165,7 @@ class GroupHandler {
             Main.GAME_LOOP.addEntity(newGroup);
         }
     }
+
 }
 
 

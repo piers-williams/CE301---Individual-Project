@@ -67,7 +67,7 @@ public class EntityFactory {
         entity.influenceBehaviour = new SimpleInfluence(entity, 9, 1);
         entity.collisionBehaviour = new SimpleCollision(entity, 40);
         entity.constructionBehaviour = new BlueprintConstruction(faction, entity, faction.getResourcePool(), location, Main.BLUEPRINT_REGISTRY.get("Home Level 3"));
-        entity.setName(EntityRegistry.getNewName("BS"));
+        entity.setName(EntityRegistry.getNewName("BS" + faction.getR()));
         entity.label = new Button(entity.getName());
         Main.REGISTRY.add(entity);
         return entity;
@@ -81,7 +81,7 @@ public class EntityFactory {
         entity.movementBehaviour = new Static(entity, location);
         entity.influenceBehaviour = new SimpleInfluence(entity, 5, 0.0);
         entity.constructionBehaviour = new BlueprintConstruction(faction, entity, faction.getResourcePool(), location, Main.BLUEPRINT_REGISTRY.get(blueprint));
-        entity.setName(EntityRegistry.getNewName("BS"));
+        entity.setName(EntityRegistry.getNewName("BS" + faction.getR()));
         entity.label = new Button(entity.getName());
         Main.REGISTRY.add(entity);
         return entity;

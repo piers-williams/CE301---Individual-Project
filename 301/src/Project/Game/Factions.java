@@ -9,6 +9,9 @@ public enum Factions {
     Red(1, 0, 0, new Vector2D(1350, 1350), true),
     Green(0, 1, 0, new Vector2D(450, 1350), true),
     Blue(0, 0, 1, new Vector2D(1350, 450), true);
+
+    // N-B
+    // G-R
     private Faction faction;
     private Boolean intelligent;
 
