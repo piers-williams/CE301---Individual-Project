@@ -8,7 +8,6 @@ import Project.Game.Registries.EntityRegistry;
 import Project.Game.Registries.NameRegistry;
 import Project.Game.UI.UIManager;
 import Project.NLP.Pipeline;
-import de.matthiasmann.twl.DebugHook;
 import de.matthiasmann.twl.GUI;
 import de.matthiasmann.twl.renderer.lwjgl.LWJGLRenderer;
 import de.matthiasmann.twl.theme.ThemeManager;
@@ -102,7 +101,7 @@ public class Main {
             BLUEPRINT_REGISTRY.calculateUpgrades();
             UIManager = new UIManager("button");
             initTWL();
-
+            // Disable Err because TWL floods it
             System.setErr(new PrintStream(new File("Content/Logs/Log")));
 
         } catch (Exception e) {

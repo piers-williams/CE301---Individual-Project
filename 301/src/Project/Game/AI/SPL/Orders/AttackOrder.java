@@ -16,4 +16,9 @@ public class AttackOrder extends BasicOrder {
     public Vector2D getLocation() {
         return location;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Attack Order: Location: " + location;
+    }
 }

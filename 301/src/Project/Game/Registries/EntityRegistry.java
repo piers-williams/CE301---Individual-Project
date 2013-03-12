@@ -11,6 +11,7 @@ import java.util.HashMap;
 public class EntityRegistry implements NameRegistry {
 
     HashMap<String, Entity> dictionary;
+    private final Object _dictionary = new Object();
 
     // String is the key to the series, Integer was the number in that series last given out
     // String-Integer
@@ -22,29 +23,39 @@ public class EntityRegistry implements NameRegistry {
     }
 
     public void layout(Widget widget, boolean visible) {
-        for (Entity entity : dictionary.values()) {
-            entity.layout(widget, visible);
+        synchronized (_dictionary) {
+            for (Entity entity : dictionary.values()) {
+                entity.layout(widget, visible);
+            }
         }
     }
 
     @Override
     public Boolean has(String name) {
-        return dictionary.containsKey(name);
+        synchronized (_dictionary) {
+            return dictionary.containsKey(name);
+        }
     }
 
     @Override
     public Entity get(String name) {
-        return dictionary.get(name);
+        synchronized (_dictionary) {
+            return dictionary.get(name);
+        }
     }
 
     @Override
     public void add(Entity entity) {
-        dictionary.put(entity.getName(), entity);
+        synchronized (_dictionary) {
+            dictionary.put(entity.getName(), entity);
+        }
     }
 
     @Override
     public void remove(String name) {
-        if (dictionary.containsKey(name)) dictionary.remove(name);
+        synchronized (_dictionary) {
+            if (dictionary.containsKey(name)) dictionary.remove(name);
+        }
     }
 
     public static String getNewName(String key) {

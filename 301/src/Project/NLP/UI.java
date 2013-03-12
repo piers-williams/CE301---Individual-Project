@@ -25,7 +25,7 @@ public class UI {
             public void actionPerformed(ActionEvent e) {
                 Pipeline pipeline = new Pipeline();
 
-                SPLObject object = pipeline.convert(field.getText());
+                SPLObject object = pipeline.process(field.getText());
                 System.out.println(object);
             }
         });

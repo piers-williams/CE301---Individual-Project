@@ -1,7 +1,9 @@
 package Project.Game.UI;
 
+import Project.Game.AI.SPL.Orders.AttackOrder;
 import Project.Game.AI.SPL.Orders.SPLObject;
 import Project.Game.Faction;
+import Project.Game.Factions;
 import Project.Game.Main;
 import Project.Game.Vector2D;
 import com.sun.istack.internal.Nullable;
@@ -53,15 +55,21 @@ public class UIManager extends Widget {
             @Override
             public void run() {
                 // Send text message stuff to pipeline
-                naturalLanguageInput.selectAll();
                 String text = naturalLanguageInput.getText();
 
                 // Do something with the object
-                //System.out.println((text == null) ? "Text was null" : Main.PIPELINE.convert(text));
+                //System.out.println((text == null) ? "Text was null" : Main.PIPELINE.process(text));
                 if (text != null) {
-                    SPLObject object = Main.PIPELINE.convert(text);
+                    SPLObject object = Main.PIPELINE.process(text);
                     if (object != null) {
                         System.out.println(object);
+                        switch (object.getType()) {
+                            case "Attack":
+                                System.out.println("Adding Attack Order to Queue");
+                                AttackOrder order = (AttackOrder) object;
+                                Factions.valueOf(object.getAddress()).getFaction().getSplQueue().addAttackOrder(order);
+                                break;
+                        }
                     }
                 }
                 naturalLanguageInput.setText("");

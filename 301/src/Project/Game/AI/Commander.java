@@ -30,7 +30,7 @@ public class Commander {
     }
 
     public void update() {
-        attackFinder.update();
+        //attackFinder.update();
     }
 
     public Faction getFaction() {
@@ -39,7 +39,9 @@ public class Commander {
 
     public void groupFilled(Group group) {
         if (faction.getSplQueue().hasAttackOrder()) {
-            group.switchToFollow((Vector2D) faction.getSplQueue().getNextAttackOrder().getLocation());
+            AttackOrder attackOrder = faction.getSplQueue().getNextAttackOrder();
+            System.out.println(attackOrder);
+            group.switchToFollow(attackOrder.getLocation());
         }
     }
 }

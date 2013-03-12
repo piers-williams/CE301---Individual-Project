@@ -3,8 +3,8 @@ package Project.NLP;
 import Project.Game.AI.SPL.Orders.AttackOrder;
 import Project.Game.AI.SPL.Orders.DefendOrder;
 import Project.Game.AI.SPL.Orders.SPLObject;
+import Project.Game.Entities.Entity;
 import Project.Game.Main;
-import Project.Game.Registries.BaseRegistry;
 import Project.Game.Registries.NameRegistry;
 import edu.stanford.nlp.ling.HasWord;
 import edu.stanford.nlp.ling.TaggedWord;
@@ -38,7 +38,7 @@ public class Pipeline implements NLPConverter {
     }
 
     @Override
-    public SPLObject convert(String message) {
+    public SPLObject process(String message) {
         String[] temp = extractSenderAndMessage(message);
         // This is needed when we integrate with the game
         String address = temp[0];
@@ -115,7 +115,10 @@ public class Pipeline implements NLPConverter {
                 case "kill":
                     // check if Noun is in the game
                     if (baseRegistry.has(match.get(1).value())) {
-                        return new AttackOrder(baseRegistry.get(match.get(1).value()).getLocation(), 5);
+                        Entity target = baseRegistry.get(match.get(1).value());
+                        System.out.println("Getting: " + match.get(1).value());
+                        System.out.println(target.getName());
+                        return new AttackOrder(target.getLocation(), 5);
                     }
                     break;
                 case "defend":

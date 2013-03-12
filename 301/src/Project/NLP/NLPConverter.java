@@ -7,5 +7,5 @@ import Project.Game.AI.SPL.Orders.SPLObject;
  */
 public interface NLPConverter {
 
-    public SPLObject convert(String message);
+    public SPLObject process(String message);
 }
