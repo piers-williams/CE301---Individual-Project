@@ -86,10 +86,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Entity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Entity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Entity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="65" selection-start="3774" selection-end="3774" vertical-scroll-proportion="0.78317755">
+            <state line="129" column="45" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pipeline.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="17" selection-start="775" selection-end="775" vertical-scroll-proportion="-0.0953271">
               <folding />
             </state>
           </provider>
@@ -175,7 +184,6 @@
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/SPLObject.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Influence/InfluenceMap.java" />
-        <option value="$PROJECT_DIR$/src/Project/NLP/Pipeline.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Registries/EntityRegistry.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/UI/UIManager.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Registries/NameRegistry.java" />
@@ -184,6 +192,7 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Vector2D.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/Entity.java" />
+        <option value="$PROJECT_DIR$/src/Project/NLP/Pipeline.java" />
       </list>
     </option>
   </component>
@@ -1292,11 +1301,6 @@
         <state line="15" column="69" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="20" selection-start="1979" selection-end="1979" vertical-scroll-proportion="-0.87541527" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Influence/InfluenceMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="123" column="9" selection-start="4298" selection-end="4298" vertical-scroll-proportion="0.03655914" />
@@ -1343,7 +1347,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="65" selection-start="3774" selection-end="3774" vertical-scroll-proportion="0.78317755">
+        <state line="129" column="45" selection-start="3724" selection-end="3724" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="17" selection-start="775" selection-end="775" vertical-scroll-proportion="-0.0953271">
           <folding />
         </state>
       </provider>

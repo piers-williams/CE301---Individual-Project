@@ -3,6 +3,7 @@ package Project.NLP;
 import Project.Game.AI.SPL.Orders.AttackOrder;
 import Project.Game.AI.SPL.Orders.DefendOrder;
 import Project.Game.AI.SPL.Orders.SPLObject;
+import Project.Game.Main;
 import Project.Game.Registries.BaseRegistry;
 import Project.Game.Registries.NameRegistry;
 import edu.stanford.nlp.ling.HasWord;
@@ -26,6 +27,7 @@ public class Pipeline implements NLPConverter {
     MaxentTagger tagger;
 
     public Pipeline() {
+        baseRegistry = Main.REGISTRY;
         try {
             tagger = new MaxentTagger("Content/NLPModels/english-bidirectional-distsim.tagger");
         } catch (IOException e) {
