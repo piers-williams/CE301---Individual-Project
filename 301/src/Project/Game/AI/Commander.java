@@ -40,7 +40,7 @@ public class Commander {
     public void groupFilled(Group group) {
         if (faction.getSplQueue().hasAttackOrder()) {
             AttackOrder attackOrder = faction.getSplQueue().getNextAttackOrder();
-            System.out.println(attackOrder);
+            System.out.println("Sending group to attack " + attackOrder);
             group.switchToFollow(attackOrder.getLocation());
         }
     }

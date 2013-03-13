@@ -28,6 +28,5 @@ public class PathFollower extends BasicMovement {
             }
 
         }
-
     }
 }

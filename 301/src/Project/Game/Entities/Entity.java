@@ -124,7 +124,7 @@ public class Entity {
             }
             if (visible) {
                 // adjust this to account for view location
-                Vector2D labelLocation = Vector2D.subtract(getLocation(), -Main.viewLocation.x, (Main.viewLocation.y + Main.SCREEN_HEIGHT));
+                Vector2D labelLocation = Vector2D.subtract(getLocation(), -Main.viewLocation.x, (Main.viewLocation.y - Main.SCREEN_HEIGHT));
 //                Vector2D labelLocation = Vector2D.subtract( Main.viewLocation, getLocation());
                 label.setPosition((int) labelLocation.x, (int) labelLocation.y);
                 label.setText(name);

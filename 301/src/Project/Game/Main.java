@@ -30,8 +30,8 @@ public class Main {
     public static int SCREEN_WIDTH = 1600;
     public static int SCREEN_HEIGHT = 900;
 
-    public static int MAP_WIDTH = 3200;
-    public static int MAP_HEIGHT = 1800;
+    public static int MAP_WIDTH = 1600;
+    public static int MAP_HEIGHT = 900;
     public static int SQUARE_WIDTH = 6;
     public static boolean FULL_SCREEN = true;
     // Collision detection cell size
@@ -62,7 +62,7 @@ public class Main {
     public String blueprintToBuild;
 
     // Where the view is located
-    public static final Vector2D viewLocation = new Vector2D(0, 0);
+    public static final Vector2D viewLocation = new Vector2D(0, SCREEN_HEIGHT);
 
     public Main() {
 
