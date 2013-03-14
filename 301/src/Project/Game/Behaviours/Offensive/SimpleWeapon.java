@@ -20,7 +20,7 @@ public class SimpleWeapon implements Offensive {
 
     public SimpleWeapon(Entity entity, int targetRadius, int damage, int coolDown) {
         this.entity = entity;
-        this.currentLocation = new Vector2D(entity.getMovementBehaviour().getLocation());
+        this.currentLocation = new Vector2D(entity.getMovementBehaviour().getLocation(), true);
         this.targetRadius = targetRadius;
         this.damage = damage;
         //this.coolDown = coolDown;

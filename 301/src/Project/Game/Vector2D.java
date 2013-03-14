@@ -128,7 +128,7 @@ public final class Vector2D {
     }
 
     public static Vector2D add(final Vector2D first, final Vector2D second) {
-        Vector2D third = new Vector2D(first);
+        Vector2D third = new Vector2D(first, true);
         third.add(second);
         return third;
     }
@@ -144,7 +144,7 @@ public final class Vector2D {
     }
 
     public static Vector2D add(final Vector2D first, double x, double y) {
-        Vector2D third = new Vector2D(first);
+        Vector2D third = new Vector2D(first, true);
         third.add(x, y);
         return third;
     }
@@ -155,7 +155,7 @@ public final class Vector2D {
     }
 
     public static Vector2D add(final Vector2D first, final Vector2D second, double fac) {
-        Vector2D third = new Vector2D(first);
+        Vector2D third = new Vector2D(first, true);
         third.add(second.x * fac, second.y * fac);
         return third;
     }
@@ -166,7 +166,7 @@ public final class Vector2D {
     }
 
     public static Vector2D subtract(final Vector2D first, final Vector2D second) {
-        Vector2D third = new Vector2D(first);
+        Vector2D third = new Vector2D(first, true);
         third.subtract(second);
         return third;
     }
@@ -182,7 +182,7 @@ public final class Vector2D {
     }
 
     public static Vector2D subtract(final Vector2D first, double x, double y) {
-        Vector2D third = new Vector2D(first);
+        Vector2D third = new Vector2D(first, true);
         third.subtract(x, y);
         return third;
     }
@@ -198,7 +198,7 @@ public final class Vector2D {
     }
 
     public static Vector2D multiply(Vector2D first, double fac) {
-        Vector2D second = new Vector2D(first);
+        Vector2D second = new Vector2D(first, true);
         second.multiply(fac);
         return second;
     }
