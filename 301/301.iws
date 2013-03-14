@@ -98,7 +98,7 @@
       <file leaf-file-name="Vector2D.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="38" selection-start="273" selection-end="273" vertical-scroll-proportion="0.3586498">
+            <state line="262" column="12" selection-start="6926" selection-end="6926" vertical-scroll-proportion="0.39029536">
               <folding />
             </state>
           </provider>
@@ -188,7 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Project/Game/Entities/Entity.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/PathFollower.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/SPLQueue.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/ComplexConstruction.java" />
@@ -204,6 +203,7 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/Flocking.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/BasicMovement.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Vector2D.java" />
       </list>
     </option>
   </component>
@@ -1592,7 +1592,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="38" selection-start="273" selection-end="273" vertical-scroll-proportion="0.3586498">
+        <state line="262" column="12" selection-start="6926" selection-end="6926" vertical-scroll-proportion="0.39029536">
           <folding />
         </state>
       </provider>

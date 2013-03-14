@@ -10,6 +10,8 @@ public final class Vector2D {
     @XmlAttribute(name = "y")
     public double y;
 
+    private boolean mutable = false;
+
     // construct a zero vector
     public Vector2D() {
         x = 0;
@@ -22,6 +24,11 @@ public final class Vector2D {
         this.y = y;
     }
 
+    public Vector2D(double x, double y, boolean mutable) {
+        this(x, y);
+        this.mutable = mutable;
+    }
+
     // construct a vector that is a copy of the argument
     public Vector2D(Vector2D v) {
         this.x = v.getX();
@@ -30,13 +37,21 @@ public final class Vector2D {
 
     // set coordinates
     public void set(double x, double y) {
-        this.x = x;
-        this.y = y;
+        if (mutable) {
+            this.x = x;
+            this.y = y;
+        } else {
+            throw new IllegalAccessError("This Vector2D is immutable");
+        }
     }
 
     // set coordinates to argument vector coordinates
     public void set(Vector2D v) {
-        set(v.getX(), v.getY());
+        if (mutable) {
+            set(v.getX(), v.getY());
+        } else {
+            throw new IllegalAccessError("This Vector2D is immutable");
+        }
     }
 
     // compare for equality (needs to allow for Object type argument...)
@@ -108,8 +123,12 @@ public final class Vector2D {
 
     // add coordinate values
     public void add(double x, double y) {
-        this.x += x;
-        this.y += y;
+        if (mutable) {
+            this.x += x;
+            this.y += y;
+        } else {
+            throw new IllegalAccessError("This Vector2D is immutable");
+        }
     }
 
     public static Vector2D add(final Vector2D first, double x, double y) {
@@ -142,10 +161,15 @@ public final class Vector2D {
 
     // subtract coordinate values
     public void subtract(double x, double y) {
-        this.x -= x;
-        this.y -= y;
+        if (mutable) {
+            this.x -= x;
+            this.y -= y;
+        } else {
+            throw new IllegalAccessError("This Vector2D is immutable");
+        }
     }
-    public static Vector2D subtract(final Vector2D first, double x, double y){
+
+    public static Vector2D subtract(final Vector2D first, double x, double y) {
         Vector2D third = new Vector2D(first);
         third.subtract(x, y);
         return third;
@@ -153,8 +177,12 @@ public final class Vector2D {
 
     // multiply with factor
     public void multiply(double fac) {
-        this.x *= fac;
-        this.y *= fac;
+        if (mutable) {
+            this.x *= fac;
+            this.y *= fac;
+        } else {
+            throw new IllegalAccessError("This Vector2D is immutable");
+        }
     }
 
     public static Vector2D multiply(Vector2D first, double fac) {
@@ -168,19 +196,22 @@ public final class Vector2D {
     // method assumes that x >= -w and y >= -h
 
     public void wrap(double w, double h) {
-        if (x >= w) {
-            x = x % w;
+        if (mutable) {
+            if (x >= w) {
+                x = x % w;
+            }
+            if (y >= h) {
+                y = y % h;
+            }
+            if (x < 0) {
+                x = (x + w) % w;
+            }
+            if (y < 0) {
+                y = (y + h) % h;
+            }
+        } else {
+            throw new IllegalAccessError("This Vector2D is immutable");
         }
-        if (y >= h) {
-            y = y % h;
-        }
-        if (x < 0) {
-            x = (x + w) % w;
-        }
-        if (y < 0) {
-            y = (y + h) % h;
-        }
-
     }
 
     // rotate by angle given in radians
@@ -202,13 +233,21 @@ public final class Vector2D {
     }
 
     public void clone(Vector2D target) {
-        this.x = target.x;
-        this.y = target.y;
+        if (mutable) {
+            this.x = target.x;
+            this.y = target.y;
+        } else {
+            throw new IllegalAccessError("This Vector2D is immutable");
+        }
     }
 
     public static void clone(Vector2D target, Vector2D source) {
-        source.x = target.x;
-        source.y = target.y;
+        if (source.mutable) {
+            source.x = target.x;
+            source.y = target.y;
+        } else {
+            throw new IllegalAccessError("This Vector2D is immutable");
+        }
     }
 
 // normalise vector so that mag becomes 1
@@ -216,8 +255,12 @@ public final class Vector2D {
     // direction is unchanged
 
     public void normalise() {
-        if (x != 0 || y != 0) {
-            multiply(1 / mag());
+        if (mutable) {
+            if (x != 0 || y != 0) {
+                multiply(1 / mag());
+            }
+        } else {
+
         }
     }
 
