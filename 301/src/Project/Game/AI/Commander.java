@@ -1,6 +1,5 @@
 package Project.Game.AI;
 
-import Project.Game.AI.ParticleSwarm.PlanningGrid;
 import Project.Game.AI.SPL.Orders.AttackOrder;
 import Project.Game.Entities.Meta.Group;
 import Project.Game.Faction;
@@ -21,7 +20,7 @@ public class Commander {
     public Commander(Faction faction) {
         this.faction = faction;
 
-        attackFinder = new AttackFinder(this, 300);
+        attackFinder = new AttackFinder(this, 6 * 50);
     }
 
     public void update() {
@@ -95,33 +94,9 @@ class AttackFinder extends TacticalAnalysis {
 
         // It is possible not to find anything at all
         if (foundSomewhere) {
-            nextTarget = new Vector2D(lowX * Main.INFLUENCE_MAP.getCellSize(), lowY * Main.INFLUENCE_MAP.getCellSize());
+            nextTarget = Main.VECTOR2D_SOURCE.getVector(lowX * Main.INFLUENCE_MAP.getCellSize(), lowY * Main.INFLUENCE_MAP.getCellSize());
 
-            commander.getFaction().getSplQueue().addAttackOrder(
-                    new AttackOrder(
-                            new Vector2D(lowX * Main.INFLUENCE_MAP.getCellSize(), lowY * Main.INFLUENCE_MAP.getCellSize()),
-                            1
-                    )
-            );
-        }
-    }
-}
-
-class NewBaseBuilder extends TacticalAnalysis {
-
-    NewBaseBuilder(Commander commander, int tickFrequency) {
-        super(commander, tickFrequency);
-    }
-
-    @Override
-    public void updateSpecialisation() {
-        int percentage = commander.getFaction().getResourcePool().getPercentage();
-
-        if (percentage > 120) {
-            // Build something to introduce drains
-        } else {
-            // Improve economy
-
+            commander.getFaction().getSplQueue().addAttackOrder(new AttackOrder(nextTarget, 1));
         }
     }
 }
