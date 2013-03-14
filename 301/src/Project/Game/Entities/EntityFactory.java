@@ -35,7 +35,7 @@ public class EntityFactory {
 
         entity.movementBehaviour = new Wandering(entity, Utilities.randomLocation(50));
         entity.drawingBehaviour = new SimpleQuad(entity, Main.SQUARE_WIDTH, entity.r, entity.g, entity.b);
-        entity.influenceBehaviour = new SimpleInfluence(entity, 3, 1);
+        entity.influenceBehaviour = new SimpleInfluence(entity, 7, 1);
         entity.collisionBehaviour = new SimpleCollision(entity, Main.SQUARE_WIDTH);
 
         return entity;
@@ -91,36 +91,6 @@ public class EntityFactory {
         setColour(entity, faction);
         entity.faction = faction;
         entity.movementBehaviour = new Static(entity, Utilities.randomLocation());
-        return entity;
-    }
-
-    public static Entity getShipyard(Faction faction, Vector2D location) {
-        Entity entity = new Entity();
-
-        setColour(entity, faction);
-        entity.faction = faction;
-
-        entity.movementBehaviour = new Static(entity, location);
-        entity.drawingBehaviour = new SimpleQuad(entity, 26, entity.r, entity.g, entity.b);
-        entity.influenceBehaviour = new SimpleInfluence(entity, 5, 1);
-        entity.collisionBehaviour = new SimpleCollision(entity, 26);
-        entity.constructionBehaviour = new SimpleConstruction(entity, faction);
-
-        return entity;
-    }
-
-    private static Entity getTower(Faction faction, Vector2D location) {
-        Entity entity = new Entity();
-
-        setColour(entity, faction);
-        entity.faction = faction;
-
-        entity.movementBehaviour = new Static(entity, location);
-        entity.drawingBehaviour = new SimpleQuad(entity, 20, entity.r, entity.g, entity.b);
-        entity.influenceBehaviour = new SimpleInfluence(entity, 11, 10);
-        entity.collisionBehaviour = new SimpleCollision(entity, 20);
-        entity.offensiveBehaviour = new SimpleWeapon(entity, 50, 10, 60);
-
         return entity;
     }
 

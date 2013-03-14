@@ -5,6 +5,7 @@ import Project.Game.AI.SPL.SPLQueue;
 import Project.Game.Entities.Entity;
 import Project.Game.Entities.Meta.Group;
 import Project.Game.Faction;
+import Project.Game.Main;
 import Project.Game.Resource.ResourcePool;
 import Project.Game.Vector2D;
 import com.sun.istack.internal.Nullable;
@@ -63,6 +64,9 @@ enum UnitState {
     Waiting, Building, AllBuilt;
 }
 
+/**
+ * Builds and registers a group, stores information from SPL to be used once group is full
+ */
 class BuildOrder {
     // Number of units needed to fulfill the order
     int numberToBuild;
@@ -71,9 +75,13 @@ class BuildOrder {
     // Location to send the units to in the end
     Vector2D targetLocation;
 
-    BuildOrder(int numberToBuild, Vector2D targetLocation) {
+    BuildOrder(int numberToBuild, Vector2D targetLocation, Faction faction, Vector2D startLocation) {
         this.numberToBuild = numberToBuild;
         this.targetLocation = targetLocation;
+
+        group = new Group(faction.getR(), faction.getG(), faction.getB(), startLocation, numberToBuild, faction);
+        // Register the group
+        Main.GAME_LOOP.addEntity(group);
 
     }
 }
