@@ -10,12 +10,19 @@ public final class Vector2D {
     @XmlAttribute(name = "y")
     public double y;
 
+    // default is to make them immutable.
     private boolean mutable = false;
 
     // construct a zero vector
     public Vector2D() {
         x = 0;
         y = 0;
+    }
+
+    public Vector2D(boolean mutable) {
+        x = 0;
+        y = 0;
+        this.mutable = mutable;
     }
 
     // construct a vector with given coordinates
@@ -33,6 +40,11 @@ public final class Vector2D {
     public Vector2D(Vector2D v) {
         this.x = v.getX();
         this.y = v.getY();
+    }
+
+    public Vector2D(Vector2D v, boolean mutable) {
+        this(v);
+        this.mutable = mutable;
     }
 
     // set coordinates

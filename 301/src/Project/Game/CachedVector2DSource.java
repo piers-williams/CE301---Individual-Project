@@ -14,7 +14,7 @@ public class CachedVector2DSource {
 
     public Vector2D getVector(int x, int y) {
         if (!vectors.containsKey(x)) vectors.put(x, new HashMap<Integer, Vector2D>(Main.MAP_HEIGHT));
-        if (!vectors.get(x).containsKey(y)) vectors.get(x).put(y, new Vector2D(x, y));
+        if (!vectors.get(x).containsKey(y)) vectors.get(x).put(y, new Vector2D(x, y, false));
         return vectors.get(x).get(y);
     }
 
