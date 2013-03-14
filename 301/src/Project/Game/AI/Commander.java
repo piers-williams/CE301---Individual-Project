@@ -17,20 +17,15 @@ public class Commander {
     private Faction faction;
 
     private AttackFinder attackFinder;
-    private NewBaseBuilder newBaseBuilder;
-
-    private PlanningGrid planningGrid;
 
     public Commander(Faction faction) {
         this.faction = faction;
 
-        attackFinder = new AttackFinder(this, 30);
-        newBaseBuilder = new NewBaseBuilder(this, 400);
-        planningGrid = new PlanningGrid(10, 50, 50, 400);
+        attackFinder = new AttackFinder(this, 300);
     }
 
     public void update() {
-        //attackFinder.update();
+        attackFinder.update();
     }
 
     public Faction getFaction() {
@@ -40,7 +35,7 @@ public class Commander {
     public void groupFilled(Group group) {
         if (faction.getSplQueue().hasAttackOrder()) {
             AttackOrder attackOrder = faction.getSplQueue().getNextAttackOrder();
-            System.out.println("Sending group to attack " + attackOrder);
+//            System.out.println("Sending group to attack " + attackOrder);
             group.switchToFollow(attackOrder.getLocation());
         }
     }
@@ -105,7 +100,7 @@ class AttackFinder extends TacticalAnalysis {
             commander.getFaction().getSplQueue().addAttackOrder(
                     new AttackOrder(
                             new Vector2D(lowX * Main.INFLUENCE_MAP.getCellSize(), lowY * Main.INFLUENCE_MAP.getCellSize()),
-                            10
+                            1
                     )
             );
         }

@@ -26,7 +26,7 @@ public class SPLQueue {
     public void addAttackOrder(AttackOrder order) {
         synchronized (_attackOrders) {
             attackOrders.add(order);
-            System.out.println("New Attack Order added: " + order);
+//            System.out.println("New Attack Order added: " + order);
             Collections.sort(attackOrders);
         }
     }
@@ -59,7 +59,7 @@ public class SPLQueue {
         synchronized (_attackOrders) {
             if (attackOrders.size() < 1) throw new IllegalStateException("No Attack Orders");
             returnedOrder = attackOrders.get(0);
-            //attackOrders.remove(0);
+            attackOrders.remove(0);
         }
         return returnedOrder;
     }

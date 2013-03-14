@@ -7,6 +7,7 @@ import Project.Game.Vector2D;
 /**
  *
  */
+@Deprecated
 public class SimpleConstruction implements Construction {
     private int maxResource = 30, resource = maxResource;
     private Faction faction;
