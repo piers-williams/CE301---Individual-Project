@@ -42,7 +42,7 @@ public class Wandering extends BasicMovement {
         int tX = random.nextInt(newLocationThreshold), tY = random.nextInt(newLocationThreshold);
         tX -= newLocationThreshold / 2;
         tY -= newLocationThreshold / 2;
-        targetLocation = new Vector2D(location.x + tX, location.y + tY);
+        targetLocation = new Vector2D(location.x + tX, location.y + tY, true);
         targetLocation.wrap(Main.MAP_WIDTH, Main.MAP_HEIGHT);
     }
 }

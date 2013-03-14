@@ -151,7 +151,7 @@ class GroupHandler {
 
     public void makeEntity(double x, double y, Construction base) {
         // Create new entity
-        Entity entity = EntityFactory.getGroupedEntity(faction, baseGroup.get(base), new Vector2D(x, y), 2);
+        Entity entity = EntityFactory.getGroupedEntity(faction, baseGroup.get(base), new Vector2D(x, y, true), 2);
 
         // Add entity to group
         baseGroup.get(base).addEntity(entity);

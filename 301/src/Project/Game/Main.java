@@ -62,7 +62,7 @@ public class Main {
     public String blueprintToBuild;
 
     // Where the view is located
-    public static final Vector2D viewLocation = new Vector2D(0, SCREEN_HEIGHT);
+    public static final Vector2D viewLocation = new Vector2D(0, SCREEN_HEIGHT, true);
 
     public Main() {
 

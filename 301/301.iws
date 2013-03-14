@@ -89,7 +89,16 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="100" selection-start="3022" selection-end="3022" vertical-scroll-proportion="0.0">
+            <state line="64" column="83" selection-start="2060" selection-end="2060" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utilities.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Utilities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="46" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,16 +107,7 @@
       <file leaf-file-name="Vector2D.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="39" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CachedVector2DSource.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/CachedVector2DSource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="36" selection-start="310" selection-end="310" vertical-scroll-proportion="0.39451477">
+            <state line="28" column="11" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,16 +116,7 @@
       <file leaf-file-name="ControlManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/ControlManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="65" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Factions.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="51" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
+            <state line="53" column="106" selection-start="1957" selection-end="1957" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -134,7 +125,7 @@
       <file leaf-file-name="Faction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="43" selection-start="3958" selection-end="3958" vertical-scroll-proportion="0.0">
+            <state line="153" column="108" selection-start="4067" selection-end="4067" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -172,7 +163,16 @@
       <file leaf-file-name="BasicMovement.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/BasicMovement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="20" selection-start="492" selection-end="505" vertical-scroll-proportion="0.0">
+            <state line="17" column="43" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Wandering.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/Wandering.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="36" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.6453055">
               <folding />
             </state>
           </provider>
@@ -188,22 +188,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/SPLQueue.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/ComplexConstruction.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/SimpleConstruction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BasicConstruction.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/GameLoop.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/Commander.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/ControlManager.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Factions.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/Flocking.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/BasicMovement.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Vector2D.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/CachedVector2DSource.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/ControlManager.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Utilities.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/BasicMovement.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/Wandering.java" />
       </list>
     </option>
   </component>
@@ -1188,8 +1188,8 @@
       <item index="1" class="java.lang.String" itemvalue="Application.UI" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.BasicConverterTest" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.PipelineTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.PipelineTest.testExtractOrder" />
-      <item index="5" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.PipelineTest.testExtractOrder" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -1267,7 +1267,7 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27513966" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27513966" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38866398" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24426451" sideWeight="0.073125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1390,111 +1390,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BasicConstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/Project">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>Project</OriginalElement>
-          <nodes>
-            <node x="" y="">Project.Game.Behaviours.Drawing.Drawing</node>
-            <node x="" y="">Project.NLP.Tests.PipelineTest</node>
-            <node x="" y="">Project.Game.ControlManager</node>
-            <node x="" y="">Project.Game.Buildings.BuildingsWrapper</node>
-            <node x="" y="">Project.Game.AI.SPL.Orders.SPLObject</node>
-            <node x="" y="">Project.Game.AI.SPL.SPLQueue</node>
-            <node x="" y="">Project.Game.Entities.EntityFactory</node>
-            <node x="" y="">Project.NLP.NLPConverter</node>
-            <node x="" y="">Project.Game.Behaviours.Offensive.Offensive</node>
-            <node x="" y="">Project.Game.Resource.ResourcePool</node>
-            <node x="" y="">Project.Game.AI.SPL.Orders.AttackOrder</node>
-            <node x="" y="">Project.Game.Utilities</node>
-            <node x="" y="">Project.Game.AI.NewBaseBuilder</node>
-            <node x="" y="">Project.Game.Blueprints.BlueprintRegistry</node>
-            <node x="" y="">Project.Game.AI.Commander</node>
-            <node x="" y="">Project.Game.Buildings.BuildingRegistry</node>
-            <node x="" y="">Project.Game.Resource.ResourceGenerator</node>
-            <node x="" y="">Project.Game.AI.TacticalAnalysis</node>
-            <node x="" y="">Project.Game.Faction</node>
-            <node x="" y="">Project.Game.AI.SPL.Orders.DefendOrder</node>
-            <node x="" y="">Project.Game.Behaviours.Movement.Static</node>
-            <node x="" y="">Project.Game.Behaviours.Influence.Influence</node>
-            <node x="" y="">Project.Game.AI.ParticleSwarm.BuildingShadow</node>
-            <node x="" y="">Project.Game.Behaviours.Collision.SimpleCollision</node>
-            <node x="" y="">Project.Game.Factions</node>
-            <node x="" y="">Project.NLP.UI</node>
-            <node x="" y="">Project.Game.Behaviours.Offensive.SimpleWeapon</node>
-            <node x="" y="">Project.Game.GroupHandler</node>
-            <node x="" y="">Project.Game.Behaviours.Movement.BasicMovement</node>
-            <node x="" y="">Project.Game.Blueprints.BlueprintBuilding</node>
-            <node x="" y="">Project.Game.AI.BaseCommander</node>
-            <node x="" y="">Project.Game.Behaviours.Resource.Resource</node>
-            <node x="" y="">Project.Game.Behaviours.Drawing.SimpleQuad</node>
-            <node x="" y="">Project.TWLTest.Lesson1</node>
-            <node x="" y="">Project.Game.Vector2D</node>
-            <node x="" y="">Project.Game.Registries.NameRegistry</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.UnitState</node>
-            <node x="" y="">Project.Game.UI.UIManager</node>
-            <node x="" y="">Project.Game.Behaviours.Collision.Collision</node>
-            <node x="" y="">Project.Game.CachedVector2DSource</node>
-            <node x="" y="">Project.Game.Registries.BaseRegistry</node>
-            <node x="" y="">Project.Game.UI.InternalButton</node>
-            <node x="" y="">Project.Game.AI.ParticleSwarm.PlanningGrid</node>
-            <node x="" y="">Project.Game.AI.ParticleSwarm.BasicParticle</node>
-            <node x="" y="">Project.Game.AI.AttackFinder</node>
-            <node x="" y="">Project.Game.Resource.ResourceDrain</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.BuildOrder</node>
-            <node x="" y="">Project.Game.Behaviours.Movement.PathFollower</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.UnitConstruction</node>
-            <node x="" y="">Project.Game.GameLoop</node>
-            <node x="" y="">Project.Game.AI.ParticleSwarm.JobPairing</node>
-            <node x="" y="">Project.Game.Influence.InfluenceGrid</node>
-            <node x="" y="">Project.Game.Behaviours.Movement.Movement</node>
-            <node x="" y="">Project.Game.Behaviours.Movement.Wandering</node>
-            <node x="" y="">Project.Game.Behaviours.Drawing.RadiusIndicator</node>
-            <node x="" y="">Project.Game.AI.ParticleSwarm.FitnessFunction</node>
-            <node x="" y="">Project.Game.Main</node>
-            <node x="" y="">Project.Game.Behaviours.Movement.Flocking</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.Construction</node>
-            <node x="" y="">Project.Game.AI.SPL.Orders.BuildOrder</node>
-            <node x="" y="">Project.Game.EntityCellPair</node>
-            <node x="" y="">Project.Game.UI.Action</node>
-            <node x="" y="">Project.Game.Behaviours.Influence.SimpleInfluence</node>
-            <node x="" y="">Project.Game.Behaviours.Behaviour</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.BlueprintConstruction</node>
-            <node x="" y="">Project.Game.Entities.Entity</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.BasicConstruction</node>
-            <node x="" y="">Project.Game.UI.ButtonsWrapper</node>
-            <node x="" y="">Project.Game.Registries.EntityRegistry</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.BlueprintState</node>
-            <node x="" y="">Project.Game.Blueprints.Blueprint</node>
-            <node x="" y="">Project.Game.UI.InternalLabel</node>
-            <node x="" y="">Project.Game.Entities.Meta.Group</node>
-            <node x="" y="">Project.Game.Buildings.InfluenceStub</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.SimpleConstruction</node>
-            <node x="" y="">Project.Game.UI.LabelWrapper</node>
-            <node x="" y="">Project.Game.AI.SPL.Orders.BasicOrder</node>
-            <node x="" y="">Project.Game.Influence.InfluenceMap</node>
-            <node x="" y="">Project.Game.Buildings.MetaBuilding</node>
-            <node x="" y="">Project.NLP.Pipeline</node>
-            <node x="" y="">Project.Game.CollisionBoard</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.20000000000000015" x="2891.4999999999977" y="1413.3928571428546" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="36" selection-start="1457" selection-end="1457" vertical-scroll-proportion="0.0">
@@ -1525,30 +1420,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="100" selection-start="3022" selection-end="3022" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/ControlManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="65" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="51" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="43" selection-start="3958" selection-end="3958" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1576,23 +1450,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/BasicMovement.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/CachedVector2DSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="20" selection-start="492" selection-end="505" vertical-scroll-proportion="0.0">
+        <state line="24" column="35" selection-start="698" selection-end="698" vertical-scroll-proportion="0.7531645">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="39" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
+        <state line="28" column="11" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/CachedVector2DSource.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/ControlManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="36" selection-start="310" selection-end="310" vertical-scroll-proportion="0.39451477">
+        <state line="53" column="106" selection-start="1957" selection-end="1957" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="153" column="108" selection-start="4067" selection-end="4067" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="83" selection-start="2060" selection-end="2060" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Utilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="46" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/BasicMovement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="43" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/Wandering.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="36" selection-start="1267" selection-end="1267" vertical-scroll-proportion="0.6453055">
           <folding />
         </state>
       </provider>

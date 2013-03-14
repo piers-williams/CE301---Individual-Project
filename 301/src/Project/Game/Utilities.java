@@ -21,17 +21,18 @@ public class Utilities {
     }
 
     public static Vector2D randomLocation() {
-        return randomLocation(0, 0);
+        return randomMutableLocation(0, 0);
     }
 
     public static Vector2D randomLocation(int margin) {
-        return randomLocation(margin, margin);
+        return randomMutableLocation(margin, margin);
     }
 
-    public static Vector2D randomLocation(int xMargin, int yMargin) {
+    public static Vector2D randomMutableLocation(int xMargin, int yMargin) {
         return new Vector2D(
                 random.nextInt((Main.MAP_WIDTH - (2 * xMargin)) + xMargin),
-                random.nextInt((Main.MAP_HEIGHT - (2 * yMargin)) + yMargin)
+                random.nextInt((Main.MAP_HEIGHT - (2 * yMargin)) + yMargin),
+                true
         );
     }
 }

@@ -51,7 +51,7 @@ public class ControlManager {
         // Handle the mouse
         if (Mouse.isButtonDown(0)) {
             if (main.blueprintToBuild != null) {
-                Vector2D centralLocation = Vector2D.subtract(new Vector2D(Mouse.getX(), Mouse.getY()), Main.viewLocation);
+                Vector2D centralLocation = Vector2D.subtract(new Vector2D(Mouse.getX(), Mouse.getY(), true), Main.viewLocation);
                 Entity entity = EntityFactory.getBlueprint(Main.HUMAN_FACTION, centralLocation, main.blueprintToBuild);
                 Main.PLANNING_GRID.addBuilding(centralLocation, Main.BLUEPRINT_REGISTRY.get(main.blueprintToBuild).getSize(), Main.HUMAN_FACTION, false);
                 Main.GAME_LOOP.addEntity(entity);

@@ -15,7 +15,7 @@ public abstract class BasicMovement implements Movement {
     protected Vector2D direction;
 
     protected BasicMovement(Entity entity, Vector2D location) {
-        direction = new Vector2D(1, 1);
+        direction = new Vector2D(1, 1, true);
         this.entity = entity;
         this.location = location;
     }
