@@ -28,21 +28,21 @@ public class ControlManager {
                         case Keyboard.KEY_N:
                             Main.INFLUENCE_MAP.cycleFaction(-1);
                             break;
-                        case Keyboard.KEY_L :
+                        case Keyboard.KEY_L:
                             // show labels - toggle them
                             main.toggleLabels();
                             break;
                         case Keyboard.KEY_A:
-                            main.shiftView(new Vector2D(50, 0));
+                            main.shiftView(Main.VECTOR2D_SOURCE.getVector(50, 0));
                             break;
                         case Keyboard.KEY_W:
-                            main.shiftView(new Vector2D(0, -50));
+                            main.shiftView(Main.VECTOR2D_SOURCE.getVector(0, -50));
                             break;
                         case Keyboard.KEY_S:
-                            main.shiftView(new Vector2D(0, 50));
+                            main.shiftView(Main.VECTOR2D_SOURCE.getVector(0, 50));
                             break;
                         case Keyboard.KEY_D:
-                            main.shiftView(new Vector2D(-50, 0));
+                            main.shiftView(Main.VECTOR2D_SOURCE.getVector(-50, 0));
                             break;
                     }
                 }

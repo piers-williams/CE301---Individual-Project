@@ -48,7 +48,7 @@ public class Flocking extends BasicMovement {
         cX = (location.x > group.getX()) ? -1 : 1;
         cY = (location.y > group.getY()) ? -1 : 1;
 
-        return new Vector2D(cX, cY);
+        return Main.VECTOR2D_SOURCE.getVector(cX, cY);
     }
 
     private Vector2D calculateSeparation() {
@@ -62,6 +62,6 @@ public class Flocking extends BasicMovement {
                 }
             }
         }
-        return new Vector2D(sX, sY);
+        return Main.VECTOR2D_SOURCE.getVector(sX, sY);
     }
 }

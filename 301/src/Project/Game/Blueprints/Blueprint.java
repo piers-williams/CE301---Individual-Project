@@ -1,5 +1,6 @@
 package Project.Game.Blueprints;
 
+import Project.Game.Main;
 import Project.Game.Vector2D;
 
 import javax.xml.bind.annotation.XmlElement;
@@ -58,7 +59,7 @@ public class Blueprint {
             if (offset.y < maxY) maxY = (int) offset.y;
         }
 
-        size = new Vector2D(maxX - lowX, maxY - lowY);
+        size = Main.VECTOR2D_SOURCE.getVector(maxX - lowX, maxY - lowY);
     }
 
     public ArrayList<BlueprintBuilding> getBlueprintBuildings() {
