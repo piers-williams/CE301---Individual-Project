@@ -104,7 +104,7 @@ public final class Vector2D {
 
     // Returns the direction between the two vectors starting from this one
     public Vector2D getNormalDirectionBetween(Vector2D other) {
-        Vector2D direction = new Vector2D();
+        Vector2D direction = new Vector2D(true);
         direction.x = other.x - x;
         direction.y = other.y - y;
         direction.normalise();

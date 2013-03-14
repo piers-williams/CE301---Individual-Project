@@ -30,7 +30,7 @@ public class Group extends Entity {
         this.g = g;
         this.b = b;
 
-        movementBehaviour = new Static(this, location);
+        movementBehaviour = new Static(this, new Vector2D(location, true));
         entities = new ArrayList<>(maxSize);
         this.maxSize = maxSize;
 
