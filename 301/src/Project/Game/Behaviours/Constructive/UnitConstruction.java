@@ -1,5 +1,7 @@
 package Project.Game.Behaviours.Constructive;
 
+import Project.Game.AI.SPL.Orders.AttackOrder;
+import Project.Game.AI.SPL.SPLQueue;
 import Project.Game.Entities.Entity;
 import Project.Game.Entities.Meta.Group;
 import Project.Game.Faction;
@@ -14,6 +16,7 @@ public class UnitConstruction extends BasicConstruction {
 
     // Current state for the object
     private UnitState state;
+    private SPLQueue splQueue;
 
     @Nullable
     private BuildOrder buildOrder = null;
@@ -22,6 +25,7 @@ public class UnitConstruction extends BasicConstruction {
         super(faction, entity, resourcePool);
 
         state = UnitState.Waiting;
+        splQueue = faction.getSplQueue();
     }
 
     @Override
@@ -35,14 +39,19 @@ public class UnitConstruction extends BasicConstruction {
         switch (state) {
             case Waiting:
                 // check faction for new order to complete
+
+                if (splQueue.hasAttackOrder()) {
+                    // Consume the order
+                    AttackOrder order = splQueue.getNextAttackOrder();
+                }
                 break;
             case Building:
                 // Complete next stage of construction for the current order
                 break;
             case AllBuilt:
                 // Clear and reset the variables ready for the next order
-
                 buildOrder = null;
+
                 // switch state to waiting
                 state = UnitState.Waiting;
                 break;
@@ -59,4 +68,12 @@ class BuildOrder {
     int numberToBuild;
     // Group to store units in for the order
     Group group;
+    // Location to send the units to in the end
+    Vector2D targetLocation;
+
+    BuildOrder(int numberToBuild, Vector2D targetLocation) {
+        this.numberToBuild = numberToBuild;
+        this.targetLocation = targetLocation;
+
+    }
 }

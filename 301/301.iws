@@ -85,82 +85,108 @@
     <favorites_list name="301" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="60" selection-start="2057" selection-end="2057" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Commander.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="6" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityRegistry.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/EntityRegistry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="48" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityFactory.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="68" selection-start="3625" selection-end="3625" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Group.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Meta/Group.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="41" selection-start="2036" selection-end="2036" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PathFollower.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/PathFollower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="9" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Faction.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="119" column="30" selection-start="2907" selection-end="2907" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnitConstruction.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="34" selection-start="678" selection-end="678" vertical-scroll-proportion="-0.047486033">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="65" column="60" selection-start="2057" selection-end="2057" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Commander.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="32" column="6" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EntityRegistry.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Registries/EntityRegistry.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="61" column="48" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EntityFactory.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="82" column="68" selection-start="3625" selection-end="3625" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Group.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Meta/Group.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="76" column="41" selection-start="2036" selection-end="2036" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PathFollower.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/PathFollower.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="18" column="6" selection-start="549" selection-end="549" vertical-scroll-proportion="0.42313322">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UnitConstruction.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="76" column="0" selection-start="2107" selection-end="2107" vertical-scroll-proportion="0.0">
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BasicConstruction.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BasicConstruction.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="45" selection-start="45" selection-end="45" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="BasicConstruction.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BasicConstruction.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="18" column="13" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Faction.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="132" column="29" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.32290184">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -170,12 +196,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Content/Logs/Log" />
         <option value="$PROJECT_DIR$/src/Project/Game/Registries/EntityRegistry.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/UI/UIManager.java" />
         <option value="$PROJECT_DIR$/src/Project/NLP/Pipeline.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Factions.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/Entity.java" />
@@ -185,7 +209,9 @@
         <option value="$PROJECT_DIR$/src/Project/Game/AI/Commander.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/ComplexConstruction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/SimpleConstruction.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BasicConstruction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
       </list>
     </option>
   </component>
@@ -1251,7 +1277,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226257" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.116875" sideWeight="0.7557355" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.211875" sideWeight="0.7557355" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38866398" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24426451" sideWeight="0.073125" order="7" side_tool="true" content_ui="tabs" />
@@ -1402,11 +1428,6 @@
         <state line="12" column="24" selection-start="221" selection-end="221" vertical-scroll-proportion="0.275" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BasicConstruction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="62" selection-start="656" selection-end="656" vertical-scroll-proportion="0.525" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/SimpleConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="59" selection-start="543" selection-end="543" vertical-scroll-proportion="0.5" />
@@ -1437,22 +1458,33 @@
         <state line="76" column="41" selection-start="2036" selection-end="2036" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/PathFollower.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BasicConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="9" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="30" selection-start="2907" selection-end="2907" vertical-scroll-proportion="0.0" />
+        <state line="18" column="13" selection-start="437" selection-end="437" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="34" selection-start="678" selection-end="678" vertical-scroll-proportion="-0.047486033">
+        <state line="76" column="0" selection-start="2107" selection-end="2107" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/PathFollower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="6" selection-start="549" selection-end="549" vertical-scroll-proportion="0.42313322">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="29" selection-start="3320" selection-end="3320" vertical-scroll-proportion="0.32290184">
+          <folding />
         </state>
       </provider>
     </entry>

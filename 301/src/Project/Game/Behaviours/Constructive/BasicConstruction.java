@@ -16,7 +16,7 @@ public abstract class BasicConstruction implements Construction {
     protected int resource = 0;
 
     private Entity entity;
-    private Faction faction;
+    protected Faction faction;
 
     protected BasicConstruction(Faction faction, Entity entity, ResourcePool resourcePool) {
         this.faction = faction;

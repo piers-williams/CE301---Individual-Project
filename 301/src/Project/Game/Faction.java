@@ -126,8 +126,11 @@ public class Faction {
 
 class GroupHandler {
 
+    // List of full groups in the game
     private ArrayList<Group> groups;
+    // List of partial groups and the Construction responsible for them
     private Dictionary<Construction, Group> baseGroup;
+    // Faction we are tied to
     private Faction faction;
 
 
