@@ -51,6 +51,7 @@ public class EntityFactory {
         entity.drawingBehaviour = new SimpleQuad(entity, Main.SQUARE_WIDTH, entity.r, entity.g, entity.b);
         entity.influenceBehaviour = new SimpleInfluence(entity, 7, strength);
         entity.collisionBehaviour = new SimpleCollision(entity, Main.SQUARE_WIDTH);
+        entity.offensiveBehaviour = new SimpleWeapon(entity, 15, 5, 3 * 50);
         entity.setName(EntityRegistry.getNewName("ES"));
         Main.REGISTRY.add(entity);
         return entity;
@@ -108,7 +109,7 @@ public class EntityFactory {
 
         switch (type.getName()) {
             case "Tower":
-                entity.offensiveBehaviour = new SimpleWeapon(entity, 50, 10, 60);
+                entity.offensiveBehaviour = new SimpleWeapon(entity, 50, 10, (int) (1.5 * 50));
                 break;
             case "Construction":
                 entity.constructionBehaviour = new SimpleConstruction(entity, faction);

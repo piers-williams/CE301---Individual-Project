@@ -1,6 +1,7 @@
 package Project.Game;
 
 import Project.Game.Entities.Entity;
+import Project.Game.Entities.Meta.Group;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -103,7 +104,8 @@ public class GameLoop implements Runnable {
         ArrayList<Entity> closeEntities = new ArrayList<>();
         synchronized (_entities) {
             for (Entity entity : entities) {
-                if (entity.isAlive()) {
+                // Exclude groups
+                if (entity.isAlive() && !(entity instanceof Group)) {
                     if (entity.getMovementBehaviour().getLocation().dist(location) < radius) {
                         closeEntities.add(entity);
                     }
