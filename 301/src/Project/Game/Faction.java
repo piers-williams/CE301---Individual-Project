@@ -134,7 +134,7 @@ class GroupHandler {
 
     public void addConstruction(Construction construction, Vector2D spawnPoint) {
         if (baseGroup.get(construction) == null) {
-            Group group = new Group(faction.getR(), faction.getG(), faction.getB(), new Vector2D(spawnPoint, true), 5, faction, false);
+            Group group = new Group(faction, new Vector2D(spawnPoint, true), 5, false);
             Main.GAME_LOOP.addEntity(group);
             baseGroup.put(construction, group);
         }
@@ -151,7 +151,7 @@ class GroupHandler {
 
         // House keeping on the groups
         if (baseGroup.get(base).isFull()) {
-            Group newGroup = new Group(faction.getR(), faction.getG(), faction.getB(), new Vector2D(base.getSpawnPoint(), true), 5, faction, false);
+            Group newGroup = new Group(faction, new Vector2D(base.getSpawnPoint(), true), 5, false);
             groups.add(baseGroup.get(base));
             baseGroup.get(base).switchToWander();
 

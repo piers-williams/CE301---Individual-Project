@@ -1,7 +1,6 @@
 package Project.Game.AI;
 
 import Project.Game.AI.SPL.Orders.AttackOrder;
-import Project.Game.Entities.Meta.Group;
 import Project.Game.Faction;
 import Project.Game.Main;
 import Project.Game.Vector2D;

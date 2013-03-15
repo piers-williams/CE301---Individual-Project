@@ -95,7 +95,7 @@ class BuildOrder {
         this.numberToBuild = numberToBuild;
         this.targetLocation = targetLocation;
 
-        group = new Group(faction.getR(), faction.getG(), faction.getB(), startLocation, numberToBuild, faction, wasNLP);
+        group = new Group(faction, startLocation, numberToBuild, wasNLP);
         // Register the group
         Main.GAME_LOOP.addEntity(group);
 
