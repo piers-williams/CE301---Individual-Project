@@ -28,7 +28,7 @@ public class Group extends Entity {
     // Are we doing something or are we free to be used
     private boolean isAllocated = false;
 
-    public Group(float r, float g, float b, Vector2D location, int maxSize, Faction faction) {
+    public Group(float r, float g, float b, Vector2D location, int maxSize, Faction faction, boolean pulsing) {
         this.r = r;
         this.g = g;
         this.b = b;
@@ -39,7 +39,7 @@ public class Group extends Entity {
 
         this.faction = faction;
 
-        drawingBehaviour = new RadiusIndicator(this, r, g, b, movementBehaviour, this);
+        drawingBehaviour = new RadiusIndicator(this, r, g, b, movementBehaviour, this, pulsing);
         influenceBehaviour = new SimpleInfluence(this, 5, 0);
     }
 

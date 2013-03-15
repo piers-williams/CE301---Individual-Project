@@ -39,7 +39,7 @@ public class UnitConstruction extends BasicConstruction {
                 if (splQueue.hasAttackOrder()) {
                     // Consume the order
                     AttackOrder order = splQueue.getNextAttackOrder();
-                    buildOrder = new BuildOrder(order.getNumberOfUnits(), order.getLocation(), faction, getSpawnPoint());
+                    buildOrder = new BuildOrder(order.getNumberOfUnits(), order.getLocation(), faction, getSpawnPoint(), order.wasNLP());
                     state = UnitState.Building;
                     resourceDrain = new ResourceDrain(resourcePool, 1);
                     resourcePool.register(resourceDrain);
@@ -91,11 +91,11 @@ class BuildOrder {
     // Location to send the units to in the end
     Vector2D targetLocation;
 
-    BuildOrder(int numberToBuild, Vector2D targetLocation, Faction faction, Vector2D startLocation) {
+    BuildOrder(int numberToBuild, Vector2D targetLocation, Faction faction, Vector2D startLocation, boolean wasNLP) {
         this.numberToBuild = numberToBuild;
         this.targetLocation = targetLocation;
 
-        group = new Group(faction.getR(), faction.getG(), faction.getB(), startLocation, numberToBuild, faction);
+        group = new Group(faction.getR(), faction.getG(), faction.getB(), startLocation, numberToBuild, faction, wasNLP);
         // Register the group
         Main.GAME_LOOP.addEntity(group);
 
