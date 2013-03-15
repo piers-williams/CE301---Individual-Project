@@ -119,7 +119,7 @@ public class Pipeline implements NLPConverter {
                         System.out.println("Getting: " + match.get(1).value());
                         System.out.println(target.getName());
                         System.out.println(target.getFaction());
-                        return new AttackOrder(target.getLocation(), 5);
+                        return new AttackOrder(target.getLocation(), 5, true);
                     }
                     break;
                 case "defend":
