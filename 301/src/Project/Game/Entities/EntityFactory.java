@@ -23,7 +23,6 @@ import de.matthiasmann.twl.Button;
  */
 public class EntityFactory {
 
-
     @SuppressWarnings("UnusedDeclaration")
     public static Entity getNaturalEntity() {
         Entity entity = new Entity();
@@ -47,6 +46,7 @@ public class EntityFactory {
         setColour(entity, faction);
         entity.faction = faction;
         entity.health = 30;
+        entity.maxHealth = entity.health;
         entity.movementBehaviour = new Flocking(entity, location, group);
         entity.drawingBehaviour = new SimpleQuad(entity, Main.SQUARE_WIDTH, entity.r, entity.g, entity.b);
         entity.influenceBehaviour = new SimpleInfluence(entity, 7, strength);
@@ -102,6 +102,7 @@ public class EntityFactory {
         entity.faction = faction;
 
         entity.health = type.getHealth();
+        entity.maxHealth = entity.health;
         entity.movementBehaviour = new Static(entity, location);
         entity.drawingBehaviour = new SimpleQuad(entity, (int) type.getSize().x, entity.r, entity.g, entity.b);
         entity.influenceBehaviour = new SimpleInfluence(entity, type.getInfluence().getSize(), type.getInfluence().getStrength());
@@ -109,7 +110,7 @@ public class EntityFactory {
 
         switch (type.getName()) {
             case "Tower":
-                entity.offensiveBehaviour = new SimpleWeapon(entity, 50, 10, (int) (1.5 * 50));
+                entity.offensiveBehaviour = new SimpleWeapon(entity, 50, 30, (int) (1.5 * 50));
                 break;
             case "Construction":
                 entity.constructionBehaviour = new SimpleConstruction(entity, faction);

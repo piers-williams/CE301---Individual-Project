@@ -76,4 +76,9 @@ public class Group extends Entity {
     public void switchToFollow(Vector2D target) {
         movementBehaviour = new PathFollower(this, movementBehaviour.getLocation(), target, 5);
     }
+
+    @Override
+    public boolean isAlive() {
+        return true;
+    }
 }

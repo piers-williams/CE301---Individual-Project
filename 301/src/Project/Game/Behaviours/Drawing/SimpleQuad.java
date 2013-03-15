@@ -31,7 +31,12 @@ public class SimpleQuad implements Drawing {
         Vector2D location = movementBehaviour.getLocation();
         double x = location.x, y = location.y;
 
-        GL11.glColor4f(r, g, b, 1f);
+
+        float health = entity.getHealth() / (float) entity.getMaxHealth();
+
+        if (health > 1) health = 1;
+        if (health < 0) health = 0;
+        GL11.glColor4f(r, g, b, health);
         GL11.glBegin(GL11.GL_QUADS);
         GL11.glVertex2d(x - width / 2, y - width / 2);
         GL11.glVertex2d(x + width / 2, y - width / 2);

@@ -34,6 +34,7 @@ public class Entity {
     protected Offensive offensiveBehaviour;
     protected Resource resourceBehaviour;
 
+    protected int maxHealth;
     protected int health;
 
     protected String name;
@@ -132,5 +133,13 @@ public class Entity {
             }
             label.setVisible(visible);
         }
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public int getMaxHealth() {
+        return maxHealth;
     }
 }
