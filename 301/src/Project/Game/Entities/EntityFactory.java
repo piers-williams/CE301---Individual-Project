@@ -62,6 +62,8 @@ public class EntityFactory {
 
         setColour(entity, faction);
         entity.faction = faction;
+        entity.health = 100;
+        entity.maxHealth = entity.health;
         entity.movementBehaviour = new Static(entity, location);
         entity.drawingBehaviour = new SimpleQuad(entity, 40, entity.r, entity.g, entity.b);
         entity.influenceBehaviour = new SimpleInfluence(entity, 9, 1);
