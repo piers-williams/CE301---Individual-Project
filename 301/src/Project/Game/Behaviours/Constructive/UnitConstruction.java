@@ -42,12 +42,17 @@ public class UnitConstruction extends BasicConstruction {
                     buildOrder = new BuildOrder(order.getNumberOfUnits(), order.getLocation(), faction, getSpawnPoint());
                     state = UnitState.Building;
                     resourceDrain = new ResourceDrain(resourcePool, 1);
+                    resourcePool.register(resourceDrain);
                 }
                 break;
             case Building:
                 // Complete next stage of construction for the current order
-                resource += resourceDrain.claimResource();
-                if (resource > 30) {
+                if (resourceDrain.hasResource()) {
+                    resource += resourceDrain.claimResource();
+                } else {
+                    System.out.println("No resource given");
+                }
+                if (resource > 120) {
                     resource -= 30;
                     Entity entity = EntityFactory.getGroupedEntity(faction, buildOrder.group, getSpawnPoint(), 2);
                     buildOrder.group.addEntity(entity);
