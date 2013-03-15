@@ -110,7 +110,7 @@ public class EntityFactory {
 
         switch (type.getName()) {
             case "Tower":
-                entity.offensiveBehaviour = new SimpleWeapon(entity, 50, 30, (int) (1.5 * 50));
+                entity.offensiveBehaviour = new SimpleWeapon(entity, 100, 30, (int) (1.5 * 50));
                 break;
             case "Construction":
                 entity.constructionBehaviour = new UnitConstruction(entity, faction, faction.getResourcePool());

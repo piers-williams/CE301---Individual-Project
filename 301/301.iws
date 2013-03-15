@@ -115,10 +115,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicOrder.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BasicOrder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="36" selection-start="505" selection-end="505" vertical-scroll-proportion="0.45945945">
+            <state line="20" column="96" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttackOrder.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="40" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,19 +145,10 @@
       <file leaf-file-name="EntityFactory.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="111" selection-start="5172" selection-end="5172" vertical-scroll-proportion="0.0">
+            <state line="112" column="54" selection-start="4963" selection-end="4963" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="method#getBlueprint#0;class#EntityFactory#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Factions.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="68" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -171,10 +171,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleWeapon.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SimpleWeapon.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Offensive/SimpleWeapon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="93" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
+            <state line="24" column="37" selection-start="756" selection-end="756" vertical-scroll-proportion="0.42882884">
               <folding />
             </state>
           </provider>
@@ -198,14 +198,14 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Factions.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/Meta/Group.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Drawing/RadiusIndicator.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/Commander.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BasicConstruction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/SPLObject.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
       </list>
     </option>
   </component>
@@ -1540,20 +1540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Offensive/SimpleWeapon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="93" selection-start="682" selection-end="682" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="30" selection-start="494" selection-end="494" vertical-scroll-proportion="0.55135137">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="145" column="45" selection-start="3820" selection-end="3820" vertical-scroll-proportion="0.0">
@@ -1565,15 +1551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="44" selection-start="2081" selection-end="2081" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="111" selection-start="5172" selection-end="5172" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="method#getBlueprint#0;class#EntityFactory#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1623,7 +1600,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="36" selection-start="505" selection-end="505" vertical-scroll-proportion="0.45945945">
+        <state line="20" column="96" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="40" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="54" selection-start="4963" selection-end="4963" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="method#getBlueprint#0;class#EntityFactory#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Offensive/SimpleWeapon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="37" selection-start="756" selection-end="756" vertical-scroll-proportion="0.42882884">
           <folding />
         </state>
       </provider>

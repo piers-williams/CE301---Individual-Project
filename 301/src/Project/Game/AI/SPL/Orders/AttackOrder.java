@@ -10,12 +10,12 @@ public class AttackOrder extends BasicOrder {
 
     private int numberOfUnits;
 
-    public AttackOrder(Vector2D location, double priority) {
-        this(location, priority, 15);
+    public AttackOrder(Vector2D location, double priority, boolean wasNLP) {
+        this(location, priority, wasNLP, 15);
     }
 
-    public AttackOrder(Vector2D location, double priority, int numberOfUnits) {
-        super(priority, "Attack");
+    public AttackOrder(Vector2D location, double priority, boolean wasNLP, int numberOfUnits) {
+        super(priority, "Attack", wasNLP);
         this.location = location;
         this.numberOfUnits = numberOfUnits;
     }
