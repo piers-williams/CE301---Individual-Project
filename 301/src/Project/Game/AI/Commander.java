@@ -30,14 +30,14 @@ public class Commander {
     public Faction getFaction() {
         return faction;
     }
-
-    public void groupFilled(Group group) {
-        if (faction.getSplQueue().hasAttackOrder()) {
-            AttackOrder attackOrder = faction.getSplQueue().getNextAttackOrder();
-//            System.out.println("Sending group to attack " + attackOrder);
-            group.switchToFollow(attackOrder.getLocation());
-        }
-    }
+//
+//    public void groupFilled(Group group) {
+//        if (faction.getSplQueue().hasAttackOrder()) {
+//            AttackOrder attackOrder = faction.getSplQueue().getNextAttackOrder();
+////            System.out.println("Sending group to attack " + attackOrder);
+//            group.switchToFollow(attackOrder.getLocation());
+//        }
+//    }
 }
 
 abstract class TacticalAnalysis {

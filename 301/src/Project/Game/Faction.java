@@ -49,11 +49,7 @@ public class Faction {
 
 
         Entity base = EntityFactory.getBase(this, startLocation);
-//        Group newGroup = new Group(r, g, b, base.getConstructionBehaviour().getSpawnPoint(), 5, this);
-//        baseGroup.put(base.getConstructionBehaviour(), newGroup);
-//
         Main.GAME_LOOP.addEntity(base);
-//        Main.GAME_LOOP.addEntity(newGroup);
 
         this.location = startLocation;
 
@@ -68,10 +64,6 @@ public class Faction {
 
     public void makeEntity(double x, double y, Construction base) {
         groupHandler.makeEntity(x, y, base);
-    }
-
-    public void addEntity(Entity entity) {
-
     }
 
     public void addConstruction(Construction construction, Vector2D spawnPoint) {
@@ -116,7 +108,6 @@ public class Faction {
         }
         return "";
     }
-
 
     @Override
     public String toString() {
@@ -165,7 +156,7 @@ class GroupHandler {
             baseGroup.get(base).switchToWander();
 
             // This is the problematic section
-            if (faction.intelligent) faction.commander.groupFilled(baseGroup.get(base));
+//            if (faction.intelligent) faction.commander.groupFilled(baseGroup.get(base));
 
             baseGroup.put(base, newGroup);
             Main.GAME_LOOP.addEntity(newGroup);

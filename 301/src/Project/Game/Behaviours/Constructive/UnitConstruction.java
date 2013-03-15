@@ -6,6 +6,7 @@ import Project.Game.Entities.Entity;
 import Project.Game.Entities.Meta.Group;
 import Project.Game.Faction;
 import Project.Game.Main;
+import Project.Game.Resource.ResourceDrain;
 import Project.Game.Resource.ResourcePool;
 import Project.Game.Vector2D;
 import com.sun.istack.internal.Nullable;
@@ -18,6 +19,7 @@ public class UnitConstruction extends BasicConstruction {
     // Current state for the object
     private UnitState state;
     private SPLQueue splQueue;
+    private ResourceDrain resourceDrain;
 
     @Nullable
     private BuildOrder buildOrder = null;
@@ -27,6 +29,7 @@ public class UnitConstruction extends BasicConstruction {
 
         state = UnitState.Waiting;
         splQueue = faction.getSplQueue();
+
     }
 
     @Override
@@ -44,14 +47,25 @@ public class UnitConstruction extends BasicConstruction {
                 if (splQueue.hasAttackOrder()) {
                     // Consume the order
                     AttackOrder order = splQueue.getNextAttackOrder();
-                    buildOrder = new BuildOrder(30, order.getLocation(), faction, getSpawnPoint());
+                    buildOrder = new BuildOrder(order.getNumberOfUnits(), order.getLocation(), faction, getSpawnPoint());
+                    state = UnitState.Building;
+                    resourceDrain = new ResourceDrain(faction.getResourcePool(), 1);
                 }
                 break;
             case Building:
                 // Complete next stage of construction for the current order
+                // If group full, then we have built it all
+
+
+                if (buildOrder.group.isFull()) state = UnitState.AllBuilt;
+
                 break;
             case AllBuilt:
+                // Send off the group
+                buildOrder.group.switchToFollow(buildOrder.targetLocation);
                 // Clear and reset the variables ready for the next order
+                resourceDrain.deRegister();
+                resourceDrain = null;
                 buildOrder = null;
 
                 // switch state to waiting
