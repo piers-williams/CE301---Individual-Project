@@ -116,7 +116,7 @@
       <file leaf-file-name="UnitConstruction.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="41" selection-start="949" selection-end="949" vertical-scroll-proportion="0.6738739">
+            <state line="21" column="0" selection-start="638" selection-end="638" vertical-scroll-proportion="0.42882884">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1646,7 +1646,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="41" selection-start="949" selection-end="949" vertical-scroll-proportion="0.6738739">
+        <state line="21" column="0" selection-start="638" selection-end="638" vertical-scroll-proportion="0.42882884">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

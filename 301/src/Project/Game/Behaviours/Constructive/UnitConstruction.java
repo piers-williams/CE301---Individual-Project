@@ -10,7 +10,6 @@ import Project.Game.Main;
 import Project.Game.Resource.ResourceDrain;
 import Project.Game.Resource.ResourcePool;
 import Project.Game.Vector2D;
-import com.sun.istack.internal.Nullable;
 
 /**
  * Builds units - better than SimpleConstruction
@@ -21,7 +20,6 @@ public class UnitConstruction extends BasicConstruction {
     private UnitState state;
     private SPLQueue splQueue;
 
-    @Nullable
     private BuildOrder buildOrder = null;
 
     public UnitConstruction(Entity entity, Faction faction, ResourcePool resourcePool) {
