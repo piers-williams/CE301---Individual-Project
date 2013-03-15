@@ -90,23 +90,38 @@ public class Pipeline implements NLPConverter {
     public SPLObject extractOrder(ArrayList<TaggedWord> words) {
         SPLObject object;
 
+        for (TaggedWord word : words) System.out.print(word + " ");
+        System.out.println("");
+
+        object = getSimpleOrderWithUnits(words);
+        if (object != null) return object;
+
         object = getSimpleOrder(words);
         if (object != null) return object;
 
         return null;
     }
 
-    /*
-     * Work on this
-     *
-     */
+    private SPLObject getSimpleOrderWithUnits(ArrayList<TaggedWord> words) {
+        // Attack BS-2 with 10 units
+        List<TaggedWord> match = getFirstInstance(words, "VB", "NN", "IN", "CD", "NNS");
+        if (match != null) {
+            switch (match.get(0).value().toLowerCase()) {
+                case "attack":
+                case "destroy":
+                case "kill":
+                    if (baseRegistry.has(match.get(1).value())) {
+                        Entity target = baseRegistry.get(match.get(1).value());
+                        return new AttackOrder(target.getLocation(), 5, true, Integer.parseInt(match.get(3).value()));
+                    }
+            }
+        }
+        return null;
+    }
+
     private SPLObject getSimpleOrder(ArrayList<TaggedWord> words) {
         // Hunt for simple order - not sure this one will come up much
         // Attack BV-23
-
-        System.out.println("Processing Simple Order:");
-        for (TaggedWord word : words) System.out.print(word + " ");
-        System.out.println("");
         List<TaggedWord> match = getFirstInstance(words, "VB", "NN");
         if (match != null) {
             switch (match.get(0).value().toLowerCase()) {
@@ -116,9 +131,6 @@ public class Pipeline implements NLPConverter {
                     // check if Noun is in the game
                     if (baseRegistry.has(match.get(1).value())) {
                         Entity target = baseRegistry.get(match.get(1).value());
-                        System.out.println("Getting: " + match.get(1).value());
-                        System.out.println(target.getName());
-                        System.out.println(target.getFaction());
                         return new AttackOrder(target.getLocation(), 5, true);
                     }
                     break;
@@ -130,22 +142,6 @@ public class Pipeline implements NLPConverter {
             }
             return null;
         }
-//        // Attack/VB Red/NNP 's/POS base/NN
-//        // Attack/VB Reds/NNP  base/NN
-//        match = getFirstInstance(words, "VB", "NNP", "POS", "NN");
-//        if (match == null) match = getFirstInstance(words, "VB", "NNP", "NN");
-//        if (match != null) {
-//            switch (match.get(0).value().toLowerCase()) {
-//                case "attack":
-//                case "destroy":
-//                case "kill":
-//                    // Not actually sure what to do here
-//                    break;
-//                case "defend":
-//                    break;
-//            }
-//        }
-
         return null;
     }
 
