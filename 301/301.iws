@@ -95,22 +95,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Commander.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
+      <file leaf-file-name="UnitConstruction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="26" selection-start="2071" selection-end="2071" vertical-scroll-proportion="0.0">
+            <state line="59" column="32" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SPLObject.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/SPLObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="28" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnitConstruction.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java">
+      <file leaf-file-name="BasicOrder.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="34" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.32612613">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="18" column="36" selection-start="505" selection-end="505" vertical-scroll-proportion="0.45945945">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -181,8 +190,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Project/Game/Utilities.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/BasicMovement.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/Wandering.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Offensive/SimpleWeapon.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Vector2D.java" />
@@ -197,6 +204,8 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BasicConstruction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/SPLObject.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java" />
       </list>
     </option>
   </component>
@@ -1374,7 +1383,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1503,20 +1512,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="71" selection-start="3789" selection-end="3789" vertical-scroll-proportion="1.6226087">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Drawing/RadiusIndicator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="39" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/Wandering.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="44" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0">
@@ -1612,10 +1607,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="34" selection-start="1913" selection-end="1913" vertical-scroll-proportion="0.32612613">
+        <state line="59" column="32" selection-start="2195" selection-end="2195" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/SPLObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="28" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="36" selection-start="505" selection-end="505" vertical-scroll-proportion="0.45945945">
+          <folding />
         </state>
       </provider>
     </entry>

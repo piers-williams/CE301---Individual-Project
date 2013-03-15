@@ -12,4 +12,6 @@ public interface SPLObject extends Comparable<SPLObject> {
     public void setAddress(String address);
 
     public double getPriority();
+
+    public boolean wasNLP();
 }

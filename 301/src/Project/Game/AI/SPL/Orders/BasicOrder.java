@@ -7,10 +7,16 @@ public abstract class BasicOrder implements SPLObject {
     private double priority;
     private String type;
     private String address;
+    private Boolean wasNLP;
 
-    protected BasicOrder(double priority, String type) {
+    protected BasicOrder(double priority, String type, boolean wasNLP) {
         this.priority = priority;
         this.type = type;
+        this.wasNLP = wasNLP;
+    }
+
+    protected BasicOrder(double priority, String type) {
+        this(priority, type, false);
     }
 
     @Override
@@ -28,6 +34,10 @@ public abstract class BasicOrder implements SPLObject {
 
     public String getAddress() {
         return address;
+    }
+
+    public boolean wasNLP() {
+        return wasNLP;
     }
 
     @Override
