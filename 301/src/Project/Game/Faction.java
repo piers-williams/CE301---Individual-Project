@@ -58,14 +58,6 @@ public class Faction {
         groupHandler = new GroupHandler(this);
     }
 
-    public void makeEntity(Vector2D location, Construction base) {
-        makeEntity(location.x, location.y, base);
-    }
-
-    public void makeEntity(double x, double y, Construction base) {
-        groupHandler.makeEntity(x, y, base);
-    }
-
     public void addConstruction(Construction construction, Vector2D spawnPoint) {
         groupHandler.addConstruction(construction, spawnPoint);
     }
