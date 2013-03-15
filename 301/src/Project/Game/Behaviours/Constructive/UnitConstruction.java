@@ -20,17 +20,15 @@ public class UnitConstruction extends BasicConstruction {
     // Current state for the object
     private UnitState state;
     private SPLQueue splQueue;
-    private ResourceDrain resourceDrain;
 
     @Nullable
     private BuildOrder buildOrder = null;
 
-    public UnitConstruction(Faction faction, Entity entity, ResourcePool resourcePool) {
+    public UnitConstruction(Entity entity, Faction faction, ResourcePool resourcePool) {
         super(faction, entity, resourcePool);
 
         state = UnitState.Waiting;
         splQueue = faction.getSplQueue();
-
     }
 
     @Override
@@ -50,7 +48,7 @@ public class UnitConstruction extends BasicConstruction {
                     AttackOrder order = splQueue.getNextAttackOrder();
                     buildOrder = new BuildOrder(order.getNumberOfUnits(), order.getLocation(), faction, getSpawnPoint());
                     state = UnitState.Building;
-                    resourceDrain = new ResourceDrain(faction.getResourcePool(), 1);
+                    resourceDrain = new ResourceDrain(resourcePool, 1);
                 }
                 break;
             case Building:

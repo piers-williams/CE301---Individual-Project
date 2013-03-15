@@ -2,7 +2,7 @@ package Project.Game.Entities;
 
 import Project.Game.Behaviours.Collision.SimpleCollision;
 import Project.Game.Behaviours.Constructive.BlueprintConstruction;
-import Project.Game.Behaviours.Constructive.SimpleConstruction;
+import Project.Game.Behaviours.Constructive.UnitConstruction;
 import Project.Game.Behaviours.Drawing.SimpleQuad;
 import Project.Game.Behaviours.Influence.SimpleInfluence;
 import Project.Game.Behaviours.Movement.Flocking;
@@ -113,7 +113,7 @@ public class EntityFactory {
                 entity.offensiveBehaviour = new SimpleWeapon(entity, 50, 30, (int) (1.5 * 50));
                 break;
             case "Construction":
-                entity.constructionBehaviour = new SimpleConstruction(entity, faction);
+                entity.constructionBehaviour = new UnitConstruction(entity, faction, faction.getResourcePool());
             case "Production":
                 entity.resourceBehaviour = new Resource() {
                     ResourcePool pool = faction.getResourcePool();
