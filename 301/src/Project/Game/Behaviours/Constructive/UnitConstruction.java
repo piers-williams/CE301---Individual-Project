@@ -3,6 +3,7 @@ package Project.Game.Behaviours.Constructive;
 import Project.Game.AI.SPL.Orders.AttackOrder;
 import Project.Game.AI.SPL.SPLQueue;
 import Project.Game.Entities.Entity;
+import Project.Game.Entities.EntityFactory;
 import Project.Game.Entities.Meta.Group;
 import Project.Game.Faction;
 import Project.Game.Main;
@@ -54,11 +55,15 @@ public class UnitConstruction extends BasicConstruction {
                 break;
             case Building:
                 // Complete next stage of construction for the current order
+                resource += resourceDrain.claimResource();
+                if (resource > 30) {
+                    resource -= 30;
+                    Entity entity = EntityFactory.getGroupedEntity(faction, buildOrder.group, getSpawnPoint(), 2);
+                    buildOrder.group.addEntity(entity);
+                    Main.GAME_LOOP.addEntity(entity);
+                }
                 // If group full, then we have built it all
-
-
                 if (buildOrder.group.isFull()) state = UnitState.AllBuilt;
-
                 break;
             case AllBuilt:
                 // Send off the group
