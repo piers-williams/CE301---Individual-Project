@@ -30,6 +30,6 @@ public class AttackOrder extends BasicOrder {
 
     @Override
     public String toString() {
-        return super.toString() + "Attack Order: Location: " + location;
+        return super.toString() + "Attack Order: Location: " + location + " Number of Units: " + numberOfUnits;
     }
 }
