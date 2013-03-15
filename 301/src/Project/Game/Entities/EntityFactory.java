@@ -121,7 +121,7 @@ public class EntityFactory {
                     ResourcePool pool = faction.getResourcePool();
                     ResourceGenerator generator = new ResourceGenerator(pool, type.getProductionPerTick());
                     boolean registered = false;
-
+                     //hi piers
                     @Override
                     public void update() {
                         if (!registered) {
