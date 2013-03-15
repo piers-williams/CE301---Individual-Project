@@ -95,7 +95,6 @@ public class Group extends Entity {
     public void switchToFollow(Vector2D target) {
         isAllocated = true;
         movementBehaviour = new PathFollower(this, movementBehaviour.getLocation(), target, 5);
-        drawingBehaviour = new RadiusIndicator(this, r, g, b, movementBehaviour, this, true);
     }
 
     @Override
