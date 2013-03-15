@@ -25,6 +25,9 @@ public class Group extends Entity {
     private ArrayList<Entity> entities;
     private int maxSize;
 
+    // Are we doing something or are we free to be used
+    private boolean isAllocated;
+
     public Group(float r, float g, float b, Vector2D location, int maxSize, Faction faction) {
         this.r = r;
         this.g = g;
@@ -63,6 +66,22 @@ public class Group extends Entity {
 
     public Boolean isFull() {
         return entities.size() >= maxSize;
+    }
+
+    public int getMaxSize() {
+        return maxSize;
+    }
+
+    public void setMaxSize(int maxSize) {
+        this.maxSize = maxSize;
+    }
+
+    public boolean isAllocated() {
+        return isAllocated;
+    }
+
+    public void setAllocated(boolean allocated) {
+        isAllocated = allocated;
     }
 
     public double getRadius() {

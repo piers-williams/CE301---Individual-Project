@@ -163,7 +163,10 @@ class GroupHandler {
             Group newGroup = new Group(faction.getR(), faction.getG(), faction.getB(), new Vector2D(base.getSpawnPoint(), true), 5, faction);
             groups.add(baseGroup.get(base));
             baseGroup.get(base).switchToWander();
+
+            // This is the problematic section
             if (faction.intelligent) faction.commander.groupFilled(baseGroup.get(base));
+
             baseGroup.put(base, newGroup);
             Main.GAME_LOOP.addEntity(newGroup);
         }
