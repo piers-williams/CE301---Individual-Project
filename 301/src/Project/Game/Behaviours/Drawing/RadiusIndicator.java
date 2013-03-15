@@ -29,6 +29,7 @@ public class RadiusIndicator implements Drawing {
 
         this.movementBehaviour = movementBehaviour;
         this.group = group;
+        this.pulsing = pulsing;
     }
 
     public RadiusIndicator(Entity entity, float r, float g, float b, Movement movementBehaviour, Group group) {
@@ -50,7 +51,7 @@ public class RadiusIndicator implements Drawing {
         radius = (int) group.getRadius();
 
         if (pulsing) {
-            if (alpha > 0.5f) delta = -0.05f;
+            if (alpha > 0.9f) delta = -0.05f;
             if (alpha <= 0.05f) delta = 0.05f;
             alpha += delta;
         }

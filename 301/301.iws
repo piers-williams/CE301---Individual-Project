@@ -113,10 +113,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RadiusIndicator.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="RadiusIndicator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Drawing/RadiusIndicator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="27" selection-start="1696" selection-end="1696" vertical-scroll-proportion="0.0">
+            <state line="31" column="31" selection-start="936" selection-end="936" vertical-scroll-proportion="0.6738739">
               <folding />
             </state>
           </provider>
@@ -149,10 +149,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Group.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Group.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Meta/Group.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="93" selection-start="2632" selection-end="2632" vertical-scroll-proportion="0.73513514">
+            <state line="80" column="27" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -191,8 +191,8 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Factions.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Drawing/RadiusIndicator.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/Meta/Group.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Drawing/RadiusIndicator.java" />
       </list>
     </option>
   </component>
@@ -1574,16 +1574,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Drawing/RadiusIndicator.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Meta/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="27" selection-start="1696" selection-end="1696" vertical-scroll-proportion="0.0">
+        <state line="80" column="27" selection-start="2087" selection-end="2087" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Meta/Group.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Drawing/RadiusIndicator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="93" selection-start="2632" selection-end="2632" vertical-scroll-proportion="0.73513514">
+        <state line="31" column="31" selection-start="936" selection-end="936" vertical-scroll-proportion="0.6738739">
           <folding />
         </state>
       </provider>
