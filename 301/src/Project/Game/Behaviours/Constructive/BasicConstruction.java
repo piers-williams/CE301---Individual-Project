@@ -4,6 +4,7 @@ import Project.Game.Entities.Entity;
 import Project.Game.Faction;
 import Project.Game.Resource.ResourceDrain;
 import Project.Game.Resource.ResourcePool;
+import Project.Game.Vector2D;
 
 /**
  *
@@ -27,6 +28,10 @@ public abstract class BasicConstruction implements Construction {
     @Override
     public void update() {
 
+    }
+
+    public Vector2D getSpawnPoint() {
+        return Vector2D.add(entity.getMovementBehaviour().getLocation(), 100, 100);
     }
 
     @Override

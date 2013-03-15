@@ -30,11 +30,6 @@ public class UnitConstruction extends BasicConstruction {
     }
 
     @Override
-    public Vector2D getSpawnPoint() {
-        return null;
-    }
-
-    @Override
     public void update() {
 
         switch (state) {
