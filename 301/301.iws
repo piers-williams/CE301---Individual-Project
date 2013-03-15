@@ -107,7 +107,16 @@
       <file leaf-file-name="Faction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="36" selection-start="3163" selection-end="3163" vertical-scroll-proportion="0.0">
+            <state line="142" column="49" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RadiusIndicator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Drawing/RadiusIndicator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="55" column="27" selection-start="1696" selection-end="1696" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,7 +152,7 @@
       <file leaf-file-name="Group.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Meta/Group.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="34" selection-start="2045" selection-end="2045" vertical-scroll-proportion="0.94086957">
+            <state line="97" column="93" selection-start="2632" selection-end="2632" vertical-scroll-proportion="0.73513514">
               <folding />
             </state>
           </provider>
@@ -168,7 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/Flocking.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Blueprints/Blueprint.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/CachedVector2DSource.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/ControlManager.java" />
@@ -183,6 +191,7 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Factions.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Faction.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Drawing/RadiusIndicator.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/Meta/Group.java" />
       </list>
     </option>
@@ -1464,13 +1473,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/BasicMovement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="43" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/BlueprintConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="0" selection-start="925" selection-end="925" vertical-scroll-proportion="0.0">
@@ -1541,13 +1543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="68" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="127" column="59" selection-start="5708" selection-end="5708" vertical-scroll-proportion="0.67870724">
@@ -1565,16 +1560,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="68" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Faction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="36" selection-start="3163" selection-end="3163" vertical-scroll-proportion="0.0">
+        <state line="142" column="49" selection-start="3509" selection-end="3509" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Drawing/RadiusIndicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="27" selection-start="1696" selection-end="1696" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Meta/Group.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="34" selection-start="2045" selection-end="2045" vertical-scroll-proportion="0.94086957">
+        <state line="97" column="93" selection-start="2632" selection-end="2632" vertical-scroll-proportion="0.73513514">
           <folding />
         </state>
       </provider>

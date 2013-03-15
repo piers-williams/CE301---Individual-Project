@@ -26,7 +26,7 @@ public class Group extends Entity {
     private int maxSize;
 
     // Are we doing something or are we free to be used
-    private boolean isAllocated;
+    private boolean isAllocated = false;
 
     public Group(float r, float g, float b, Vector2D location, int maxSize, Faction faction) {
         this.r = r;
@@ -93,7 +93,9 @@ public class Group extends Entity {
     }
 
     public void switchToFollow(Vector2D target) {
+        isAllocated = true;
         movementBehaviour = new PathFollower(this, movementBehaviour.getLocation(), target, 5);
+        drawingBehaviour = new RadiusIndicator(this, r, g, b, movementBehaviour, this, true);
     }
 
     @Override
