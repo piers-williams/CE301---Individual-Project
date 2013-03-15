@@ -22,7 +22,7 @@ public final class ResourceDrain {
     }
 
     public void assignResource(int amount) {
-        resource += amount;
+        resource += (amount > maxDrainPerTick) ? maxDrainPerTick : amount;
     }
 
     /**

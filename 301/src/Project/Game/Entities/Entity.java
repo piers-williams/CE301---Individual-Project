@@ -59,6 +59,7 @@ public class Entity {
 
     public void draw() {
         if (alive) {
+            if (offensiveBehaviour != null) offensiveBehaviour.draw();
             if (drawingBehaviour != null) drawingBehaviour.draw();
         }
     }

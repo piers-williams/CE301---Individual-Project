@@ -3,6 +3,7 @@ package Project.Game.Behaviours.Offensive;
 import Project.Game.Entities.Entity;
 import Project.Game.Main;
 import Project.Game.Vector2D;
+import org.lwjgl.opengl.GL11;
 
 import java.util.ArrayList;
 
@@ -17,6 +18,8 @@ public class SimpleWeapon implements Offensive {
     private Vector2D currentLocation;
 
     private int targetRadius, damage, coolDown, maxCoolDown;
+    // Used for drawing
+    private Entity targetEntity;
 
     public SimpleWeapon(Entity entity, int targetRadius, int damage, int coolDown) {
         this.entity = entity;
@@ -31,6 +34,7 @@ public class SimpleWeapon implements Offensive {
     public void update() {
         currentLocation.clone(entity.getMovementBehaviour().getLocation());
         if (coolDown == 0) {
+            targetEntity = null;
             ArrayList<Entity> entities = Main.GAME_LOOP.getEntities(currentLocation, targetRadius, entity.getFaction());
             if (entities.size() > 0) {
 
@@ -46,11 +50,27 @@ public class SimpleWeapon implements Offensive {
 
                 // Take shot
                 closestEntitySoFar.damage(damage);
+                targetEntity = closestEntitySoFar;
                 coolDown = maxCoolDown;
             }
         } else {
             coolDown--;
         }
+    }
+
+    @Override
+    public void draw() {
+        if (targetEntity != null) {
+
+            GL11.glColor4f(1f, 1f, 0f, 1f);
+            GL11.glBegin(GL11.GL_LINE_STRIP);
+            // Our point
+            GL11.glVertex2d(entity.getX(), entity.getY());
+            // Target point
+            GL11.glVertex2d(targetEntity.getX(), targetEntity.getY());
+            GL11.glEnd();
+        }
+
     }
 
     @Override

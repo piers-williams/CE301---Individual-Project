@@ -30,8 +30,8 @@ public class Main {
     public static int SCREEN_WIDTH = 1600;
     public static int SCREEN_HEIGHT = 900;
 
-    public static int MAP_WIDTH = 1600;
-    public static int MAP_HEIGHT = 900;
+    public static int MAP_WIDTH = 3200;
+    public static int MAP_HEIGHT = 1800;
     public static int SQUARE_WIDTH = 6;
     public static boolean FULL_SCREEN = true;
     // Collision detection cell size
@@ -154,10 +154,10 @@ public class Main {
 
             Main.GAME_LOOP.draw();
             INFLUENCE_MAP.draw();
+            drawBoundary();
 
             GL11.glScaled(1, -1, 1);
             GL11.glTranslated(-viewLocation.x, -viewLocation.y, 0);
-            drawBoundary();
             gui.update();
             Display.update();
             Control_MANAGER.update();
@@ -170,25 +170,25 @@ public class Main {
         GL11.glColor4f(255, 255, 255, 255);
 
         // Left
-        GL11.glBegin(GL11.GL_LINE);
+        GL11.glBegin(GL11.GL_LINE_STRIP);
         GL11.glVertex2d(0, 0);
-        GL11.glVertex2d(10, Main.MAP_HEIGHT);
+        GL11.glVertex2d(1, Main.MAP_HEIGHT);
         GL11.glEnd();
 
         // Top
-        GL11.glBegin(GL11.GL_LINE);
+        GL11.glBegin(GL11.GL_LINE_STRIP);
         GL11.glVertex2d(0, 0);
-        GL11.glVertex2d(Main.MAP_WIDTH, 10);
+        GL11.glVertex2d(Main.MAP_WIDTH, 1);
         GL11.glEnd();
 
         // Bottom
-        GL11.glBegin(GL11.GL_LINE);
+        GL11.glBegin(GL11.GL_LINE_STRIP);
         GL11.glVertex2d(0, Main.MAP_HEIGHT);
         GL11.glVertex2d(Main.MAP_WIDTH, Main.MAP_HEIGHT);
         GL11.glEnd();
 
         // Right
-        GL11.glBegin(GL11.GL_LINE);
+        GL11.glBegin(GL11.GL_LINE_STRIP);
         GL11.glVertex2d(Main.MAP_WIDTH, 0);
         GL11.glVertex2d(Main.MAP_WIDTH, Main.MAP_HEIGHT);
         GL11.glEnd();

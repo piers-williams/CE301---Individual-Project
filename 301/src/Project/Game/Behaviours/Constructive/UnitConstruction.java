@@ -48,7 +48,8 @@ public class UnitConstruction extends BasicConstruction {
             case Building:
                 // Complete next stage of construction for the current order
                 if (resourceDrain.hasResource()) {
-                    resource += resourceDrain.claimResource();
+                    int temp = resourceDrain.claimResource();
+                    resource += temp;
                 } else {
                     System.out.println("No resource given");
                 }
