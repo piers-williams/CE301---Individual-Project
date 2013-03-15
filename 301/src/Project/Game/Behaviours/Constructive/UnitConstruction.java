@@ -44,6 +44,7 @@ public class UnitConstruction extends BasicConstruction {
                 if (splQueue.hasAttackOrder()) {
                     // Consume the order
                     AttackOrder order = splQueue.getNextAttackOrder();
+                    buildOrder = new BuildOrder(30, order.getLocation(), faction, getSpawnPoint());
                 }
                 break;
             case Building:
