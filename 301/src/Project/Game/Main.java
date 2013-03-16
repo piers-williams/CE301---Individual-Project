@@ -212,6 +212,12 @@ public class Main {
         Control_MANAGER.paused = paused;
     }
 
+    public void togglePauseNoInput() {
+        togglePause();
+        UIManager.showInput = false;
+        Control_MANAGER.paused = false;
+    }
+
     public void shiftView(Vector2D shiftAmount) {
         Main.viewLocation.add(shiftAmount);
     }
