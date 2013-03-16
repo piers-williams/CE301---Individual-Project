@@ -107,53 +107,53 @@ public class Pipeline implements NLPConverter {
 
     private SPLObject getSimpleAdjectiveOrder(ArrayList<TaggedWord> words) {
         List<TaggedWord> match = getFirstInstance(words, "JJ", "VB", "IN", "NN");
+        if (match != null) {
+            switch (match.get(1).value()) {
+                case "attack":
+                case "offense":
+                    Entity target = baseRegistry.get(match.get(3).value());
+                    if (target != null) {
+                        // Adjective gives us strength
+                        String adjective = match.get(0).value();
+                        int numberOfUnits = 0;
+                        switch (adjective.toLowerCase()) {
+                            case "massive":
+                            case "intense":
+                                numberOfUnits = 45;
+                                break;
+                            case "heavy":
+                            case "considerable":
+                            case "huge":
+                            case "mighty":
+                                numberOfUnits = 30;
+                                break;
+                            case "strong":
+                            case "big":
+                            case "tough":
+                            case "substantial":
+                            case "severe":
+                                numberOfUnits = 20;
+                                break;
+                            case "medium":
+                            case "moderate":
+                            case "standard":
+                                numberOfUnits = 15;
+                                break;
+                            case "small":
+                            case "little":
+                            case "midget":
+                                numberOfUnits = 10;
+                                break;
+                            case "tiny":
+                            case "mini":
+                                numberOfUnits = 5;
+                                break;
+                        }
 
-        switch (match.get(1).value()) {
-            case "attack":
-            case "offense":
-                Entity target = baseRegistry.get(match.get(3).value());
-                if (target != null) {
-                    // Adjective gives us strength
-                    String adjective = match.get(0).value();
-                    int numberOfUnits = 0;
-                    switch (adjective.toLowerCase()) {
-                        case "massive":
-                        case "intense":
-                            numberOfUnits = 45;
-                            break;
-                        case "heavy":
-                        case "considerable":
-                        case "huge":
-                        case "mighty":
-                            numberOfUnits = 30;
-                            break;
-                        case "strong":
-                        case "big":
-                        case "tough":
-                        case "substantial":
-                        case "severe":
-                            numberOfUnits = 20;
-                            break;
-                        case "medium":
-                        case "moderate":
-                        case "standard":
-                            numberOfUnits = 15;
-                            break;
-                        case "small":
-                        case "little":
-                        case "midget":
-                            numberOfUnits = 10;
-                            break;
-                        case "tiny":
-                        case "mini":
-                            numberOfUnits = 5;
-                            break;
+                        return new AttackOrder(target.getLocation(), 10, true, numberOfUnits);
                     }
-
-                    return new AttackOrder(target.getLocation(), 10, true, numberOfUnits);
-                }
+            }
         }
-
         return null;
     }
 
