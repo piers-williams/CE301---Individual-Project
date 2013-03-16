@@ -53,8 +53,8 @@ public class UnitConstruction extends BasicConstruction {
                 } else {
                     System.out.println("No resource given");
                 }
-                if (resource > 120) {
-                    resource -= 120;
+                if (resource > 60) {
+                    resource -= 60;
                     Entity entity = EntityFactory.getGroupedEntity(faction, buildOrder.group, getSpawnPoint(), 2);
                     buildOrder.group.addEntity(entity);
                     Main.GAME_LOOP.addEntity(entity);
