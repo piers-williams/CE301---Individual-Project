@@ -93,6 +93,9 @@ public class Pipeline implements NLPConverter {
         for (TaggedWord word : words) System.out.print(word + " ");
         System.out.println("");
 
+        object = getSimpleAdjectiveOrder(words);
+        if (object != null) return object;
+
         object = getSimpleOrderWithUnits(words);
         if (object != null) return object;
 
