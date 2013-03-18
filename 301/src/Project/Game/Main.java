@@ -128,6 +128,11 @@ public class Main {
         planning.setName("Planning Grid Thread");
         planning.start();
 
+        // Start initially not drawing
+        INFLUENCE_MAP.cycleFaction(-1);
+        // Start initially drawing labels
+        UIManager.showLabels = true;
+
         for (Factions factions : Factions.values()) {
             GAME_LOOP.addFaction(factions.getFaction());
         }
@@ -165,7 +170,6 @@ public class Main {
         Display.destroy();
     }
 
-    // TODO Get this working
     private void drawBoundary() {
         GL11.glColor4f(255, 255, 255, 255);
 
@@ -225,7 +229,7 @@ public class Main {
     private void initTWL() {
         try {
             renderer = new LWJGLRenderer();
-            themeManager = ThemeManager.createThemeManager(new File("Content/UITheme/simple.xml").toURL(), renderer);
+            themeManager = ThemeManager.createThemeManager(new File("Content/UITheme/Simple.xml").toURL(), renderer);
 
         } catch (LWJGLException e) {
             e.printStackTrace();

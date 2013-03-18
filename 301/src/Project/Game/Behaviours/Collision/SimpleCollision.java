@@ -13,6 +13,7 @@ public class SimpleCollision implements Collision {
     private Vector2D oldCell;
     private int width;
 
+
     public SimpleCollision(Entity entity, int width) {
         this.entity = entity;
         this.oldCell = Main.COLLISION_BOARD.getPoint(entity);
