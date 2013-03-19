@@ -10,12 +10,12 @@ public class DefendOrder extends BasicOrder {
     private int radius;
     private int numberOfUnits;
 
-    public DefendOrder(Vector2D location, double priority) {
-        this(location, 200, 20, priority);
+    public DefendOrder(Vector2D location, double priority, boolean wasNLP) {
+        this(location, 200, 20, priority, wasNLP);
     }
 
-    public DefendOrder(Vector2D location, int radius, int numberOfUnits, double priority) {
-        super(priority, "Defend");
+    public DefendOrder(Vector2D location, int radius, int numberOfUnits, double priority, boolean wasNLP) {
+        super(priority, "Defend", wasNLP);
         this.location = location;
         this.numberOfUnits = numberOfUnits;
         this.radius = radius;
@@ -31,5 +31,10 @@ public class DefendOrder extends BasicOrder {
 
     public int getNumberOfUnits() {
         return numberOfUnits;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Defend Order: Location: " + location + " Number of Units: " + numberOfUnits + " Radius: " + radius;
     }
 }

@@ -1,6 +1,7 @@
 package Project.Game.UI;
 
 import Project.Game.AI.SPL.Orders.AttackOrder;
+import Project.Game.AI.SPL.Orders.DefendOrder;
 import Project.Game.AI.SPL.Orders.SPLObject;
 import Project.Game.Faction;
 import Project.Game.Factions;
@@ -68,6 +69,10 @@ public class UIManager extends Widget {
                                 System.out.println("Adding Attack Order to Queue");
                                 AttackOrder order = (AttackOrder) object;
                                 Factions.valueOf(object.getAddress()).getFaction().getSplQueue().addAttackOrder(order);
+                                break;
+                            case "Defend":
+                                DefendOrder defendOrder = (DefendOrder) object;
+                                Factions.valueOf(object.getAddress()).getFaction().getSplQueue().addDefendOrder(defendOrder);
                                 break;
                         }
                     }

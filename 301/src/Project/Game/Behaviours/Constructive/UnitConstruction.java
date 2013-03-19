@@ -3,6 +3,7 @@ package Project.Game.Behaviours.Constructive;
 import Project.Game.AI.SPL.Orders.AttackOrder;
 import Project.Game.AI.SPL.Orders.DefendOrder;
 import Project.Game.AI.SPL.SPLQueue;
+import Project.Game.Behaviours.Movement.RadiusPatrol;
 import Project.Game.Entities.Entity;
 import Project.Game.Entities.EntityFactory;
 import Project.Game.Entities.Meta.Group;
@@ -37,7 +38,6 @@ public class UnitConstruction extends BasicConstruction {
         switch (state) {
             case Waiting:
                 // check faction for new order to complete
-
                 if (splQueue.hasDefendOrder()) {
                     DefendOrder order = splQueue.getNextDefendOrder();
                     defendBuildOrder = new DefendBuildOrder(order, faction, getSpawnPoint(), order.wasNLP());
@@ -82,7 +82,7 @@ public class UnitConstruction extends BasicConstruction {
                 if (attackBuildOrder != null) {
                     attackBuildOrder.group.switchToFollow(attackBuildOrder.targetLocation);
                 } else {
-                    defendBuildOrder.group.setMovementBehaviour(null);
+                    defendBuildOrder.group.setMovementBehaviour(new RadiusPatrol(defendBuildOrder.group, defendBuildOrder.group.getLocation(), defendBuildOrder.order.getLocation(), 200));
                 }
                 // Clear and reset the variables ready for the next order
                 resourceDrain.deRegister();

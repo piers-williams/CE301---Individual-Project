@@ -15,6 +15,7 @@ public abstract class BasicOrder implements SPLObject {
         this.wasNLP = wasNLP;
     }
 
+    @Deprecated
     protected BasicOrder(double priority, String type) {
         this(priority, type, false);
     }
