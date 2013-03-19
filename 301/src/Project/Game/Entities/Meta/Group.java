@@ -2,6 +2,7 @@ package Project.Game.Entities.Meta;
 
 import Project.Game.Behaviours.Drawing.RadiusIndicator;
 import Project.Game.Behaviours.Influence.SimpleInfluence;
+import Project.Game.Behaviours.Movement.Movement;
 import Project.Game.Behaviours.Movement.PathFollower;
 import Project.Game.Behaviours.Movement.Static;
 import Project.Game.Behaviours.Movement.Wandering;
@@ -95,6 +96,10 @@ public class Group extends Entity {
     public void switchToFollow(Vector2D target) {
         isAllocated = true;
         movementBehaviour = new PathFollower(this, movementBehaviour.getLocation(), target, 5);
+    }
+
+    public void setMovementBehaviour(Movement behaviour) {
+        movementBehaviour = behaviour;
     }
 
     @Override

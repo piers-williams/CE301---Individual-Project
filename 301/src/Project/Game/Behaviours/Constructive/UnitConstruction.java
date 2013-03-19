@@ -1,6 +1,7 @@
 package Project.Game.Behaviours.Constructive;
 
 import Project.Game.AI.SPL.Orders.AttackOrder;
+import Project.Game.AI.SPL.Orders.DefendOrder;
 import Project.Game.AI.SPL.SPLQueue;
 import Project.Game.Entities.Entity;
 import Project.Game.Entities.EntityFactory;
@@ -20,7 +21,8 @@ public class UnitConstruction extends BasicConstruction {
     private UnitState state;
     private SPLQueue splQueue;
 
-    private BuildOrder buildOrder = null;
+    private AttackBuildOrder attackBuildOrder = null;
+    private DefendBuildOrder defendBuildOrder = null;
 
     public UnitConstruction(Entity entity, Faction faction, ResourcePool resourcePool) {
         super(faction, entity, resourcePool);
@@ -36,14 +38,20 @@ public class UnitConstruction extends BasicConstruction {
             case Waiting:
                 // check faction for new order to complete
 
-                if (splQueue.hasAttackOrder()) {
+                if (splQueue.hasDefendOrder()) {
+                    DefendOrder order = splQueue.getNextDefendOrder();
+                    defendBuildOrder = new DefendBuildOrder(order, faction, getSpawnPoint(), order.wasNLP());
+                } else if (splQueue.hasAttackOrder()) {
                     // Consume the order
                     AttackOrder order = splQueue.getNextAttackOrder();
-                    buildOrder = new BuildOrder(order.getNumberOfUnits(), order.getLocation(), faction, getSpawnPoint(), order.wasNLP());
-                    state = UnitState.Building;
-                    resourceDrain = new ResourceDrain(resourcePool, 1);
-                    resourcePool.register(resourceDrain);
+                    attackBuildOrder = new AttackBuildOrder(order.getNumberOfUnits(), order.getLocation(), faction, getSpawnPoint(), order.wasNLP());
+                } else {
+                    break;
                 }
+
+                state = UnitState.Building;
+                resourceDrain = new ResourceDrain(resourcePool, 1);
+                resourcePool.register(resourceDrain);
                 break;
             case Building:
                 // Complete next stage of construction for the current order
@@ -55,20 +63,31 @@ public class UnitConstruction extends BasicConstruction {
                 }
                 if (resource > 60) {
                     resource -= 60;
-                    Entity entity = EntityFactory.getGroupedEntity(faction, buildOrder.group, getSpawnPoint(), 2);
-                    buildOrder.group.addEntity(entity);
-                    Main.GAME_LOOP.addEntity(entity);
+                    if (attackBuildOrder != null) {
+                        Entity entity = EntityFactory.getGroupedEntity(faction, attackBuildOrder.group, getSpawnPoint(), 2);
+                        attackBuildOrder.group.addEntity(entity);
+                        Main.GAME_LOOP.addEntity(entity);
+                    } else if (defendBuildOrder != null) {
+                        Entity entity = EntityFactory.getGroupedEntity(faction, defendBuildOrder.group, getSpawnPoint(), 2);
+                        defendBuildOrder.group.addEntity(entity);
+                        Main.GAME_LOOP.addEntity(entity);
+                    }
                 }
                 // If group full, then we have built it all
-                if (buildOrder.group.isFull()) state = UnitState.AllBuilt;
+                if (attackBuildOrder != null && attackBuildOrder.group.isFull()) state = UnitState.AllBuilt;
+                if (defendBuildOrder != null && defendBuildOrder.group.isFull()) state = UnitState.AllBuilt;
                 break;
             case AllBuilt:
                 // Send off the group
-                buildOrder.group.switchToFollow(buildOrder.targetLocation);
+                if (attackBuildOrder != null) {
+                    attackBuildOrder.group.switchToFollow(attackBuildOrder.targetLocation);
+                } else {
+                    defendBuildOrder.group.setMovementBehaviour(null);
+                }
                 // Clear and reset the variables ready for the next order
                 resourceDrain.deRegister();
                 resourceDrain = null;
-                buildOrder = null;
+                attackBuildOrder = null;
 
                 // switch state to waiting
                 state = UnitState.Waiting;
@@ -84,7 +103,7 @@ enum UnitState {
 /**
  * Builds and registers a group, stores information from SPL to be used once group is full
  */
-class BuildOrder {
+class AttackBuildOrder {
     // Number of units needed to fulfill the order
     int numberToBuild;
     // Group to store units in for the order
@@ -92,7 +111,7 @@ class BuildOrder {
     // Location to send the units to in the end
     Vector2D targetLocation;
 
-    BuildOrder(int numberToBuild, Vector2D targetLocation, Faction faction, Vector2D startLocation, boolean wasNLP) {
+    AttackBuildOrder(int numberToBuild, Vector2D targetLocation, Faction faction, Vector2D startLocation, boolean wasNLP) {
         this.numberToBuild = numberToBuild;
         this.targetLocation = targetLocation;
 
@@ -100,5 +119,20 @@ class BuildOrder {
         // Register the group
         Main.GAME_LOOP.addEntity(group);
 
+    }
+}
+
+// Builds and registers a group, stores information from SPL to be used once group is full
+class DefendBuildOrder {
+    DefendOrder order;
+
+    Group group;
+
+    DefendBuildOrder(DefendOrder order, Faction faction, Vector2D startLocation, boolean wasNLP) {
+        this.order = order;
+
+        group = new Group(faction, startLocation, order.getNumberOfUnits(), wasNLP);
+
+        Main.GAME_LOOP.addEntity(group);
     }
 }

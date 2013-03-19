@@ -161,14 +161,17 @@ public class Pipeline implements NLPConverter {
         // Attack BS-2 with 10 units
         List<TaggedWord> match = getFirstInstance(words, "VB", "NN", "IN", "CD", "NNS");
         if (match != null) {
-            switch (match.get(0).value().toLowerCase()) {
-                case "attack":
-                case "destroy":
-                case "kill":
-                    if (baseRegistry.has(match.get(1).value())) {
-                        Entity target = baseRegistry.get(match.get(1).value());
+            if (baseRegistry.has(match.get(1).value())) {
+                Entity target = baseRegistry.get(match.get(1).value());
+                switch (match.get(0).value().toLowerCase()) {
+                    case "attack":
+                    case "destroy":
+                    case "kill":
                         return new AttackOrder(target.getLocation(), 5, true, Integer.parseInt(match.get(3).value()));
-                    }
+                    case "defend":
+                    case "protect":
+                        return new DefendOrder(target.getLocation(), 5);
+                }
             }
         }
         return null;
@@ -190,6 +193,7 @@ public class Pipeline implements NLPConverter {
                     }
                     break;
                 case "defend":
+                case "protect":
                     if (baseRegistry.has(match.get(1).value())) {
                         return new DefendOrder(baseRegistry.get(match.get(1).value()).getLocation(), 5);
                     }
