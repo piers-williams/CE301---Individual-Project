@@ -45,7 +45,7 @@ public class RadiusPatrol extends BasicMovement {
     @Override
     public void updateSpecialisation() {
         if (location.dist(checkPoints.get(checkPointIndex)) < CHECKPOINT_THRESHOLD) {
-            System.out.println("Checkpoint reached");
+//            System.out.println("Checkpoint reached");
             checkPointIndex++;
             if (checkPointIndex >= checkPoints.size()) checkPointIndex = 0;
         }
