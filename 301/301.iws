@@ -89,7 +89,7 @@
       <file leaf-file-name="RadiusPatrol.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/RadiusPatrol.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="23" selection-start="680" selection-end="680" vertical-scroll-proportion="0.54805726">
+            <state line="25" column="50" selection-start="730" selection-end="730" vertical-scroll-proportion="-0.112474434">
               <folding />
             </state>
           </provider>
@@ -1083,7 +1083,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/RadiusPatrol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="23" selection-start="680" selection-end="680" vertical-scroll-proportion="0.54805726">
+        <state line="25" column="50" selection-start="730" selection-end="730" vertical-scroll-proportion="-0.112474434">
           <folding />
         </state>
       </provider>

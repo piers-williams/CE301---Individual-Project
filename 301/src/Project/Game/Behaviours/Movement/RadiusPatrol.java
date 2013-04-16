@@ -21,7 +21,7 @@ public class RadiusPatrol extends BasicMovement {
     public RadiusPatrol(Entity entity, Vector2D location, Vector2D centerLocation, int radius) {
         super(entity, location);
         this.centerLocation = centerLocation;
-        this.radius = radius;
+        this.radius = (int) (radius * 1.75);
 
         setUpCheckPoints();
         checkPointIndex = 0;
