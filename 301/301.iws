@@ -113,10 +113,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UIManager.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="UIManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="40" selection-start="3250" selection-end="3250" vertical-scroll-proportion="0.82617587">
+            <state line="73" column="47" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameLoop.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/GameLoop.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="40" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllianceManager.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Alliances/AllianceManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="54" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.79141104">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Alliance.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Alliances/Alliance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="22" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,9 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Project/Game/Resource/ResourceDrain.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Offensive/Offensive.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Entities/Entity.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Offensive/SimpleWeapon.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/ControlManager.java" />
@@ -148,6 +174,9 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/RadiusPatrol.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/UI/UIManager.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/AllianceManager.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Alliances/Alliance.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Alliances/AllianceManager.java" />
       </list>
     </option>
   </component>
@@ -402,12 +431,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="UI" />
+              <option name="myItemId" value="Alliances" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UIManager.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -919,21 +944,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Entities/Meta/Group.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="38" selection-start="2746" selection-end="2746" vertical-scroll-proportion="0.6421053" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/BasicOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="32" selection-start="427" selection-end="427" vertical-scroll-proportion="0.63516486" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="44" selection-start="5734" selection-end="5734" vertical-scroll-proportion="2.7894738" />
-      </provider>
-    </entry>
     <entry file="uml://JAVA/Project">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1112,8 +1122,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="40" selection-start="3250" selection-end="3250" vertical-scroll-proportion="0.82617587">
+        <state line="73" column="47" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/GameLoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="40" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Alliances/Alliance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="22" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Alliances/AllianceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="54" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.79141104">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
