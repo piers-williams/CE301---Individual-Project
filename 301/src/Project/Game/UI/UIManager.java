@@ -75,9 +75,11 @@ public class UIManager extends Widget {
                                 Factions.valueOf(object.getAddress()).getFaction().getSplQueue().addDefendOrder(defendOrder);
                                 break;
                         }
+                        naturalLanguageInput.setText("");
+                    }else{
+                        naturalLanguageInput.setText("Message not known!");
                     }
                 }
-                naturalLanguageInput.setText("");
 
             }
         });

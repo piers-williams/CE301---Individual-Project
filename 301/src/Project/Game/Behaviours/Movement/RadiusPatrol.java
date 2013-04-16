@@ -35,17 +35,11 @@ public class RadiusPatrol extends BasicMovement {
             temp.rotate(Math.toRadians(360 / NUMBER_OF_CHECKPOINTS));
             checkPoints.add(Main.VECTOR2D_SOURCE.getVector(centerLocation.x + temp.x, centerLocation.y + temp.y));
         }
-
-//        System.out.println("Calculated Checkpoints: ");
-//        for (Vector2D checkPoint : checkPoints) {
-//            System.out.println("    " + checkPoint);
-//        }
     }
 
     @Override
     public void updateSpecialisation() {
         if (location.dist(checkPoints.get(checkPointIndex)) < CHECKPOINT_THRESHOLD) {
-//            System.out.println("Checkpoint reached");
             checkPointIndex++;
             if (checkPointIndex >= checkPoints.size()) checkPointIndex = 0;
         }
