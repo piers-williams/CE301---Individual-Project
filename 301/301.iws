@@ -85,108 +85,7 @@
     <favorites_list name="301" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.522283">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="UnitConstruction.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="84" column="105" selection-start="3746" selection-end="3782" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Vector2D.java" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="241" column="16" selection-start="6402" selection-end="6402" vertical-scroll-proportion="1.1864035">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BasicMovement.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/BasicMovement.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="33" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Wandering.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/Wandering.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="39" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="DefendOrder.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/DefendOrder.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="42" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AttackOrder.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="9" column="44" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="AttackOrder.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="10" column="32" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Pipeline.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="199" column="118" selection-start="7065" selection-end="7065" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RadiusPatrol.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/RadiusPatrol.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="31" column="43" selection-start="895" selection-end="895" vertical-scroll-proportion="0.37184873">
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UIManager.java" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="72" column="19" selection-start="2755" selection-end="2755" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -350,16 +249,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -428,332 +317,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="NLP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Game" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CollisionBoard.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UIManager.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Entities" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Meta" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Behaviours" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Behaviours" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Movement" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Behaviours" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Constructive" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SPL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Game" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SPL" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Orders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Content" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1127,19 +702,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30865923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226257" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07786358" sideWeight="0.7178771" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21750322" sideWeight="0.7178771" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38826814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25139666" sideWeight="0.081724584" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2821229" sideWeight="0.9137709" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2821229" sideWeight="0.9137709" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1151,6 +725,7 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2742857" sideWeight="0.497426" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30865923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1255,26 +830,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/diagram.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../Java Programs/HighScaleAntSimulator/src/Behaviours/Collision/SimpleCollision.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="528" selection-end="528" vertical-scroll-proportion="0.39123866" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/CollisionBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="42" selection-start="5002" selection-end="5002" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Content/Logs/Log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2991" column="30" selection-start="113727" selection-end="113727" vertical-scroll-proportion="0.7852632" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Collision/SimpleCollision.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="34" selection-start="2270" selection-end="2270" vertical-scroll-proportion="0.6673684" />
@@ -1290,16 +845,149 @@
         <state line="17" column="32" selection-start="427" selection-end="427" vertical-scroll-proportion="0.63516486" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="105" selection-start="3746" selection-end="3782" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="218" column="44" selection-start="5734" selection-end="5734" vertical-scroll-proportion="2.7894738" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="19" selection-start="2755" selection-end="2755" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Project">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Project</OriginalElement>
+          <nodes>
+            <node x="" y="">Project.Game.Behaviours.Drawing.Drawing</node>
+            <node x="" y="">Project.NLP.Tests.PipelineTest</node>
+            <node x="" y="">Project.Game.ControlManager</node>
+            <node x="" y="">Project.Game.Buildings.BuildingsWrapper</node>
+            <node x="" y="">Project.Game.AI.SPL.Orders.SPLObject</node>
+            <node x="" y="">Project.Game.AI.SPL.SPLQueue</node>
+            <node x="" y="">Project.Game.Entities.EntityFactory</node>
+            <node x="" y="">Project.NLP.NLPConverter</node>
+            <node x="" y="">Project.Game.Behaviours.Constructive.DefendBuildOrder</node>
+            <node x="" y="">Project.Game.Behaviours.Offensive.Offensive</node>
+            <node x="" y="">Project.Game.Resource.ResourcePool</node>
+            <node x="" y="">Project.Game.AI.SPL.Orders.AttackOrder</node>
+            <node x="" y="">Project.Game.Utilities</node>
+            <node x="" y="">Project.Game.Blueprints.BlueprintRegistry</node>
+            <node x="" y="">Project.Game.AI.Commander</node>
+            <node x="" y="">Project.Game.Buildings.BuildingRegistry</node>
+            <node x="" y="">Project.Game.Resource.ResourceGenerator</node>
+            <node x="" y="">Project.Game.AI.TacticalAnalysis</node>
+            <node x="" y="">Project.Game.Behaviours.Constructive.AttackBuildOrder</node>
+            <node x="" y="">Project.Game.Faction</node>
+            <node x="" y="">Project.Game.AI.SPL.Orders.DefendOrder</node>
+            <node x="" y="">Project.Game.Behaviours.Movement.Static</node>
+            <node x="" y="">Project.Game.AI.ParticleSwarm.BuildingShadow</node>
+            <node x="" y="">Project.Game.Behaviours.Influence.Influence</node>
+            <node x="" y="">Project.Game.Behaviours.Collision.SimpleCollision</node>
+            <node x="" y="">Project.Game.Factions</node>
+            <node x="" y="">Project.NLP.UI</node>
+            <node x="" y="">Project.Game.Behaviours.Offensive.SimpleWeapon</node>
+            <node x="" y="">Project.Game.GroupHandler</node>
+            <node x="" y="">Project.Game.Behaviours.Movement.BasicMovement</node>
+            <node x="" y="">Project.Game.Blueprints.BlueprintBuilding</node>
+            <node x="" y="">Project.Game.AI.BaseCommander</node>
+            <node x="" y="">Project.Game.Behaviours.Resource.Resource</node>
+            <node x="" y="">Project.Game.Behaviours.Drawing.SimpleQuad</node>
+            <node x="" y="">Project.TWLTest.Lesson1</node>
+            <node x="" y="">Project.Game.Vector2D</node>
+            <node x="" y="">Project.Game.Registries.NameRegistry</node>
+            <node x="" y="">Project.Game.Behaviours.Constructive.UnitState</node>
+            <node x="" y="">Project.Game.UI.UIManager</node>
+            <node x="" y="">Project.Game.Behaviours.Collision.Collision</node>
+            <node x="" y="">Project.Game.CachedVector2DSource</node>
+            <node x="" y="">Project.Game.Registries.BaseRegistry</node>
+            <node x="" y="">Project.Game.UI.InternalButton</node>
+            <node x="" y="">Project.Game.AI.ParticleSwarm.PlanningGrid</node>
+            <node x="" y="">Project.Game.AI.ParticleSwarm.BasicParticle</node>
+            <node x="" y="">Project.Game.AI.AttackFinder</node>
+            <node x="" y="">Project.Game.Resource.ResourceDrain</node>
+            <node x="" y="">Project.Game.Behaviours.Movement.PathFollower</node>
+            <node x="" y="">Project.Game.Behaviours.Constructive.UnitConstruction</node>
+            <node x="" y="">Project.Game.GameLoop</node>
+            <node x="" y="">Project.Game.AI.ParticleSwarm.JobPairing</node>
+            <node x="" y="">Project.Game.Influence.InfluenceGrid</node>
+            <node x="" y="">Project.Game.Behaviours.Movement.Wandering</node>
+            <node x="" y="">Project.Game.Behaviours.Movement.Movement</node>
+            <node x="" y="">Project.Game.Behaviours.Drawing.RadiusIndicator</node>
+            <node x="" y="">Project.Game.AI.ParticleSwarm.FitnessFunction</node>
+            <node x="" y="">Project.Game.Main</node>
+            <node x="" y="">Project.Game.Behaviours.Movement.Flocking</node>
+            <node x="" y="">Project.Game.Behaviours.Constructive.Construction</node>
+            <node x="" y="">Project.Game.AI.SPL.Orders.BuildOrder</node>
+            <node x="" y="">Project.Game.EntityCellPair</node>
+            <node x="" y="">Project.Game.UI.Action</node>
+            <node x="" y="">Project.Game.Behaviours.Influence.SimpleInfluence</node>
+            <node x="" y="">Project.Game.Behaviours.Behaviour</node>
+            <node x="" y="">Project.Game.Behaviours.Constructive.BlueprintConstruction</node>
+            <node x="" y="">Project.Game.Entities.Entity</node>
+            <node x="" y="">Project.Game.Behaviours.Constructive.BasicConstruction</node>
+            <node x="" y="">Project.Game.UI.ButtonsWrapper</node>
+            <node x="" y="">Project.Game.Registries.EntityRegistry</node>
+            <node x="" y="">Project.Game.Behaviours.Constructive.BlueprintState</node>
+            <node x="" y="">Project.Game.Blueprints.Blueprint</node>
+            <node x="" y="">Project.Game.UI.InternalLabel</node>
+            <node x="" y="">Project.Game.Entities.Meta.Group</node>
+            <node x="" y="">Project.Game.Buildings.InfluenceStub</node>
+            <node x="" y="">Project.Game.UI.LabelWrapper</node>
+            <node x="" y="">Project.Game.Behaviours.Movement.RadiusPatrol</node>
+            <node x="" y="">Project.Game.AI.SPL.Orders.BasicOrder</node>
+            <node x="" y="">Project.Game.Influence.InfluenceMap</node>
+            <node x="" y="">Project.Game.Buildings.MetaBuilding</node>
+            <node x="" y="">Project.NLP.Pipeline</node>
+            <node x="" y="">Project.Game.CollisionBoard</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="337.0" y="97.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/BasicMovement.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/RadiusPatrol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="33" selection-start="698" selection-end="698" vertical-scroll-proportion="0.0" />
+        <state line="43" column="24" selection-start="1428" selection-end="1428" vertical-scroll-proportion="0.5079595" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="199" column="118" selection-start="7065" selection-end="7065" vertical-scroll-proportion="0.040520985" />
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Project.Game.Vector2D">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Project.Game.Vector2D</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">Project.Game.Vector2D</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="44.0" y="335.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="44" selection-start="156" selection-end="156" vertical-scroll-proportion="0.21273516" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/Wandering.java">
@@ -1309,38 +997,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/DefendOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="42" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0" />
+        <state line="19" column="39" selection-start="571" selection-end="571" vertical-scroll-proportion="0.3357453" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/BasicMovement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="32" selection-start="187" selection-end="187" vertical-scroll-proportion="0.0" />
+        <state line="26" column="33" selection-start="698" selection-end="698" vertical-scroll-proportion="0.024602026" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Influence/InfluenceMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="118" selection-start="7065" selection-end="7065" vertical-scroll-proportion="0.0" />
+        <state line="34" column="40" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.024602026" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/SPLQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="19" selection-start="2755" selection-end="2755" vertical-scroll-proportion="0.0" />
+        <state line="31" column="3" selection-start="908" selection-end="908" vertical-scroll-proportion="0.024602026" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Vector2D.java">
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Constructive/UnitConstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="241" column="16" selection-start="6402" selection-end="6402" vertical-scroll-proportion="1.1864035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/RadiusPatrol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="43" selection-start="895" selection-end="895" vertical-scroll-proportion="0.37184873">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="73" column="56" selection-start="3091" selection-end="3091" vertical-scroll-proportion="0.025073746" />
       </provider>
     </entry>
   </component>
