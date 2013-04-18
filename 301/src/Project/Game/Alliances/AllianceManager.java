@@ -11,12 +11,12 @@ import java.util.HashMap;
  */
 public class AllianceManager {
     // Maps factions to a number for the matrix indices
-    HashMap<Faction, Integer> factionToInteger;
-    HashMap<Integer, Faction> integerToFaction;
-    int currentIndex = 0;
+    private HashMap<Faction, Integer> factionToInteger;
+    private HashMap<Integer, Faction> integerToFaction;
+    private int currentIndex = 0;
 
     // Simple matrix
-    Alliance[][] alliances;
+    private Alliance[][] alliances;
 
 
     public AllianceManager() {
@@ -38,6 +38,10 @@ public class AllianceManager {
         alliances[factionToInteger.get(second)][factionToInteger.get(first)] = newType;
     }
 
+    public Alliance getAlliance(Faction first, Faction second){
+         return alliances[factionToInteger.get(first)][factionToInteger.get(second)];
+    }
+
     // Returns list of factions that match the Alliance type given
     public ArrayList<Faction> getFactions(Faction first, Alliance type) {
         ArrayList<Faction> factions = new ArrayList<>();
@@ -51,6 +55,4 @@ public class AllianceManager {
 
         return factions;
     }
-
-
 }

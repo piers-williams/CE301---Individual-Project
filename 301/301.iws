@@ -134,10 +134,8 @@
       <file leaf-file-name="AllianceManager.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Alliances/AllianceManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="54" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.79141104">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="40" column="23" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.5904486">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,7 +143,16 @@
       <file leaf-file-name="Alliance.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project/Game/Alliances/Alliance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="22" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
+            <state line="5" column="6" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Factions.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="47" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -161,8 +168,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Offensive/SimpleWeapon.java" />
-        <option value="$PROJECT_DIR$/src/Project/Game/Entities/EntityFactory.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/ControlManager.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Main.java" />
         <option value="$PROJECT_DIR$/../../Java Programs/HighScaleAntSimulator/src/Behaviours/Collision/SimpleCollision.java" />
@@ -175,7 +180,9 @@
         <option value="$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/RadiusPatrol.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/UI/UIManager.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/AllianceManager.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Alliances/AllianceTests.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Alliances/Alliance.java" />
+        <option value="$PROJECT_DIR$/src/Project/Game/Factions.java" />
         <option value="$PROJECT_DIR$/src/Project/Game/Alliances/AllianceManager.java" />
       </list>
     </option>
@@ -315,20 +322,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="301" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -447,6 +440,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="301" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Favorites" />
     </panes>
   </component>
@@ -466,9 +473,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -490,7 +497,7 @@
       <recent name="Project.Game.Blueprints" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.AllianceTests">
     <configuration default="false" name="BlueprintRegistry" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -737,13 +744,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list size="6">
+    <configuration default="false" name="AllianceTests" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="Project.Game.Alliances.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="301" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="PACKAGE_NAME" value="Project.Game.Alliances" />
+      <option name="MAIN_CLASS_NAME" value="Project.Game.Alliances.AllianceTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Application.BlueprintRegistry" />
       <item index="1" class="java.lang.String" itemvalue="Application.UI" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.BasicConverterTest" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.PipelineTest" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.PipelineTest.testExtractOrder" />
       <item index="5" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="6" class="java.lang.String" itemvalue="JUnit.AllianceTests" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -818,17 +856,16 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30865923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3226257" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21750322" sideWeight="0.7178771" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22715573" sideWeight="0.7178771" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38826814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25139666" sideWeight="0.081724584" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2821229" sideWeight="0.9137709" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2821229" sideWeight="0.9137709" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -840,6 +877,7 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2742857" sideWeight="0.497426" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30865923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -944,131 +982,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://JAVA/Project">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>Project</OriginalElement>
-          <nodes>
-            <node x="" y="">Project.Game.Behaviours.Drawing.Drawing</node>
-            <node x="" y="">Project.NLP.Tests.PipelineTest</node>
-            <node x="" y="">Project.Game.ControlManager</node>
-            <node x="" y="">Project.Game.Buildings.BuildingsWrapper</node>
-            <node x="" y="">Project.Game.AI.SPL.Orders.SPLObject</node>
-            <node x="" y="">Project.Game.AI.SPL.SPLQueue</node>
-            <node x="" y="">Project.Game.Entities.EntityFactory</node>
-            <node x="" y="">Project.NLP.NLPConverter</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.DefendBuildOrder</node>
-            <node x="" y="">Project.Game.Behaviours.Offensive.Offensive</node>
-            <node x="" y="">Project.Game.Resource.ResourcePool</node>
-            <node x="" y="">Project.Game.AI.SPL.Orders.AttackOrder</node>
-            <node x="" y="">Project.Game.Utilities</node>
-            <node x="" y="">Project.Game.Blueprints.BlueprintRegistry</node>
-            <node x="" y="">Project.Game.AI.Commander</node>
-            <node x="" y="">Project.Game.Buildings.BuildingRegistry</node>
-            <node x="" y="">Project.Game.Resource.ResourceGenerator</node>
-            <node x="" y="">Project.Game.AI.TacticalAnalysis</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.AttackBuildOrder</node>
-            <node x="" y="">Project.Game.Faction</node>
-            <node x="" y="">Project.Game.AI.SPL.Orders.DefendOrder</node>
-            <node x="" y="">Project.Game.Behaviours.Movement.Static</node>
-            <node x="" y="">Project.Game.AI.ParticleSwarm.BuildingShadow</node>
-            <node x="" y="">Project.Game.Behaviours.Influence.Influence</node>
-            <node x="" y="">Project.Game.Behaviours.Collision.SimpleCollision</node>
-            <node x="" y="">Project.Game.Factions</node>
-            <node x="" y="">Project.NLP.UI</node>
-            <node x="" y="">Project.Game.Behaviours.Offensive.SimpleWeapon</node>
-            <node x="" y="">Project.Game.GroupHandler</node>
-            <node x="" y="">Project.Game.Behaviours.Movement.BasicMovement</node>
-            <node x="" y="">Project.Game.Blueprints.BlueprintBuilding</node>
-            <node x="" y="">Project.Game.AI.BaseCommander</node>
-            <node x="" y="">Project.Game.Behaviours.Resource.Resource</node>
-            <node x="" y="">Project.Game.Behaviours.Drawing.SimpleQuad</node>
-            <node x="" y="">Project.TWLTest.Lesson1</node>
-            <node x="" y="">Project.Game.Vector2D</node>
-            <node x="" y="">Project.Game.Registries.NameRegistry</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.UnitState</node>
-            <node x="" y="">Project.Game.UI.UIManager</node>
-            <node x="" y="">Project.Game.Behaviours.Collision.Collision</node>
-            <node x="" y="">Project.Game.CachedVector2DSource</node>
-            <node x="" y="">Project.Game.Registries.BaseRegistry</node>
-            <node x="" y="">Project.Game.UI.InternalButton</node>
-            <node x="" y="">Project.Game.AI.ParticleSwarm.PlanningGrid</node>
-            <node x="" y="">Project.Game.AI.ParticleSwarm.BasicParticle</node>
-            <node x="" y="">Project.Game.AI.AttackFinder</node>
-            <node x="" y="">Project.Game.Resource.ResourceDrain</node>
-            <node x="" y="">Project.Game.Behaviours.Movement.PathFollower</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.UnitConstruction</node>
-            <node x="" y="">Project.Game.GameLoop</node>
-            <node x="" y="">Project.Game.AI.ParticleSwarm.JobPairing</node>
-            <node x="" y="">Project.Game.Influence.InfluenceGrid</node>
-            <node x="" y="">Project.Game.Behaviours.Movement.Wandering</node>
-            <node x="" y="">Project.Game.Behaviours.Movement.Movement</node>
-            <node x="" y="">Project.Game.Behaviours.Drawing.RadiusIndicator</node>
-            <node x="" y="">Project.Game.AI.ParticleSwarm.FitnessFunction</node>
-            <node x="" y="">Project.Game.Main</node>
-            <node x="" y="">Project.Game.Behaviours.Movement.Flocking</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.Construction</node>
-            <node x="" y="">Project.Game.AI.SPL.Orders.BuildOrder</node>
-            <node x="" y="">Project.Game.EntityCellPair</node>
-            <node x="" y="">Project.Game.UI.Action</node>
-            <node x="" y="">Project.Game.Behaviours.Influence.SimpleInfluence</node>
-            <node x="" y="">Project.Game.Behaviours.Behaviour</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.BlueprintConstruction</node>
-            <node x="" y="">Project.Game.Entities.Entity</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.BasicConstruction</node>
-            <node x="" y="">Project.Game.UI.ButtonsWrapper</node>
-            <node x="" y="">Project.Game.Registries.EntityRegistry</node>
-            <node x="" y="">Project.Game.Behaviours.Constructive.BlueprintState</node>
-            <node x="" y="">Project.Game.Blueprints.Blueprint</node>
-            <node x="" y="">Project.Game.UI.InternalLabel</node>
-            <node x="" y="">Project.Game.Entities.Meta.Group</node>
-            <node x="" y="">Project.Game.Buildings.InfluenceStub</node>
-            <node x="" y="">Project.Game.UI.LabelWrapper</node>
-            <node x="" y="">Project.Game.Behaviours.Movement.RadiusPatrol</node>
-            <node x="" y="">Project.Game.AI.SPL.Orders.BasicOrder</node>
-            <node x="" y="">Project.Game.Influence.InfluenceMap</node>
-            <node x="" y="">Project.Game.Buildings.MetaBuilding</node>
-            <node x="" y="">Project.NLP.Pipeline</node>
-            <node x="" y="">Project.Game.CollisionBoard</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="337.0" y="97.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/Project.Game.Vector2D">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>Project.Game.Vector2D</OriginalElement>
-          <nodes>
-            <node x="0.0" y="0.0">Project.Game.Vector2D</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="44.0" y="335.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/SPL/Orders/AttackOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="44" selection-start="156" selection-end="156" vertical-scroll-proportion="0.21273516" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/Wandering.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="39" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0" />
@@ -1101,52 +1014,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Movement/RadiusPatrol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="8" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="20" column="8" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/AI/Commander.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="50" selection-start="1905" selection-end="1905" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="76" column="50" selection-start="1905" selection-end="1905" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/NLP/Pipeline.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="41" selection-start="7548" selection-end="7548" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="217" column="41" selection-start="7548" selection-end="7548" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/UI/UIManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="47" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="73" column="47" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/GameLoop.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="40" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="23" column="40" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Alliances/Alliance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
+        <state line="5" column="6" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Behaviours/Collision/SimpleCollision.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="58" selection-start="1365" selection-end="1365" vertical-scroll-proportion="0.48137107">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project/Game/Factions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="47" selection-start="671" selection-end="671" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project/Game/Alliances/AllianceManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="54" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.79141104">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="40" column="23" selection-start="1208" selection-end="1208" vertical-scroll-proportion="0.5904486">
+          <folding />
         </state>
       </provider>
     </entry>

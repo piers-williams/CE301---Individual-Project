@@ -5,10 +5,10 @@ package Project.Game;
  * Must only be one non intelligent Faction
  */
 public enum Factions {
-    Nature(1, 1, 1, Main.VECTOR2D_SOURCE.getVector(450, 450), false),
-    Red(1, 0, 0, Main.VECTOR2D_SOURCE.getVector(1350, 1350), true),
+    Nature(1, 1, 1, new Vector2D(450, 450), false),
+    Red(1, 0, 0, new Vector2D(1350, 1350), true),
     //    Green(0, 1, 0, Main.VECTOR2D_SOURCE.getVector(450, 1350), true),
-    Blue(0, 0, 1, Main.VECTOR2D_SOURCE.getVector(1350, 450), true);
+    Blue(0, 0, 1, new Vector2D(1350, 450), true);
 
     // W-B
     // G-R
