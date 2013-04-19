@@ -1,9 +1,11 @@
 package Project.Game.Influence;
 
+import Project.Game.Alliances.Alliance;
 import Project.Game.*;
 import Project.Game.Entities.Entity;
 import org.lwjgl.opengl.GL11;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -142,8 +144,10 @@ public class InfluenceMap implements Runnable {
      */
     public double[][] getEnemyInfluence(Faction ourFaction) {
         double[][] finalResult = new double[width][height];
-        for (Factions factions : Factions.values()) {
-            Faction faction = factions.getFaction();
+
+        ArrayList<Faction> enemyFactions = Main.ALLIANCE_MANAGER.getFactions(ourFaction, Alliance.Hostile);
+        System.out.println("Number of enemy Factions: " + enemyFactions.size());
+        for (Faction faction : enemyFactions) {
             if (faction != ourFaction) {
                 for (int x = 0; x < influence.get(faction)[drawIndex].length; x++) {
                     for (int y = 0; y < influence.get(faction)[drawIndex][x].length; y++) {

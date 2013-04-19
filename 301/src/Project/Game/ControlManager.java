@@ -33,16 +33,16 @@ public class ControlManager {
                             main.toggleLabels();
                             break;
                         case Keyboard.KEY_A:
-                            main.shiftView(Main.VECTOR2D_SOURCE.getVector(50, 0));
+                            main.shiftView(Main.VECTOR2D_SOURCE.getVector(100, 0));
                             break;
                         case Keyboard.KEY_W:
-                            main.shiftView(Main.VECTOR2D_SOURCE.getVector(0, -50));
+                            main.shiftView(Main.VECTOR2D_SOURCE.getVector(0, -100));
                             break;
                         case Keyboard.KEY_S:
-                            main.shiftView(Main.VECTOR2D_SOURCE.getVector(0, 50));
+                            main.shiftView(Main.VECTOR2D_SOURCE.getVector(0, 100));
                             break;
                         case Keyboard.KEY_D:
-                            main.shiftView(Main.VECTOR2D_SOURCE.getVector(-50, 0));
+                            main.shiftView(Main.VECTOR2D_SOURCE.getVector(-100, 0));
                             break;
                         case Keyboard.KEY_P:
                             main.togglePauseNoInput();

@@ -1,6 +1,8 @@
 package Project.Game;
 
 import Project.Game.AI.ParticleSwarm.PlanningGrid;
+import Project.Game.Alliances.Alliance;
+import Project.Game.Alliances.AllianceManager;
 import Project.Game.Blueprints.BlueprintRegistry;
 import Project.Game.Buildings.BuildingRegistry;
 import Project.Game.Influence.InfluenceMap;
@@ -47,6 +49,7 @@ public class Main {
     public static PlanningGrid PLANNING_GRID;
     public static Pipeline PIPELINE;
     public static NameRegistry REGISTRY;
+    public static AllianceManager ALLIANCE_MANAGER;
 
     // Please don't re-assign this one
     public static Faction HUMAN_FACTION;
@@ -79,8 +82,23 @@ public class Main {
         Control_MANAGER = new ControlManager(this);
         PLANNING_GRID = new PlanningGrid(50, 50, 100, 400);
         PIPELINE = new Pipeline();
+
+        ALLIANCE_MANAGER = new AllianceManager();
+        setUpAlliances();
+
         if (FULL_SCREEN) System.setProperty("org.lwjgl.opengl.Window.undecorated", "true");
 
+    }
+
+    private void setUpAlliances() {
+        ALLIANCE_MANAGER.setAlliance(Factions.Nature.getFaction(), Factions.Blue.getFaction(), Alliance.Friendly);
+        ALLIANCE_MANAGER.setAlliance(Factions.Red.getFaction(), Factions.Green.getFaction(), Alliance.Friendly);
+
+        ALLIANCE_MANAGER.setAlliance(Factions.Blue.getFaction(), Factions.Red.getFaction(), Alliance.Hostile);
+        ALLIANCE_MANAGER.setAlliance(Factions.Nature.getFaction(), Factions.Red.getFaction(), Alliance.Hostile);
+
+        ALLIANCE_MANAGER.setAlliance(Factions.Blue.getFaction(), Factions.Green.getFaction(), Alliance.Hostile);
+        ALLIANCE_MANAGER.setAlliance(Factions.Nature.getFaction(), Factions.Green.getFaction(), Alliance.Hostile);
     }
 
     public void start() {

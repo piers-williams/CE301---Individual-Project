@@ -96,6 +96,8 @@ class AttackFinder extends TacticalAnalysis {
             nextTarget = Main.VECTOR2D_SOURCE.getVector(lowX * Main.INFLUENCE_MAP.getCellSize(), lowY * Main.INFLUENCE_MAP.getCellSize());
 
             commander.getFaction().getSplQueue().addAttackOrder(new AttackOrder(nextTarget, 1, false));
+        } else{
+            System.out.println("Didn't find anything");
         }
     }
 }

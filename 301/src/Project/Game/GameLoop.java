@@ -1,5 +1,6 @@
 package Project.Game;
 
+import Project.Game.Alliances.Alliance;
 import Project.Game.Entities.Entity;
 import Project.Game.Entities.Meta.Group;
 
@@ -118,9 +119,10 @@ public class GameLoop implements Runnable {
 
     public ArrayList<Entity> getEntities(Vector2D location, int radius, Faction faction) {
         ArrayList<Entity> closeEntities = new ArrayList<>();
+        ArrayList<Faction> friendlyFactions = Main.ALLIANCE_MANAGER.getFactions(faction, Alliance.Friendly);
         synchronized (_entities) {
             for (Entity entity : entities) {
-                if (entity.isAlive() && entity.getFaction() != faction) {
+                if (entity.isAlive() && (entity.getFaction() != faction || friendlyFactions.contains(entity.getFaction()))) {
                     if (entity.getMovementBehaviour().getLocation().dist(location) < radius) {
                         closeEntities.add(entity);
                     }
